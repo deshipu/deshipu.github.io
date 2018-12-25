@@ -15,10 +15,21 @@
     <author>
       <name></name>
     </author>
-    <content type="html">&lt;p&gt;My hosting provider is dropping their service, and that has forced me to look
+    <content type="html">&lt;div class=&quot;section&quot; id=&quot;new-website&quot;&gt;
+
+&lt;p&gt;My hosting provider is dropping their service, and that has forced me to look
 for another solution for hosting my website. I’ve been toying with the idea of
 a statically-generated blog for a long time, and this finally pushed me to try
 it.&lt;/p&gt;
+&lt;p&gt;I’m using &lt;a class=&quot;reference external&quot; href=&quot;https://ablog.readthedocs.io&quot;&gt;ablog&lt;/a&gt;, which lets me write articles
+using the familiar &lt;a class=&quot;reference external&quot; href=&quot;http://www.sphinx-doc.org&quot;&gt;sphinx&lt;/a&gt; markup, and publish
+them on Github Pages.&lt;/p&gt;
+&lt;p&gt;Of course I had to customize it a bit to generate less bloated HTML and to use
+my own custom CSS — not everything could be changed to be the way that I
+like, but I’m mostly happy with it.&lt;/p&gt;
+&lt;p&gt;Now I “just” need to migrate all the content that I want to keep from the old
+wiki and WikiCreole markup to this and ReStructuredText.&lt;/p&gt;
+&lt;/div&gt;
 </content>
   </entry>
 </feed>
