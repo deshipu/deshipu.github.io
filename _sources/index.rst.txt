@@ -1,12 +1,10 @@
 Welcome
 *******
 
-It's not much, but it's mine. This is where I keep assorted bits of information
-that I would like to share with the world. It used to be a wiki, editable by
-anyone, but only spam bots edited it, so now I've closed it down to make the
-RSS feed more useful – now you can actually use it to see the updates of the
-website. If you have any comments, suggestions, questions or messages, you can
-drop me an e-mail.
+I'm `Radomir Dopieralski <about>`_ and this is my home page. It's not much, but
+it's mine. This is where I keep assorted bits of information that I would like
+to share with the world.  If you have any comments, suggestions, questions or
+messages, you can drop me an e-mail.
 
 Recent Articles
 ***************
