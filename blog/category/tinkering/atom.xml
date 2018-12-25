@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title type="text">sheep.art.pl - Posts in tinkering</title>
-  <id>http://sheep.art.pl/blog/blog/category/tinkering/atom.xml</id>
+  <title type="text">dopieralski.pl - Posts in tinkering</title>
+  <id>http://dopieralski.pl/blog/category/tinkering/atom.xml</id>
   <updated>2018-12-25T00:00:00Z</updated>
-  <link href="http://sheep.art.pl/blog/" />
-  <link href="http://sheep.art.pl/blog/blog/category/tinkering/atom.xml" rel="self" />
+  <link href="http://dopieralski.pl/" />
+  <link href="http://dopieralski.pl/blog/category/tinkering/atom.xml" rel="self" />
   <generator uri="http://ablog.readthedocs.org" version="0.9.3">ABlog</generator>
-  <entry xml:base="http://sheep.art.pl/blog/blog/category/tinkering/atom.xml">
+  <entry xml:base="http://dopieralski.pl/blog/category/tinkering/atom.xml">
     <title type="text">First Post</title>
-    <id>http://sheep.art.pl/blog/posts/first-post/</id>
+    <id>http://dopieralski.pl/posts/first-post/</id>
     <updated>2018-12-25T00:00:00Z</updated>
     <published>2018-12-25T00:00:00Z</published>
-    <link href="http://sheep.art.pl/blog/posts/first-post/" />
+    <link href="http://dopieralski.pl/posts/first-post/" />
     <author>
       <name></name>
     </author>
