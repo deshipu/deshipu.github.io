@@ -3,6 +3,18 @@ My Talks
 
 Here are some talks I gave on various conferences.
 
+2019
+====
+* FOSDEM --- Making Computer Games in MicroPython
+
+2018
+====
+* Europython --- poster session
+* PyCon.DE --- lightning talk
+
+2017
+====
+
 2016
 ====
 
@@ -23,28 +35,30 @@ Here are some talks I gave on various conferences.
 2014
 ====
 
-* PyRa #14 [[https://www.youtube.com/watch?v=IFUm1fLzPVs|Become a Professional Programmer]]
-* PyCon.PL [[https://bitbucket.org/thesheep/better-slides/downloads/slides.zip|Become a Professional Programmer]]
-* PyCon.PL [[https://bitbucket.org/thesheep/slides-robots/downloads/robots.zip|Building Robots]]
+* PyRa #14 `Become a Professional Programmer <https://www.youtube.com/watch?v=IFUm1fLzPVs>`_
+* PyCon.PL `Become a Professional Programmer <https://bitbucket.org/thesheep/better-slides/downloads/slides.zip>`_
+* PyCon.PL `Building Robots <https://bitbucket.org/thesheep/slides-robots/downloads/robots.zip>`_
 * Europython
-* PyWaw [[https://bitbucket.org/thesheep/memoize-slides/downloads/memoize.zip|Memoization]]
+* PyWaw `Memoization <https://bitbucket.org/thesheep/memoize-slides/downloads/memoize.zip>`_
 
 2013
 ====
 
-* PyCon.PL [[https://www.youtube.com/watch?v=BP0dWrnxGQc|Magiczne Atrybuty]]
-* PyCon.PL [[https://www.youtube.com/watch?v=0WS6LC1MG1s|How to Write a Trojan in Python]]
-* Europython [[https://www.youtube.com/watch?v=rj4mf5aNhh0|Magical Attributes]] [[https://bitbucket.org/thesheep/magic/downloads/magic.zip|Slides]]
+* PyCon.PL `Magiczne Atrybuty <https://www.youtube.com/watch?v=BP0dWrnxGQc>`_
+* PyCon.PL `How to Write a Trojan in Python <https://www.youtube.com/watch?v=0WS6LC1MG1s>`_
+* Europython `Magical Attributes <https://www.youtube.com/watch?v=rj4mf5aNhh0>`_
+  `Slides <https://bitbucket.org/thesheep/magic/downloads/magic.zip>`_
 
 2012
 ====
-* Europython [[http://pyvideo.org/video/1311/hands-on-with-pygame|Hands on PyGame]]
-* Europtyhon [[http://pyvideo.org/video/1283/javascript-for-pythonistas-part-1|Javascript for Pythonistas]] [[http://pyvideo.org/video/1284/javascript-for-pythonistas-part-2|Part 2]]
+* Europython `Hand on PyGame <http://pyvideo.org/video/1311/hands-on-with-pygame>`_
+* Europtyhon `JavasScript for Pythonistas <http://pyvideo.org/video/1283/javascript-for-pythonistas-part-1>`_
+  `Part 2 <http://pyvideo.org/video/1284/javascript-for-pythonistas-part-2>`_
 
 2011
 ====
-* PyCon PL [[https://bitbucket.org/thesheep/slides-fragments/downloads/fragments.zip|Python Fragments]]
+* PyCon PL `Python Fragments <https://bitbucket.org/thesheep/slides-fragments/downloads/fragments.zip>`_
 
 2009
 ====
-* IRDC [[https://www.youtube.com/watch?v=Q_OnyWTF1Gg|Tools That Make You a Better Programmer]]
+* IRDC `Tools That Make You a Better Programmer <https://www.youtube.com/watch?v=Q_OnyWTF1Gg>`_
