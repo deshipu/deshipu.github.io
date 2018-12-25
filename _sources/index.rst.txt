@@ -12,7 +12,7 @@ Recent Articles
 Here are the most recent articles.
 
 .. postlist:: 5
-  :format: {title} on {date} in {category}
+    :format: {title} on {date} in {category}
 
 You can also check the `archive <blog>`_ to
 see the full list of articles, the `categories <blog/category>`_ for articles
@@ -24,8 +24,13 @@ Personal
 Here is some basic information about me, and a way to contact me.
 
 .. toctree::
-   :maxdepth: 1
+    :maxdepth: 1
 
-   about.rst
-   talks.rst
-   hobbies.rst
+    about.rst
+    talks.rst
+    hobbies.rst
+
+.. toctree::
+    :hidden:
+
+    tinwhistle.rst

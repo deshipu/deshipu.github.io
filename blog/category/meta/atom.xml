@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title type="text">dopieralski.pl - Posted in 2018</title>
-  <id>http://dopieralski.pl/blog/2018/atom.xml</id>
+  <title type="text">dopieralski.pl - Posts in meta</title>
+  <id>http://dopieralski.pl/blog/category/meta/atom.xml</id>
   <updated>2018-12-25T00:00:00Z</updated>
   <link href="http://dopieralski.pl/" />
-  <link href="http://dopieralski.pl/blog/2018/atom.xml" rel="self" />
+  <link href="http://dopieralski.pl/blog/category/meta/atom.xml" rel="self" />
   <generator uri="http://ablog.readthedocs.org" version="0.9.3">ABlog</generator>
-  <entry xml:base="http://dopieralski.pl/blog/2018/atom.xml">
+  <entry xml:base="http://dopieralski.pl/blog/category/meta/atom.xml">
     <title type="text">New Website</title>
     <id>http://dopieralski.pl/posts/2018-12-25/</id>
     <updated>2018-12-25T00:00:00Z</updated>

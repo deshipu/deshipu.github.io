@@ -13,7 +13,7 @@ Favorite Music
 * Yashishi Ishii
 * Yoko Kanno
 * Madredeus
-* `Tinwhistle <tinwhistle>`_ and ocarina playing
+* `Tinwhistle <../tinwhistle>`_ and ocarina playing
 
 
 Favorite Book Authors

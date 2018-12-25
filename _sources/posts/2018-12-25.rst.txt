@@ -1,0 +1,21 @@
+.. post:: 2018-12-25
+   :category: webdev, meta
+
+New Website
+***********
+
+My hosting provider is dropping their service, and that has forced me to look
+for another solution for hosting my website. I've been toying with the idea of
+a statically-generated blog for a long time, and this finally pushed me to try
+it.
+
+I'm using `ablog <https://ablog.readthedocs.io>`_, which lets me write articles
+using the familiar `sphinx <http://www.sphinx-doc.org>`_ markup, and publish
+them on Github Pages.
+
+Of course I had to customize it a bit to generate less bloated HTML and to use
+my own custom CSS --- not everything could be changed to be the way that I
+like, but I'm mostly happy with it.
+
+Now I "just" need to migrate all the content that I want to keep from the old
+wiki and WikiCreole markup to this and ReStructuredText.
