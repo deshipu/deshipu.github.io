@@ -11,7 +11,9 @@ Here are some talks I gave on various conferences.
 * Europython --- `Making Robots Walk with Python <https://www.youtube.com/watch?v=W5wN7pf2iLo>`_
 * PyCon.PL
 
-== 2015 ==
+2015
+====
+
 * DevConf.cz `Building Robots <https://www.youtube.com/watch?v=ujBWbr93KX8>`_
 * PyCon.US --- `Poster Session <https://us.pycon.org/2015/schedule/presentation/448/>`_
 * PyCon.PL --- `Why Do You Need Code Review Software <https://bitbucket.org/thesheep/slides-review>`_
