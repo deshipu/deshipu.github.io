@@ -1,0 +1,77 @@
+Tinwhistle
+***********
+
+Tinwhistle is a simple instrument: a piece of pipe with 6 finger-holes and a
+whistle on top. It can play almost three full octaves, and it's really easy to
+learn. It's cheap to get too. If you want to learn to play some instrument,
+this is one of the best choices.
+
+I have transcribed a number of simple tunes that I couldn't find anywhere else.
+Since I can't write notes here, I will just write how many holes you need to
+cover to get the particular sound. If the digit is **bold**, you just need to
+blow harder to get to the second octave. "0/2" means that you need to skip one
+hole from the top and cover the next two holes. Same for "0/5" -- cover all the
+holes except for the first one. You will have to guess the rhythm yourself.
+
+The Egg and I
+=============
+*Yoko Kanno/Seatbelts*
+
+3 3 1 3 0 1 2 3 | 3 3 1 3 2 4 5 6 | 3 3 1 3 0 1 2 3 | 0 **5** **4** **4** **3** 0/5 0 1 3 2 3
+
+Riddle
+======
+*Gigi D'Agostino*
+
+5 4 3 3 2 3 4 | 5 6 6 5 4 4 | 5 4 3 2 3 4 | 5 6 5 5 6 || 1 0/5 0/2 1 2 3 5 6 5
+
+When the Saints are Marching In
+===============================
+
+6 4 3 2 | 6 4 3 2 | 6 4 3 2 | 4 6 4 5 | 4 4 5 6 | 4 2 2 3 | 3 4 3 2 | 4 6 5 6
+
+Country Roads
+=============
+*John Denver*
+
+6 6 5 6 | 5 6 5 3 | 2 2 1 2 | 5 5 6 5 3\\
+6 6 5 6 | 5 3 3 1 1 | 2 2 2 2 1 2 | 5 3 3 2 3
+
+3 2 1 | 123 2 | 1 2 3 | 1 0/5 **5** | **5** 1 0/5 1 | 123 2 1 | 1 2 3 | 3 2 3
+
+3 3 3 4 3 2 1 1 2 1 3 | 3 0 0 0 0 1 2 3 2 2 1 2\\
+2 1 1 1 1 2 2 3 3 2 3 | 2 1 2 | 2 1 0
+
+Morning Has Broken
+==================
+*Cat Stevens*
+
+6 4 2 0/5 **5** | 0 1 2 101 2 | 6 5 4 2 1 | 2 4 6 5\\
+2 4 2 0/5 1 | 2 4 6 6 5 | 4 5 4 2 1 | 5 4 5 6
+
+Twisted Nerve (Kill Bill whistling song)
+========================================
+*Bernard Herrmann*
+
+1 2 1 1 2 | 2 3 2 2 3 | 1 1 2 2 1 1 2 | 2 2 3 3 2 2 3\\
+3 4 3 2 | 3 4 3 2 | 3 4 3 2 | 1 2\\
+3 2 1 2 3 2 1 2 3 2 1 2 3 2 1
+
+Top Gun Anthem
+==============
+*Steve Stevens*
+
+6 2 2 3434 5 5 | 654 543 4 5 4 5\\
+6 2 2 3434 5 5 | 654 543 3 4 6 2
+
+Three Ships
+===========
+
+6 33 2 1 0/5 1 2 | 0/2 1 33 | 1 2 4 6\\
+6 33 2 1 0/5 1 2 | 0/2 1 3321 2 3
+
+Guardia Millenial Fair (from Chronotrigger)
+===========================================
+
+**32 3 4 5** | **6 5 4 3 4 5 6** 2 | 0/2 0/5 0/2 1 0/2 1 2 13 2\\
+**32 3 4 5** | **6 5 4 3 4 5 6** 2 | 0/2 0/5 0/2 **5 4 3 4 3 5 4**

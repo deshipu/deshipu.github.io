@@ -28,3 +28,4 @@ Here is some basic information about me, and a way to contact me.
 
    about.rst
    talks.rst
+   hobbies.rst
