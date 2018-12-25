@@ -1,0 +1,32 @@
+Welcome
+*******
+
+It's not much, but it's mine. This is where I keep assorted bits of information
+that I would like to share with the world. It used to be a wiki, editable by
+anyone, but only spam bots edited it, so now I've closed it down to make the
+RSS feed more useful – now you can actually use it to see the updates of the
+website. If you have any comments, suggestions, questions or messages, you can
+drop me an e-mail.
+
+Recent Articles
+***************
+
+Here are the most recent articles.
+
+.. postlist:: 5
+  :format: {title} on {date} in {category}
+
+You can also check the `archive <blog>`_ to
+see the full list of articles, the `categories <blog/category>`_ for articles
+on particular topics.
+
+Personal
+********
+
+Here is some basic information about me, and a way to contact me.
+
+.. toctree::
+   :maxdepth: 1
+
+   about.rst
+   talks.rst

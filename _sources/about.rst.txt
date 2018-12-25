@@ -1,0 +1,27 @@
+
+.. _about:
+
+About Me
+********
+
+By day a Python programmer, I have a number of hobbies by night: building
+robots, tinkering with electronics, wikis, game programming, miniature
+painting, drawing and pixel art, ocarina and tinwhistle, and so on.
+
+.. image:: images/gogles.jpg
+   :align: right
+
+Contact Information
+===================
+
+* Name: Radomir Dopieralski
+* Also known as: Deshipu, TheSheep
+* Jabber: sheep at sheep.art.pl
+* e-mail: home at sheep.art.pl
+
+Other Places
+============
+* deshipu at irc.freenode.net
+* Mastodon
+* Hackaday.io
+* Tindie

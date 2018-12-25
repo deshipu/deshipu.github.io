@@ -1,0 +1,163 @@
+html {
+    background: #fff url(back.svg) 90% 50% no-repeat fixed;;
+    background-size: auto 75%;
+    color: #222;
+    min-height: 100%;
+    font-size: 96%;
+}
+body {
+    max-width: 50em;
+    margin: 1.5em auto 1.5em 3em;
+}
+
+
+body, h1, h2, h3, h4, p, ul, ol, dl, hr, li, html input, html button {
+    font-family: "DejaVu Sans", sans-serif;
+    font-size: 100%;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    line-height: 1.5em;
+}
+
+html textarea,
+html input,
+html button {
+    margin: -3px 0;
+    padding: 2px 4px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: #eee 0 0 0.4em;
+    font-family: DejaVu Mono, monospace;
+    font-size: 100%;
+}
+html input[type="button"],
+html input[type="submit"],
+html input[type="reset"],
+html button {
+    color: #444;
+    background: #f2fce9;
+    border: 1px solid #ccdcbd;
+}
+textarea:focus, input:focus {
+ border: 1px solid #000;
+ box-shadow: #ffe 0 0 0.4em;
+}
+input:active {
+ background: #f2fce9;
+ color: #000;
+ border: 1px solid #000;
+ box-shadow: #ffe 0 0 0.4em;
+}
+
+p, form, hr {
+    margin-bottom: 1.5em;
+}
+
+p + ul, p + ol, p + ul.search, p + hr, p + .toctree-wrapper {
+    margin-top: -1.5em;
+}
+html ul.search li {
+    padding: 0;
+    background: none;
+}
+
+
+h2, h3, h4 {
+    letter-spacing: 0.125ex;
+    margin-top: 1.5em;
+    color: #abbc9a;
+    text-shadow: #ddd 1px 1px 4px;
+}
+
+h1 {
+    font-size: 200%;
+    line-height: 1.25;
+    margin-top: 1em;
+    font-weight: normal;
+    color: #abbc9a;
+    text-shadow: #ddd 1px 1px 4px;
+}
+
+h2 {
+    font-weight: bold;
+}
+
+h3 {
+    font-weight: normal;
+    font-style: italic;
+}
+
+#topbar {
+    min-height: 2.5em;
+    padding: 2em 0 1.5em 0;
+}
+#topbar a {
+    font-size: 200%;
+    text-decoration: none;
+    white-space: nowrap;
+    color: #cbdcba;
+    text-shadow: #ddd 1px 1px 4px;
+}
+#topbar a:hover {
+    text-decoration: underline;
+    color: #48f;
+}
+
+#logo img {
+    max-height: 2em;
+    margin: -0.25em 0 -0.5em 0;
+    vertical-align: middle;
+}
+#searchbox {
+    font-size: 75%;
+    float: right;
+    margin: 0.5em 0;
+}
+#searchbox form {
+    margin: 0;
+}
+
+a {
+    color: #48f;
+    text-decoration: none;
+}
+a:visited {
+    color: #84f;
+}
+a:hover {
+    color: #000;
+    text-decoration: underline;
+}
+a.headerlink,
+a.headerlink:hover {
+    text-decoration: none;
+    color: #ddd;
+}
+
+ul, ol {
+    padding-inline-start: 1.5em;
+}
+
+ul li {
+    list-style: url("bullet.png");
+}
+
+.section img {
+    padding: 0.5em;
+    margin: 0 1em;
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: #eee 0 0 0.4em;
+}
+
+hr {
+ height: 1px;
+ border: none;
+ color: #fff;
+ background: transparent;
+ border-bottom: 1px solid #ccc;
+ box-shadow: #eee 0px 0px 0.4em;
+}
