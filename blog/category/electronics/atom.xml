@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title type="text">dopieralski.pl</title>
-  <id>http://dopieralski.pl/blog/atom.xml</id>
+  <title type="text">dopieralski.pl - Posts in electronics</title>
+  <id>http://dopieralski.pl/blog/category/electronics/atom.xml</id>
   <updated>2019-01-04T00:00:00Z</updated>
   <link href="http://dopieralski.pl/" />
-  <link href="http://dopieralski.pl/blog/atom.xml" rel="self" />
+  <link href="http://dopieralski.pl/blog/category/electronics/atom.xml" rel="self" />
   <generator uri="http://ablog.readthedocs.org" version="0.9.3">ABlog</generator>
-  <entry xml:base="http://dopieralski.pl/blog/atom.xml">
+  <entry xml:base="http://dopieralski.pl/blog/category/electronics/atom.xml">
     <title type="text">CircuitPython in 2019</title>
     <id>http://dopieralski.pl/posts/2019-01-04-circuitpython/</id>
     <updated>2019-01-04T00:00:00Z</updated>
@@ -117,32 +117,6 @@ few promises. That’s because the trend in the recent years is for me to have
 less and less time and motivation for my projects. Perhaps the trend will
 reverse at some point, but until then I try to not plan ahead too much.&lt;/p&gt;
 &lt;/div&gt;
-&lt;/div&gt;
-</content>
-  </entry>
-  <entry xml:base="http://dopieralski.pl/blog/atom.xml">
-    <title type="text">New Website</title>
-    <id>http://dopieralski.pl/posts/2018-12-25/</id>
-    <updated>2018-12-25T00:00:00Z</updated>
-    <published>2018-12-25T00:00:00Z</published>
-    <link href="http://dopieralski.pl/posts/2018-12-25/" />
-    <author>
-      <name></name>
-    </author>
-    <content type="html">&lt;div class=&quot;section&quot; id=&quot;new-website&quot;&gt;
-
-&lt;p&gt;My hosting provider is dropping their service, and that has forced me to look
-for another solution for hosting my website. I’ve been toying with the idea of
-a statically-generated blog for a long time, and this finally pushed me to try
-it.&lt;/p&gt;
-&lt;p&gt;I’m using &lt;a class=&quot;reference external&quot; href=&quot;https://ablog.readthedocs.io&quot;&gt;ablog&lt;/a&gt;, which lets me write articles
-using the familiar &lt;a class=&quot;reference external&quot; href=&quot;http://www.sphinx-doc.org&quot;&gt;sphinx&lt;/a&gt; markup, and publish
-them on Github Pages.&lt;/p&gt;
-&lt;p&gt;Of course I had to customize it a bit to generate less bloated HTML and to use
-my own custom CSS — not everything could be changed to be the way that I
-like, but I’m mostly happy with it.&lt;/p&gt;
-&lt;p&gt;Now I “just” need to migrate all the content that I want to keep from the old
-wiki and WikiCreole markup to this and ReStructuredText.&lt;/p&gt;
 &lt;/div&gt;
 </content>
   </entry>

@@ -1,0 +1,135 @@
+.. post:: 2019-01-04
+   :category: circuitpython, python, electronics
+
+
+CircuitPython in 2019
+*********************
+
+Adafruit has requested `on their blog
+<https://blog.adafruit.com/2018/12/17/what-do-you-want-from-circuitpython-in-2019-circuitpython2019-circuitpython/>`_
+feedback and comments about CircuitPython in 2019, so here I go. I am mostly
+going to talk about three things: the projects that I personally want to do
+using it, the ongoing developments that I would love to see finished this year,
+and some completely crazy stuff that could potentially be added if someone
+smarter than me and with copious free time worked on it.
+
+
+The Projects
+============
+
+
+PewPew
+------
+
+The immediate thing with highest priority right now is the `PewPew
+<http://pewpew.rtfd.io>`_ educational game console, and the workshop I'm
+planning to run with it really soon now (™). I'm rather happy with the hardware
+and the ``pew`` library on it, but I need to work on preparing more learning
+materials and example games for it. I also need to reorganize the repository to
+make it easier to follow and contribute to it.
+
+
+µGame and Successors
+--------------------
+
+A much lower priority thing is to write those games that I have built the
+`µGame <http://ugame.rtfd.io>`_ for, and possibly also port/rewrite those games
+for Adafruit's game console when it is finally released. That is probably not
+going to happen very soon, though, so I have some time. If motivation suffices,
+I will probably also improve the ``stage`` game library that µGame uses, and
+create more ready-to-use resources for it.
+
+
+Kubik and Tote
+--------------
+
+While the homebrew game consoles took most of my free time last year, this year
+I want to come back to my robots for a bit. In particular, I want to finish the
+design and programming of ESP8266-based version of `Tote
+<http://tote.rtfd.io>`_, and to finish the Kubik M0 robot (possibly switching
+it to NRF52 in the process). There is also a number of old robots I would like
+to re-visit and finish, such as the `Logicoma-kun
+<https://hackaday.io/project/7168-logicoma-kun>`_, `Pony Bot
+<https://hackaday.io/project/10665-pony-bot>`_, and `Henk the Hexapod
+<https://hackaday.io/project/10534-hexapod-henk-mkii>`_.
+
+I also need to explore more better ways of doing inverse kinematics,
+interpreting accelerometer output, reacting to touch sensors on the legs, and
+possibly also to force sensors in the joints and complaint motion.
+
+
+Badges and Wearables
+--------------------
+
+The CircuitPython Badge project is suspended, as the people who wanted to work
+with me to get it to conferences gave up on it, but if there is a Python
+conference that wants it, I might work on it again.
+
+I also have this wearable hub prototype, for which I want to make some
+interactive jewelry and accessories. No idea about anything specific yet, but I
+think I will have cat ears for sure, at the least. Maybe also a video pendant.
+
+
+CircuitPython Development
+=========================
+
+
+TextMode Library
+----------------
+
+I really want to write a CircuitPython library that would let you do something
+like the old DOS text mode display, and that would support a variety of
+different displays and fonts. I already have some prototypes for OLED and TFT
+displays, but I need to sit down and bring it all together with a consistent
+API.
+
+
+Built-in Display Support
+------------------------
+
+I'm waiting with bated breath for the built-in support for displays that is
+being worked on. It will not only make it trivially easy to display the errors
+and the REPL console on any display connected to CircuitPython boards, but also
+let do high-performance graphic operations, and create games like on the µGame.
+This is probably also a prerequisite for that game console board to be released
+by Adafruit, so I really can't wait for it.
+
+
+Wireless Communication
+----------------------
+
+There is a new library for using ESP8266 as a WiFi module in the AT mode, but
+also some improvement to the RFM9x module support, and of course support for
+NRF52 chips means there is Bluetooth support coming. I'm really looking forward
+to being able to use any of those in CircuitPython, and I hope that the coming
+year will bring a standardised and consistent API for wireless communication.
+
+
+Crazy Project Ideas
+===================
+
+
+Speech Synthesizer
+------------------
+
+The same speech synthesizer that is used to make the Micro:bit talk should be
+very easy to port to CircuitPython, and should even have much better sound
+quality by using the DAC.
+
+
+Speech Recognition
+------------------
+
+At the same time, it might be possible to use the stronger M4 boards to do
+trigger word recognition, using the same algorithm as the Snowboy program for
+Raspberry Pi. This requires a lot of knowledge and patience that I don't have,
+but it could be potentially very useful project.
+
+
+Summary
+=======
+
+That's all I have right now. As you can see, there is a lot of hope and very
+few promises. That's because the trend in the recent years is for me to have
+less and less time and motivation for my projects. Perhaps the trend will
+reverse at some point, but until then I try to not plan ahead too much.
