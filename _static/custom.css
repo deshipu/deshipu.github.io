@@ -76,7 +76,7 @@ h1+div.section > h3:first-of-type,
 h1+div.section > h4:first-of-type,
 h2+div.section > h3:first-of-type,
 h2+div.section > h4:first-of-type,
-h3+div.section < h4:first-of-type {
+h3+div.section > h4:first-of-type {
     margin-top: 0;
 }
 
