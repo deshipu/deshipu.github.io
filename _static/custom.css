@@ -102,14 +102,14 @@ h3 {
     min-height: 2.5em;
     padding: 2em 0 1.5em 0;
 }
-#topbar a {
+#topbar #logo a {
     font-size: 200%;
     text-decoration: none;
     white-space: nowrap;
     color: #cbdcba;
     text-shadow: #ddd 1px 1px 4px;
 }
-#topbar a:hover {
+#topbar #logo a:hover {
     text-decoration: underline;
     color: #48f;
 }

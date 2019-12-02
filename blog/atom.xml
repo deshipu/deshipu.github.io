@@ -5,7 +5,7 @@
   <updated>2019-03-26T00:00:00Z</updated>
   <link href="http://dopieralski.pl/" />
   <link href="http://dopieralski.pl/blog/atom.xml" rel="self" />
-  <generator uri="http://ablog.readthedocs.org" version="0.9.3">ABlog</generator>
+  <generator uri="https://ablog.readthedocs.org" version="0.10.0">ABlog</generator>
   <entry xml:base="http://dopieralski.pl/blog/atom.xml">
     <title type="text">Boredom</title>
     <id>http://dopieralski.pl/posts/2019-03-26-boredom/</id>
@@ -71,8 +71,9 @@ smarter than me and with copious free time worked on it.&lt;/p&gt;
 &lt;div class=&quot;section&quot; id=&quot;pewpew&quot;&gt;
 &lt;h3&gt;PewPew&lt;/h3&gt;
 &lt;div class=&quot;system-message&quot;&gt;
-&lt;p class=&quot;system-message-title&quot;&gt;System Message: INFO/1 (&lt;tt class=&quot;docutils&quot;&gt;/home/sheep/dev/blog/blog/posts/2019-01-04-circuitpython.rst&lt;/tt&gt;, line 6); &lt;em&gt;&lt;a href=&quot;#id1&quot;&gt;backlink&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
-Duplicate implicit target name: “pewpew”.&lt;/div&gt;
+&lt;p class=&quot;system-message-title&quot;&gt;System Message: INFO/1 (&lt;span class=&quot;docutils literal&quot;&gt;/home/sheep/dev/blog/blog/posts/2019-01-04-circuitpython.rst&lt;/span&gt;, line 6); &lt;em&gt;&lt;a href=&quot;#id1&quot;&gt;backlink&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Duplicate implicit target name: “pewpew”.&lt;/p&gt;
+&lt;/div&gt;
 &lt;p&gt;The immediate thing with highest priority right now is the &lt;a class=&quot;reference external&quot; href=&quot;http://pewpew.rtfd.io&quot;&gt;PewPew&lt;/a&gt; educational game console, and the workshop I’m
 planning to run with it really soon now (™). I’m rather happy with the hardware
 and the &lt;code class=&quot;docutils literal notranslate&quot;&gt;&lt;span class=&quot;pre&quot;&gt;pew&lt;/span&gt;&lt;/code&gt; library on it, but I need to work on preparing more learning
