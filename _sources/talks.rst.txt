@@ -26,18 +26,18 @@ Here are some talks I gave on various conferences.
 2015
 ====
 
-* DevConf.cz `Building Robots <https://www.youtube.com/watch?v=ujBWbr93KX8>`_
+* DevConf.cz `Building Robots 2 <https://www.youtube.com/watch?v=ujBWbr93KX8>`_
 * PyCon.US --- `Poster Session <https://us.pycon.org/2015/schedule/presentation/448/>`_
 * PyCon.PL --- `Why Do You Need Code Review Software <https://bitbucket.org/thesheep/slides-review>`_
-* PyCon.CZ --- `Magical Attributes <https://bitbucket.org/thesheep/magic/downloads/magic.zip>`_
+* PyCon.CZ --- `Magical Attributes 2 <https://bitbucket.org/thesheep/magic/downloads/magic.zip>`_
   `Video <http://www.superlectures.com/pycon2015/magical-attributes>`_
 
 2014
 ====
 
-* PyRa #14 `Become a Professional Programmer <https://www.youtube.com/watch?v=IFUm1fLzPVs>`_
-* PyCon.PL `Become a Professional Programmer <https://bitbucket.org/thesheep/better-slides/downloads/slides.zip>`_
-* PyCon.PL `Building Robots <https://bitbucket.org/thesheep/slides-robots/downloads/robots.zip>`_
+* PyRa #14 `Become a Professional Programmer 2 <https://www.youtube.com/watch?v=IFUm1fLzPVs>`_
+* PyCon.PL `Become a Professional Programmer 1 <https://bitbucket.org/thesheep/better-slides/downloads/slides.zip>`_
+* PyCon.PL `Building Robots 1 <https://bitbucket.org/thesheep/slides-robots/downloads/robots.zip>`_
 * Europython
 * PyWaw `Memoization <https://bitbucket.org/thesheep/memoize-slides/downloads/memoize.zip>`_
 
@@ -46,7 +46,7 @@ Here are some talks I gave on various conferences.
 
 * PyCon.PL `Magiczne Atrybuty <https://www.youtube.com/watch?v=BP0dWrnxGQc>`_
 * PyCon.PL `How to Write a Trojan in Python <https://www.youtube.com/watch?v=0WS6LC1MG1s>`_
-* Europython `Magical Attributes <https://www.youtube.com/watch?v=rj4mf5aNhh0>`_
+* Europython `Magical Attributes 1 <https://www.youtube.com/watch?v=rj4mf5aNhh0>`_
   `Slides <https://bitbucket.org/thesheep/magic/downloads/magic.zip>`_
 
 2012
