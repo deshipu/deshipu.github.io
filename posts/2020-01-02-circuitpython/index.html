@@ -1,0 +1,165 @@
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8" />
+    <title>CircuitPython in 2020 - dopieralski.pl</title>
+    <link rel="stylesheet" href="../../_static/basic.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+    <script type="text/javascript" src="../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../_static/doctools.js"></script>
+    <script type="text/javascript" src="../../_static/language_data.js"></script>
+    <link rel="author" title="About these documents" href="../../about/" />
+    <link rel="index" title="Index" href="../../genindex/" />
+    <link rel="search" title="Search" href="../../search/" />
+  
+     
+    <link rel="stylesheet" href="../../_static/custom.css" type="text/css" />
+    <link rel="icon" type="image/png" href="../../_static/favicon.png">
+
+  
+  <link rel="alternate" type="application/atom+xml"  href="../../blog/atom.xml" title="dopieralski.pl">
+  
+
+  </head><body>
+<div id="topbar">
+<div id="searchbox" style="display: none" role="search">
+    <div class="searchformwrapper">
+    <form class="search" action="../../search/" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="search" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+    <div id="logo"><a href="../../">
+        <img
+            src="/_static/logo.png"
+            alt=""
+        />dopieralski.pl</a></div>
+</div>
+
+<div role="main">
+  <div class="section" id="circuitpython-in-2020">
+<h1>CircuitPython in 2020<a class="headerlink" href="#circuitpython-in-2020" title="Permalink to this headline">¶</a></h1>
+<p>It looks like I’m mostly using this blog to answer <a class="reference external" href="https://blog.adafruit.com/2020/01/01/what-do-you-want-from-circuitpython-in-2020-circuitpython2020-circuitpython/">Adafruit’s prompts for
+feedback on CircuitPython</a>. Oh well, so be it.</p>
+<div class="section" id="the-projects">
+<h2>The Projects<a class="headerlink" href="#the-projects" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="pewpew">
+<h3>PewPew<a class="headerlink" href="#pewpew" title="Permalink to this headline">¶</a></h3>
+<p>The <a class="reference external" href="http://pewpew.rtfd.io">PewPew</a> educational game console project is still
+alive, and there has been some progress. EuroPython gave out 1400 devices to
+Python developers at a conference, and I helped design and manufacture some
+custom units for some more conferences. <a class="reference external" href="http://makerfabs.com">MakerFabs</a> —
+the fabrication company that is helping me with this is now selling PewPew
+Standalone consoles for $10 a piece for everyone who have any kind of workshop,
+entertainment or hacking needs. There is even a mailing list at
+<code class="docutils literal notranslate"><span class="pre">pewpew&#64;python.org</span></code> and I’m trying to keep everyone updated by sending
+monthly summaries to it (I only skipped one month so far).</p>
+<p>However, the device is not perfect, and I have decided to pursue the successor
+to <a class="reference external" href="http://ugame.rtfd.io">µGame</a> to try an fix that. It’s a blend of PewPew
+and µGame, being able to run programs for both (and also MakerCode Arcade and
+PyGamer/PyBadge device too). It’s going to be considerably cheaper than
+Adafruit’s offerings, but it’s also not supposed to be competing with them.
+I needed the display to show the error messages, because those turned out to
+be the hardest part of working with PewPews — not everyone can get the REPL
+going easily. In any case, I worked on the successor, PewPew M4 for a good part
+of the last year, and it’s ready now. I’m going to be sending out the first
+units to reviewers and people interested in development for it soon, and then
+we will try to make the devices available through MakerFabs just like the
+PewPew Standalone.</p>
+</div>
+<div class="section" id="robots">
+<h3>Robots<a class="headerlink" href="#robots" title="Permalink to this headline">¶</a></h3>
+<p>I still have the low-cost spider-like walking robots on my drawing boards, and
+they are going to run CircuitPython too. The plan to re-start the development
+with a more integrated Kubik M0 unfortunately failed: after fixing some bugs
+with PWM channels, it turned out that the SAMD21 that I was using simply
+doesn’t have enough PWM outputs to drive all the 12 servos of this robot. That
+means I probably need a bigger chip, and it would probably make more sense to
+use the BLE-capable NRF52840 and not the SAMD51. But that also means it will be
+Kubik M4 and not M0, and I still need to do my research about the NRF52840. I
+have the NRF52840 Feather at hand, but it’s the non-express version, which is
+apparently no longer supported. So either I bring back the support for it, hack
+an SPI flash chip on it, or switch to an express board. We will see.</p>
+<p>In the mean time, I also resurrected the SpiderWing, which can work with pretty
+much any Feather board. The recent modifications added battery protection to
+it, which is an important feature. I will use it for a platform for
+experimenting with BLE robots.</p>
+</div>
+<div class="section" id="keyboards">
+<h3>Keyboards<a class="headerlink" href="#keyboards" title="Permalink to this headline">¶</a></h3>
+<p>After visiting a local annual meetup of mechanical keyboard enthusiasts, I got
+an urge to make a very flat keyboard (just a PCB and low-profile choc
+switches), and since I didn’t have much room on it, I decided to put a SAMD21
+on it. Once I had that, it was very easy to write a simple firmware for it,
+especially since the USB support really improved recently. There was no support
+for CapsLock, but it was surprisingly easy to hack it on with the help of
+Adafruit staff, and there is now a pull request in works for adding it
+properly. The ability to disable the drive, midi, mouse and all those other
+funky USB endpoints also helped a lot.</p>
+</div>
+</div>
+<div class="section" id="circuitpython-development">
+<h2>CircuitPython Development<a class="headerlink" href="#circuitpython-development" title="Permalink to this headline">¶</a></h2>
+<p>I ended up not contributing as much as I wanted to CircuitPython development
+this last year, but I am still amazed with the progress it made. The display
+support is now very good, and there is no need for my TextMode library anymore.
+You can do pretty much anything with the displayio that you could do with the
+stage library, and much more on top of that. The stage is still a little bit
+faster and uses a bit less memory (because of the limitations it has), so I
+keep using and maintaining it.</p>
+<p>I still didn’t have any time to play with the wireless capabilities: the Nina
+firmware, the awesome BLE work, the LoRa and other radio modules. Maybe this
+year I will have more luck with it.</p>
+<p>I did add (non-animated) GIF support to the loadimage library (and also to
+stage), and it could easily be extended to support animation as well. I also
+did some small improvement with buffer allocation for the audio module, and
+that CapsLock support thing most recently — but I would really love to do more.</p>
+<p>I didn’t get to implement any of my last-year crazy project ideas. They are up
+for grabs.</p>
+</div>
+<div class="section" id="micropython-development">
+<h2>MicroPython Development<a class="headerlink" href="#micropython-development" title="Permalink to this headline">¶</a></h2>
+<p>Even though I no longer pay much attention to that project, I did notice some
+progress in there. Most importantly for me, there is now some support for
+dynamically loadable C modules, so I tried to port the Stage library to that.
+Unfortunately it doesn’t seem to be mature/featurefull/finished enough for it
+to work, and the help is as usual non-existent.</p>
+</div>
+<div class="section" id="future-plans">
+<h2>Future Plans<a class="headerlink" href="#future-plans" title="Permalink to this headline">¶</a></h2>
+<p>I don’t really have any are in CircuitPython right now that I would
+particularly want to work on and improve. I really want to give more focus
+to the PewPew, the Stage library, and the examples and tutorials for it.</p>
+<p>I would also love to see the PewPew M4 become popular/useful, and people
+writing games for it. I think there is a need for some place where people
+can find CircuitPython-based games for the µGame, PyBadge, PyGamer, PyPortal,
+and PewPew M4, download and play them, see the code, read the tutorials about
+making them, and so on. I also think it would be nice if game creators could
+sell their games — I’m thinking about a platform like itch.io for this.</p>
+<p>I want to get back to the robots for a little bit, and I have some nice ideas
+for them, though nothing overly specific yet. We will see how it goes with the
+wireless communication research.</p>
+<p>I’m waiting with bated breath for the ESP32-S2 board, but it will be probably
+another year or two before CircuitPython works on that (if ever).</p>
+</div>
+<div class="section" id="summary">
+<h2>Summary<a class="headerlink" href="#summary" title="Permalink to this headline">¶</a></h2>
+<p>It has been an amazing year for CircuitPython, and a huge amount of work has
+been done. I wish I could have been more involved, but day job interferes. I’m
+going to bring back some of my old projects this year and see if I can make
+them work even better with CircuitPython now.</p>
+</div>
+</div>
+
+
+</div>
+  </body>
+</html>
