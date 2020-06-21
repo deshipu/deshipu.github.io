@@ -2,8 +2,8 @@
    :category: gamedev, politics
 
 
-Prgress Mechanics
-*****************
+Progress Mechanics
+******************
 
 Progress is an important mechanic in computer games. Not only it gives us a
 reason to play the game, but it also serves as a way of communicating how
