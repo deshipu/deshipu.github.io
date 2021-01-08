@@ -5,7 +5,7 @@
   <updated>2020-06-21T00:00:00Z</updated>
   <link href="http://dopieralski.pl/" />
   <link href="http://dopieralski.pl/blog/category/gamedev/atom.xml" rel="self" />
-  <generator uri="https://ablog.readthedocs.org" version="0.10.0">ABlog</generator>
+  <generator uri="http://ablog.readthedocs.org" version="0.9.5">ABlog</generator>
   <entry xml:base="http://dopieralski.pl/blog/category/gamedev/atom.xml">
     <title type="text">Progress Mechanics</title>
     <id>http://dopieralski.pl/posts/2020-06-21-snowball/</id>
@@ -156,6 +156,13 @@ that being successful in one doesn’t automatically make all the others easier.
 And most importantly, noblesse oblige – make the game harder for those with
 more victory points – expect more of them in exchange for the power they
 wield.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;conclusion&quot;&gt;
+&lt;h2&gt;Conclusion&lt;/h2&gt;
+&lt;p&gt;It’s worth to pay attention to what progress mechanics you have in your game
+and how they affect the feel of the game and the incentive of the players.
+Many techniques and tricks can be adapted, both from other games, and from
+the wider world of economics, politics and social sciences in general.&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 </content>
