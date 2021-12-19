@@ -12,7 +12,6 @@ Favorite Music
 * Pink Floyd
 * Yashishi Ishii
 * Yoko Kanno
-* Madredeus
 * `Tinwhistle <../tinwhistle>`_ and ocarina playing
 
 
@@ -22,36 +21,36 @@ Favorite Book Authors
 * Roger Zelazny
 * Stanisław Lem
 * Ursula LeGuin
-* Terry Pratchett
-* Orson Scott Card
 * Arkadi and Borys Strugacki
-* William Gibson
 * James White
+* Terry Pratchett
+* L. E. Modesitt Jr.
+* Vernor Vinge
 
 Favorite Comics and Manga
 =========================
 
-* Neil Gaiman (Sandman)
 * Masamune Shirow (Appleseed)
 * Tsutomu Nihei (Blame!)
 * Hitoshi Ashinano (Yokohama Kaidashi Kikō)
-* Masakazu Katsura (I''s)
 * Mike Mignola (Hellboy)
 
-Computer Games
-==============
+Computer and Board Games
+========================
 
+* Game development
 * Console role playing games (Final Fantasy, Chronotrigger, Seiken Densetsu)
 * Roguelike games (Rogue, Moria, Nethack, Angband, ADOM)
 * Miniature painting (Warzone, Necromunda, Mordheim)
 * Go (aka Igo, Baduk)
 
-Poetry
-======
+Interesting Books
+=================
 
-* [[The Hunting of the Snark]]
-* [[The Raven]]
-* [[As Into the Garden Elizabeth Ran]]
-* [[The Dong with a Luminous Nose]]
-* [[How Pleasant to Know Mr. Lear]]
-* [[Seuss Technical Writing]]
+* Robert M. Pirsig, *Zen and the Art of Motorcycle Maintenance*
+* David Graeber and David Wengrow, *The Dawn of Everything: A New History of Humanity*
+* David Graeber, *Debt: The First 5000 Years*
+* Douglas R Hofstadter, *Gödel, Escher, Bach: An Eternal Golden Braid*
+* Daniel Kahneman, *Thinking, Fast and Slow*
+* Alfie Kohn, *No Contest: The Case Against Competition*
+* Mihaly Csikszentmihalyi, *Creativity: Flow and the Psychology of Discovery and Invention*
