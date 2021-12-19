@@ -2,10 +2,146 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title type="text">dopieralski.pl - Posts in electronics</title>
   <id>http://dopieralski.pl/blog/category/electronics/atom.xml</id>
-  <updated>2021-01-09T00:00:00Z</updated>
+  <updated>2021-12-19T00:00:00Z</updated>
   <link href="http://dopieralski.pl/" />
   <link href="http://dopieralski.pl/blog/category/electronics/atom.xml" rel="self" />
   <generator uri="http://ablog.readthedocs.org" version="0.9.5">ABlog</generator>
+  <entry xml:base="http://dopieralski.pl/blog/category/electronics/atom.xml">
+    <title type="text">Build Small Robots</title>
+    <id>http://dopieralski.pl/posts/2021-12-19-small-robots/</id>
+    <updated>2021-12-19T00:00:00Z</updated>
+    <published>2021-12-19T00:00:00Z</published>
+    <link href="http://dopieralski.pl/posts/2021-12-19-small-robots/" />
+    <author>
+      <name></name>
+    </author>
+    <content type="html">&lt;div class=&quot;section&quot; id=&quot;build-small-robots&quot;&gt;
+
+&lt;p&gt;In which we learn why it’s much easier to build small robots than large ones.&lt;/p&gt;
+&lt;div class=&quot;section&quot; id=&quot;the-cube-law&quot;&gt;
+&lt;h2&gt;The Cube Law&lt;/h2&gt;
+&lt;p&gt;A lot of reasons for making your robots small comes from the cube law. This law
+gives you the relation between the size of an object and its volume (there is
+also the square law, that gives you the relation between the size and the
+area). It says that as your robot grows in size, its volume will grow
+proportionally to the third power of that size (also called cube, hence the
+law’s name). Consider the following two example robots:&lt;/p&gt;
+&lt;ul class=&quot;simple&quot;&gt;
+&lt;li&gt;Dimensions 5×5×5cm, volume 125cm³, weight 125g&lt;/li&gt;
+&lt;li&gt;Dimensions 10×10×10cm, volume 1000cm³, weight 1000g&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;(I’m assuming that in both cases the average density of the robot doesn’t
+change, that is, that it’s not almost empty in the second case. As we will see
+later, that’s quite accurate, or even optimistic.)&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;actuator-strength&quot;&gt;
+&lt;h2&gt;Actuator Strength&lt;/h2&gt;
+&lt;p&gt;“Actuator” is a fancy name for whatever makes your robot move: servo, motor,
+artificial muscle, memory metal, hydraulics, pneumatics, etc. As the size and
+weight of your robot grows, so has to the strength of the actuators it uses.&lt;/p&gt;
+&lt;p&gt;For instance, consider a servo. Its strength (in this case called torque) is
+usually expressed in kilograms (of force) times centimeters, or newton meters.
+If a servo has 1kg×cm of torque, it means it can lift 1kg of weight on a 1cm
+long lever. Since the levers scale linearly, it means it could also lift 0.5kg
+on 2cm long lever, or 2kg on 0.5cm long lever, etc. You can see already that if
+you make the robot’s legs twice as long, you will need twice as much torque.
+But that’s assuming that the weight remains the same. From the cube law you
+know, that the weight is going to grow fast, so in reality larger robots will
+need a lot more torque.&lt;/p&gt;
+&lt;p&gt;But there is another thing. The smaller the servos, the lighter and cheaper
+they are. Sure, the torque also gets smaller, but not nearly as fast. Consider
+those two example servos:&lt;/p&gt;
+&lt;ul class=&quot;simple&quot;&gt;
+&lt;li&gt;HK-282A Ultra-Micro Servo: weight 2.2g, torque 0.11kg*cm, price 3 EUR&lt;/li&gt;
+&lt;li&gt;S3027 Metal Gear Servo: weight 20g, torque 2.5kg*cm, price 20 EUR&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;As you can see, the smaller servo can raise itself on a lever half a meter
+long! The larger one, almost 10 times heavier and over 20 times stronger, can
+only do 125cm. And it will be similar with any other parameter: price, speed,
+amount of current needed, etc. At some point the parameters will be so bad,
+that you will have to switch to hydraulics.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;material-strength&quot;&gt;
+&lt;h2&gt;Material Strength&lt;/h2&gt;
+&lt;p&gt;It’s not just the actuators that need to be stronger. They are connected to the
+structural elements, that have to bear all that force too. And thanks to the
+cube law, it doesn’t suffice for them to be just longer and thicker – they
+actually have to be made from stronger and lighter materials.&lt;/p&gt;
+&lt;p&gt;Stronger materials are harder to machine and generally work with. You can no
+longer get away with hot-gluing parts together: you will need nuts and bolts,
+and possibly also special mechanical design. And you will need specialized
+tools.&lt;/p&gt;
+&lt;p&gt;And when you finally get your robot together, it will be very fragile. Why do
+you think all those large robots in laboratories always operate with a safety
+line hanging from the ceiling over them? That’s because if they fall down, they
+will smash into pieces. The materials they use are strong enough to hold them
+together, but not strong enough to survive a fall.&lt;/p&gt;
+&lt;p&gt;On the other hand, my smallest robots survived repeated falls from my desk to
+the floor without even a scratch. If you make a robot the size of a cockroach,
+you can drop it from the roof of a building. It will simply not gain enough
+speed falling through the air to damage it on impacting the floor.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;inertia&quot;&gt;
+&lt;h2&gt;Inertia&lt;/h2&gt;
+&lt;p&gt;So you finished your large robot, and now you are programming it. For a start,
+you just make the limbs move straight to their destinations and stopping once
+they get there. Your robot falls, the limbs break off, the servos strip gears
+and there are huge spikes of current drawn from the battery. What happens?&lt;/p&gt;
+&lt;p&gt;Well, you cannot just move a heavy object with high speed and then have it stop
+instantly. Inertia will make it keep on moving, and the servomechanisms will
+need to do a lot of extra work (and endure great forces of stress) to stop it
+and move it back where it belongs. That also applies when moving the whole body
+of the robot while walking – your effective Zero Movement Point no longer
+coincides with the center of mass of your robot. You have to start taking the
+speed and acceleration into consideration in your motion planning, and thus all
+your movement equations become second degree differential equations without a
+closed-form solution. Yay!&lt;/p&gt;
+&lt;p&gt;On the other hand, if you keep the robot small, all its elements light and the
+servos have abundance of power, you can pretty much ignore inertia and get away
+with writing much simpler code that only takes into account the current
+positions of the limbs.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;safety&quot;&gt;
+&lt;h2&gt;Safety&lt;/h2&gt;
+&lt;p&gt;So you think you have the budget, you have the materials and tools, you have
+the programming expertise and strong servos to handle the inertia, what could
+possibly happen.&lt;/p&gt;
+&lt;p&gt;Strong servos, larger batteries, high currents, long reach of the limbs, high
+movement speeds – it all means trouble. You will need safety measures. Force
+stop buttons, one on the robot itself (hardware, brutally cutting the power),
+and one remote (so that you don’t have to chase your robot through a hole in
+made in the wall). Suspensions mechanisms. Safety gear for you to wear. Fire
+extinguisher capable of containing a LiPo battery fire. Circuit breakers.
+Someone to check periodically if you are trapped under your robot’s weight…&lt;/p&gt;
+&lt;p&gt;It’s all extra work, extra cost and extra risk. Why take it, if you can instead
+have a robot the size of a hamster that behaves funny when something goes
+wrong, and tickles instead of crushing your bones?&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;convenience&quot;&gt;
+&lt;h2&gt;Convenience&lt;/h2&gt;
+&lt;p&gt;I left the most important reason for the end. Small robots are convenient.&lt;/p&gt;
+&lt;p&gt;You can work with them directly on your desktop, connect them to your computer,
+adjust easily with just a screwdriver. You can store them in your drawer. You
+can recharge them from your phone charger. You can take them with you to
+conferences and workshops. You can fly with them in your carry-on baggage (as
+long as they don’t have anything that looks like a clock on them). When
+something goes wrong or breaks, you can simply pick them up and fix.&lt;/p&gt;
+&lt;p&gt;Not so easy with larger robots. You will need to test them on the floor, in a
+garage or even outside. You will need a complete suite of tools to work on
+them, and a dedicated storage space to keep them. Special battery charger.
+Taking them anywhere involves careful packaging or even loading onto a car. For
+flight, you have to remove anything that is sensitive to low temperature and
+pressure, as it’s going to go in the check-in baggage. Also be prepared to have
+to re-fasten all the screws on it that came loose due to vibrations. When
+something goes wrong or breaks, you have to call the mason to fix your house…&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;conclusion&quot;&gt;
+&lt;h2&gt;Conclusion&lt;/h2&gt;
+&lt;p&gt;Make your robots as small, as practically possible.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</content>
+  </entry>
   <entry xml:base="http://dopieralski.pl/blog/category/electronics/atom.xml">
     <title type="text">CircuitPython in 2021</title>
     <id>http://dopieralski.pl/posts/2021-01-09-circuitpython/</id>
