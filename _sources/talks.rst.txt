@@ -3,6 +3,11 @@ My Talks
 
 Here are some talks I gave on various conferences.
 
+2021
+====
+
+* VisCon --- Build a Handheld Game Console
+
 2019
 ====
 * FOSDEM --- Making Computer Games in MicroPython
