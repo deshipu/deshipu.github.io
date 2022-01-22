@@ -2,10 +2,88 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title type="text">dopieralski.pl</title>
   <id>http://dopieralski.pl/blog/atom.xml</id>
-  <updated>2021-12-19T00:00:00Z</updated>
+  <updated>2022-01-22T00:00:00Z</updated>
   <link href="http://dopieralski.pl/" />
   <link href="http://dopieralski.pl/blog/atom.xml" rel="self" />
   <generator uri="http://ablog.readthedocs.org" version="0.9.5">ABlog</generator>
+  <entry xml:base="http://dopieralski.pl/blog/atom.xml">
+    <title type="text">CircuitPython in 2022</title>
+    <id>http://dopieralski.pl/posts/2022-01-22-circuitpython/</id>
+    <updated>2022-01-22T00:00:00Z</updated>
+    <published>2022-01-22T00:00:00Z</published>
+    <link href="http://dopieralski.pl/posts/2022-01-22-circuitpython/" />
+    <author>
+      <name></name>
+    </author>
+    <content type="html">&lt;div class=&quot;section&quot; id=&quot;circuitpython-in-2022&quot;&gt;
+
+&lt;p&gt;As every year, it’s time for a yearly summary and plans of all things I do
+that are related to CircuitPython.&lt;/p&gt;
+&lt;div class=&quot;section&quot; id=&quot;the-projects&quot;&gt;
+&lt;h2&gt;The Projects&lt;/h2&gt;
+&lt;p&gt;This year I made a record number of keyboards, and also greatly improved my
+keyboard library, uKeeb. Some features were added, because CircuitPython now
+supports them: CapsLock LED, disabled disk and console, NKRO and BOOT modes,
+keypad module. Others I added as new keyboards needed them: proper hold/tap
+with rollover timeout, layer switching improvements, mouse support, LED
+animations.&lt;/p&gt;
+&lt;p&gt;My FluffBug robot is now at hardware version 5, but software-wise there was
+no progress. I got the per-leg inverse kinematics done, and I should write
+the walking code, but I can’t find the motivation.&lt;/p&gt;
+&lt;p&gt;The MIDI Ocarina is now at version 3. I gave up on the barometric pressure
+sensor for detecting blowing, as its recovery time was poor, and instead
+switched to a PDM microphone using audiobusio. This works great. I still need
+to write the MIDI code for it.&lt;/p&gt;
+&lt;p&gt;I tried the new camera code, but I couldn’t get it to work with the camera
+breakouts that I have. Either I’m using wrong pins, or something broke in the
+IDF version I used. I have no energy to investigate this further.&lt;/p&gt;
+&lt;p&gt;I also gave up on making the uGame console work with newer versions of
+CircuitPython – the changes in interrupt handling and time module related to
+adding sleep made the SAMD21 port work so erratically, that I simply gave up.
+I did fix the PewPew code by avoiding using the time module altogether.&lt;/p&gt;
+&lt;p&gt;There is also a but in the PWM code on SAMD that makes it hang completely
+in a loop waiting for a register flag that never gets set. I got that far
+debugging it, but why it never gets set is a mystery to me, and nobody
+seems to be interested in fixing it. I worked around it in Stage library
+by simply setting the backlight pin high, not using PWM at all, but I got
+bitten by the same bug recently in the ocarina code.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;the-future&quot;&gt;
+&lt;h2&gt;The Future&lt;/h2&gt;
+&lt;p&gt;This year I want to finish FluffBug at least to the point where it walks and
+uses the leg sensors and the distance sensors. I wish I could get the camera
+to work with it as well. I might also try a gesture sensor, and an
+accelerometer.&lt;/p&gt;
+&lt;p&gt;I received a nice ESP32-S2 development board with a display from MakerFabs,
+and I want to get the display working with displayio. Unfortunately it’s a
+16-bit parallel, with non-consecutive data pins, so I would need to work
+on the relevant module first. No idea how much work it would require.&lt;/p&gt;
+&lt;p&gt;There is a cool watch project using a SAML22 microcontroller, which should
+be very similar to SAMD21. The author mentioned that he wants to get a port
+of CircuitPython working on it. I’m very interested in this, because that
+chip also has an LCD-driving circuitry, which would allow me to make even
+cheaper version of the PewPew console, with a custom LCD screen.&lt;/p&gt;
+&lt;p&gt;I might be making another handheld game console, with a 3.2”
+screen and ESP32-S2 as the brains, but I’m not entirely sure yet. I’m doing
+research on how viable it would be, and collecting parts.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot; id=&quot;conclusion&quot;&gt;
+&lt;h2&gt;Conclusion&lt;/h2&gt;
+&lt;p&gt;This year brought some cool developments around USB and keyboards, but also
+a lot of frustration with keeping my existing projects working despite new
+bugs. The SAMD family seems to now get very little attention, and it suffered
+greatly with the addition of sleep support. Not being able to find and fix
+those bugs is very frustrating, and drains energy I could use on projects
+instead. The new boards are ridiculously powerful, but considerably more
+complex to use in projects, unless using a ready development board. I think
+I will focus on the Lolin S2 Mini boards for my projects this year, however,
+while I mentioned some things I hope to work on, I am aware that I have
+very little energy left for this. Hopefully my health and the overall global
+situation will improve.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</content>
+  </entry>
   <entry xml:base="http://dopieralski.pl/blog/atom.xml">
     <title type="text">Build Small Robots</title>
     <id>http://dopieralski.pl/posts/2021-12-19-small-robots/</id>
@@ -486,49 +564,6 @@ been done. I wish I could have been more involved, but day job interferes. I’m
 going to bring back some of my old projects this year and see if I can make
 them work even better with CircuitPython now.&lt;/p&gt;
 &lt;/div&gt;
-&lt;/div&gt;
-</content>
-  </entry>
-  <entry xml:base="http://dopieralski.pl/blog/atom.xml">
-    <title type="text">Boredom</title>
-    <id>http://dopieralski.pl/posts/2019-03-26-boredom/</id>
-    <updated>2019-03-26T00:00:00Z</updated>
-    <published>2019-03-26T00:00:00Z</published>
-    <link href="http://dopieralski.pl/posts/2019-03-26-boredom/" />
-    <author>
-      <name></name>
-    </author>
-    <content type="html">&lt;div class=&quot;section&quot; id=&quot;boredom&quot;&gt;
-
-&lt;p&gt;Would you like to be more creative? More eloquent in conversations? More
-intelligent in decision making? Better at problem solving? More attentive? Able
-to read those difficult books? Focus deeply on the project at hand? There is a
-simple solution for all this: embrace boredom.&lt;/p&gt;
-&lt;p&gt;It takes some effort and training, but I can assure you that it certainly is
-worth it. Whenever you are waiting, whenever you don’t have anything urgent to
-do, whenever you don’t particularly feel like doing something, just be bored.
-Forget about taking out your phone and mindlessly scrolling through the social
-network stream, frantically checking your messages, or playing silly games
-designed to get you addicted to them. Just stay there and think about whatever
-comes to your mind: that conversation you had last week with a friend about
-morality, that book you are reading, that project you were planning to start,
-what you will tell the person you are waiting for when they arrive, what you
-will do next, etc. — it doesn’t really matter what you think about, just let
-your mind wander.&lt;/p&gt;
-&lt;p&gt;The effect of this? You will have more motivation to actually work on that
-project, you will understand the book better, you will have interesting things
-to say in the next conversation, you will enjoy your time with that person
-more, and so on. Because your mind will have done some of the work up front and
-will be prepared. Because you will also think about things that you wouldn’t
-notice otherwise. Because you will be more rested and ready to pay more
-attention to the here and now.&lt;/p&gt;
-&lt;p&gt;Obviously, this is not a silver bullet. It doesn’t work when you are tired,
-depressed, stressed and burned out: you have to make sure you take care of your
-sleep deprivation, depression and anxiety first — don’t be afraid to talk to a
-doctor about them, they are often very easily cured. But once you have that
-under control, make sure to leave yourself as much time as possible for doing
-absolutely nothing. Literally staring at a wall. It will make everything else
-you do much better.&lt;/p&gt;
 &lt;/div&gt;
 </content>
   </entry>

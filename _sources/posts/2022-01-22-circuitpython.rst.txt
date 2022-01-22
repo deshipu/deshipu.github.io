@@ -1,0 +1,85 @@
+.. post:: 2022-01-22
+   :category: circuitpython, python, electronics
+
+
+CircuitPython in 2022
+*********************
+
+As every year, it's time for a yearly summary and plans of all things I do
+that are related to CircuitPython.
+
+
+The Projects
+============
+
+This year I made a record number of keyboards, and also greatly improved my
+keyboard library, uKeeb. Some features were added, because CircuitPython now
+supports them: CapsLock LED, disabled disk and console, NKRO and BOOT modes,
+keypad module. Others I added as new keyboards needed them: proper hold/tap
+with rollover timeout, layer switching improvements, mouse support, LED
+animations.
+
+My FluffBug robot is now at hardware version 5, but software-wise there was
+no progress. I got the per-leg inverse kinematics done, and I should write
+the walking code, but I can't find the motivation.
+
+The MIDI Ocarina is now at version 3. I gave up on the barometric pressure
+sensor for detecting blowing, as its recovery time was poor, and instead
+switched to a PDM microphone using audiobusio. This works great. I still need
+to write the MIDI code for it.
+
+I tried the new camera code, but I couldn't get it to work with the camera
+breakouts that I have. Either I'm using wrong pins, or something broke in the
+IDF version I used. I have no energy to investigate this further.
+
+I also gave up on making the uGame console work with newer versions of
+CircuitPython – the changes in interrupt handling and time module related to
+adding sleep made the SAMD21 port work so erratically, that I simply gave up.
+I did fix the PewPew code by avoiding using the time module altogether.
+
+There is also a but in the PWM code on SAMD that makes it hang completely
+in a loop waiting for a register flag that never gets set. I got that far
+debugging it, but why it never gets set is a mystery to me, and nobody
+seems to be interested in fixing it. I worked around it in Stage library
+by simply setting the backlight pin high, not using PWM at all, but I got
+bitten by the same bug recently in the ocarina code.
+
+
+The Future
+==========
+
+This year I want to finish FluffBug at least to the point where it walks and
+uses the leg sensors and the distance sensors. I wish I could get the camera
+to work with it as well. I might also try a gesture sensor, and an
+accelerometer.
+
+I received a nice ESP32-S2 development board with a display from MakerFabs,
+and I want to get the display working with displayio. Unfortunately it's a
+16-bit parallel, with non-consecutive data pins, so I would need to work
+on the relevant module first. No idea how much work it would require.
+
+There is a cool watch project using a SAML22 microcontroller, which should
+be very similar to SAMD21. The author mentioned that he wants to get a port
+of CircuitPython working on it. I'm very interested in this, because that
+chip also has an LCD-driving circuitry, which would allow me to make even
+cheaper version of the PewPew console, with a custom LCD screen.
+
+I might be making another handheld game console, with a 3.2"
+screen and ESP32-S2 as the brains, but I'm not entirely sure yet. I'm doing
+research on how viable it would be, and collecting parts.
+
+
+Conclusion
+==========
+
+This year brought some cool developments around USB and keyboards, but also
+a lot of frustration with keeping my existing projects working despite new
+bugs. The SAMD family seems to now get very little attention, and it suffered
+greatly with the addition of sleep support. Not being able to find and fix
+those bugs is very frustrating, and drains energy I could use on projects
+instead. The new boards are ridiculously powerful, but considerably more
+complex to use in projects, unless using a ready development board. I think
+I will focus on the Lolin S2 Mini boards for my projects this year, however,
+while I mentioned some things I hope to work on, I am aware that I have
+very little energy left for this. Hopefully my health and the overall global
+situation will improve.

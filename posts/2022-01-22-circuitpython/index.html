@@ -1,0 +1,121 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>CircuitPython in 2022 - dopieralski.pl</title>
+    <link rel="stylesheet" href="../../_static/basic.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+    <script type="text/javascript" src="../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../_static/doctools.js"></script>
+    <script type="text/javascript" src="../../_static/language_data.js"></script>
+    <link rel="author" title="About these documents" href="../../about/" />
+    <link rel="index" title="Index" href="../../genindex/" />
+    <link rel="search" title="Search" href="../../search/" />
+  
+     
+    <link rel="stylesheet" href="../../_static/custom.css" type="text/css" />
+    <link rel="icon" type="image/png" href="../../_static/favicon.png">
+
+  
+  <link rel="alternate" type="application/atom+xml"  href="../../blog/atom.xml" title="dopieralski.pl">
+  
+
+  </head><body>
+<div id="topbar">
+<div id="searchbox" style="display: none" role="search">
+    <div class="searchformwrapper">
+    <form class="search" action="../../search/" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="search" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+    <div id="logo"><a href="../../">
+        <img
+            src="/_static/logo.png"
+            alt=""
+        />dopieralski.pl</a></div>
+</div>
+
+<div role="main">
+  <div class="section" id="circuitpython-in-2022">
+<h1>CircuitPython in 2022<a class="headerlink" href="#circuitpython-in-2022" title="Permalink to this headline">¶</a></h1>
+<p>As every year, it’s time for a yearly summary and plans of all things I do
+that are related to CircuitPython.</p>
+<div class="section" id="the-projects">
+<h2>The Projects<a class="headerlink" href="#the-projects" title="Permalink to this headline">¶</a></h2>
+<p>This year I made a record number of keyboards, and also greatly improved my
+keyboard library, uKeeb. Some features were added, because CircuitPython now
+supports them: CapsLock LED, disabled disk and console, NKRO and BOOT modes,
+keypad module. Others I added as new keyboards needed them: proper hold/tap
+with rollover timeout, layer switching improvements, mouse support, LED
+animations.</p>
+<p>My FluffBug robot is now at hardware version 5, but software-wise there was
+no progress. I got the per-leg inverse kinematics done, and I should write
+the walking code, but I can’t find the motivation.</p>
+<p>The MIDI Ocarina is now at version 3. I gave up on the barometric pressure
+sensor for detecting blowing, as its recovery time was poor, and instead
+switched to a PDM microphone using audiobusio. This works great. I still need
+to write the MIDI code for it.</p>
+<p>I tried the new camera code, but I couldn’t get it to work with the camera
+breakouts that I have. Either I’m using wrong pins, or something broke in the
+IDF version I used. I have no energy to investigate this further.</p>
+<p>I also gave up on making the uGame console work with newer versions of
+CircuitPython – the changes in interrupt handling and time module related to
+adding sleep made the SAMD21 port work so erratically, that I simply gave up.
+I did fix the PewPew code by avoiding using the time module altogether.</p>
+<p>There is also a but in the PWM code on SAMD that makes it hang completely
+in a loop waiting for a register flag that never gets set. I got that far
+debugging it, but why it never gets set is a mystery to me, and nobody
+seems to be interested in fixing it. I worked around it in Stage library
+by simply setting the backlight pin high, not using PWM at all, but I got
+bitten by the same bug recently in the ocarina code.</p>
+</div>
+<div class="section" id="the-future">
+<h2>The Future<a class="headerlink" href="#the-future" title="Permalink to this headline">¶</a></h2>
+<p>This year I want to finish FluffBug at least to the point where it walks and
+uses the leg sensors and the distance sensors. I wish I could get the camera
+to work with it as well. I might also try a gesture sensor, and an
+accelerometer.</p>
+<p>I received a nice ESP32-S2 development board with a display from MakerFabs,
+and I want to get the display working with displayio. Unfortunately it’s a
+16-bit parallel, with non-consecutive data pins, so I would need to work
+on the relevant module first. No idea how much work it would require.</p>
+<p>There is a cool watch project using a SAML22 microcontroller, which should
+be very similar to SAMD21. The author mentioned that he wants to get a port
+of CircuitPython working on it. I’m very interested in this, because that
+chip also has an LCD-driving circuitry, which would allow me to make even
+cheaper version of the PewPew console, with a custom LCD screen.</p>
+<p>I might be making another handheld game console, with a 3.2”
+screen and ESP32-S2 as the brains, but I’m not entirely sure yet. I’m doing
+research on how viable it would be, and collecting parts.</p>
+</div>
+<div class="section" id="conclusion">
+<h2>Conclusion<a class="headerlink" href="#conclusion" title="Permalink to this headline">¶</a></h2>
+<p>This year brought some cool developments around USB and keyboards, but also
+a lot of frustration with keeping my existing projects working despite new
+bugs. The SAMD family seems to now get very little attention, and it suffered
+greatly with the addition of sleep support. Not being able to find and fix
+those bugs is very frustrating, and drains energy I could use on projects
+instead. The new boards are ridiculously powerful, but considerably more
+complex to use in projects, unless using a ready development board. I think
+I will focus on the Lolin S2 Mini boards for my projects this year, however,
+while I mentioned some things I hope to work on, I am aware that I have
+very little energy left for this. Hopefully my health and the overall global
+situation will improve.</p>
+</div>
+</div>
+
+
+</div>
+  </body>
+</html>
