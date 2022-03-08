@@ -16,12 +16,10 @@ Contact Information
 
 * Name: Radomir Dopieralski
 * Also known as: Deshipu, TheSheep
-* Jabber: sheep at sheep.art.pl
-* e-mail: home at sheep.art.pl
+* Jabber: radomir at dopieralski.pl
+* e-mail: home at dopieralski.pl
 
 Other Places
 ============
-* deshipu at irc.freenode.net
-* Mastodon
-* Hackaday.io
-* Tindie
+* Mastodon: @deshipu@mastodon.technology
+* Hackaday.io: deshipu
