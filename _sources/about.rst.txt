@@ -21,5 +21,5 @@ Contact Information
 
 Other Places
 ============
-* Mastodon: @deshipu@mastodon.technology
+* Mastodon: @deshipu@chaos.social
 * Hackaday.io: deshipu
