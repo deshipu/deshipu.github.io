@@ -1,19 +1,20 @@
 
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html>
 
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html lang="en">
   <head>
-    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+
     <title>CircuitPython in 2019 - dopieralski.pl</title>
-    <link rel="stylesheet" href="../../_static/basic.css" type="text/css" />
-    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
-    <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
-    <script type="text/javascript" src="../../_static/jquery.js"></script>
-    <script type="text/javascript" src="../../_static/underscore.js"></script>
-    <script type="text/javascript" src="../../_static/doctools.js"></script>
-    <script type="text/javascript" src="../../_static/language_data.js"></script>
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/basic.css" />
+    <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/sphinx_highlight.js"></script>
     <link rel="author" title="About these documents" href="../../about/" />
     <link rel="index" title="Index" href="../../genindex/" />
     <link rel="search" title="Search" href="../../search/" />
@@ -47,35 +48,35 @@
 </div>
 
 <div role="main">
-  <div class="section" id="circuitpython-in-2019">
-<h1>CircuitPython in 2019<a class="headerlink" href="#circuitpython-in-2019" title="Permalink to this headline">¶</a></h1>
+  <section id="circuitpython-in-2019">
+<h1>CircuitPython in 2019<a class="headerlink" href="#circuitpython-in-2019" title="Permalink to this heading">¶</a></h1>
 <p>Adafruit has requested <a class="reference external" href="https://blog.adafruit.com/2018/12/17/what-do-you-want-from-circuitpython-in-2019-circuitpython2019-circuitpython/">on their blog</a>
 feedback and comments about CircuitPython in 2019, so here I go. I am mostly
 going to talk about three things: the projects that I personally want to do
 using it, the ongoing developments that I would love to see finished this year,
 and some completely crazy stuff that could potentially be added if someone
 smarter than me and with copious free time worked on it.</p>
-<div class="section" id="the-projects">
-<h2>The Projects<a class="headerlink" href="#the-projects" title="Permalink to this headline">¶</a></h2>
-<div class="section" id="pewpew">
-<h3>PewPew<a class="headerlink" href="#pewpew" title="Permalink to this headline">¶</a></h3>
+<section id="the-projects">
+<h2>The Projects<a class="headerlink" href="#the-projects" title="Permalink to this heading">¶</a></h2>
+<section id="pewpew">
+<h3>PewPew<a class="headerlink" href="#pewpew" title="Permalink to this heading">¶</a></h3>
 <p>The immediate thing with highest priority right now is the <a class="reference external" href="http://pewpew.rtfd.io">PewPew</a> educational game console, and the workshop I’m
 planning to run with it really soon now (™). I’m rather happy with the hardware
 and the <code class="docutils literal notranslate"><span class="pre">pew</span></code> library on it, but I need to work on preparing more learning
 materials and example games for it. I also need to reorganize the repository to
 make it easier to follow and contribute to it.</p>
-</div>
-<div class="section" id="game-and-successors">
-<h3>µGame and Successors<a class="headerlink" href="#game-and-successors" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="game-and-successors">
+<h3>µGame and Successors<a class="headerlink" href="#game-and-successors" title="Permalink to this heading">¶</a></h3>
 <p>A much lower priority thing is to write those games that I have built the
 <a class="reference external" href="http://ugame.rtfd.io">µGame</a> for, and possibly also port/rewrite those games
 for Adafruit’s game console when it is finally released. That is probably not
 going to happen very soon, though, so I have some time. If motivation suffices,
 I will probably also improve the <code class="docutils literal notranslate"><span class="pre">stage</span></code> game library that µGame uses, and
 create more ready-to-use resources for it.</p>
-</div>
-<div class="section" id="kubik-and-tote">
-<h3>Kubik and Tote<a class="headerlink" href="#kubik-and-tote" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="kubik-and-tote">
+<h3>Kubik and Tote<a class="headerlink" href="#kubik-and-tote" title="Permalink to this heading">¶</a></h3>
 <p>While the homebrew game consoles took most of my free time last year, this year
 I want to come back to my robots for a bit. In particular, I want to finish the
 design and programming of ESP8266-based version of <a class="reference external" href="http://tote.rtfd.io">Tote</a>, and to finish the Kubik M0 robot (possibly switching
@@ -84,69 +85,69 @@ to re-visit and finish, such as the <a class="reference external" href="https://
 <p>I also need to explore more better ways of doing inverse kinematics,
 interpreting accelerometer output, reacting to touch sensors on the legs, and
 possibly also to force sensors in the joints and complaint motion.</p>
-</div>
-<div class="section" id="badges-and-wearables">
-<h3>Badges and Wearables<a class="headerlink" href="#badges-and-wearables" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="badges-and-wearables">
+<h3>Badges and Wearables<a class="headerlink" href="#badges-and-wearables" title="Permalink to this heading">¶</a></h3>
 <p>The CircuitPython Badge project is suspended, as the people who wanted to work
 with me to get it to conferences gave up on it, but if there is a Python
 conference that wants it, I might work on it again.</p>
 <p>I also have this wearable hub prototype, for which I want to make some
 interactive jewelry and accessories. No idea about anything specific yet, but I
 think I will have cat ears for sure, at the least. Maybe also a video pendant.</p>
-</div>
-</div>
-<div class="section" id="circuitpython-development">
-<h2>CircuitPython Development<a class="headerlink" href="#circuitpython-development" title="Permalink to this headline">¶</a></h2>
-<div class="section" id="textmode-library">
-<h3>TextMode Library<a class="headerlink" href="#textmode-library" title="Permalink to this headline">¶</a></h3>
+</section>
+</section>
+<section id="circuitpython-development">
+<h2>CircuitPython Development<a class="headerlink" href="#circuitpython-development" title="Permalink to this heading">¶</a></h2>
+<section id="textmode-library">
+<h3>TextMode Library<a class="headerlink" href="#textmode-library" title="Permalink to this heading">¶</a></h3>
 <p>I really want to write a CircuitPython library that would let you do something
 like the old DOS text mode display, and that would support a variety of
 different displays and fonts. I already have some prototypes for OLED and TFT
 displays, but I need to sit down and bring it all together with a consistent
 API.</p>
-</div>
-<div class="section" id="built-in-display-support">
-<h3>Built-in Display Support<a class="headerlink" href="#built-in-display-support" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="built-in-display-support">
+<h3>Built-in Display Support<a class="headerlink" href="#built-in-display-support" title="Permalink to this heading">¶</a></h3>
 <p>I’m waiting with bated breath for the built-in support for displays that is
 being worked on. It will not only make it trivially easy to display the errors
 and the REPL console on any display connected to CircuitPython boards, but also
 let do high-performance graphic operations, and create games like on the µGame.
 This is probably also a prerequisite for that game console board to be released
 by Adafruit, so I really can’t wait for it.</p>
-</div>
-<div class="section" id="wireless-communication">
-<h3>Wireless Communication<a class="headerlink" href="#wireless-communication" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="wireless-communication">
+<h3>Wireless Communication<a class="headerlink" href="#wireless-communication" title="Permalink to this heading">¶</a></h3>
 <p>There is a new library for using ESP8266 as a WiFi module in the AT mode, but
 also some improvement to the RFM9x module support, and of course support for
 NRF52 chips means there is Bluetooth support coming. I’m really looking forward
 to being able to use any of those in CircuitPython, and I hope that the coming
 year will bring a standardised and consistent API for wireless communication.</p>
-</div>
-</div>
-<div class="section" id="crazy-project-ideas">
-<h2>Crazy Project Ideas<a class="headerlink" href="#crazy-project-ideas" title="Permalink to this headline">¶</a></h2>
-<div class="section" id="speech-synthesizer">
-<h3>Speech Synthesizer<a class="headerlink" href="#speech-synthesizer" title="Permalink to this headline">¶</a></h3>
+</section>
+</section>
+<section id="crazy-project-ideas">
+<h2>Crazy Project Ideas<a class="headerlink" href="#crazy-project-ideas" title="Permalink to this heading">¶</a></h2>
+<section id="speech-synthesizer">
+<h3>Speech Synthesizer<a class="headerlink" href="#speech-synthesizer" title="Permalink to this heading">¶</a></h3>
 <p>The same speech synthesizer that is used to make the Micro:bit talk should be
 very easy to port to CircuitPython, and should even have much better sound
 quality by using the DAC.</p>
-</div>
-<div class="section" id="speech-recognition">
-<h3>Speech Recognition<a class="headerlink" href="#speech-recognition" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="speech-recognition">
+<h3>Speech Recognition<a class="headerlink" href="#speech-recognition" title="Permalink to this heading">¶</a></h3>
 <p>At the same time, it might be possible to use the stronger M4 boards to do
 trigger word recognition, using the same algorithm as the Snowboy program for
 Raspberry Pi. This requires a lot of knowledge and patience that I don’t have,
 but it could be potentially very useful project.</p>
-</div>
-</div>
-<div class="section" id="summary">
-<h2>Summary<a class="headerlink" href="#summary" title="Permalink to this headline">¶</a></h2>
+</section>
+</section>
+<section id="summary">
+<h2>Summary<a class="headerlink" href="#summary" title="Permalink to this heading">¶</a></h2>
 <p>That’s all I have right now. As you can see, there is a lot of hope and very
 few promises. That’s because the trend in the recent years is for me to have
 less and less time and motivation for my projects. Perhaps the trend will
 reverse at some point, but until then I try to not plan ahead too much.</p>
-</div>
-</div>
+</section>
+</section>
 
 
 </div>

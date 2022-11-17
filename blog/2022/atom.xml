@@ -1,25 +1,20 @@
-<?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom">
-  <title type="text">dopieralski.pl - Posted in 2022</title>
-  <id>http://dopieralski.pl/blog/2022/atom.xml</id>
-  <updated>2022-01-22T00:00:00Z</updated>
-  <link href="http://dopieralski.pl/" />
-  <link href="http://dopieralski.pl/blog/2022/atom.xml" rel="self" />
-  <generator uri="http://ablog.readthedocs.org" version="0.9.5">ABlog</generator>
-  <entry xml:base="http://dopieralski.pl/blog/2022/atom.xml">
-    <title type="text">CircuitPython in 2022</title>
+<?xml version='1.0' encoding='UTF-8'?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+  <id>http://dopieralski.pl/</id>
+  <title>dopieralski.pl - Posted in 2022</title>
+  <updated>2022-11-17T20:03:34.799513+00:00</updated>
+  <link href="http://dopieralski.pl/"/>
+  <link href="http://dopieralski.pl/blog/2022/atom.xml" rel="self"/>
+  <generator uri="https://ablog.readthedocs.org/" version="0.10.33">ABlog</generator>
+  <entry>
     <id>http://dopieralski.pl/posts/2022-01-22-circuitpython/</id>
-    <updated>2022-01-22T00:00:00Z</updated>
-    <published>2022-01-22T00:00:00Z</published>
-    <link href="http://dopieralski.pl/posts/2022-01-22-circuitpython/" />
-    <author>
-      <name></name>
-    </author>
-    <content type="html">&lt;div class=&quot;section&quot; id=&quot;circuitpython-in-2022&quot;&gt;
+    <title>CircuitPython in 2022</title>
+    <updated>2022-01-22T00:00:00+01:00</updated>
+    <content type="html">&lt;section id="circuitpython-in-2022"&gt;
 
 &lt;p&gt;As every year, it’s time for a yearly summary and plans of all things I do
 that are related to CircuitPython.&lt;/p&gt;
-&lt;div class=&quot;section&quot; id=&quot;the-projects&quot;&gt;
+&lt;section id="the-projects"&gt;
 &lt;h2&gt;The Projects&lt;/h2&gt;
 &lt;p&gt;This year I made a record number of keyboards, and also greatly improved my
 keyboard library, uKeeb. Some features were added, because CircuitPython now
@@ -47,8 +42,8 @@ debugging it, but why it never gets set is a mystery to me, and nobody
 seems to be interested in fixing it. I worked around it in Stage library
 by simply setting the backlight pin high, not using PWM at all, but I got
 bitten by the same bug recently in the ocarina code.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;section&quot; id=&quot;the-future&quot;&gt;
+&lt;/section&gt;
+&lt;section id="the-future"&gt;
 &lt;h2&gt;The Future&lt;/h2&gt;
 &lt;p&gt;This year I want to finish FluffBug at least to the point where it walks and
 uses the leg sensors and the distance sensors. I wish I could get the camera
@@ -66,8 +61,8 @@ cheaper version of the PewPew console, with a custom LCD screen.&lt;/p&gt;
 &lt;p&gt;I might be making another handheld game console, with a 3.2”
 screen and ESP32-S2 as the brains, but I’m not entirely sure yet. I’m doing
 research on how viable it would be, and collecting parts.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;section&quot; id=&quot;conclusion&quot;&gt;
+&lt;/section&gt;
+&lt;section id="conclusion"&gt;
 &lt;h2&gt;Conclusion&lt;/h2&gt;
 &lt;p&gt;This year brought some cool developments around USB and keyboards, but also
 a lot of frustration with keeping my existing projects working despite new
@@ -80,8 +75,12 @@ I will focus on the Lolin S2 Mini boards for my projects this year, however,
 while I mentioned some things I hope to work on, I am aware that I have
 very little energy left for this. Hopefully my health and the overall global
 situation will improve.&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
+&lt;/section&gt;
+&lt;/section&gt;
 </content>
+    <link href="http://dopieralski.pl/posts/2022-01-22-circuitpython/" rel="alternate"/>
+    <summary>As every year, it’s time for a yearly summary and plans of all things I do
+that are related to CircuitPython.</summary>
+    <published>2022-01-22T00:00:00+01:00</published>
   </entry>
 </feed>

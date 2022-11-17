@@ -1,25 +1,458 @@
-<?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom">
-  <title type="text">dopieralski.pl - Posts in electronics</title>
-  <id>http://dopieralski.pl/blog/category/electronics/atom.xml</id>
-  <updated>2022-01-22T00:00:00Z</updated>
-  <link href="http://dopieralski.pl/" />
-  <link href="http://dopieralski.pl/blog/category/electronics/atom.xml" rel="self" />
-  <generator uri="http://ablog.readthedocs.org" version="0.9.5">ABlog</generator>
-  <entry xml:base="http://dopieralski.pl/blog/category/electronics/atom.xml">
-    <title type="text">CircuitPython in 2022</title>
+<?xml version='1.0' encoding='UTF-8'?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+  <id>http://dopieralski.pl/</id>
+  <title>dopieralski.pl - Posts in electronics</title>
+  <updated>2022-11-17T20:03:34.762125+00:00</updated>
+  <link href="http://dopieralski.pl/"/>
+  <link href="http://dopieralski.pl/blog/category/electronics/atom.xml" rel="self"/>
+  <generator uri="https://ablog.readthedocs.org/" version="0.10.33">ABlog</generator>
+  <entry>
+    <id>http://dopieralski.pl/posts/2019-01-04-circuitpython/</id>
+    <title>CircuitPython in 2019</title>
+    <updated>2019-01-04T00:00:00+01:00</updated>
+    <content type="html">&lt;section id="circuitpython-in-2019"&gt;
+
+&lt;p&gt;Adafruit has requested &lt;a class="reference external" href="https://blog.adafruit.com/2018/12/17/what-do-you-want-from-circuitpython-in-2019-circuitpython2019-circuitpython/"&gt;on their blog&lt;/a&gt;
+feedback and comments about CircuitPython in 2019, so here I go. I am mostly
+going to talk about three things: the projects that I personally want to do
+using it, the ongoing developments that I would love to see finished this year,
+and some completely crazy stuff that could potentially be added if someone
+smarter than me and with copious free time worked on it.&lt;/p&gt;
+&lt;section id="the-projects"&gt;
+&lt;h2&gt;The Projects&lt;/h2&gt;
+&lt;section id="pewpew"&gt;
+&lt;h3&gt;PewPew&lt;/h3&gt;
+&lt;aside class="system-message"&gt;
+&lt;p class="system-message-title"&gt;System Message: INFO/1 (&lt;span class="docutils literal"&gt;/home/sheep/dev/ablog/dopieralski.pl/posts/2019-01-04-circuitpython.rst&lt;/span&gt;, line 6); &lt;em&gt;&lt;a href="#id1"&gt;backlink&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Duplicate implicit target name: “pewpew”.&lt;/p&gt;
+&lt;/aside&gt;
+&lt;p&gt;The immediate thing with highest priority right now is the &lt;a class="reference external" href="http://pewpew.rtfd.io"&gt;PewPew&lt;/a&gt; educational game console, and the workshop I’m
+planning to run with it really soon now (™). I’m rather happy with the hardware
+and the &lt;code class="docutils literal notranslate"&gt;&lt;span class="pre"&gt;pew&lt;/span&gt;&lt;/code&gt; library on it, but I need to work on preparing more learning
+materials and example games for it. I also need to reorganize the repository to
+make it easier to follow and contribute to it.&lt;/p&gt;
+&lt;/section&gt;
+&lt;section id="game-and-successors"&gt;
+&lt;h3&gt;µGame and Successors&lt;/h3&gt;
+&lt;p&gt;A much lower priority thing is to write those games that I have built the
+&lt;a class="reference external" href="http://ugame.rtfd.io"&gt;µGame&lt;/a&gt; for, and possibly also port/rewrite those games
+for Adafruit’s game console when it is finally released. That is probably not
+going to happen very soon, though, so I have some time. If motivation suffices,
+I will probably also improve the &lt;code class="docutils literal notranslate"&gt;&lt;span class="pre"&gt;stage&lt;/span&gt;&lt;/code&gt; game library that µGame uses, and
+create more ready-to-use resources for it.&lt;/p&gt;
+&lt;/section&gt;
+&lt;section id="kubik-and-tote"&gt;
+&lt;h3&gt;Kubik and Tote&lt;/h3&gt;
+&lt;p&gt;While the homebrew game consoles took most of my free time last year, this year
+I want to come back to my robots for a bit. In particular, I want to finish the
+design and programming of ESP8266-based version of &lt;a class="reference external" href="http://tote.rtfd.io"&gt;Tote&lt;/a&gt;, and to finish the Kubik M0 robot (possibly switching
+it to NRF52 in the process). There is also a number of old robots I would like
+to re-visit and finish, such as the &lt;a class="reference external" href="https://hackaday.io/project/7168-logicoma-kun"&gt;Logicoma-kun&lt;/a&gt;, &lt;a class="reference external" href="https://hackaday.io/project/10665-pony-bot"&gt;Pony Bot&lt;/a&gt;, and &lt;a class="reference external" href="https://hackaday.io/project/10534-hexapod-henk-mkii"&gt;Henk the Hexapod&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;I also need to explore more better ways of doing inverse kinematics,
+interpreting accelerometer output, reacting to touch sensors on the legs, and
+possibly also to force sensors in the joints and complaint motion.&lt;/p&gt;
+&lt;/section&gt;
+&lt;section id="badges-and-wearables"&gt;
+&lt;h3&gt;Badges and Wearables&lt;/h3&gt;
+&lt;p&gt;The CircuitPython Badge project is suspended, as the people who wanted to work
+with me to get it to conferences gave up on it, but if there is a Python
+conference that wants it, I might work on it again.&lt;/p&gt;
+&lt;p&gt;I also have this wearable hub prototype, for which I want to make some
+interactive jewelry and accessories. No idea about anything specific yet, but I
+think I will have cat ears for sure, at the least. Maybe also a video pendant.&lt;/p&gt;
+&lt;/section&gt;
+&lt;/section&gt;
+&lt;section id="circuitpython-development"&gt;
+&lt;h2&gt;CircuitPython Development&lt;/h2&gt;
+&lt;section id="textmode-library"&gt;
+&lt;h3&gt;TextMode Library&lt;/h3&gt;
+&lt;p&gt;I really want to write a CircuitPython library that would let you do something
+like the old DOS text mode display, and that would support a variety of
+different displays and fonts. I already have some prototypes for OLED and TFT
+displays, but I need to sit down and bring it all together with a consistent
+API.&lt;/p&gt;
+&lt;/section&gt;
+&lt;section id="built-in-display-support"&gt;
+&lt;h3&gt;Built-in Display Support&lt;/h3&gt;
+&lt;p&gt;I’m waiting with bated breath for the built-in support for displays that is
+being worked on. It will not only make it trivially easy to display the errors
+and the REPL console on any display connected to CircuitPython boards, but also
+let do high-performance graphic operations, and create games like on the µGame.
+This is probably also a prerequisite for that game console board to be released
+by Adafruit, so I really can’t wait for it.&lt;/p&gt;
+&lt;/section&gt;
+&lt;section id="wireless-communication"&gt;
+&lt;h3&gt;Wireless Communication&lt;/h3&gt;
+&lt;p&gt;There is a new library for using ESP8266 as a WiFi module in the AT mode, but
+also some improvement to the RFM9x module support, and of course support for
+NRF52 chips means there is Bluetooth support coming. I’m really looking forward
+to being able to use any of those in CircuitPython, and I hope that the coming
+year will bring a standardised and consistent API for wireless communication.&lt;/p&gt;
+&lt;/section&gt;
+&lt;/section&gt;
+&lt;section id="crazy-project-ideas"&gt;
+&lt;h2&gt;Crazy Project Ideas&lt;/h2&gt;
+&lt;section id="speech-synthesizer"&gt;
+&lt;h3&gt;Speech Synthesizer&lt;/h3&gt;
+&lt;p&gt;The same speech synthesizer that is used to make the Micro:bit talk should be
+very easy to port to CircuitPython, and should even have much better sound
+quality by using the DAC.&lt;/p&gt;
+&lt;/section&gt;
+&lt;section id="speech-recognition"&gt;
+&lt;h3&gt;Speech Recognition&lt;/h3&gt;
+&lt;p&gt;At the same time, it might be possible to use the stronger M4 boards to do
+trigger word recognition, using the same algorithm as the Snowboy program for
+Raspberry Pi. This requires a lot of knowledge and patience that I don’t have,
+but it could be potentially very useful project.&lt;/p&gt;
+&lt;/section&gt;
+&lt;/section&gt;
+&lt;section id="summary"&gt;
+&lt;h2&gt;Summary&lt;/h2&gt;
+&lt;p&gt;That’s all I have right now. As you can see, there is a lot of hope and very
+few promises. That’s because the trend in the recent years is for me to have
+less and less time and motivation for my projects. Perhaps the trend will
+reverse at some point, but until then I try to not plan ahead too much.&lt;/p&gt;
+&lt;/section&gt;
+&lt;/section&gt;
+</content>
+    <link href="http://dopieralski.pl/posts/2019-01-04-circuitpython/" rel="alternate"/>
+    <summary>Adafruit has requested on their blog
+feedback and comments about CircuitPython in 2019, so here I go. I am mostly
+going to talk about three things: the projects that I personally want to do
+using it, the ongoing developments that I would love to see finished this year,
+and some completely crazy stuff that could potentially be added if someone
+smarter than me and with copious free time worked on it.</summary>
+    <published>2019-01-04T00:00:00+01:00</published>
+  </entry>
+  <entry>
+    <id>http://dopieralski.pl/posts/2020-01-02-circuitpython/</id>
+    <title>CircuitPython in 2020</title>
+    <updated>2020-01-02T00:00:00+01:00</updated>
+    <content type="html">&lt;section id="circuitpython-in-2020"&gt;
+
+&lt;p&gt;It looks like I’m mostly using this blog to answer &lt;a class="reference external" href="https://blog.adafruit.com/2020/01/01/what-do-you-want-from-circuitpython-in-2020-circuitpython2020-circuitpython/"&gt;Adafruit’s prompts for
+feedback on CircuitPython&lt;/a&gt;. Oh well, so be it.&lt;/p&gt;
+&lt;section id="the-projects"&gt;
+&lt;h2&gt;The Projects&lt;/h2&gt;
+&lt;section id="pewpew"&gt;
+&lt;h3&gt;PewPew&lt;/h3&gt;
+&lt;aside class="system-message"&gt;
+&lt;p class="system-message-title"&gt;System Message: INFO/1 (&lt;span class="docutils literal"&gt;/home/sheep/dev/ablog/dopieralski.pl/posts/2020-01-02-circuitpython.rst&lt;/span&gt;, line 6); &lt;em&gt;&lt;a href="#id1"&gt;backlink&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Duplicate implicit target name: “pewpew”.&lt;/p&gt;
+&lt;/aside&gt;
+&lt;p&gt;The &lt;a class="reference external" href="http://pewpew.rtfd.io"&gt;PewPew&lt;/a&gt; educational game console project is still
+alive, and there has been some progress. EuroPython gave out 1400 devices to
+Python developers at a conference, and I helped design and manufacture some
+custom units for some more conferences. &lt;a class="reference external" href="http://makerfabs.com"&gt;MakerFabs&lt;/a&gt; —
+the fabrication company that is helping me with this is now selling PewPew
+Standalone consoles for $10 a piece for everyone who have any kind of workshop,
+entertainment or hacking needs. There is even a mailing list at
+&lt;code class="docutils literal notranslate"&gt;&lt;span class="pre"&gt;pewpew&amp;#64;python.org&lt;/span&gt;&lt;/code&gt; and I’m trying to keep everyone updated by sending
+monthly summaries to it (I only skipped one month so far).&lt;/p&gt;
+&lt;p&gt;However, the device is not perfect, and I have decided to pursue the successor
+to &lt;a class="reference external" href="http://ugame.rtfd.io"&gt;µGame&lt;/a&gt; to try an fix that. It’s a blend of PewPew
+and µGame, being able to run programs for both (and also MakerCode Arcade and
+PyGamer/PyBadge device too). It’s going to be considerably cheaper than
+Adafruit’s offerings, but it’s also not supposed to be competing with them.
+I needed the display to show the error messages, because those turned out to
+be the hardest part of working with PewPews — not everyone can get the REPL
+going easily. In any case, I worked on the successor, PewPew M4 for a good part
+of the last year, and it’s ready now. I’m going to be sending out the first
+units to reviewers and people interested in development for it soon, and then
+we will try to make the devices available through MakerFabs just like the
+PewPew Standalone.&lt;/p&gt;
+&lt;/section&gt;
+&lt;section id="robots"&gt;
+&lt;h3&gt;Robots&lt;/h3&gt;
+&lt;p&gt;I still have the low-cost spider-like walking robots on my drawing boards, and
+they are going to run CircuitPython too. The plan to re-start the development
+with a more integrated Kubik M0 unfortunately failed: after fixing some bugs
+with PWM channels, it turned out that the SAMD21 that I was using simply
+doesn’t have enough PWM outputs to drive all the 12 servos of this robot. That
+means I probably need a bigger chip, and it would probably make more sense to
+use the BLE-capable NRF52840 and not the SAMD51. But that also means it will be
+Kubik M4 and not M0, and I still need to do my research about the NRF52840. I
+have the NRF52840 Feather at hand, but it’s the non-express version, which is
+apparently no longer supported. So either I bring back the support for it, hack
+an SPI flash chip on it, or switch to an express board. We will see.&lt;/p&gt;
+&lt;p&gt;In the mean time, I also resurrected the SpiderWing, which can work with pretty
+much any Feather board. The recent modifications added battery protection to
+it, which is an important feature. I will use it for a platform for
+experimenting with BLE robots.&lt;/p&gt;
+&lt;/section&gt;
+&lt;section id="keyboards"&gt;
+&lt;h3&gt;Keyboards&lt;/h3&gt;
+&lt;p&gt;After visiting a local annual meetup of mechanical keyboard enthusiasts, I got
+an urge to make a very flat keyboard (just a PCB and low-profile choc
+switches), and since I didn’t have much room on it, I decided to put a SAMD21
+on it. Once I had that, it was very easy to write a simple firmware for it,
+especially since the USB support really improved recently. There was no support
+for CapsLock, but it was surprisingly easy to hack it on with the help of
+Adafruit staff, and there is now a pull request in works for adding it
+properly. The ability to disable the drive, midi, mouse and all those other
+funky USB endpoints also helped a lot.&lt;/p&gt;
+&lt;/section&gt;
+&lt;/section&gt;
+&lt;section id="circuitpython-development"&gt;
+&lt;h2&gt;CircuitPython Development&lt;/h2&gt;
+&lt;p&gt;I ended up not contributing as much as I wanted to CircuitPython development
+this last year, but I am still amazed with the progress it made. The display
+support is now very good, and there is no need for my TextMode library anymore.
+You can do pretty much anything with the displayio that you could do with the
+stage library, and much more on top of that. The stage is still a little bit
+faster and uses a bit less memory (because of the limitations it has), so I
+keep using and maintaining it.&lt;/p&gt;
+&lt;p&gt;I still didn’t have any time to play with the wireless capabilities: the Nina
+firmware, the awesome BLE work, the LoRa and other radio modules. Maybe this
+year I will have more luck with it.&lt;/p&gt;
+&lt;p&gt;I did add (non-animated) GIF support to the loadimage library (and also to
+stage), and it could easily be extended to support animation as well. I also
+did some small improvement with buffer allocation for the audio module, and
+that CapsLock support thing most recently — but I would really love to do more.&lt;/p&gt;
+&lt;p&gt;I didn’t get to implement any of my last-year crazy project ideas. They are up
+for grabs.&lt;/p&gt;
+&lt;/section&gt;
+&lt;section id="micropython-development"&gt;
+&lt;h2&gt;MicroPython Development&lt;/h2&gt;
+&lt;p&gt;Even though I no longer pay much attention to that project, I did notice some
+progress in there. Most importantly for me, there is now some support for
+dynamically loadable C modules, so I tried to port the Stage library to that.
+Unfortunately it doesn’t seem to be mature/featurefull/finished enough for it
+to work, and the help is as usual non-existent.&lt;/p&gt;
+&lt;/section&gt;
+&lt;section id="future-plans"&gt;
+&lt;h2&gt;Future Plans&lt;/h2&gt;
+&lt;p&gt;I don’t really have any are in CircuitPython right now that I would
+particularly want to work on and improve. I really want to give more focus
+to the PewPew, the Stage library, and the examples and tutorials for it.&lt;/p&gt;
+&lt;p&gt;I would also love to see the PewPew M4 become popular/useful, and people
+writing games for it. I think there is a need for some place where people
+can find CircuitPython-based games for the µGame, PyBadge, PyGamer, PyPortal,
+and PewPew M4, download and play them, see the code, read the tutorials about
+making them, and so on. I also think it would be nice if game creators could
+sell their games — I’m thinking about a platform like itch.io for this.&lt;/p&gt;
+&lt;p&gt;I want to get back to the robots for a little bit, and I have some nice ideas
+for them, though nothing overly specific yet. We will see how it goes with the
+wireless communication research.&lt;/p&gt;
+&lt;p&gt;I’m waiting with bated breath for the ESP32-S2 board, but it will be probably
+another year or two before CircuitPython works on that (if ever).&lt;/p&gt;
+&lt;/section&gt;
+&lt;section id="summary"&gt;
+&lt;h2&gt;Summary&lt;/h2&gt;
+&lt;p&gt;It has been an amazing year for CircuitPython, and a huge amount of work has
+been done. I wish I could have been more involved, but day job interferes. I’m
+going to bring back some of my old projects this year and see if I can make
+them work even better with CircuitPython now.&lt;/p&gt;
+&lt;/section&gt;
+&lt;/section&gt;
+</content>
+    <link href="http://dopieralski.pl/posts/2020-01-02-circuitpython/" rel="alternate"/>
+    <summary>It looks like I’m mostly using this blog to answer Adafruit’s prompts for
+feedback on CircuitPython. Oh well, so be it.</summary>
+    <published>2020-01-02T00:00:00+01:00</published>
+  </entry>
+  <entry>
+    <id>http://dopieralski.pl/posts/2021-01-09-circuitpython/</id>
+    <title>CircuitPython in 2021</title>
+    <updated>2021-01-09T00:00:00+01:00</updated>
+    <content type="html">&lt;section id="circuitpython-in-2021"&gt;
+
+&lt;p&gt;It is once again time for &lt;a class="reference external" href="https://blog.adafruit.com/2021/01/01/where-should-circuitpython-go-in-2021-circuitpython2021-circuitpython/"&gt;Adafruit’s prompt for
+feedback on CircuitPython&lt;/a&gt;. Let’s see what I did
+last year and what I hope for this year.&lt;/p&gt;
+&lt;section id="the-projects"&gt;
+&lt;h2&gt;The Projects&lt;/h2&gt;
+&lt;p&gt;This year was slow project-wise. I did some work on a new, cheaper version of
+my walking robots, but they still need a lot of programming work. Then I went
+into the rabbit hole of low-profile mechanical keyboards, built half a dozen of
+them, until I made a perfect one for me. In the process I also made a library
+for keyboards that has substantially lower resource requirements than existing
+ones.&lt;/p&gt;
+&lt;p&gt;I also ported the Stage game library to a few new platforms, re-made the menu
+program for it, and merged a couple of improvements from other contributors.&lt;/p&gt;
+&lt;p&gt;Right now I’m working on a 6-hole MIDI ocarina, and I’m considering doing a
+business-card sized flat version of PewPew Standalone, with bi-color LEDs.&lt;/p&gt;
+&lt;/section&gt;
+&lt;section id="the-future"&gt;
+&lt;h2&gt;The Future&lt;/h2&gt;
+&lt;p&gt;After most of my plans went awry in 2020, I’m careful about planning anything
+this year. I think I will just be making small projects to keep myself sane,
+and see how the situation develops.&lt;/p&gt;
+&lt;p&gt;In terms of development of CircuitPython, I’m really looking forward to the
+dynamic USB descriptors, because that will let me make my keyboards more usable
+for the general public, and then it will make sense to actually publish them
+properly.&lt;/p&gt;
+&lt;p&gt;It’s also nice to see the work around deep sleep, as this might let me save on
+some parts in the future, moving the power switch to software.&lt;/p&gt;
+&lt;p&gt;The work around reset, safe mode and what file should be run after reset will
+allow me optimize the menu program for PewPews a little better, giving more
+memory to the games.&lt;/p&gt;
+&lt;p&gt;From what I can see most work is still focused on ESP32-S2, but I don’t find
+this particularly interesting for myself. I’m not a great fan of wireless
+solutions in general, and WiFi in particular seems a bit heavy for
+microcontroller-based projects. The need for certification also limits greatly
+what kind of projects I could make with this.&lt;/p&gt;
+&lt;/section&gt;
+&lt;section id="conclusion"&gt;
+&lt;h2&gt;Conclusion&lt;/h2&gt;
+&lt;p&gt;It’s great to see the CircuitPython project progressing and getting more
+popular, and I am very grateful to all contributors for it. Having said that,
+I think it is slowly reaching a point where it has most of what is needed, so
+it’s difficult to be excited about new developments — they are no longer such
+big steps forward. Of course in the long run it is a good thing — we can focus
+more on things we are building with the tool, not on the tool itself.&lt;/p&gt;
+&lt;/section&gt;
+&lt;/section&gt;
+</content>
+    <link href="http://dopieralski.pl/posts/2021-01-09-circuitpython/" rel="alternate"/>
+    <summary>It is once again time for Adafruit’s prompt for
+feedback on CircuitPython. Let’s see what I did
+last year and what I hope for this year.</summary>
+    <published>2021-01-09T00:00:00+01:00</published>
+  </entry>
+  <entry>
+    <id>http://dopieralski.pl/posts/2021-12-19-small-robots/</id>
+    <title>Build Small Robots</title>
+    <updated>2021-12-19T00:00:00+01:00</updated>
+    <content type="html">&lt;section id="build-small-robots"&gt;
+
+&lt;p&gt;In which we learn why it’s much easier to build small robots than large ones.&lt;/p&gt;
+&lt;section id="the-cube-law"&gt;
+&lt;h2&gt;The Cube Law&lt;/h2&gt;
+&lt;p&gt;A lot of reasons for making your robots small comes from the cube law. This law
+gives you the relation between the size of an object and its volume (there is
+also the square law, that gives you the relation between the size and the
+area). It says that as your robot grows in size, its volume will grow
+proportionally to the third power of that size (also called cube, hence the
+law’s name). Consider the following two example robots:&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;p&gt;Dimensions 5×5×5cm, volume 125cm³, weight 125g&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Dimensions 10×10×10cm, volume 1000cm³, weight 1000g&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;(I’m assuming that in both cases the average density of the robot doesn’t
+change, that is, that it’s not almost empty in the second case. As we will see
+later, that’s quite accurate, or even optimistic.)&lt;/p&gt;
+&lt;/section&gt;
+&lt;section id="actuator-strength"&gt;
+&lt;h2&gt;Actuator Strength&lt;/h2&gt;
+&lt;p&gt;“Actuator” is a fancy name for whatever makes your robot move: servo, motor,
+artificial muscle, memory metal, hydraulics, pneumatics, etc. As the size and
+weight of your robot grows, so has to the strength of the actuators it uses.&lt;/p&gt;
+&lt;p&gt;For instance, consider a servo. Its strength (in this case called torque) is
+usually expressed in kilograms (of force) times centimeters, or newton meters.
+If a servo has 1kg×cm of torque, it means it can lift 1kg of weight on a 1cm
+long lever. Since the levers scale linearly, it means it could also lift 0.5kg
+on 2cm long lever, or 2kg on 0.5cm long lever, etc. You can see already that if
+you make the robot’s legs twice as long, you will need twice as much torque.
+But that’s assuming that the weight remains the same. From the cube law you
+know, that the weight is going to grow fast, so in reality larger robots will
+need a lot more torque.&lt;/p&gt;
+&lt;p&gt;But there is another thing. The smaller the servos, the lighter and cheaper
+they are. Sure, the torque also gets smaller, but not nearly as fast. Consider
+those two example servos:&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;p&gt;HK-282A Ultra-Micro Servo: weight 2.2g, torque 0.11kg*cm, price 3 EUR&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;S3027 Metal Gear Servo: weight 20g, torque 2.5kg*cm, price 20 EUR&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;As you can see, the smaller servo can raise itself on a lever half a meter
+long! The larger one, almost 10 times heavier and over 20 times stronger, can
+only do 125cm. And it will be similar with any other parameter: price, speed,
+amount of current needed, etc. At some point the parameters will be so bad,
+that you will have to switch to hydraulics.&lt;/p&gt;
+&lt;/section&gt;
+&lt;section id="material-strength"&gt;
+&lt;h2&gt;Material Strength&lt;/h2&gt;
+&lt;p&gt;It’s not just the actuators that need to be stronger. They are connected to the
+structural elements, that have to bear all that force too. And thanks to the
+cube law, it doesn’t suffice for them to be just longer and thicker – they
+actually have to be made from stronger and lighter materials.&lt;/p&gt;
+&lt;p&gt;Stronger materials are harder to machine and generally work with. You can no
+longer get away with hot-gluing parts together: you will need nuts and bolts,
+and possibly also special mechanical design. And you will need specialized
+tools.&lt;/p&gt;
+&lt;p&gt;And when you finally get your robot together, it will be very fragile. Why do
+you think all those large robots in laboratories always operate with a safety
+line hanging from the ceiling over them? That’s because if they fall down, they
+will smash into pieces. The materials they use are strong enough to hold them
+together, but not strong enough to survive a fall.&lt;/p&gt;
+&lt;p&gt;On the other hand, my smallest robots survived repeated falls from my desk to
+the floor without even a scratch. If you make a robot the size of a cockroach,
+you can drop it from the roof of a building. It will simply not gain enough
+speed falling through the air to damage it on impacting the floor.&lt;/p&gt;
+&lt;/section&gt;
+&lt;section id="inertia"&gt;
+&lt;h2&gt;Inertia&lt;/h2&gt;
+&lt;p&gt;So you finished your large robot, and now you are programming it. For a start,
+you just make the limbs move straight to their destinations and stopping once
+they get there. Your robot falls, the limbs break off, the servos strip gears
+and there are huge spikes of current drawn from the battery. What happens?&lt;/p&gt;
+&lt;p&gt;Well, you cannot just move a heavy object with high speed and then have it stop
+instantly. Inertia will make it keep on moving, and the servomechanisms will
+need to do a lot of extra work (and endure great forces of stress) to stop it
+and move it back where it belongs. That also applies when moving the whole body
+of the robot while walking – your effective Zero Movement Point no longer
+coincides with the center of mass of your robot. You have to start taking the
+speed and acceleration into consideration in your motion planning, and thus all
+your movement equations become second degree differential equations without a
+closed-form solution. Yay!&lt;/p&gt;
+&lt;p&gt;On the other hand, if you keep the robot small, all its elements light and the
+servos have abundance of power, you can pretty much ignore inertia and get away
+with writing much simpler code that only takes into account the current
+positions of the limbs.&lt;/p&gt;
+&lt;/section&gt;
+&lt;section id="safety"&gt;
+&lt;h2&gt;Safety&lt;/h2&gt;
+&lt;p&gt;So you think you have the budget, you have the materials and tools, you have
+the programming expertise and strong servos to handle the inertia, what could
+possibly happen.&lt;/p&gt;
+&lt;p&gt;Strong servos, larger batteries, high currents, long reach of the limbs, high
+movement speeds – it all means trouble. You will need safety measures. Force
+stop buttons, one on the robot itself (hardware, brutally cutting the power),
+and one remote (so that you don’t have to chase your robot through a hole in
+made in the wall). Suspensions mechanisms. Safety gear for you to wear. Fire
+extinguisher capable of containing a LiPo battery fire. Circuit breakers.
+Someone to check periodically if you are trapped under your robot’s weight…&lt;/p&gt;
+&lt;p&gt;It’s all extra work, extra cost and extra risk. Why take it, if you can instead
+have a robot the size of a hamster that behaves funny when something goes
+wrong, and tickles instead of crushing your bones?&lt;/p&gt;
+&lt;/section&gt;
+&lt;section id="convenience"&gt;
+&lt;h2&gt;Convenience&lt;/h2&gt;
+&lt;p&gt;I left the most important reason for the end. Small robots are convenient.&lt;/p&gt;
+&lt;p&gt;You can work with them directly on your desktop, connect them to your computer,
+adjust easily with just a screwdriver. You can store them in your drawer. You
+can recharge them from your phone charger. You can take them with you to
+conferences and workshops. You can fly with them in your carry-on baggage (as
+long as they don’t have anything that looks like a clock on them). When
+something goes wrong or breaks, you can simply pick them up and fix.&lt;/p&gt;
+&lt;p&gt;Not so easy with larger robots. You will need to test them on the floor, in a
+garage or even outside. You will need a complete suite of tools to work on
+them, and a dedicated storage space to keep them. Special battery charger.
+Taking them anywhere involves careful packaging or even loading onto a car. For
+flight, you have to remove anything that is sensitive to low temperature and
+pressure, as it’s going to go in the check-in baggage. Also be prepared to have
+to re-fasten all the screws on it that came loose due to vibrations. When
+something goes wrong or breaks, you have to call the mason to fix your house…&lt;/p&gt;
+&lt;/section&gt;
+&lt;section id="conclusion"&gt;
+&lt;h2&gt;Conclusion&lt;/h2&gt;
+&lt;p&gt;Make your robots as small, as practically possible.&lt;/p&gt;
+&lt;/section&gt;
+&lt;/section&gt;
+</content>
+    <link href="http://dopieralski.pl/posts/2021-12-19-small-robots/" rel="alternate"/>
+    <summary>In which we learn why it’s much easier to build small robots than large ones.</summary>
+    <published>2021-12-19T00:00:00+01:00</published>
+  </entry>
+  <entry>
     <id>http://dopieralski.pl/posts/2022-01-22-circuitpython/</id>
-    <updated>2022-01-22T00:00:00Z</updated>
-    <published>2022-01-22T00:00:00Z</published>
-    <link href="http://dopieralski.pl/posts/2022-01-22-circuitpython/" />
-    <author>
-      <name></name>
-    </author>
-    <content type="html">&lt;div class=&quot;section&quot; id=&quot;circuitpython-in-2022&quot;&gt;
+    <title>CircuitPython in 2022</title>
+    <updated>2022-01-22T00:00:00+01:00</updated>
+    <content type="html">&lt;section id="circuitpython-in-2022"&gt;
 
 &lt;p&gt;As every year, it’s time for a yearly summary and plans of all things I do
 that are related to CircuitPython.&lt;/p&gt;
-&lt;div class=&quot;section&quot; id=&quot;the-projects&quot;&gt;
+&lt;section id="the-projects"&gt;
 &lt;h2&gt;The Projects&lt;/h2&gt;
 &lt;p&gt;This year I made a record number of keyboards, and also greatly improved my
 keyboard library, uKeeb. Some features were added, because CircuitPython now
@@ -47,8 +480,8 @@ debugging it, but why it never gets set is a mystery to me, and nobody
 seems to be interested in fixing it. I worked around it in Stage library
 by simply setting the backlight pin high, not using PWM at all, but I got
 bitten by the same bug recently in the ocarina code.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;section&quot; id=&quot;the-future&quot;&gt;
+&lt;/section&gt;
+&lt;section id="the-future"&gt;
 &lt;h2&gt;The Future&lt;/h2&gt;
 &lt;p&gt;This year I want to finish FluffBug at least to the point where it walks and
 uses the leg sensors and the distance sensors. I wish I could get the camera
@@ -66,8 +499,8 @@ cheaper version of the PewPew console, with a custom LCD screen.&lt;/p&gt;
 &lt;p&gt;I might be making another handheld game console, with a 3.2”
 screen and ESP32-S2 as the brains, but I’m not entirely sure yet. I’m doing
 research on how viable it would be, and collecting parts.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;section&quot; id=&quot;conclusion&quot;&gt;
+&lt;/section&gt;
+&lt;section id="conclusion"&gt;
 &lt;h2&gt;Conclusion&lt;/h2&gt;
 &lt;p&gt;This year brought some cool developments around USB and keyboards, but also
 a lot of frustration with keeping my existing projects working despite new
@@ -80,444 +513,12 @@ I will focus on the Lolin S2 Mini boards for my projects this year, however,
 while I mentioned some things I hope to work on, I am aware that I have
 very little energy left for this. Hopefully my health and the overall global
 situation will improve.&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
+&lt;/section&gt;
+&lt;/section&gt;
 </content>
-  </entry>
-  <entry xml:base="http://dopieralski.pl/blog/category/electronics/atom.xml">
-    <title type="text">Build Small Robots</title>
-    <id>http://dopieralski.pl/posts/2021-12-19-small-robots/</id>
-    <updated>2021-12-19T00:00:00Z</updated>
-    <published>2021-12-19T00:00:00Z</published>
-    <link href="http://dopieralski.pl/posts/2021-12-19-small-robots/" />
-    <author>
-      <name></name>
-    </author>
-    <content type="html">&lt;div class=&quot;section&quot; id=&quot;build-small-robots&quot;&gt;
-
-&lt;p&gt;In which we learn why it’s much easier to build small robots than large ones.&lt;/p&gt;
-&lt;div class=&quot;section&quot; id=&quot;the-cube-law&quot;&gt;
-&lt;h2&gt;The Cube Law&lt;/h2&gt;
-&lt;p&gt;A lot of reasons for making your robots small comes from the cube law. This law
-gives you the relation between the size of an object and its volume (there is
-also the square law, that gives you the relation between the size and the
-area). It says that as your robot grows in size, its volume will grow
-proportionally to the third power of that size (also called cube, hence the
-law’s name). Consider the following two example robots:&lt;/p&gt;
-&lt;ul class=&quot;simple&quot;&gt;
-&lt;li&gt;Dimensions 5×5×5cm, volume 125cm³, weight 125g&lt;/li&gt;
-&lt;li&gt;Dimensions 10×10×10cm, volume 1000cm³, weight 1000g&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;(I’m assuming that in both cases the average density of the robot doesn’t
-change, that is, that it’s not almost empty in the second case. As we will see
-later, that’s quite accurate, or even optimistic.)&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;section&quot; id=&quot;actuator-strength&quot;&gt;
-&lt;h2&gt;Actuator Strength&lt;/h2&gt;
-&lt;p&gt;“Actuator” is a fancy name for whatever makes your robot move: servo, motor,
-artificial muscle, memory metal, hydraulics, pneumatics, etc. As the size and
-weight of your robot grows, so has to the strength of the actuators it uses.&lt;/p&gt;
-&lt;p&gt;For instance, consider a servo. Its strength (in this case called torque) is
-usually expressed in kilograms (of force) times centimeters, or newton meters.
-If a servo has 1kg×cm of torque, it means it can lift 1kg of weight on a 1cm
-long lever. Since the levers scale linearly, it means it could also lift 0.5kg
-on 2cm long lever, or 2kg on 0.5cm long lever, etc. You can see already that if
-you make the robot’s legs twice as long, you will need twice as much torque.
-But that’s assuming that the weight remains the same. From the cube law you
-know, that the weight is going to grow fast, so in reality larger robots will
-need a lot more torque.&lt;/p&gt;
-&lt;p&gt;But there is another thing. The smaller the servos, the lighter and cheaper
-they are. Sure, the torque also gets smaller, but not nearly as fast. Consider
-those two example servos:&lt;/p&gt;
-&lt;ul class=&quot;simple&quot;&gt;
-&lt;li&gt;HK-282A Ultra-Micro Servo: weight 2.2g, torque 0.11kg*cm, price 3 EUR&lt;/li&gt;
-&lt;li&gt;S3027 Metal Gear Servo: weight 20g, torque 2.5kg*cm, price 20 EUR&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;As you can see, the smaller servo can raise itself on a lever half a meter
-long! The larger one, almost 10 times heavier and over 20 times stronger, can
-only do 125cm. And it will be similar with any other parameter: price, speed,
-amount of current needed, etc. At some point the parameters will be so bad,
-that you will have to switch to hydraulics.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;section&quot; id=&quot;material-strength&quot;&gt;
-&lt;h2&gt;Material Strength&lt;/h2&gt;
-&lt;p&gt;It’s not just the actuators that need to be stronger. They are connected to the
-structural elements, that have to bear all that force too. And thanks to the
-cube law, it doesn’t suffice for them to be just longer and thicker – they
-actually have to be made from stronger and lighter materials.&lt;/p&gt;
-&lt;p&gt;Stronger materials are harder to machine and generally work with. You can no
-longer get away with hot-gluing parts together: you will need nuts and bolts,
-and possibly also special mechanical design. And you will need specialized
-tools.&lt;/p&gt;
-&lt;p&gt;And when you finally get your robot together, it will be very fragile. Why do
-you think all those large robots in laboratories always operate with a safety
-line hanging from the ceiling over them? That’s because if they fall down, they
-will smash into pieces. The materials they use are strong enough to hold them
-together, but not strong enough to survive a fall.&lt;/p&gt;
-&lt;p&gt;On the other hand, my smallest robots survived repeated falls from my desk to
-the floor without even a scratch. If you make a robot the size of a cockroach,
-you can drop it from the roof of a building. It will simply not gain enough
-speed falling through the air to damage it on impacting the floor.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;section&quot; id=&quot;inertia&quot;&gt;
-&lt;h2&gt;Inertia&lt;/h2&gt;
-&lt;p&gt;So you finished your large robot, and now you are programming it. For a start,
-you just make the limbs move straight to their destinations and stopping once
-they get there. Your robot falls, the limbs break off, the servos strip gears
-and there are huge spikes of current drawn from the battery. What happens?&lt;/p&gt;
-&lt;p&gt;Well, you cannot just move a heavy object with high speed and then have it stop
-instantly. Inertia will make it keep on moving, and the servomechanisms will
-need to do a lot of extra work (and endure great forces of stress) to stop it
-and move it back where it belongs. That also applies when moving the whole body
-of the robot while walking – your effective Zero Movement Point no longer
-coincides with the center of mass of your robot. You have to start taking the
-speed and acceleration into consideration in your motion planning, and thus all
-your movement equations become second degree differential equations without a
-closed-form solution. Yay!&lt;/p&gt;
-&lt;p&gt;On the other hand, if you keep the robot small, all its elements light and the
-servos have abundance of power, you can pretty much ignore inertia and get away
-with writing much simpler code that only takes into account the current
-positions of the limbs.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;section&quot; id=&quot;safety&quot;&gt;
-&lt;h2&gt;Safety&lt;/h2&gt;
-&lt;p&gt;So you think you have the budget, you have the materials and tools, you have
-the programming expertise and strong servos to handle the inertia, what could
-possibly happen.&lt;/p&gt;
-&lt;p&gt;Strong servos, larger batteries, high currents, long reach of the limbs, high
-movement speeds – it all means trouble. You will need safety measures. Force
-stop buttons, one on the robot itself (hardware, brutally cutting the power),
-and one remote (so that you don’t have to chase your robot through a hole in
-made in the wall). Suspensions mechanisms. Safety gear for you to wear. Fire
-extinguisher capable of containing a LiPo battery fire. Circuit breakers.
-Someone to check periodically if you are trapped under your robot’s weight…&lt;/p&gt;
-&lt;p&gt;It’s all extra work, extra cost and extra risk. Why take it, if you can instead
-have a robot the size of a hamster that behaves funny when something goes
-wrong, and tickles instead of crushing your bones?&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;section&quot; id=&quot;convenience&quot;&gt;
-&lt;h2&gt;Convenience&lt;/h2&gt;
-&lt;p&gt;I left the most important reason for the end. Small robots are convenient.&lt;/p&gt;
-&lt;p&gt;You can work with them directly on your desktop, connect them to your computer,
-adjust easily with just a screwdriver. You can store them in your drawer. You
-can recharge them from your phone charger. You can take them with you to
-conferences and workshops. You can fly with them in your carry-on baggage (as
-long as they don’t have anything that looks like a clock on them). When
-something goes wrong or breaks, you can simply pick them up and fix.&lt;/p&gt;
-&lt;p&gt;Not so easy with larger robots. You will need to test them on the floor, in a
-garage or even outside. You will need a complete suite of tools to work on
-them, and a dedicated storage space to keep them. Special battery charger.
-Taking them anywhere involves careful packaging or even loading onto a car. For
-flight, you have to remove anything that is sensitive to low temperature and
-pressure, as it’s going to go in the check-in baggage. Also be prepared to have
-to re-fasten all the screws on it that came loose due to vibrations. When
-something goes wrong or breaks, you have to call the mason to fix your house…&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;section&quot; id=&quot;conclusion&quot;&gt;
-&lt;h2&gt;Conclusion&lt;/h2&gt;
-&lt;p&gt;Make your robots as small, as practically possible.&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-</content>
-  </entry>
-  <entry xml:base="http://dopieralski.pl/blog/category/electronics/atom.xml">
-    <title type="text">CircuitPython in 2021</title>
-    <id>http://dopieralski.pl/posts/2021-01-09-circuitpython/</id>
-    <updated>2021-01-09T00:00:00Z</updated>
-    <published>2021-01-09T00:00:00Z</published>
-    <link href="http://dopieralski.pl/posts/2021-01-09-circuitpython/" />
-    <author>
-      <name></name>
-    </author>
-    <content type="html">&lt;div class=&quot;section&quot; id=&quot;circuitpython-in-2021&quot;&gt;
-
-&lt;p&gt;It is once again time for &lt;a class=&quot;reference external&quot; href=&quot;https://blog.adafruit.com/2021/01/01/where-should-circuitpython-go-in-2021-circuitpython2021-circuitpython/&quot;&gt;Adafruit’s prompt for
-feedback on CircuitPython&lt;/a&gt;. Let’s see what I did
-last year and what I hope for this year.&lt;/p&gt;
-&lt;div class=&quot;section&quot; id=&quot;the-projects&quot;&gt;
-&lt;h2&gt;The Projects&lt;/h2&gt;
-&lt;p&gt;This year was slow project-wise. I did some work on a new, cheaper version of
-my walking robots, but they still need a lot of programming work. Then I went
-into the rabbit hole of low-profile mechanical keyboards, built half a dozen of
-them, until I made a perfect one for me. In the process I also made a library
-for keyboards that has substantially lower resource requirements than existing
-ones.&lt;/p&gt;
-&lt;p&gt;I also ported the Stage game library to a few new platforms, re-made the menu
-program for it, and merged a couple of improvements from other contributors.&lt;/p&gt;
-&lt;p&gt;Right now I’m working on a 6-hole MIDI ocarina, and I’m considering doing a
-business-card sized flat version of PewPew Standalone, with bi-color LEDs.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;section&quot; id=&quot;the-future&quot;&gt;
-&lt;h2&gt;The Future&lt;/h2&gt;
-&lt;p&gt;After most of my plans went awry in 2020, I’m careful about planning anything
-this year. I think I will just be making small projects to keep myself sane,
-and see how the situation develops.&lt;/p&gt;
-&lt;p&gt;In terms of development of CircuitPython, I’m really looking forward to the
-dynamic USB descriptors, because that will let me make my keyboards more usable
-for the general public, and then it will make sense to actually publish them
-properly.&lt;/p&gt;
-&lt;p&gt;It’s also nice to see the work around deep sleep, as this might let me save on
-some parts in the future, moving the power switch to software.&lt;/p&gt;
-&lt;p&gt;The work around reset, safe mode and what file should be run after reset will
-allow me optimize the menu program for PewPews a little better, giving more
-memory to the games.&lt;/p&gt;
-&lt;p&gt;From what I can see most work is still focused on ESP32-S2, but I don’t find
-this particularly interesting for myself. I’m not a great fan of wireless
-solutions in general, and WiFi in particular seems a bit heavy for
-microcontroller-based projects. The need for certification also limits greatly
-what kind of projects I could make with this.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;section&quot; id=&quot;conclusion&quot;&gt;
-&lt;h2&gt;Conclusion&lt;/h2&gt;
-&lt;p&gt;It’s great to see the CircuitPython project progressing and getting more
-popular, and I am very grateful to all contributors for it. Having said that,
-I think it is slowly reaching a point where it has most of what is needed, so
-it’s difficult to be excited about new developments — they are no longer such
-big steps forward. Of course in the long run it is a good thing — we can focus
-more on things we are building with the tool, not on the tool itself.&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-</content>
-  </entry>
-  <entry xml:base="http://dopieralski.pl/blog/category/electronics/atom.xml">
-    <title type="text">CircuitPython in 2020</title>
-    <id>http://dopieralski.pl/posts/2020-01-02-circuitpython/</id>
-    <updated>2020-01-02T00:00:00Z</updated>
-    <published>2020-01-02T00:00:00Z</published>
-    <link href="http://dopieralski.pl/posts/2020-01-02-circuitpython/" />
-    <author>
-      <name></name>
-    </author>
-    <content type="html">&lt;div class=&quot;section&quot; id=&quot;circuitpython-in-2020&quot;&gt;
-
-&lt;p&gt;It looks like I’m mostly using this blog to answer &lt;a class=&quot;reference external&quot; href=&quot;https://blog.adafruit.com/2020/01/01/what-do-you-want-from-circuitpython-in-2020-circuitpython2020-circuitpython/&quot;&gt;Adafruit’s prompts for
-feedback on CircuitPython&lt;/a&gt;. Oh well, so be it.&lt;/p&gt;
-&lt;div class=&quot;section&quot; id=&quot;the-projects&quot;&gt;
-&lt;h2&gt;The Projects&lt;/h2&gt;
-&lt;div class=&quot;section&quot; id=&quot;pewpew&quot;&gt;
-&lt;h3&gt;PewPew&lt;/h3&gt;
-&lt;div class=&quot;system-message&quot;&gt;
-&lt;p class=&quot;system-message-title&quot;&gt;System Message: INFO/1 (&lt;tt class=&quot;docutils&quot;&gt;/home/sheep/dev/blog/blog/posts/2020-01-02-circuitpython.rst&lt;/tt&gt;, line 6); &lt;em&gt;&lt;a href=&quot;#id1&quot;&gt;backlink&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
-Duplicate implicit target name: “pewpew”.&lt;/div&gt;
-&lt;p&gt;The &lt;a class=&quot;reference external&quot; href=&quot;http://pewpew.rtfd.io&quot;&gt;PewPew&lt;/a&gt; educational game console project is still
-alive, and there has been some progress. EuroPython gave out 1400 devices to
-Python developers at a conference, and I helped design and manufacture some
-custom units for some more conferences. &lt;a class=&quot;reference external&quot; href=&quot;http://makerfabs.com&quot;&gt;MakerFabs&lt;/a&gt; —
-the fabrication company that is helping me with this is now selling PewPew
-Standalone consoles for $10 a piece for everyone who have any kind of workshop,
-entertainment or hacking needs. There is even a mailing list at
-&lt;code class=&quot;docutils literal notranslate&quot;&gt;&lt;span class=&quot;pre&quot;&gt;pewpew&amp;#64;python.org&lt;/span&gt;&lt;/code&gt; and I’m trying to keep everyone updated by sending
-monthly summaries to it (I only skipped one month so far).&lt;/p&gt;
-&lt;p&gt;However, the device is not perfect, and I have decided to pursue the successor
-to &lt;a class=&quot;reference external&quot; href=&quot;http://ugame.rtfd.io&quot;&gt;µGame&lt;/a&gt; to try an fix that. It’s a blend of PewPew
-and µGame, being able to run programs for both (and also MakerCode Arcade and
-PyGamer/PyBadge device too). It’s going to be considerably cheaper than
-Adafruit’s offerings, but it’s also not supposed to be competing with them.
-I needed the display to show the error messages, because those turned out to
-be the hardest part of working with PewPews — not everyone can get the REPL
-going easily. In any case, I worked on the successor, PewPew M4 for a good part
-of the last year, and it’s ready now. I’m going to be sending out the first
-units to reviewers and people interested in development for it soon, and then
-we will try to make the devices available through MakerFabs just like the
-PewPew Standalone.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;section&quot; id=&quot;robots&quot;&gt;
-&lt;h3&gt;Robots&lt;/h3&gt;
-&lt;p&gt;I still have the low-cost spider-like walking robots on my drawing boards, and
-they are going to run CircuitPython too. The plan to re-start the development
-with a more integrated Kubik M0 unfortunately failed: after fixing some bugs
-with PWM channels, it turned out that the SAMD21 that I was using simply
-doesn’t have enough PWM outputs to drive all the 12 servos of this robot. That
-means I probably need a bigger chip, and it would probably make more sense to
-use the BLE-capable NRF52840 and not the SAMD51. But that also means it will be
-Kubik M4 and not M0, and I still need to do my research about the NRF52840. I
-have the NRF52840 Feather at hand, but it’s the non-express version, which is
-apparently no longer supported. So either I bring back the support for it, hack
-an SPI flash chip on it, or switch to an express board. We will see.&lt;/p&gt;
-&lt;p&gt;In the mean time, I also resurrected the SpiderWing, which can work with pretty
-much any Feather board. The recent modifications added battery protection to
-it, which is an important feature. I will use it for a platform for
-experimenting with BLE robots.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;section&quot; id=&quot;keyboards&quot;&gt;
-&lt;h3&gt;Keyboards&lt;/h3&gt;
-&lt;p&gt;After visiting a local annual meetup of mechanical keyboard enthusiasts, I got
-an urge to make a very flat keyboard (just a PCB and low-profile choc
-switches), and since I didn’t have much room on it, I decided to put a SAMD21
-on it. Once I had that, it was very easy to write a simple firmware for it,
-especially since the USB support really improved recently. There was no support
-for CapsLock, but it was surprisingly easy to hack it on with the help of
-Adafruit staff, and there is now a pull request in works for adding it
-properly. The ability to disable the drive, midi, mouse and all those other
-funky USB endpoints also helped a lot.&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&quot;section&quot; id=&quot;circuitpython-development&quot;&gt;
-&lt;h2&gt;CircuitPython Development&lt;/h2&gt;
-&lt;p&gt;I ended up not contributing as much as I wanted to CircuitPython development
-this last year, but I am still amazed with the progress it made. The display
-support is now very good, and there is no need for my TextMode library anymore.
-You can do pretty much anything with the displayio that you could do with the
-stage library, and much more on top of that. The stage is still a little bit
-faster and uses a bit less memory (because of the limitations it has), so I
-keep using and maintaining it.&lt;/p&gt;
-&lt;p&gt;I still didn’t have any time to play with the wireless capabilities: the Nina
-firmware, the awesome BLE work, the LoRa and other radio modules. Maybe this
-year I will have more luck with it.&lt;/p&gt;
-&lt;p&gt;I did add (non-animated) GIF support to the loadimage library (and also to
-stage), and it could easily be extended to support animation as well. I also
-did some small improvement with buffer allocation for the audio module, and
-that CapsLock support thing most recently — but I would really love to do more.&lt;/p&gt;
-&lt;p&gt;I didn’t get to implement any of my last-year crazy project ideas. They are up
-for grabs.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;section&quot; id=&quot;micropython-development&quot;&gt;
-&lt;h2&gt;MicroPython Development&lt;/h2&gt;
-&lt;p&gt;Even though I no longer pay much attention to that project, I did notice some
-progress in there. Most importantly for me, there is now some support for
-dynamically loadable C modules, so I tried to port the Stage library to that.
-Unfortunately it doesn’t seem to be mature/featurefull/finished enough for it
-to work, and the help is as usual non-existent.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;section&quot; id=&quot;future-plans&quot;&gt;
-&lt;h2&gt;Future Plans&lt;/h2&gt;
-&lt;p&gt;I don’t really have any are in CircuitPython right now that I would
-particularly want to work on and improve. I really want to give more focus
-to the PewPew, the Stage library, and the examples and tutorials for it.&lt;/p&gt;
-&lt;p&gt;I would also love to see the PewPew M4 become popular/useful, and people
-writing games for it. I think there is a need for some place where people
-can find CircuitPython-based games for the µGame, PyBadge, PyGamer, PyPortal,
-and PewPew M4, download and play them, see the code, read the tutorials about
-making them, and so on. I also think it would be nice if game creators could
-sell their games — I’m thinking about a platform like itch.io for this.&lt;/p&gt;
-&lt;p&gt;I want to get back to the robots for a little bit, and I have some nice ideas
-for them, though nothing overly specific yet. We will see how it goes with the
-wireless communication research.&lt;/p&gt;
-&lt;p&gt;I’m waiting with bated breath for the ESP32-S2 board, but it will be probably
-another year or two before CircuitPython works on that (if ever).&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;section&quot; id=&quot;summary&quot;&gt;
-&lt;h2&gt;Summary&lt;/h2&gt;
-&lt;p&gt;It has been an amazing year for CircuitPython, and a huge amount of work has
-been done. I wish I could have been more involved, but day job interferes. I’m
-going to bring back some of my old projects this year and see if I can make
-them work even better with CircuitPython now.&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-</content>
-  </entry>
-  <entry xml:base="http://dopieralski.pl/blog/category/electronics/atom.xml">
-    <title type="text">CircuitPython in 2019</title>
-    <id>http://dopieralski.pl/posts/2019-01-04-circuitpython/</id>
-    <updated>2019-01-04T00:00:00Z</updated>
-    <published>2019-01-04T00:00:00Z</published>
-    <link href="http://dopieralski.pl/posts/2019-01-04-circuitpython/" />
-    <author>
-      <name></name>
-    </author>
-    <content type="html">&lt;div class=&quot;section&quot; id=&quot;circuitpython-in-2019&quot;&gt;
-
-&lt;p&gt;Adafruit has requested &lt;a class=&quot;reference external&quot; href=&quot;https://blog.adafruit.com/2018/12/17/what-do-you-want-from-circuitpython-in-2019-circuitpython2019-circuitpython/&quot;&gt;on their blog&lt;/a&gt;
-feedback and comments about CircuitPython in 2019, so here I go. I am mostly
-going to talk about three things: the projects that I personally want to do
-using it, the ongoing developments that I would love to see finished this year,
-and some completely crazy stuff that could potentially be added if someone
-smarter than me and with copious free time worked on it.&lt;/p&gt;
-&lt;div class=&quot;section&quot; id=&quot;the-projects&quot;&gt;
-&lt;h2&gt;The Projects&lt;/h2&gt;
-&lt;div class=&quot;section&quot; id=&quot;pewpew&quot;&gt;
-&lt;h3&gt;PewPew&lt;/h3&gt;
-&lt;div class=&quot;system-message&quot;&gt;
-&lt;p class=&quot;system-message-title&quot;&gt;System Message: INFO/1 (&lt;tt class=&quot;docutils&quot;&gt;/home/sheep/dev/blog/blog/posts/2019-01-04-circuitpython.rst&lt;/tt&gt;, line 6); &lt;em&gt;&lt;a href=&quot;#id1&quot;&gt;backlink&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
-Duplicate implicit target name: “pewpew”.&lt;/div&gt;
-&lt;p&gt;The immediate thing with highest priority right now is the &lt;a class=&quot;reference external&quot; href=&quot;http://pewpew.rtfd.io&quot;&gt;PewPew&lt;/a&gt; educational game console, and the workshop I’m
-planning to run with it really soon now (™). I’m rather happy with the hardware
-and the &lt;code class=&quot;docutils literal notranslate&quot;&gt;&lt;span class=&quot;pre&quot;&gt;pew&lt;/span&gt;&lt;/code&gt; library on it, but I need to work on preparing more learning
-materials and example games for it. I also need to reorganize the repository to
-make it easier to follow and contribute to it.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;section&quot; id=&quot;game-and-successors&quot;&gt;
-&lt;h3&gt;µGame and Successors&lt;/h3&gt;
-&lt;p&gt;A much lower priority thing is to write those games that I have built the
-&lt;a class=&quot;reference external&quot; href=&quot;http://ugame.rtfd.io&quot;&gt;µGame&lt;/a&gt; for, and possibly also port/rewrite those games
-for Adafruit’s game console when it is finally released. That is probably not
-going to happen very soon, though, so I have some time. If motivation suffices,
-I will probably also improve the &lt;code class=&quot;docutils literal notranslate&quot;&gt;&lt;span class=&quot;pre&quot;&gt;stage&lt;/span&gt;&lt;/code&gt; game library that µGame uses, and
-create more ready-to-use resources for it.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;section&quot; id=&quot;kubik-and-tote&quot;&gt;
-&lt;h3&gt;Kubik and Tote&lt;/h3&gt;
-&lt;p&gt;While the homebrew game consoles took most of my free time last year, this year
-I want to come back to my robots for a bit. In particular, I want to finish the
-design and programming of ESP8266-based version of &lt;a class=&quot;reference external&quot; href=&quot;http://tote.rtfd.io&quot;&gt;Tote&lt;/a&gt;, and to finish the Kubik M0 robot (possibly switching
-it to NRF52 in the process). There is also a number of old robots I would like
-to re-visit and finish, such as the &lt;a class=&quot;reference external&quot; href=&quot;https://hackaday.io/project/7168-logicoma-kun&quot;&gt;Logicoma-kun&lt;/a&gt;, &lt;a class=&quot;reference external&quot; href=&quot;https://hackaday.io/project/10665-pony-bot&quot;&gt;Pony Bot&lt;/a&gt;, and &lt;a class=&quot;reference external&quot; href=&quot;https://hackaday.io/project/10534-hexapod-henk-mkii&quot;&gt;Henk the Hexapod&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;I also need to explore more better ways of doing inverse kinematics,
-interpreting accelerometer output, reacting to touch sensors on the legs, and
-possibly also to force sensors in the joints and complaint motion.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;section&quot; id=&quot;badges-and-wearables&quot;&gt;
-&lt;h3&gt;Badges and Wearables&lt;/h3&gt;
-&lt;p&gt;The CircuitPython Badge project is suspended, as the people who wanted to work
-with me to get it to conferences gave up on it, but if there is a Python
-conference that wants it, I might work on it again.&lt;/p&gt;
-&lt;p&gt;I also have this wearable hub prototype, for which I want to make some
-interactive jewelry and accessories. No idea about anything specific yet, but I
-think I will have cat ears for sure, at the least. Maybe also a video pendant.&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&quot;section&quot; id=&quot;circuitpython-development&quot;&gt;
-&lt;h2&gt;CircuitPython Development&lt;/h2&gt;
-&lt;div class=&quot;section&quot; id=&quot;textmode-library&quot;&gt;
-&lt;h3&gt;TextMode Library&lt;/h3&gt;
-&lt;p&gt;I really want to write a CircuitPython library that would let you do something
-like the old DOS text mode display, and that would support a variety of
-different displays and fonts. I already have some prototypes for OLED and TFT
-displays, but I need to sit down and bring it all together with a consistent
-API.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;section&quot; id=&quot;built-in-display-support&quot;&gt;
-&lt;h3&gt;Built-in Display Support&lt;/h3&gt;
-&lt;p&gt;I’m waiting with bated breath for the built-in support for displays that is
-being worked on. It will not only make it trivially easy to display the errors
-and the REPL console on any display connected to CircuitPython boards, but also
-let do high-performance graphic operations, and create games like on the µGame.
-This is probably also a prerequisite for that game console board to be released
-by Adafruit, so I really can’t wait for it.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;section&quot; id=&quot;wireless-communication&quot;&gt;
-&lt;h3&gt;Wireless Communication&lt;/h3&gt;
-&lt;p&gt;There is a new library for using ESP8266 as a WiFi module in the AT mode, but
-also some improvement to the RFM9x module support, and of course support for
-NRF52 chips means there is Bluetooth support coming. I’m really looking forward
-to being able to use any of those in CircuitPython, and I hope that the coming
-year will bring a standardised and consistent API for wireless communication.&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&quot;section&quot; id=&quot;crazy-project-ideas&quot;&gt;
-&lt;h2&gt;Crazy Project Ideas&lt;/h2&gt;
-&lt;div class=&quot;section&quot; id=&quot;speech-synthesizer&quot;&gt;
-&lt;h3&gt;Speech Synthesizer&lt;/h3&gt;
-&lt;p&gt;The same speech synthesizer that is used to make the Micro:bit talk should be
-very easy to port to CircuitPython, and should even have much better sound
-quality by using the DAC.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;section&quot; id=&quot;speech-recognition&quot;&gt;
-&lt;h3&gt;Speech Recognition&lt;/h3&gt;
-&lt;p&gt;At the same time, it might be possible to use the stronger M4 boards to do
-trigger word recognition, using the same algorithm as the Snowboy program for
-Raspberry Pi. This requires a lot of knowledge and patience that I don’t have,
-but it could be potentially very useful project.&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&quot;section&quot; id=&quot;summary&quot;&gt;
-&lt;h2&gt;Summary&lt;/h2&gt;
-&lt;p&gt;That’s all I have right now. As you can see, there is a lot of hope and very
-few promises. That’s because the trend in the recent years is for me to have
-less and less time and motivation for my projects. Perhaps the trend will
-reverse at some point, but until then I try to not plan ahead too much.&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-</content>
+    <link href="http://dopieralski.pl/posts/2022-01-22-circuitpython/" rel="alternate"/>
+    <summary>As every year, it’s time for a yearly summary and plans of all things I do
+that are related to CircuitPython.</summary>
+    <published>2022-01-22T00:00:00+01:00</published>
   </entry>
 </feed>
