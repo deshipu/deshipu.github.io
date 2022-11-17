@@ -21,7 +21,9 @@ Contact Information
 
 Other Places
 ============
+
 .. raw:: html
+
     <ul>
         <li>Mastodon: <a rel="me" href="https://fosstodon.org/@deshipu">@deshipu@fosstodon.org</a></li>
         <li>Hackaday: <a href="https://hackaday.io/deshipu">deshipu</a></li>
