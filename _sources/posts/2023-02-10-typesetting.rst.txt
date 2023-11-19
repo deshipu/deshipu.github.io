@@ -1,0 +1,98 @@
+.. post:: Feb 10, 2023
+   :category: usability
+
+Design for Exploration
+**********************
+
+
+Typesetting Software
+====================
+
+Imagine a text processor, similar to Wordstar, but more closely modelled around
+the tried and tested workflows of professional typesetters.
+
+You begin by composing the text of your copy. But to avoid mistakes and to make
+use of the saved work you did before, you don't simply type the words. You
+select them from a set of dictionaries that were created by other users,
+organized according to whatever needs those users had. Of course if you need
+any word that is not already in the dictionary, you can always create your own
+custom dictionary and add any words you need to it.
+
+Once you have all your words, you connect them into sentences. Each sentence gets assigned a name, so that you can refer to it later on easily.
+
+Then you have to select the fonts for your words. Most words will already have their fonts assigned by default in the dictionary, but you might want to make a word bold or italic, or select alternate forms for some letters, maybe a long S or some ligature, or change the kerning subtly to make it look better.
+
+Finally, you get to place all those words. You will have them dumped on the page, and you can move them around and arrange them carefully. The sentence names you set earlier are used to show you the "ratlines" connecting the words, to help you get them in the right order. You might even use an "autotypesetter" to arrange the words automatically, but usually you will need to do some manual adjustments.
+
+Once you have all that, you can simply hit "print" to have a beautiful page of text printed.
+
+If the above described user interface seems to you to be unnecessarily clunky
+and complicated for such a "simple" task as writing a page of text to be
+printed, remember that the process is only seems to be simple when you don't
+care about all those details. The user interface is fake, of course, but it's
+an example of something you might come up with if you researched carefully how
+the printing press staff is going about the task, and tried to re-create that
+process in the computer.
+
+KiCAD
+=====
+
+That is, incidentally, exactly what the authors of PCB design software KiCAD
+did, and the end result is equally baroque:
+
+You have to start by drawing a schematic for the circuit you plan to design. Just like with the words, you don't simply draw the symbols that you need, but instead you select them from a vast library of electronic symbols, divided into several "libraries" by random criteria. If you need a symbol that doesn't exist in any of those libraries, you have to draw it, place it in a new library, and then you can select it from there.
+
+Once you have all your symbols placed, you connect them with wires. And again,
+all wires that are connected together form a net, and get assigned a unique net
+name. You will need those names later. Even if two nets are not visually
+connected, but share the same net, they are considered connected, because who
+cares how hard that is to read. Our program only cares about the nets.
+
+Once you have your schematic drawn, you have to select a footprint for each of the symbols. A footprint is the arrangement of holes and pads on the PCB where the physical part will be placed. And of course many symbols will already have a default footprint, but some will have several possibilities, and if it's a new part, you will have to make a custom one yourself. So you still have to got through this step manually.
+
+And finally, you get to see the actual layout of your PCB, with all the
+footprints dumped into a pile, and you can start arranging them, and connecting
+them with traces. There are tools like the autorouter that can help you with
+the connections sometimes, but they mostly come up with solutions that are
+worse than what you could do by hand.
+
+Once you have it all placed and connected, you can generate the gerber files and send them to your favorite PCB factory to be manufactured.
+
+Can we do better?
+=================
+
+I sure hope so! I mean, modern text processors don't work like described here,
+and while you often don't have such precise control on the output, they seem to
+be much easier to use. How do they do that?
+
+Well, first of all, they have given up on the division between the manuscript
+and the printed page. They show you the preview of the printed page right away
+– or at least some approximation of it, with some extra information like
+margins paragraph markers included. This merging of the two views, makes it
+much more intuitive, and obviates the need to go back and forth between them to
+make changes and then to see the effects of those changes and so on.
+
+You also don't need to search the dictionaries. You just type the word you
+need, and if it's not found in any dictionary, it will be marked by
+spellchecker as suspicious, but you are still allowed to have it on your page.
+And if you know you are going to use that new word more, adding it to the
+custom dictionary is just a question of a single command.
+
+And you don't have to assign a font and style to every word separately. You use
+the defaults most of the time, and then you can select parts of the text and
+change those defaults in bulk as needed. If you really want to, you can even
+change ligatures and alternate letter forms, though that is usually automated
+well enough that most people never need to touch it.
+
+Of course you are still limited to the fonts installed on your system, and if
+you need a custom glyph that is not included in any font, you will need to
+either make a new font (which is very complicated) or cheat by including it as
+an image or doing some similar trick. Font selection dialogs came a long way in
+modern word processors, but they still suck a lot. There is a lot that could be
+done to improve on them, starting with proper tagging and categorizing of the
+fonts themselves. Perhaps at some point we will be able to just describe what
+we want, instead of having to look for it in a long list? And maybe one day we
+will find a better way of sorting fonts than by name.
+
+But still, I think the text editing came a long way compared to some other
+computer assisted tasks, like PCB design.

@@ -2,137 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>http://dopieralski.pl/</id>
   <title>dopieralski.pl</title>
-  <updated>2022-11-17T20:08:45.807061+00:00</updated>
+  <updated>2023-11-19T21:41:49.870382+00:00</updated>
   <link href="http://dopieralski.pl/"/>
   <link href="http://dopieralski.pl/blog/atom.xml" rel="self"/>
   <generator uri="https://ablog.readthedocs.org/" version="0.10.33">ABlog</generator>
-  <entry>
-    <id>http://dopieralski.pl/posts/2020-01-02-circuitpython/</id>
-    <title>CircuitPython in 2020</title>
-    <updated>2020-01-02T00:00:00+01:00</updated>
-    <content type="html">&lt;section id="circuitpython-in-2020"&gt;
-
-&lt;p&gt;It looks like I’m mostly using this blog to answer &lt;a class="reference external" href="https://blog.adafruit.com/2020/01/01/what-do-you-want-from-circuitpython-in-2020-circuitpython2020-circuitpython/"&gt;Adafruit’s prompts for
-feedback on CircuitPython&lt;/a&gt;. Oh well, so be it.&lt;/p&gt;
-&lt;section id="the-projects"&gt;
-&lt;h2&gt;The Projects&lt;/h2&gt;
-&lt;section id="pewpew"&gt;
-&lt;h3&gt;PewPew&lt;/h3&gt;
-&lt;aside class="system-message"&gt;
-&lt;p class="system-message-title"&gt;System Message: INFO/1 (&lt;span class="docutils literal"&gt;/home/sheep/dev/ablog/dopieralski.pl/posts/2020-01-02-circuitpython.rst&lt;/span&gt;, line 6); &lt;em&gt;&lt;a href="#id1"&gt;backlink&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;Duplicate implicit target name: “pewpew”.&lt;/p&gt;
-&lt;/aside&gt;
-&lt;p&gt;The &lt;a class="reference external" href="http://pewpew.rtfd.io"&gt;PewPew&lt;/a&gt; educational game console project is still
-alive, and there has been some progress. EuroPython gave out 1400 devices to
-Python developers at a conference, and I helped design and manufacture some
-custom units for some more conferences. &lt;a class="reference external" href="http://makerfabs.com"&gt;MakerFabs&lt;/a&gt; —
-the fabrication company that is helping me with this is now selling PewPew
-Standalone consoles for $10 a piece for everyone who have any kind of workshop,
-entertainment or hacking needs. There is even a mailing list at
-&lt;code class="docutils literal notranslate"&gt;&lt;span class="pre"&gt;pewpew&amp;#64;python.org&lt;/span&gt;&lt;/code&gt; and I’m trying to keep everyone updated by sending
-monthly summaries to it (I only skipped one month so far).&lt;/p&gt;
-&lt;p&gt;However, the device is not perfect, and I have decided to pursue the successor
-to &lt;a class="reference external" href="http://ugame.rtfd.io"&gt;µGame&lt;/a&gt; to try an fix that. It’s a blend of PewPew
-and µGame, being able to run programs for both (and also MakerCode Arcade and
-PyGamer/PyBadge device too). It’s going to be considerably cheaper than
-Adafruit’s offerings, but it’s also not supposed to be competing with them.
-I needed the display to show the error messages, because those turned out to
-be the hardest part of working with PewPews — not everyone can get the REPL
-going easily. In any case, I worked on the successor, PewPew M4 for a good part
-of the last year, and it’s ready now. I’m going to be sending out the first
-units to reviewers and people interested in development for it soon, and then
-we will try to make the devices available through MakerFabs just like the
-PewPew Standalone.&lt;/p&gt;
-&lt;/section&gt;
-&lt;section id="robots"&gt;
-&lt;h3&gt;Robots&lt;/h3&gt;
-&lt;p&gt;I still have the low-cost spider-like walking robots on my drawing boards, and
-they are going to run CircuitPython too. The plan to re-start the development
-with a more integrated Kubik M0 unfortunately failed: after fixing some bugs
-with PWM channels, it turned out that the SAMD21 that I was using simply
-doesn’t have enough PWM outputs to drive all the 12 servos of this robot. That
-means I probably need a bigger chip, and it would probably make more sense to
-use the BLE-capable NRF52840 and not the SAMD51. But that also means it will be
-Kubik M4 and not M0, and I still need to do my research about the NRF52840. I
-have the NRF52840 Feather at hand, but it’s the non-express version, which is
-apparently no longer supported. So either I bring back the support for it, hack
-an SPI flash chip on it, or switch to an express board. We will see.&lt;/p&gt;
-&lt;p&gt;In the mean time, I also resurrected the SpiderWing, which can work with pretty
-much any Feather board. The recent modifications added battery protection to
-it, which is an important feature. I will use it for a platform for
-experimenting with BLE robots.&lt;/p&gt;
-&lt;/section&gt;
-&lt;section id="keyboards"&gt;
-&lt;h3&gt;Keyboards&lt;/h3&gt;
-&lt;p&gt;After visiting a local annual meetup of mechanical keyboard enthusiasts, I got
-an urge to make a very flat keyboard (just a PCB and low-profile choc
-switches), and since I didn’t have much room on it, I decided to put a SAMD21
-on it. Once I had that, it was very easy to write a simple firmware for it,
-especially since the USB support really improved recently. There was no support
-for CapsLock, but it was surprisingly easy to hack it on with the help of
-Adafruit staff, and there is now a pull request in works for adding it
-properly. The ability to disable the drive, midi, mouse and all those other
-funky USB endpoints also helped a lot.&lt;/p&gt;
-&lt;/section&gt;
-&lt;/section&gt;
-&lt;section id="circuitpython-development"&gt;
-&lt;h2&gt;CircuitPython Development&lt;/h2&gt;
-&lt;p&gt;I ended up not contributing as much as I wanted to CircuitPython development
-this last year, but I am still amazed with the progress it made. The display
-support is now very good, and there is no need for my TextMode library anymore.
-You can do pretty much anything with the displayio that you could do with the
-stage library, and much more on top of that. The stage is still a little bit
-faster and uses a bit less memory (because of the limitations it has), so I
-keep using and maintaining it.&lt;/p&gt;
-&lt;p&gt;I still didn’t have any time to play with the wireless capabilities: the Nina
-firmware, the awesome BLE work, the LoRa and other radio modules. Maybe this
-year I will have more luck with it.&lt;/p&gt;
-&lt;p&gt;I did add (non-animated) GIF support to the loadimage library (and also to
-stage), and it could easily be extended to support animation as well. I also
-did some small improvement with buffer allocation for the audio module, and
-that CapsLock support thing most recently — but I would really love to do more.&lt;/p&gt;
-&lt;p&gt;I didn’t get to implement any of my last-year crazy project ideas. They are up
-for grabs.&lt;/p&gt;
-&lt;/section&gt;
-&lt;section id="micropython-development"&gt;
-&lt;h2&gt;MicroPython Development&lt;/h2&gt;
-&lt;p&gt;Even though I no longer pay much attention to that project, I did notice some
-progress in there. Most importantly for me, there is now some support for
-dynamically loadable C modules, so I tried to port the Stage library to that.
-Unfortunately it doesn’t seem to be mature/featurefull/finished enough for it
-to work, and the help is as usual non-existent.&lt;/p&gt;
-&lt;/section&gt;
-&lt;section id="future-plans"&gt;
-&lt;h2&gt;Future Plans&lt;/h2&gt;
-&lt;p&gt;I don’t really have any are in CircuitPython right now that I would
-particularly want to work on and improve. I really want to give more focus
-to the PewPew, the Stage library, and the examples and tutorials for it.&lt;/p&gt;
-&lt;p&gt;I would also love to see the PewPew M4 become popular/useful, and people
-writing games for it. I think there is a need for some place where people
-can find CircuitPython-based games for the µGame, PyBadge, PyGamer, PyPortal,
-and PewPew M4, download and play them, see the code, read the tutorials about
-making them, and so on. I also think it would be nice if game creators could
-sell their games — I’m thinking about a platform like itch.io for this.&lt;/p&gt;
-&lt;p&gt;I want to get back to the robots for a little bit, and I have some nice ideas
-for them, though nothing overly specific yet. We will see how it goes with the
-wireless communication research.&lt;/p&gt;
-&lt;p&gt;I’m waiting with bated breath for the ESP32-S2 board, but it will be probably
-another year or two before CircuitPython works on that (if ever).&lt;/p&gt;
-&lt;/section&gt;
-&lt;section id="summary"&gt;
-&lt;h2&gt;Summary&lt;/h2&gt;
-&lt;p&gt;It has been an amazing year for CircuitPython, and a huge amount of work has
-been done. I wish I could have been more involved, but day job interferes. I’m
-going to bring back some of my old projects this year and see if I can make
-them work even better with CircuitPython now.&lt;/p&gt;
-&lt;/section&gt;
-&lt;/section&gt;
-</content>
-    <link href="http://dopieralski.pl/posts/2020-01-02-circuitpython/" rel="alternate"/>
-    <summary>It looks like I’m mostly using this blog to answer Adafruit’s prompts for
-feedback on CircuitPython. Oh well, so be it.</summary>
-    <published>2020-01-02T00:00:00+01:00</published>
-  </entry>
   <entry>
     <id>http://dopieralski.pl/posts/2020-06-21-snowball/</id>
     <title>Progress Mechanics</title>
@@ -563,5 +436,91 @@ situation will improve.&lt;/p&gt;
     <summary>As every year, it’s time for a yearly summary and plans of all things I do
 that are related to CircuitPython.</summary>
     <published>2022-01-22T00:00:00+01:00</published>
+  </entry>
+  <entry>
+    <id>http://dopieralski.pl/posts/2023-02-10-typesetting/</id>
+    <title>Design for Exploration</title>
+    <updated>2023-02-10T00:00:00+01:00</updated>
+    <content type="html">&lt;section id="design-for-exploration"&gt;
+
+&lt;section id="typesetting-software"&gt;
+&lt;h2&gt;Typesetting Software&lt;/h2&gt;
+&lt;p&gt;Imagine a text processor, similar to Wordstar, but more closely modelled around
+the tried and tested workflows of professional typesetters.&lt;/p&gt;
+&lt;p&gt;You begin by composing the text of your copy. But to avoid mistakes and to make
+use of the saved work you did before, you don’t simply type the words. You
+select them from a set of dictionaries that were created by other users,
+organized according to whatever needs those users had. Of course if you need
+any word that is not already in the dictionary, you can always create your own
+custom dictionary and add any words you need to it.&lt;/p&gt;
+&lt;p&gt;Once you have all your words, you connect them into sentences. Each sentence gets assigned a name, so that you can refer to it later on easily.&lt;/p&gt;
+&lt;p&gt;Then you have to select the fonts for your words. Most words will already have their fonts assigned by default in the dictionary, but you might want to make a word bold or italic, or select alternate forms for some letters, maybe a long S or some ligature, or change the kerning subtly to make it look better.&lt;/p&gt;
+&lt;p&gt;Finally, you get to place all those words. You will have them dumped on the page, and you can move them around and arrange them carefully. The sentence names you set earlier are used to show you the “ratlines” connecting the words, to help you get them in the right order. You might even use an “autotypesetter” to arrange the words automatically, but usually you will need to do some manual adjustments.&lt;/p&gt;
+&lt;p&gt;Once you have all that, you can simply hit “print” to have a beautiful page of text printed.&lt;/p&gt;
+&lt;p&gt;If the above described user interface seems to you to be unnecessarily clunky
+and complicated for such a “simple” task as writing a page of text to be
+printed, remember that the process is only seems to be simple when you don’t
+care about all those details. The user interface is fake, of course, but it’s
+an example of something you might come up with if you researched carefully how
+the printing press staff is going about the task, and tried to re-create that
+process in the computer.&lt;/p&gt;
+&lt;/section&gt;
+&lt;section id="kicad"&gt;
+&lt;h2&gt;KiCAD&lt;/h2&gt;
+&lt;p&gt;That is, incidentally, exactly what the authors of PCB design software KiCAD
+did, and the end result is equally baroque:&lt;/p&gt;
+&lt;p&gt;You have to start by drawing a schematic for the circuit you plan to design. Just like with the words, you don’t simply draw the symbols that you need, but instead you select them from a vast library of electronic symbols, divided into several “libraries” by random criteria. If you need a symbol that doesn’t exist in any of those libraries, you have to draw it, place it in a new library, and then you can select it from there.&lt;/p&gt;
+&lt;p&gt;Once you have all your symbols placed, you connect them with wires. And again,
+all wires that are connected together form a net, and get assigned a unique net
+name. You will need those names later. Even if two nets are not visually
+connected, but share the same net, they are considered connected, because who
+cares how hard that is to read. Our program only cares about the nets.&lt;/p&gt;
+&lt;p&gt;Once you have your schematic drawn, you have to select a footprint for each of the symbols. A footprint is the arrangement of holes and pads on the PCB where the physical part will be placed. And of course many symbols will already have a default footprint, but some will have several possibilities, and if it’s a new part, you will have to make a custom one yourself. So you still have to got through this step manually.&lt;/p&gt;
+&lt;p&gt;And finally, you get to see the actual layout of your PCB, with all the
+footprints dumped into a pile, and you can start arranging them, and connecting
+them with traces. There are tools like the autorouter that can help you with
+the connections sometimes, but they mostly come up with solutions that are
+worse than what you could do by hand.&lt;/p&gt;
+&lt;p&gt;Once you have it all placed and connected, you can generate the gerber files and send them to your favorite PCB factory to be manufactured.&lt;/p&gt;
+&lt;/section&gt;
+&lt;section id="can-we-do-better"&gt;
+&lt;h2&gt;Can we do better?&lt;/h2&gt;
+&lt;p&gt;I sure hope so! I mean, modern text processors don’t work like described here,
+and while you often don’t have such precise control on the output, they seem to
+be much easier to use. How do they do that?&lt;/p&gt;
+&lt;p&gt;Well, first of all, they have given up on the division between the manuscript
+and the printed page. They show you the preview of the printed page right away
+– or at least some approximation of it, with some extra information like
+margins paragraph markers included. This merging of the two views, makes it
+much more intuitive, and obviates the need to go back and forth between them to
+make changes and then to see the effects of those changes and so on.&lt;/p&gt;
+&lt;p&gt;You also don’t need to search the dictionaries. You just type the word you
+need, and if it’s not found in any dictionary, it will be marked by
+spellchecker as suspicious, but you are still allowed to have it on your page.
+And if you know you are going to use that new word more, adding it to the
+custom dictionary is just a question of a single command.&lt;/p&gt;
+&lt;p&gt;And you don’t have to assign a font and style to every word separately. You use
+the defaults most of the time, and then you can select parts of the text and
+change those defaults in bulk as needed. If you really want to, you can even
+change ligatures and alternate letter forms, though that is usually automated
+well enough that most people never need to touch it.&lt;/p&gt;
+&lt;p&gt;Of course you are still limited to the fonts installed on your system, and if
+you need a custom glyph that is not included in any font, you will need to
+either make a new font (which is very complicated) or cheat by including it as
+an image or doing some similar trick. Font selection dialogs came a long way in
+modern word processors, but they still suck a lot. There is a lot that could be
+done to improve on them, starting with proper tagging and categorizing of the
+fonts themselves. Perhaps at some point we will be able to just describe what
+we want, instead of having to look for it in a long list? And maybe one day we
+will find a better way of sorting fonts than by name.&lt;/p&gt;
+&lt;p&gt;But still, I think the text editing came a long way compared to some other
+computer assisted tasks, like PCB design.&lt;/p&gt;
+&lt;/section&gt;
+&lt;/section&gt;
+</content>
+    <link href="http://dopieralski.pl/posts/2023-02-10-typesetting/" rel="alternate"/>
+    <summary>Imagine a text processor, similar to Wordstar, but more closely modelled around
+the tried and tested workflows of professional typesetters.</summary>
+    <published>2023-02-10T00:00:00+01:00</published>
   </entry>
 </feed>
