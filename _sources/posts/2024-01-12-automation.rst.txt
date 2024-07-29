@@ -1,0 +1,42 @@
+.. post:: Jan 12, 2024
+   :category: tools, programming, python. open source
+
+
+The High Costs of Automation
+****************************
+
+We have seen huge advances both in tooling and in best practices, both for
+Python in particular, and programming in general. We use version control
+systems, we write tests, we have code formatting, coverage, linting, automated
+type checking, dependency management and packaging tools. We use continuous
+integration and even continuous release. We have issue reporting, code review,
+sprint and release planning, and documentation. And we can use all of that
+automatically, on every commit, making sure of high quality of our work at all
+times.
+
+But should we?
+
+Of course each of those tools comes with numerous advantages. After all, if
+they weren't useful, why would we be using them? But running them all the time
+in an automated way has a hidden cost that you might want to consider.
+
+
+Code Formatting
+===============
+
+Let's start with code formatting tools, such as Black or Blue, or even just the
+code formatting checking tools, such as pep8 or flake. Their role is simple:
+they are there to make sure all the code in your project follows the same,
+consistent style. A friend of mine told me that ever since they run one of
+those tools automatically on all commits, there is no more arguing about code
+formatting in code reviews, and they can use that time for having other kinds
+of pointless arguments instead.
+
+Obviously, if you have consistent code formatting in your project, that is a
+good thing, right? It's a sign of a healthy project and high quality of code,
+isn't it? Well, not necessarily.
+
+"When a measure becomes a target, it ceases to be a good measure." --
+Goodhart's Law.
+
+

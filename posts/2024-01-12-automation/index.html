@@ -1,0 +1,85 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+
+    <title>The High Costs of Automation - dopieralski.pl</title>
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/basic.css" />
+    <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/sphinx_highlight.js"></script>
+    <link rel="author" title="About these documents" href="../../about/" />
+    <link rel="index" title="Index" href="../../genindex/" />
+    <link rel="search" title="Search" href="../../search/" />
+  
+     
+    <link rel="stylesheet" href="../../_static/custom.css" type="text/css" />
+    <link rel="icon" type="image/png" href="../../_static/favicon.png">
+
+  
+  <link rel="alternate" type="application/atom+xml"  href="../../blog/atom.xml" title="dopieralski.pl">
+  
+
+  </head><body>
+<div id="topbar">
+<div id="searchbox" style="display: none" role="search">
+    <div class="searchformwrapper">
+    <form class="search" action="../../search/" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="search" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+    <div id="logo"><a href="../../">
+        <img
+            src="/_static/logo.png"
+            alt=""
+        />dopieralski.pl</a></div>
+</div>
+
+<div role="main">
+  <section id="the-high-costs-of-automation">
+<h1>The High Costs of Automation<a class="headerlink" href="#the-high-costs-of-automation" title="Permalink to this heading">¶</a></h1>
+<p>We have seen huge advances both in tooling and in best practices, both for
+Python in particular, and programming in general. We use version control
+systems, we write tests, we have code formatting, coverage, linting, automated
+type checking, dependency management and packaging tools. We use continuous
+integration and even continuous release. We have issue reporting, code review,
+sprint and release planning, and documentation. And we can use all of that
+automatically, on every commit, making sure of high quality of our work at all
+times.</p>
+<p>But should we?</p>
+<p>Of course each of those tools comes with numerous advantages. After all, if
+they weren’t useful, why would we be using them? But running them all the time
+in an automated way has a hidden cost that you might want to consider.</p>
+<section id="code-formatting">
+<h2>Code Formatting<a class="headerlink" href="#code-formatting" title="Permalink to this heading">¶</a></h2>
+<p>Let’s start with code formatting tools, such as Black or Blue, or even just the
+code formatting checking tools, such as pep8 or flake. Their role is simple:
+they are there to make sure all the code in your project follows the same,
+consistent style. A friend of mine told me that ever since they run one of
+those tools automatically on all commits, there is no more arguing about code
+formatting in code reviews, and they can use that time for having other kinds
+of pointless arguments instead.</p>
+<p>Obviously, if you have consistent code formatting in your project, that is a
+good thing, right? It’s a sign of a healthy project and high quality of code,
+isn’t it? Well, not necessarily.</p>
+<p>“When a measure becomes a target, it ceases to be a good measure.” –
+Goodhart’s Law.</p>
+</section>
+</section>
+
+
+</div>
+  </body>
+</html>

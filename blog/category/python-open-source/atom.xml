@@ -1,0 +1,55 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+  <id>http://dopieralski.pl/</id>
+  <title>dopieralski.pl - Posts in python. open source</title>
+  <updated>2024-07-27T20:31:41.471103+00:00</updated>
+  <link href="http://dopieralski.pl/"/>
+  <link href="http://dopieralski.pl/blog/category/python-open-source/atom.xml" rel="self"/>
+  <generator uri="https://ablog.readthedocs.org/" version="0.10.33">ABlog</generator>
+  <entry>
+    <id>http://dopieralski.pl/posts/2024-01-12-automation/</id>
+    <title>The High Costs of Automation</title>
+    <updated>2024-01-12T00:00:00+01:00</updated>
+    <content type="html">&lt;section id="the-high-costs-of-automation"&gt;
+
+&lt;p&gt;We have seen huge advances both in tooling and in best practices, both for
+Python in particular, and programming in general. We use version control
+systems, we write tests, we have code formatting, coverage, linting, automated
+type checking, dependency management and packaging tools. We use continuous
+integration and even continuous release. We have issue reporting, code review,
+sprint and release planning, and documentation. And we can use all of that
+automatically, on every commit, making sure of high quality of our work at all
+times.&lt;/p&gt;
+&lt;p&gt;But should we?&lt;/p&gt;
+&lt;p&gt;Of course each of those tools comes with numerous advantages. After all, if
+they weren’t useful, why would we be using them? But running them all the time
+in an automated way has a hidden cost that you might want to consider.&lt;/p&gt;
+&lt;section id="code-formatting"&gt;
+&lt;h2&gt;Code Formatting&lt;/h2&gt;
+&lt;p&gt;Let’s start with code formatting tools, such as Black or Blue, or even just the
+code formatting checking tools, such as pep8 or flake. Their role is simple:
+they are there to make sure all the code in your project follows the same,
+consistent style. A friend of mine told me that ever since they run one of
+those tools automatically on all commits, there is no more arguing about code
+formatting in code reviews, and they can use that time for having other kinds
+of pointless arguments instead.&lt;/p&gt;
+&lt;p&gt;Obviously, if you have consistent code formatting in your project, that is a
+good thing, right? It’s a sign of a healthy project and high quality of code,
+isn’t it? Well, not necessarily.&lt;/p&gt;
+&lt;p&gt;“When a measure becomes a target, it ceases to be a good measure.” –
+Goodhart’s Law.&lt;/p&gt;
+&lt;/section&gt;
+&lt;/section&gt;
+</content>
+    <link href="http://dopieralski.pl/posts/2024-01-12-automation/" rel="alternate"/>
+    <summary>We have seen huge advances both in tooling and in best practices, both for
+Python in particular, and programming in general. We use version control
+systems, we write tests, we have code formatting, coverage, linting, automated
+type checking, dependency management and packaging tools. We use continuous
+integration and even continuous release. We have issue reporting, code review,
+sprint and release planning, and documentation. And we can use all of that
+automatically, on every commit, making sure of high quality of our work at all
+times.</summary>
+    <published>2024-01-12T00:00:00+01:00</published>
+  </entry>
+</feed>
