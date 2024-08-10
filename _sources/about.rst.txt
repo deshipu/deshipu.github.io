@@ -26,5 +26,5 @@ Other Places
 
     <ul>
         <li>Mastodon: <a rel="me" href="https://fosstodon.org/@deshipu">@deshipu@fosstodon.org</a></li>
-        <li>Hackaday: <a href="https://hackaday.io/deshipu">deshipu</a></li>
+        <li>Projects: <a href="https://deshipu.art">deshipu.art</a></li>
     </ul>
