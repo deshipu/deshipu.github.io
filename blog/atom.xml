@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>http://dopieralski.pl/</id>
   <title>dopieralski.pl</title>
-  <updated>2025-05-09T19:34:36.994558+00:00</updated>
+  <updated>2025-05-09T19:39:17.697467+00:00</updated>
   <link href="http://dopieralski.pl/"/>
   <link href="http://dopieralski.pl/blog/atom.xml" rel="self"/>
   <generator uri="https://ablog.readthedocs.org/" version="0.10.33">ABlog</generator>
@@ -423,7 +423,7 @@ that is much more important.&lt;/p&gt;
 urbanist Jane Jacobs, titled “Systems of Survival”. Unlike her other books,
 it’s not about cities, or economy, or urban planning. It’s about morality.
 Specifically, it’s about morals in professional settings. In that book she
-identifies two “moral syndromes”, as she calls them – two ways at looking at
+identifies two “moral syndromes”, as she calls them – two ways of looking at
 the world and deciding what is good and what is bad. The two ways are both
 consistent internally, but often conflict with each other. She named them
 “commercial” and “guardian” (she initially wanted to call it “raider”, but
@@ -447,7 +447,7 @@ programming practice are between two distinct styles of reasoning about
 computer programs. When I looked at it closer, I decided to call the people
 promoting those styles “Wizards” and “Warlocks”.&lt;/p&gt;
 &lt;p&gt;Wizards really appreciate the effort of writing code that is correct,
-performant and generally elegant. They care about the code itself very much.
+performant, and generally elegant. They care about the code itself very much.
 They want to understand it all, and to have full control over every aspect of
 it. Even if they include some dependency, it’s only after they have reviewed
 it, and possibly even forked and modified it to better match what they expect.
@@ -474,7 +474,7 @@ move slowly and fix them. Knowing when to use which style is an important
 part of being a software engineer.&lt;/p&gt;
 &lt;p&gt;That doesn’t mean there aren’t biases. In fact, most people prefer one style
 of work over the other. There are even programming languages and other tools
-that specifically encourage of those styles over the other. While you pick
+that specifically encourage one of those styles over the other. While you pick
 them depending on the context, there is always room for interpretation, and
 arguments, and often you will see the same people fall consistently on either
 side of those arguments. Some people simply prefer to be wizards or warlocks.&lt;/p&gt;

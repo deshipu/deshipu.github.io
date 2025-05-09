@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>http://dopieralski.pl/</id>
   <title>dopieralski.pl - Posts in python</title>
-  <updated>2025-05-09T19:34:37.060463+00:00</updated>
+  <updated>2025-05-09T19:39:17.760855+00:00</updated>
   <link href="http://dopieralski.pl/"/>
   <link href="http://dopieralski.pl/blog/category/python/atom.xml" rel="self"/>
   <generator uri="https://ablog.readthedocs.org/" version="0.10.33">ABlog</generator>
