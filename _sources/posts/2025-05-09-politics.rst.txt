@@ -64,7 +64,7 @@ Systems of Survival
 ===================
 
 Some time ago I stumbled into a small book written by the famous architect and
-urbanist Jane Jacobs titled "Systems of Survival". Unlike her other books,
+urbanist Jane Jacobs, titled "Systems of Survival". Unlike her other books,
 it's not about cities, or economy, or urban planning. It's about morality.
 Specifically, it's about morals in professional settings. In that book she
 identifies two "moral syndromes", as she calls them -- two ways at looking at
