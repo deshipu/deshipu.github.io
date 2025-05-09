@@ -2,171 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>http://dopieralski.pl/</id>
   <title>dopieralski.pl</title>
-  <updated>2024-08-10T10:52:13.209054+00:00</updated>
+  <updated>2025-05-09T19:02:42.050926+00:00</updated>
   <link href="http://dopieralski.pl/"/>
   <link href="http://dopieralski.pl/blog/atom.xml" rel="self"/>
   <generator uri="https://ablog.readthedocs.org/" version="0.10.33">ABlog</generator>
-  <entry>
-    <id>http://dopieralski.pl/posts/2020-06-21-snowball/</id>
-    <title>Progress Mechanics</title>
-    <updated>2020-06-21T00:00:00+02:00</updated>
-    <content type="html">&lt;section id="progress-mechanics"&gt;
-
-&lt;p&gt;Progress is an important mechanic in computer games. Not only it gives us a
-reason to play the game, but it also serves as a way of communicating how
-well we are playing. It can also serve several other purposes.&lt;/p&gt;
-&lt;section id="reward-spiral"&gt;
-&lt;h2&gt;Reward Spiral&lt;/h2&gt;
-&lt;p&gt;One of the most obvious ways of implementing progress is to simply reward the
-player with experience points, better equipment, or other resources as they
-complete fragments of the game. Defeating opponents, completing quests,
-arriving in a new area, finding hidden treasures, etc. can all be used for this
-purpose. However, there is a danger in this if the rewards are useful in terms
-of the gameplay mechanics – they make the game easier.&lt;/p&gt;
-&lt;p&gt;Making the game easier as the player progresses is bad in single-player games
-because it often makes the game boring – the initial challenge, when finally
-overcome, becomes a mindless grind to get more of the rewards, with little
-actual skill required. To counter that, game designers will often try to offset
-player progress with stronger monsters and harder levels – so that even though
-the player character gets more powerful, so do the obstacles. This results in a
-kind of a power inflation phenomenon. It requires careful balancing, because a
-small random fluctuation can leave the player facing unrealistic challenges, or
-catapult them into too easy a game, staying just ahead of the difficulty.&lt;/p&gt;
-&lt;p&gt;While bad in single-player games, in competitive multi-player games this
-mechanic is often devastating. Whichever player manages to get even a tiny
-advantage, through skill or luck, gets catapulted ahead of the other players,
-and leaves them in the dust with no hope of winning, except maybe for a
-desperate gamble to get ahead in the initial stages. You can see that in action
-particularly well in the board game Monopoly, which was actually designed to
-demonstrate the problem.&lt;/p&gt;
-&lt;/section&gt;
-&lt;section id="optimal-tactics"&gt;
-&lt;h2&gt;Optimal Tactics&lt;/h2&gt;
-&lt;p&gt;When playing a game in which rewards make the game easier, there is no longer a
-dilemma between sharpening your axe or cutting the tree. When you have to
-choose between gaining more power or doing something useful, you always have to
-choose more power. Anybody who diverts even a tiny bit of their gains into
-something else than immediate growth will fall back on the growth curve behind
-their opponents and lose the game. Power is the only thing worth fighting for.&lt;/p&gt;
-&lt;p&gt;The game is won or lost in the initial stages. Your best tactic is to optimize
-for short-time advantages, keeping yourself alive and as close to the point
-where the exponential growth begins, in the hope that a random fluctuation will
-boost you onto the path to victory. Sometimes you might even be able to see the
-fluctuation coming, or even to arrange it to happen, but there is still an
-element of randomness here, as some other player might be better positioned to
-exploit it.&lt;/p&gt;
-&lt;p&gt;Once your gamble worked and you get catapulted, all the other players will try
-to latch onto you, surf the same wave as you, or simply shoot you down to give
-themselves another chance. This is a delicate moment when you have to
-ruthlessly attack anyone who comes close to you or tries to overtake you. Exponential growth will exaggerate any initial differences fast, so all you have to do is to make sure you are leading for a short time, and afterwards you will be pretty much outside the reach of the other players. You have won the game.&lt;/p&gt;
-&lt;p&gt;The game could end at this point, but usually it doesn’t. The exponential
-growth means that the differences between players grow, and it’s pretty much
-impossible to change their order anymore. The growing powers will now compete
-for resources, until all are consumed, and then they will start eating each
-other, with the stronger taking over the weaker. In theory it’s still possible
-for two weaker powers to combine and overcome a stronger power, but in practice
-the stronger power can prevent that from happening by defeating one of the
-weaker ones before they merge. The game turns into a boring grind, desperate
-struggle to survive as long as possible and push away the inevitable.&lt;/p&gt;
-&lt;p&gt;If there is no time limit, the game will always end with one player controlling
-all the resources, standing on the burned husk of the world, with nothing more
-left to conquer.&lt;/p&gt;
-&lt;/section&gt;
-&lt;section id="politics"&gt;
-&lt;h2&gt;Politics&lt;/h2&gt;
-&lt;p&gt;If this looks to you like a criticism of capitalism, it’s probably because
-there are similar mechanisms at play. Bringing it all down to money (or
-capital, or power, or whatever single resource) does this. I’m not an economist
-or a politician, so I’m not going to dwell on this too much. I’m sure you can
-find such discussions easily elsewhere. I’m going to get back to game design.&lt;/p&gt;
-&lt;/section&gt;
-&lt;section id="breaking-the-loop"&gt;
-&lt;h2&gt;Breaking the Loop&lt;/h2&gt;
-&lt;p&gt;You see that this kind of positive feedback loop, where getting more powerful
-lets you easier become even more powerful is harmful to enjoyment of games. So
-what can be done to fix this?&lt;/p&gt;
-&lt;p&gt;The most obvious thing you can do is to separate the “victory points” that you
-gain for completing elements of the game from the other in-game resources. Make
-it “fame” or “status” or distance travelled or whatever else that has no direct
-impact on the ease of playing. Don’t worry, humans have an intrinsic desire to
-make numbers go up, and they will care about that number even if it doesn’t do
-anything. In multi-player games you can say that whoever has the most of those
-points after a certain time, or whoever reaches a certain number first, wins.
-This works very well in games like Splendor, for example.&lt;/p&gt;
-&lt;p&gt;But you can do even better. Make the victory points a burden. Make the game
-&lt;em&gt;harder&lt;/em&gt; for the players that have more victory points. There are several
-interesting ways to do this.&lt;/p&gt;
-&lt;p&gt;In a card game Dominion, you build your deck as the game progresses. Victory
-points are scored by buying cards that have victory points on them – but
-usually those cards don’t do anything else, they just take up space in your
-deck, and remove the opportunity to play cards that actually bring you
-advantages. If you start by buying victory cards from the beginning, you will
-soon have a deck that is almost entirely victory cards and you won’t be able to
-do anything, soon your treasure cards will become so rare in the mass of
-victory cards, that you won’t even be able to buy the cheapest victory cards.
-So instead you have to balance your game carefully between buying the treasures
-that let you buy better cards, the actions that let you interact with your deck
-and other players to play better cards, and the actual victory cards. And that
-balance depends very much on what the other players are doing. This makes the
-game massively more interesting, and lets all players to play at their own
-pace according to their own strategy.&lt;/p&gt;
-&lt;p&gt;Another interesting trick is to leave the power inflation in there, but subtly
-use it to make the game more complex as it progresses. You can see that for
-example in the computer game Doom. The weakest weapon in the game needs no
-ammunition and no aiming – you just come up to the monster and punch it. But
-as the monsters become more powerful you have to use more powerful weapons, at
-the cost of complexity. The second least powerful weapon, pistol, requires
-ammunition and works at a distance, so you can’t just hold down the fire button
-and run around, you have to conserve your resources and aim. The next weapon, a
-shotgun, adds a long delay after each shot, so careful aiming becomes even more
-important. This pattern continues, with every weapon adding some kind of a
-special challenge – whether it’s especially rare ammunition, rocket explosions
-that can hurt you, a spin-up delay before the chain gun starts shooting, or
-long delays before and after each shot. As a result, power inflation prevents
-the game from becoming easier, and the growing complexity of the stronger
-weapons makes the game more interesting as it progresses.&lt;/p&gt;
-&lt;/section&gt;
-&lt;section id="fungibility"&gt;
-&lt;h2&gt;Fungibility&lt;/h2&gt;
-&lt;p&gt;We say that something is “fungible”, when it can be easily exchanged into other
-resources. A lot of things are fungible in the modern world, because gives us
-more options and frees us from having to plan too much – there are people who
-live owning just a few things (and a big bank account), because they can always
-buy whatever they need, and discard it afterwards. But this also means it’s
-much easier to fall into a power loop.&lt;/p&gt;
-&lt;p&gt;Social status used to be divorced from money or capital. People scoffed at the
-“nouveau riche” – people who have become rich recently, but don’t really have
-high social status. Master artists and craftsmen used to be rather poor and
-often relied on patronage.&lt;/p&gt;
-&lt;p&gt;Today things have changed. A rich person can become a famous innovator by just
-buying a car factory or a space rocket business. Status is decided by the lists
-of the richest people published by magazines. And money also give you access to
-the politicians, so you can make sure the rules won’t change. Fungibility has
-created a positive feedback loop of power.&lt;/p&gt;
-&lt;p&gt;Can it be avoided? Of course. You just need “victory points” separated from the
-money. Have goals that can’t be bought: being a good member of your community,
-having friends, learning skills, performing an art, protecting something
-irreplaceable, creating something unique. Separate different parts of life, so
-that being successful in one doesn’t automatically make all the others easier.
-And most importantly, noblesse oblige – make the game harder for those with
-more victory points – expect more of them in exchange for the power they
-wield.&lt;/p&gt;
-&lt;/section&gt;
-&lt;section id="conclusion"&gt;
-&lt;h2&gt;Conclusion&lt;/h2&gt;
-&lt;p&gt;It’s worth to pay attention to what progress mechanics you have in your game
-and how they affect the feel of the game and the incentive of the players.
-Many techniques and tricks can be adapted, both from other games, and from
-the wider world of economics, politics and social sciences in general.&lt;/p&gt;
-&lt;/section&gt;
-&lt;/section&gt;
-</content>
-    <link href="http://dopieralski.pl/posts/2020-06-21-snowball/" rel="alternate"/>
-    <summary>Progress is an important mechanic in computer games. Not only it gives us a
-reason to play the game, but it also serves as a way of communicating how
-well we are playing. It can also serve several other purposes.</summary>
-    <published>2020-06-21T00:00:00+02:00</published>
-  </entry>
   <entry>
     <id>http://dopieralski.pl/posts/2021-01-09-circuitpython/</id>
     <title>CircuitPython in 2021</title>
@@ -522,5 +361,414 @@ computer assisted tasks, like PCB design.&lt;/p&gt;
     <summary>Imagine a text processor, similar to Wordstar, but more closely modelled around
 the tried and tested workflows of professional typesetters.</summary>
     <published>2023-02-10T00:00:00+01:00</published>
+  </entry>
+  <entry>
+    <id>http://dopieralski.pl/posts/2025-05-09-politics/</id>
+    <title>Slavic Gods</title>
+    <updated>2025-05-09T00:00:00+02:00</updated>
+    <content type="html">&lt;section id="slavic-gods"&gt;
+
+&lt;p&gt;Before we were somewhat brutally brought into the loving embrace of the Roman
+Catholic Church by our considerate neighbours, my country had its own “pagan”
+religion, with its own mythology and traditions. A lot of the traditions
+survive in some way, because you can’t tell people they no longer have
+a holiday on a given day just because they are worshipping a different god
+now, but most information about the beliefs of my ancestors have been
+judiciously eradicated by the same people who were at the time responsible for
+preserving history – the chroniclers were mostly priests at the time, after
+all. Some of it has been reconstructed from mentions in various historical
+texts, but there is very little that is certain. Which is a great shame,
+because those “primitive” mythologies often were records of knowledge about
+the world and its working presented in a form that is easy for people to
+understand – attitudes and relationships. That’s why gods in them are mostly
+humans with special powers connected with the nature. And that “pagan”
+mythology could tell us a lot about how the society functioned back then.&lt;/p&gt;
+&lt;p&gt;For example, one particularly well attested god (possibly because it was easy
+to compare with similar Greek, Roman and Nordic gods) was the god of thunder
+named Perun. He controlled the weather and could send storms and control the
+lightning. His symbol was an oak tree (because those trees were often hit by
+lightnings), and he was said to live on tops of the mountains. He generally
+fits the Proto-Indo-European pattern of a storm god. He was also the god of
+warriors and battle, and he would punish dishonorable behavior with death in
+battle. He was worshipped by warriors and nobility, and his temples and
+statues would often stand on tops of hills, inside city walls.&lt;/p&gt;
+&lt;p&gt;Some sources indicate, that Perun had a competing god that is, unfortunately,
+not as well attested. His name was Veles, and he was the god of cattle,
+craftsmen, and science (well, magic and secret knowledge, but that’s how it
+worked back then). His statues would stand outside the city walls, in the
+village in the valley. He was said to live underground, and to take care of
+the souls of dead people. He would punish breaking of contracts with
+a disease. He was worshipped by what we would today call “upper-middle class”
+– various craftsmen, artists, shepherds and cowherds, smiths, and so on.&lt;/p&gt;
+&lt;p&gt;As I said, there are literally only a handful sources mentioning Veles by
+name, and historians mostly reconstructed him from stories that survived to
+the modern times with the gods replaced by saints. In particular, the story of
+Saint George killing a dragon seems to be such a remnant. It’s another pattern
+that repeats all over the Proto-Indo-Europen mythology. The story is rather
+simple: there is a drought, and Perun discovers it’s caused by Veles in the
+form of a giant snake blocking the water at the source. So he challenges him
+to a fight, which is visible to the people as a storm, with lightning bolts
+hitting the giant snake. Veles avoids defeat using various tricks, but
+eventually escapes and hides, releasing the water, which then falls from the
+sky in the form of rain. Prosperity returns until the next time.&lt;/p&gt;
+&lt;p&gt;Some historians insist that this is supposed to explain the seasons, but I’m
+doubtful. I think this story tells us about a different social mechanic, one
+that is much more important.&lt;/p&gt;
+&lt;/section&gt;
+&lt;section id="systems-of-survival"&gt;
+&lt;h1&gt;Systems of Survival&lt;/h1&gt;
+&lt;p&gt;Some time ago I stumbled into a small book written by the famous architect and
+urbanist Jane Jacobs titled “Systems of Survival”. Unlike her other books,
+it’s not about cities, or economy, or urban planning. It’s about morality.
+Specifically, it’s about morals in professional settings. In that book she
+identifies two “moral syndromes”, as she calls them – two ways at looking at
+the world and deciding what is good and what is bad. The two ways are both
+consistent internally, but often conflict with each other. She named them
+“commercial” and “guardian” (she initially wanted to call it “raider”, but
+realized how intimately it is connected with protecting territory). She notes
+that a lot of morally questionable worldviews come from mixing elements from
+those two systems, creating internally inconsistent “monstrous” systems.&lt;/p&gt;
+&lt;p&gt;She also notes that in the modern world it’s impossible to survive sticking to
+only one of those worldviews. We have to switch between them depending on the
+context, using the commercial syndrome in trade, science, and technology, and
+the guardian syndrome in bureaucracy, politics, and public services.&lt;/p&gt;
+&lt;p&gt;I encourage you to read the book if you can, or at least look at the Wikipedia
+summary of it. It made a huge impression on me, because at the time I was
+investigating a different duality I noticed in my profession.&lt;/p&gt;
+&lt;/section&gt;
+&lt;section id="wizards-and-warlocks"&gt;
+&lt;h1&gt;Wizards and Warlocks&lt;/h1&gt;
+&lt;p&gt;I’m a software engineer. I maintain and develop software for a living. That
+means that I spend a lot of time thinking about programming, and also talk to
+other people about it. I couldn’t help but notice that most arguments in the
+programming practice are between two distinct styles of reasoning about
+computer programs. When I looked at it closer, I decided to call the people
+promoting those styles “Wizards” and “Warlocks”.&lt;/p&gt;
+&lt;p&gt;Wizards really appreciate the effort of writing code that is correct,
+performant and generally elegant. They care about the code itself very much.
+They want to understand it all, and to have full control over every aspect of
+it. Even if they include some dependency, it’s only after they have reviewed
+it, and possibly even forked and modified it to better match what they expect.
+They tend to work on relatively small, but high quality projects. They also
+tend to stick to a single programming language of choice for the given
+project, and are not afraid of adding things to it if they are required for
+their task. They tend to stick to a single project at a time, and get back to
+it to gradually improve it.&lt;/p&gt;
+&lt;p&gt;Warlocks just want to get things done. If there is a library or framework that
+already does most of what they need, they are happy to use it. They will copy
+snippets of code from random websites, and even use code generation tools. If
+they are missing something in one language or framework, they don’t mind
+changing to another one that has it, or creating a hybrid solution that uses
+both. They usually don’t much care for formal correctness, performance, or any
+kind of aesthetics in what they cobble together. They just want it to do the
+thing they need good enough for their needs, and they don’t really care how it
+is done under the hood. They also don’t come back to old code, unless they
+have to fix something.&lt;/p&gt;
+&lt;p&gt;Of course in real life nobody is fully a wizard or a warlock. You have to
+switch between the two approaches as needed. Sometimes practicality beats
+purity, sometimes technical debt is unacceptable and needs to be minimized.
+Sometimes you want to move fast and break things, and sometimes you want to
+move slowly and fix them. Knowing when to use which style is an important
+part of being a software engineer.&lt;/p&gt;
+&lt;p&gt;That doesn’t mean there aren’t biases. In fact, most people prefer one style
+of work over the other. There are even programming languages and other tools
+that specifically encourage of those styles over the other. While you pick
+them depending on the context, there is always room for interpretation, and
+arguments, and often you will see the same people fall consistently on either
+side of those arguments. Some people simply prefer to be wizards or warlocks.&lt;/p&gt;
+&lt;/section&gt;
+&lt;section id="dualities"&gt;
+&lt;h1&gt;Dualities&lt;/h1&gt;
+&lt;p&gt;It’s easy to find opposing dualities. Good and evil, light and dark, order and
+chaos, female and male – as soon as we can think about it, we can split it
+into two opposing states. But most of those a gradients. There are a few
+dualities where we can see the two opposing sides, but nothing in between.
+For instance, there are visual tricks, like the Necker cube, where we can
+interpret the same picture in two completely different ways, but not both at
+once. Which interpretation we choose depends on a complex mixture of visual
+hints, lighting, situational context, and personal preference. But we can also
+consciously force ourselves to see it one way or the other, if we want to.&lt;/p&gt;
+&lt;p&gt;The moral syndromes identified by Jane Jacobs seem to be like that. Once you
+decide on one feature – for example that it is good to do mutually beneficial
+trade – all the rest jumps in place: the need for honesty and contracts, the
+universal rights, shunning of force, thriftiness, etc. It’s all or nothing. If
+you cherry-pick features from both moral syndromes, you inevitably get an
+inconsistent mixture that is morally questionable. And just like with the
+Necker cube, we seem to naturally pick the syndrome to use based on subtle
+hints, situation, and preference. For example, if the matter at hand is
+related to territory of some kind, we tend to pick the guardian moral
+syndrome. But I think they are also kinda sticky – once we decide to use one
+and not the other in a given situation, we will tend to repeat that choice
+again in a similar situation, unless we consciously decide otherwise, or
+something happens to change our minds. So as we go through our lives, we
+collect examples of situations and assign them one or the other moral
+syndrome.&lt;/p&gt;
+&lt;/section&gt;
+&lt;section id="more-than-a-syndrome"&gt;
+&lt;h1&gt;More than a Syndrome&lt;/h1&gt;
+&lt;p&gt;Jane Jacobs called her findings “syndromes”, because to her that is what it
+was – literally groups of symptoms. In her book she made observations about
+them, but she refrained from jumping to any conclusions, or speculating about
+the mechanism that creates them.&lt;/p&gt;
+&lt;p&gt;We don’t have to be so restrained ourselves. In fact, I’m now going to make
+wild generalizations and come to crazy conclusions without so much as a shred
+of proof or research. I’m going to do it because it’s fun, and because I think
+it’s useful to imagine what we &lt;em&gt;could&lt;/em&gt; find there if we took the time to look
+closer and do proper research. You can think of it like a science fiction book
+about how alien civilizations could look like – it might be inspired by our
+existing knowledge, but most of it is just fantasy and speculation. Enjoy.&lt;/p&gt;
+&lt;p&gt;So let’s stop calling them “syndromes” and give them a more representative
+name: worldviews. Also, I’m not very fond of the names “guardian” and
+“commercial”. I understand where they came from, but I don’t like the
+connotations they bring to mind. Let’s call them “political worldview” or
+“political thinking” and “practical worldview” or “practical thinking”, and
+let’s call the people who predominantly use one or the other “politicians” and
+“builders”. It will shortly become clear why.&lt;/p&gt;
+&lt;/section&gt;
+&lt;section id="relationship-with-truth"&gt;
+&lt;h1&gt;Relationship with Truth&lt;/h1&gt;
+&lt;p&gt;Every politician knows intimately that truth is always negotiable. It’s
+a consensus. You can get away with the most outrageous claims, as long as
+you make them confidently, and other people are inclined to let them slide,
+usually because objecting would be very inconvenient for them. This is why
+they will always try to color the truth to their advantage, and they don’t
+even consider this to be lying. And they will also always assume that other
+people are doing it all the time as well. Or should be doing it, and it’s
+only their own fault if they are not.&lt;/p&gt;
+&lt;p&gt;The builders can’t afford to bend truth. They usually work where the rubber
+hits the asphalt, and the physical reality doesn’t care about how strongly you
+believe something or how convincing you are. You are either right (or close
+enough) and things work, or you aren’t, and they fail spectacularly.  Besides,
+physical truths are out there for everyone to see. Unless it’s a high energy
+physics problem, you can usually do a simple experiment that will easily show
+you if you are right or not. Even with high energy physics the experiments can
+be replicated and confirmed. So it simply doesn’t make sense to lie about
+those things, or even to hide them, because they are in the open for everyone
+to see. And finally, unlike with politicians who always assume you are lying
+anyways, and who are completely unsurprised when you are caught lying, the
+builders care a lot about maintaining trust, and a single lie can ruin your
+reputation.&lt;/p&gt;
+&lt;p&gt;This points to another clue that can be used to choose which worldview to
+choose in a given situation: when you are building something, doing scientific
+research, planning a trip, or even just cooking, you are better off with the
+practical worldview, because it lets you learn from mistakes and improve your
+technique, until it works. On the other hand, if it’s trying to get a building
+permit, doing humanist research, recounting your trip, or organizing a party,
+you will probably be better off with political thinking, as the success
+depends more on other people agreeing with you than on actual physical
+reality.&lt;/p&gt;
+&lt;/section&gt;
+&lt;section id="communication-and-trust"&gt;
+&lt;h1&gt;Communication and Trust&lt;/h1&gt;
+&lt;p&gt;Builders trust strangers implicitly, at least with low-risk things. With more
+successful interactions that trust increases, and everyone builds
+a reputation. They also treat all promises seriously, and feel very hurt when
+a promise is broken. Even if it’s for something insignificant, it can break
+your reputation. Builders will also often communicate without words, by just
+doing things and having others decide how to best cooperate with them, if they
+want to. This is somewhat similar to what is called stigmergy in ants.&lt;/p&gt;
+&lt;p&gt;Politicians never trust other people, because they assume that everybody are
+lying all the time anyways. This poses a problem, because you need a certain
+amount of trust to cooperate in a society. There are generally two commonly
+used solutions for this.&lt;/p&gt;
+&lt;p&gt;First, you can put some “skin in the game” to show you really mean what you
+are saying. This can be anything that costs you, like a charity donation, a
+lavish party, generous gifts or bribes, but often also comes down to violence
+or threats of violence. To a politician, nothing underlines your point better
+than a brutal attack to get the other party’s attention. Even if the goal is
+alliance, this is not malicious, this is just a way they communicate. You can
+think about it like a elementary school student trying to get the attention of
+a person they like in their class.&lt;/p&gt;
+&lt;p&gt;The second way to get some semblance of trust, is to get a third party to
+guarantee the agreement, usually by threatening sanctions if it is broken.
+This is why politicians love authorities of all kinds – they make it easier
+for them to trust each other. Even if the authority in question is corrupt
+itself, to a politician it seems better than just trusting the word of the
+other side.&lt;/p&gt;
+&lt;p&gt;The practical mindset is also at odds with censorship. If you can see the
+truth from the world around you, it makes little sense to control what people
+talk about. Political mindset regards control of the flow of information as
+very important. After all, it doesn’t really matter how things actually are,
+but only what people believe they are. If you can control what people believe,
+you can control reality. This especially shows in how people approach
+scientific publications: the builders will trust the publications that were
+detailed and can be reproduced experimentally. Thew politicians will trust the
+publications published by authoritative organisations.&lt;/p&gt;
+&lt;/section&gt;
+&lt;section id="justice-and-force"&gt;
+&lt;h1&gt;Justice and Force&lt;/h1&gt;
+&lt;p&gt;This brings us to the use of force. As you can guess, builders hate violence,
+and generally only use it for self-defence (though the definition of
+self-defence can be overly board sometimes). They will hesitantly acknowledge
+the need for violence sometimes, but they will not want to have anything to do
+with it themselves. It’s distasteful and uncomfortable. Ideally, all conflicts
+should be resolved peacefully, and the guilty parties should submit willfully
+to whatever punishment (usually in the form of recompense) is necessary.&lt;/p&gt;
+&lt;p&gt;Builders believe that the world should be fair, and everybody should start out
+with equal rights and opportunities. Some of them will act as if that was
+actually true, and fall for the just-world fallacy. Things not being fair is
+a big problem for them, and they will work to fix such perceived flaws.&lt;/p&gt;
+&lt;p&gt;The politicians don’t mind violence at all, and they will use it casually just
+as a way of amplifying their words. They put fundamental human rights in the
+same category as the tooth fairy and Santa Claus – it’s obviously false, but
+it’s rude to say it aloud, because some children still believe it and it’s
+cute. The world belongs to the powerful, and if you can’t defend your
+property, then it never was yours in the first place.&lt;/p&gt;
+&lt;p&gt;It’s a dog-eat-dog world, and the only way to survive is to be stronger than
+the others. Justice is all about demonstrating your power by retaliating, so
+punishment have to be public, often over the top, and it doesn’t really matter
+if they person being punished is actually guilty. It’s all about demonstrating
+what happens to those who step out of line.&lt;/p&gt;
+&lt;/section&gt;
+&lt;section id="work-and-ownership"&gt;
+&lt;h1&gt;Work and Ownership&lt;/h1&gt;
+&lt;p&gt;For the builders, your success is comes from the work you do, risks you take,
+and deals you make. Everything you have you either earned by working, or
+traded for something else you earned (or traded, and so on). Everybody work
+together for the common benefit, and make the world a little bit more
+convenient and safe. The things you were given don’t really count. Your value
+is based on your skill, industry, and entrepreneurship. You become better by
+learning skills, acquiring tools, and cooperating and competing.&lt;/p&gt;
+&lt;p&gt;For the politicians, your success is your fate. You are a chosen one, destined
+for greatness, and your rights and obligations come directly from who you are.
+You prove your greatness by defeating others. When you get defeated yourself,
+it’s so that you become stronger and more ruthless. The world is a zero-sum
+game, and the only way to grow is by taking from others. And you deserve to
+grow, because you are the destined future of all of humanity, who will perish
+without your leadership. Or something along those lines.&lt;/p&gt;
+&lt;p&gt;Work is something dirty to politicians. They are aware that it’s somehow
+happening somewhere, but they don’t talk about it, and don’t understand it.
+Value comes from owning things: land, factories, subscription services, mines,
+data centers, patents, copyrights, stock shares, capital, etc. – owning them
+makes you entitled to the resources they produce. Some of them produce more
+resources than others, but why and how is a mystery. There is a whole area of
+“science” dedicated to explaining the world pretending work doesn’t happen,
+and it’s called “economy”.&lt;/p&gt;
+&lt;p&gt;If a builder makes something, or works on improving it, or pays for something,
+they want to own it (or a part of it). You should own the fruits of your work.
+You may, and should, give up some of that to cover the costs of infrastructure
+or for social security and the like. Taking something by force is a crime. If
+you find lost property, you should return it to the owner, possibly for
+a prize.&lt;/p&gt;
+&lt;p&gt;A politician owns anything they can control and defend. If you can take
+something by force and hold on to it, it’s now yours. If you lose control of
+something, it’s free for taking for anyone else. Finders keepers.&lt;/p&gt;
+&lt;/section&gt;
+&lt;section id="seeing-each-other"&gt;
+&lt;h1&gt;Seeing Each Other&lt;/h1&gt;
+&lt;p&gt;Politicians view the builders as extremely naive and stupid. They think they
+are much smarter and more mature, because they can cheat and trick them. At
+the same time they find builders extremely annoying with their insistence on
+fairness and owning things they made. They most annoying situation is when the
+politics collides with the physical reality, and you absolutely need the
+practical worldview to make any sort of progress, so the politicians have to
+pander to the builders and pretend to care for what they think, or use
+wasteful violence to force them to cooperate.&lt;/p&gt;
+&lt;p&gt;The builders see the politicians as evil and tedious. Their constant squabbles
+and feuding gets in the way of getting the work done, and their dishonesty
+makes it pretty much impossible to do business with them. The fact that
+a politician would rather be a king on a ruin than an prosperous person among
+equals makes him look like a selfish asshole. When forced to work with them,
+builders will often learn to manage the politicians to keep them busy fighting
+each other and away from interfering with important work.&lt;/p&gt;
+&lt;/section&gt;
+&lt;section id="art-and-literature"&gt;
+&lt;h1&gt;Art and Literature&lt;/h1&gt;
+&lt;p&gt;If I were to pick two genres of literature that show the differences between
+the two worldviews, I would pick Fantasy and SciFi.&lt;/p&gt;
+&lt;p&gt;If there is a poor boy who is secretly a prince or otherwise destined to rule
+and save the world, who then proves their worth by coming out victorious from
+different adventures and challenges, defeats both the evil monsters
+threatening the kingdom and any competition, and wins, then you are reading
+political story. Not surprisingly, pretty much any legend, saga, tale, play,
+or epic are political works. Many were directly commissioned by politicians
+as means to achieve political goals, such as fame and immortality. (Did
+I mention politician believe themselves to be immortal?)&lt;/p&gt;
+&lt;p&gt;On the other hand, if there is skilled and smart inventor who in his garage
+builds an interdimensional gate, explores other worlds, meets and befriends
+strange alien creatures, and is in the end fairly rewarded for his work and
+risks, you might have an example of a builder literature.&lt;/p&gt;
+&lt;p&gt;There are exceptions. The books of Terry Pratchett, for example, while using
+fantasy tropes, are very much builder literature, speaking about fairness,
+decency, cooperation and healthy competition, and yes, the incomprehensibly
+evil behavior of some selfish people.&lt;/p&gt;
+&lt;p&gt;There are also stories that happen is space in the future, but are very much
+political in the worldview they present. The entire Warhammer 40k universe is
+an example of this. You have knights with swords and lasers, aliens with
+pointy ears who use magic, immortal skeleton robots, and priceless artifacts.&lt;/p&gt;
+&lt;p&gt;A lot of movie adaptations of SciFi stores often end up more political than
+the original stories, because they are re-interpreted by politicians in the
+process of adapting for a movie. Any large endeavor like shooting a movie is
+going to be dominated with politicians, especially when there is relatively
+little hard contact with physical reality. The entertainment industry is
+a paradise for them.&lt;/p&gt;
+&lt;/section&gt;
+&lt;section id="good-and-evil"&gt;
+&lt;h1&gt;Good and Evil&lt;/h1&gt;
+&lt;p&gt;As Jane Jacobs noted, those two worldviews come with two mutually incompatible
+moral codes. Each of them will look evil from the point of view of the other,
+while it will look good and proper from its own point of view. If I’m painting
+the political worldview in darker colors than the practical one, it’s because
+of my own biases, and the fact that the political worldview seems to be
+dominating the world right now in many areas that could maybe benefit more
+from a practical approach.&lt;/p&gt;
+&lt;p&gt;The evil comes from three possible sources. First, as Jane Jacobs noted, when
+you try to mix the tenets of the two systems, you often get a monstrous
+hybrid. Allow commercial deals in your political world view, and you get
+bribes and corruption. Allow violence in your practical worldview, and you get
+East India Company.&lt;/p&gt;
+&lt;p&gt;The second source is when people disagree about which of the systems should be
+applied in a given situation. Take for example the ridiculously high salaries
+of company CEOs. From a political point of view, they hold a very important
+position, with a lot of responsibility, and so they deserve it. In fact,
+making their salary higher makes the entire company look more powerful. Of
+course from the practical point of view their contribution to the work of the
+company is practically non existent, and often even negative, and they could
+be replaced with a very simple spreadsheet.&lt;/p&gt;
+&lt;p&gt;Finally, there are things that are evil according to both of those worldviews,
+and no amount of reasoning is going to excuse them.&lt;/p&gt;
+&lt;/section&gt;
+&lt;section id="conclusions"&gt;
+&lt;h1&gt;Conclusions&lt;/h1&gt;
+&lt;p&gt;Where am I going with this? Why am I writing this article at all? Well,
+several reasons.&lt;/p&gt;
+&lt;p&gt;For one, I wanted to get it off my chest and write it down, so that I can
+refer to it later. Second, it might actually help someone else to understand
+some otherwise inexplicable behavior of other people. I know it helps me to
+navigate politics-rich minefields, mostly to get away from them as fast as
+possible.&lt;/p&gt;
+&lt;p&gt;Third, I think this might be actionable. As I mentioned, maybe I’m biased, but
+I think there is too much political thinking and not enough practical approach
+in many areas of modern life. Companies move from selling products to
+subscriptions, political parties lean to the right increasingly, science and
+art seems to rely increasingly on authority, technical communities are invaded
+by evangelists and advocates, and there seems to be a general crisis of trust.&lt;/p&gt;
+&lt;p&gt;I have this hope that the situation could be improved somewhat (or maybe even
+a lot) by promoting the practical worldview more, and pushing to use that
+worldview in more situations. To “embody” and “ground” the thinking, bringing
+it closer to physical reality and verifiable facts. To reject cynicism and
+cruelty of the politicians, and embrace the welcoming and trust of the
+builders. I think it’s a cultural shift that we need. We need more builder
+media, more books, movies, comics, stories, and games that embrace the
+practical worldview.&lt;/p&gt;
+&lt;/section&gt;
+</content>
+    <link href="http://dopieralski.pl/posts/2025-05-09-politics/" rel="alternate"/>
+    <summary>Before we were somewhat brutally brought into the loving embrace of the Roman
+Catholic Church by our considerate neighbours, my country had its own “pagan”
+religion, with its own mythology and traditions. A lot of the traditions
+survive in some way, because you can’t tell people they no longer have
+a holiday on a given day just because they are worshipping a different god
+now, but most information about the beliefs of my ancestors have been
+judiciously eradicated by the same people who were at the time responsible for
+preserving history – the chroniclers were mostly priests at the time, after
+all. Some of it has been reconstructed from mentions in various historical
+texts, but there is very little that is certain. Which is a great shame,
+because those “primitive” mythologies often were records of knowledge about
+the world and its working presented in a form that is easy for people to
+understand – attitudes and relationships. That’s why gods in them are mostly
+humans with special powers connected with the nature. And that “pagan”
+mythology could tell us a lot about how the society functioned back then.</summary>
+    <published>2025-05-09T00:00:00+02:00</published>
   </entry>
 </feed>

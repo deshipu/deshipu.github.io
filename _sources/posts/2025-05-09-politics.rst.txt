@@ -1,0 +1,452 @@
+.. post:: May 9, 2025
+   :category: politics, philosophy, culture
+
+
+Slavic Gods
+===========
+
+Before we were somewhat brutally brought into the loving embrace of the Roman
+Catholic Church by our considerate neighbours, my country had its own "pagan"
+religion, with its own mythology and traditions. A lot of the traditions
+survive in some way, because you can't tell people they no longer have
+a holiday on a given day just because they are worshipping a different god
+now, but most information about the beliefs of my ancestors have been
+judiciously eradicated by the same people who were at the time responsible for
+preserving history -- the chroniclers were mostly priests at the time, after
+all. Some of it has been reconstructed from mentions in various historical
+texts, but there is very little that is certain. Which is a great shame,
+because those "primitive" mythologies often were records of knowledge about
+the world and its working presented in a form that is easy for people to
+understand -- attitudes and relationships. That's why gods in them are mostly
+humans with special powers connected with the nature. And that "pagan"
+mythology could tell us a lot about how the society functioned back then.
+
+For example, one particularly well attested god (possibly because it was easy
+to compare with similar Greek, Roman and Nordic gods) was the god of thunder
+named Perun. He controlled the weather and could send storms and control the
+lightning. His symbol was an oak tree (because those trees were often hit by
+lightnings), and he was said to live on tops of the mountains. He generally
+fits the Proto-Indo-European pattern of a storm god. He was also the god of
+warriors and battle, and he would punish dishonorable behavior with death in
+battle. He was worshipped by warriors and nobility, and his temples and
+statues would often stand on tops of hills, inside city walls.
+
+Some sources indicate, that Perun had a competing god that is, unfortunately,
+not as well attested. His name was Veles, and he was the god of cattle,
+craftsmen, and science (well, magic and secret knowledge, but that's how it
+worked back then). His statues would stand outside the city walls, in the
+village in the valley. He was said to live underground, and to take care of
+the souls of dead people. He would punish breaking of contracts with
+a disease. He was worshipped by what we would today call "upper-middle class"
+-- various craftsmen, artists, shepherds and cowherds, smiths, and so on.
+
+As I said, there are literally only a handful sources mentioning Veles by
+name, and historians mostly reconstructed him from stories that survived to
+the modern times with the gods replaced by saints. In particular, the story of
+Saint George killing a dragon seems to be such a remnant. It's another pattern
+that repeats all over the Proto-Indo-Europen mythology. The story is rather
+simple: there is a drought, and Perun discovers it's caused by Veles in the
+form of a giant snake blocking the water at the source. So he challenges him
+to a fight, which is visible to the people as a storm, with lightning bolts
+hitting the giant snake. Veles avoids defeat using various tricks, but
+eventually escapes and hides, releasing the water, which then falls from the
+sky in the form of rain. Prosperity returns until the next time.
+
+Some historians insist that this is supposed to explain the seasons, but I'm
+doubtful. I think this story tells us about a different social mechanic, one
+that is much more important.
+
+
+Systems of Survival
+===================
+
+Some time ago I stumbled into a small book written by the famous architect and
+urbanist Jane Jacobs titled "Systems of Survival". Unlike her other books,
+it's not about cities, or economy, or urban planning. It's about morality.
+Specifically, it's about morals in professional settings. In that book she
+identifies two "moral syndromes", as she calls them -- two ways at looking at
+the world and deciding what is good and what is bad. The two ways are both
+consistent internally, but often conflict with each other. She named them
+"commercial" and "guardian" (she initially wanted to call it "raider", but
+realized how intimately it is connected with protecting territory). She notes
+that a lot of morally questionable worldviews come from mixing elements from
+those two systems, creating internally inconsistent "monstrous" systems.
+
+She also notes that in the modern world it's impossible to survive sticking to
+only one of those worldviews. We have to switch between them depending on the
+context, using the commercial syndrome in trade, science, and technology, and
+the guardian syndrome in bureaucracy, politics, and public services.
+
+I encourage you to read the book if you can, or at least look at the Wikipedia
+summary of it. It made a huge impression on me, because at the time I was
+investigating a different duality I noticed in my profession.
+
+
+Wizards and Warlocks
+====================
+
+I'm a software engineer. I maintain and develop software for a living. That
+means that I spend a lot of time thinking about programming, and also talk to
+other people about it. I couldn't help but notice that most arguments in the
+programming practice are between two distinct styles of reasoning about
+computer programs. When I looked at it closer, I decided to call the people
+promoting those styles "Wizards" and "Warlocks".
+
+Wizards really appreciate the effort of writing code that is correct,
+performant and generally elegant. They care about the code itself very much.
+They want to understand it all, and to have full control over every aspect of
+it. Even if they include some dependency, it's only after they have reviewed
+it, and possibly even forked and modified it to better match what they expect.
+They tend to work on relatively small, but high quality projects. They also
+tend to stick to a single programming language of choice for the given
+project, and are not afraid of adding things to it if they are required for
+their task. They tend to stick to a single project at a time, and get back to
+it to gradually improve it.
+
+Warlocks just want to get things done. If there is a library or framework that
+already does most of what they need, they are happy to use it. They will copy
+snippets of code from random websites, and even use code generation tools. If
+they are missing something in one language or framework, they don't mind
+changing to another one that has it, or creating a hybrid solution that uses
+both. They usually don't much care for formal correctness, performance, or any
+kind of aesthetics in what they cobble together. They just want it to do the
+thing they need good enough for their needs, and they don't really care how it
+is done under the hood. They also don't come back to old code, unless they
+have to fix something.
+
+Of course in real life nobody is fully a wizard or a warlock. You have to
+switch between the two approaches as needed. Sometimes practicality beats
+purity, sometimes technical debt is unacceptable and needs to be minimized.
+Sometimes you want to move fast and break things, and sometimes you want to
+move slowly and fix them. Knowing when to use which style is an important
+part of being a software engineer.
+
+That doesn't mean there aren't biases. In fact, most people prefer one style
+of work over the other. There are even programming languages and other tools
+that specifically encourage of those styles over the other. While you pick
+them depending on the context, there is always room for interpretation, and
+arguments, and often you will see the same people fall consistently on either
+side of those arguments. Some people simply prefer to be wizards or warlocks.
+
+
+Dualities
+=========
+
+It's easy to find opposing dualities. Good and evil, light and dark, order and
+chaos, female and male -- as soon as we can think about it, we can split it
+into two opposing states. But most of those a gradients. There are a few
+dualities where we can see the two opposing sides, but nothing in between.
+For instance, there are visual tricks, like the Necker cube, where we can
+interpret the same picture in two completely different ways, but not both at
+once. Which interpretation we choose depends on a complex mixture of visual
+hints, lighting, situational context, and personal preference. But we can also
+consciously force ourselves to see it one way or the other, if we want to.
+
+The moral syndromes identified by Jane Jacobs seem to be like that. Once you
+decide on one feature -- for example that it is good to do mutually beneficial
+trade -- all the rest jumps in place: the need for honesty and contracts, the
+universal rights, shunning of force, thriftiness, etc. It's all or nothing. If
+you cherry-pick features from both moral syndromes, you inevitably get an
+inconsistent mixture that is morally questionable. And just like with the
+Necker cube, we seem to naturally pick the syndrome to use based on subtle
+hints, situation, and preference. For example, if the matter at hand is
+related to territory of some kind, we tend to pick the guardian moral
+syndrome. But I think they are also kinda sticky -- once we decide to use one
+and not the other in a given situation, we will tend to repeat that choice
+again in a similar situation, unless we consciously decide otherwise, or
+something happens to change our minds. So as we go through our lives, we
+collect examples of situations and assign them one or the other moral
+syndrome.
+
+
+More than a Syndrome
+====================
+
+Jane Jacobs called her findings "syndromes", because to her that is what it
+was -- literally groups of symptoms. In her book she made observations about
+them, but she refrained from jumping to any conclusions, or speculating about
+the mechanism that creates them.
+
+We don't have to be so restrained ourselves. In fact, I'm now going to make
+wild generalizations and come to crazy conclusions without so much as a shred
+of proof or research. I'm going to do it because it's fun, and because I think
+it's useful to imagine what we *could* find there if we took the time to look
+closer and do proper research. You can think of it like a science fiction book
+about how alien civilizations could look like -- it might be inspired by our
+existing knowledge, but most of it is just fantasy and speculation. Enjoy.
+
+So let's stop calling them "syndromes" and give them a more representative
+name: worldviews. Also, I'm not very fond of the names "guardian" and
+"commercial". I understand where they came from, but I don't like the
+connotations they bring to mind. Let's call them "political worldview" or
+"political thinking" and "practical worldview" or "practical thinking", and
+let's call the people who predominantly use one or the other "politicians" and
+"builders". It will shortly become clear why.
+
+
+Relationship with Truth
+=======================
+
+Every politician knows intimately that truth is always negotiable. It's
+a consensus. You can get away with the most outrageous claims, as long as
+you make them confidently, and other people are inclined to let them slide,
+usually because objecting would be very inconvenient for them. This is why
+they will always try to color the truth to their advantage, and they don't
+even consider this to be lying. And they will also always assume that other
+people are doing it all the time as well. Or should be doing it, and it's
+only their own fault if they are not.
+
+The builders can't afford to bend truth. They usually work where the rubber
+hits the asphalt, and the physical reality doesn't care about how strongly you
+believe something or how convincing you are. You are either right (or close
+enough) and things work, or you aren't, and they fail spectacularly.  Besides,
+physical truths are out there for everyone to see. Unless it's a high energy
+physics problem, you can usually do a simple experiment that will easily show
+you if you are right or not. Even with high energy physics the experiments can
+be replicated and confirmed. So it simply doesn't make sense to lie about
+those things, or even to hide them, because they are in the open for everyone
+to see. And finally, unlike with politicians who always assume you are lying
+anyways, and who are completely unsurprised when you are caught lying, the
+builders care a lot about maintaining trust, and a single lie can ruin your
+reputation.
+
+This points to another clue that can be used to choose which worldview to
+choose in a given situation: when you are building something, doing scientific
+research, planning a trip, or even just cooking, you are better off with the
+practical worldview, because it lets you learn from mistakes and improve your
+technique, until it works. On the other hand, if it's trying to get a building
+permit, doing humanist research, recounting your trip, or organizing a party,
+you will probably be better off with political thinking, as the success
+depends more on other people agreeing with you than on actual physical
+reality.
+
+
+Communication and Trust
+=======================
+
+Builders trust strangers implicitly, at least with low-risk things. With more
+successful interactions that trust increases, and everyone builds
+a reputation. They also treat all promises seriously, and feel very hurt when
+a promise is broken. Even if it's for something insignificant, it can break
+your reputation. Builders will also often communicate without words, by just
+doing things and having others decide how to best cooperate with them, if they
+want to. This is somewhat similar to what is called stigmergy in ants.
+
+Politicians never trust other people, because they assume that everybody are
+lying all the time anyways. This poses a problem, because you need a certain
+amount of trust to cooperate in a society. There are generally two commonly
+used solutions for this.
+
+First, you can put some "skin in the game" to show you really mean what you
+are saying. This can be anything that costs you, like a charity donation, a
+lavish party, generous gifts or bribes, but often also comes down to violence
+or threats of violence. To a politician, nothing underlines your point better
+than a brutal attack to get the other party's attention. Even if the goal is
+alliance, this is not malicious, this is just a way they communicate. You can
+think about it like a elementary school student trying to get the attention of
+a person they like in their class.
+
+The second way to get some semblance of trust, is to get a third party to
+guarantee the agreement, usually by threatening sanctions if it is broken.
+This is why politicians love authorities of all kinds -- they make it easier
+for them to trust each other. Even if the authority in question is corrupt
+itself, to a politician it seems better than just trusting the word of the
+other side.
+
+The practical mindset is also at odds with censorship. If you can see the
+truth from the world around you, it makes little sense to control what people
+talk about. Political mindset regards control of the flow of information as
+very important. After all, it doesn't really matter how things actually are,
+but only what people believe they are. If you can control what people believe,
+you can control reality. This especially shows in how people approach
+scientific publications: the builders will trust the publications that were
+detailed and can be reproduced experimentally. Thew politicians will trust the
+publications published by authoritative organisations.
+
+
+Justice and Force
+=================
+
+This brings us to the use of force. As you can guess, builders hate violence,
+and generally only use it for self-defence (though the definition of
+self-defence can be overly board sometimes). They will hesitantly acknowledge
+the need for violence sometimes, but they will not want to have anything to do
+with it themselves. It's distasteful and uncomfortable. Ideally, all conflicts
+should be resolved peacefully, and the guilty parties should submit willfully
+to whatever punishment (usually in the form of recompense) is necessary.
+
+Builders believe that the world should be fair, and everybody should start out
+with equal rights and opportunities. Some of them will act as if that was
+actually true, and fall for the just-world fallacy. Things not being fair is
+a big problem for them, and they will work to fix such perceived flaws.
+
+The politicians don't mind violence at all, and they will use it casually just
+as a way of amplifying their words. They put fundamental human rights in the
+same category as the tooth fairy and Santa Claus -- it's obviously false, but
+it's rude to say it aloud, because some children still believe it and it's
+cute. The world belongs to the powerful, and if you can't defend your
+property, then it never was yours in the first place.
+
+It's a dog-eat-dog world, and the only way to survive is to be stronger than
+the others. Justice is all about demonstrating your power by retaliating, so
+punishment have to be public, often over the top, and it doesn't really matter
+if they person being punished is actually guilty. It's all about demonstrating
+what happens to those who step out of line.
+
+
+Work and Ownership
+==================
+
+For the builders, your success is comes from the work you do, risks you take,
+and deals you make. Everything you have you either earned by working, or
+traded for something else you earned (or traded, and so on). Everybody work
+together for the common benefit, and make the world a little bit more
+convenient and safe. The things you were given don't really count. Your value
+is based on your skill, industry, and entrepreneurship. You become better by
+learning skills, acquiring tools, and cooperating and competing.
+
+For the politicians, your success is your fate. You are a chosen one, destined
+for greatness, and your rights and obligations come directly from who you are.
+You prove your greatness by defeating others. When you get defeated yourself,
+it's so that you become stronger and more ruthless. The world is a zero-sum
+game, and the only way to grow is by taking from others. And you deserve to
+grow, because you are the destined future of all of humanity, who will perish
+without your leadership. Or something along those lines.
+
+Work is something dirty to politicians. They are aware that it's somehow
+happening somewhere, but they don't talk about it, and don't understand it.
+Value comes from owning things: land, factories, subscription services, mines,
+data centers, patents, copyrights, stock shares, capital, etc. -- owning them
+makes you entitled to the resources they produce. Some of them produce more
+resources than others, but why and how is a mystery. There is a whole area of
+"science" dedicated to explaining the world pretending work doesn't happen,
+and it's called "economy".
+
+If a builder makes something, or works on improving it, or pays for something,
+they want to own it (or a part of it). You should own the fruits of your work.
+You may, and should, give up some of that to cover the costs of infrastructure
+or for social security and the like. Taking something by force is a crime. If
+you find lost property, you should return it to the owner, possibly for
+a prize.
+
+A politician owns anything they can control and defend. If you can take
+something by force and hold on to it, it's now yours. If you lose control of
+something, it's free for taking for anyone else. Finders keepers.
+
+
+Seeing Each Other
+=================
+
+Politicians view the builders as extremely naive and stupid. They think they
+are much smarter and more mature, because they can cheat and trick them. At
+the same time they find builders extremely annoying with their insistence on
+fairness and owning things they made. They most annoying situation is when the
+politics collides with the physical reality, and you absolutely need the
+practical worldview to make any sort of progress, so the politicians have to
+pander to the builders and pretend to care for what they think, or use
+wasteful violence to force them to cooperate.
+
+The builders see the politicians as evil and tedious. Their constant squabbles
+and feuding gets in the way of getting the work done, and their dishonesty
+makes it pretty much impossible to do business with them. The fact that
+a politician would rather be a king on a ruin than an prosperous person among
+equals makes him look like a selfish asshole. When forced to work with them,
+builders will often learn to manage the politicians to keep them busy fighting
+each other and away from interfering with important work.
+
+
+Art and Literature
+==================
+
+If I were to pick two genres of literature that show the differences between
+the two worldviews, I would pick Fantasy and SciFi.
+
+If there is a poor boy who is secretly a prince or otherwise destined to rule
+and save the world, who then proves their worth by coming out victorious from
+different adventures and challenges, defeats both the evil monsters
+threatening the kingdom and any competition, and wins, then you are reading
+political story. Not surprisingly, pretty much any legend, saga, tale, play,
+or epic are political works. Many were directly commissioned by politicians
+as means to achieve political goals, such as fame and immortality. (Did
+I mention politician believe themselves to be immortal?)
+
+On the other hand, if there is skilled and smart inventor who in his garage
+builds an interdimensional gate, explores other worlds, meets and befriends
+strange alien creatures, and is in the end fairly rewarded for his work and
+risks, you might have an example of a builder literature.
+
+There are exceptions. The books of Terry Pratchett, for example, while using
+fantasy tropes, are very much builder literature, speaking about fairness,
+decency, cooperation and healthy competition, and yes, the incomprehensibly
+evil behavior of some selfish people.
+
+There are also stories that happen is space in the future, but are very much
+political in the worldview they present. The entire Warhammer 40k universe is
+an example of this. You have knights with swords and lasers, aliens with
+pointy ears who use magic, immortal skeleton robots, and priceless artifacts.
+
+A lot of movie adaptations of SciFi stores often end up more political than
+the original stories, because they are re-interpreted by politicians in the
+process of adapting for a movie. Any large endeavor like shooting a movie is
+going to be dominated with politicians, especially when there is relatively
+little hard contact with physical reality. The entertainment industry is
+a paradise for them.
+
+
+Good and Evil
+=============
+
+As Jane Jacobs noted, those two worldviews come with two mutually incompatible
+moral codes. Each of them will look evil from the point of view of the other,
+while it will look good and proper from its own point of view. If I'm painting
+the political worldview in darker colors than the practical one, it's because
+of my own biases, and the fact that the political worldview seems to be
+dominating the world right now in many areas that could maybe benefit more
+from a practical approach.
+
+The evil comes from three possible sources. First, as Jane Jacobs noted, when
+you try to mix the tenets of the two systems, you often get a monstrous
+hybrid. Allow commercial deals in your political world view, and you get
+bribes and corruption. Allow violence in your practical worldview, and you get
+East India Company.
+
+The second source is when people disagree about which of the systems should be
+applied in a given situation. Take for example the ridiculously high salaries
+of company CEOs. From a political point of view, they hold a very important
+position, with a lot of responsibility, and so they deserve it. In fact,
+making their salary higher makes the entire company look more powerful. Of
+course from the practical point of view their contribution to the work of the
+company is practically non existent, and often even negative, and they could
+be replaced with a very simple spreadsheet.
+
+Finally, there are things that are evil according to both of those worldviews,
+and no amount of reasoning is going to excuse them.
+
+
+Conclusions
+===========
+
+Where am I going with this? Why am I writing this article at all? Well,
+several reasons.
+
+For one, I wanted to get it off my chest and write it down, so that I can
+refer to it later. Second, it might actually help someone else to understand
+some otherwise inexplicable behavior of other people. I know it helps me to
+navigate politics-rich minefields, mostly to get away from them as fast as
+possible.
+
+Third, I think this might be actionable. As I mentioned, maybe I'm biased, but
+I think there is too much political thinking and not enough practical approach
+in many areas of modern life. Companies move from selling products to
+subscriptions, political parties lean to the right increasingly, science and
+art seems to rely increasingly on authority, technical communities are invaded
+by evangelists and advocates, and there seems to be a general crisis of trust.
+
+I have this hope that the situation could be improved somewhat (or maybe even
+a lot) by promoting the practical worldview more, and pushing to use that
+worldview in more situations. To "embody" and "ground" the thinking, bringing
+it closer to physical reality and verifiable facts. To reject cynicism and
+cruelty of the politicians, and embrace the welcoming and trust of the
+builders. I think it's a cultural shift that we need. We need more builder
+media, more books, movies, comics, stories, and games that embrace the
+practical worldview.
