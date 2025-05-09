@@ -137,7 +137,7 @@ Dualities
 
 It's easy to find opposing dualities. Good and evil, light and dark, order and
 chaos, female and male -- as soon as we can think about it, we can split it
-into two opposing states. But most of those a gradients. There are a few
+into two opposing states. But most of those a gradients. There are few
 dualities where we can see the two opposing sides, but nothing in between.
 For instance, there are visual tricks, like the Necker cube, where we can
 interpret the same picture in two completely different ways, but not both at
