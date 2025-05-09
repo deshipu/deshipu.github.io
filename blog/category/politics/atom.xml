@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>http://dopieralski.pl/</id>
   <title>dopieralski.pl - Posts in politics</title>
-  <updated>2025-05-09T19:02:42.110685+00:00</updated>
+  <updated>2025-05-09T19:05:00.829441+00:00</updated>
   <link href="http://dopieralski.pl/"/>
   <link href="http://dopieralski.pl/blog/category/politics/atom.xml" rel="self"/>
   <generator uri="https://ablog.readthedocs.org/" version="0.10.33">ABlog</generator>
@@ -169,10 +169,12 @@ well we are playing. It can also serve several other purposes.</summary>
   </entry>
   <entry>
     <id>http://dopieralski.pl/posts/2025-05-09-politics/</id>
-    <title>Slavic Gods</title>
+    <title>Political and Practical Worldviews</title>
     <updated>2025-05-09T00:00:00+02:00</updated>
-    <content type="html">&lt;section id="slavic-gods"&gt;
+    <content type="html">&lt;section id="political-and-practical-worldviews"&gt;
 
+&lt;section id="slavic-gods"&gt;
+&lt;h2&gt;Slavic Gods&lt;/h2&gt;
 &lt;p&gt;Before we were somewhat brutally brought into the loving embrace of the Roman
 Catholic Church by our considerate neighbours, my country had its own “pagan”
 religion, with its own mythology and traditions. A lot of the traditions
@@ -221,7 +223,7 @@ doubtful. I think this story tells us about a different social mechanic, one
 that is much more important.&lt;/p&gt;
 &lt;/section&gt;
 &lt;section id="systems-of-survival"&gt;
-&lt;h1&gt;Systems of Survival&lt;/h1&gt;
+&lt;h2&gt;Systems of Survival&lt;/h2&gt;
 &lt;p&gt;Some time ago I stumbled into a small book written by the famous architect and
 urbanist Jane Jacobs titled “Systems of Survival”. Unlike her other books,
 it’s not about cities, or economy, or urban planning. It’s about morality.
@@ -242,7 +244,7 @@ summary of it. It made a huge impression on me, because at the time I was
 investigating a different duality I noticed in my profession.&lt;/p&gt;
 &lt;/section&gt;
 &lt;section id="wizards-and-warlocks"&gt;
-&lt;h1&gt;Wizards and Warlocks&lt;/h1&gt;
+&lt;h2&gt;Wizards and Warlocks&lt;/h2&gt;
 &lt;p&gt;I’m a software engineer. I maintain and develop software for a living. That
 means that I spend a lot of time thinking about programming, and also talk to
 other people about it. I couldn’t help but notice that most arguments in the
@@ -283,7 +285,7 @@ arguments, and often you will see the same people fall consistently on either
 side of those arguments. Some people simply prefer to be wizards or warlocks.&lt;/p&gt;
 &lt;/section&gt;
 &lt;section id="dualities"&gt;
-&lt;h1&gt;Dualities&lt;/h1&gt;
+&lt;h2&gt;Dualities&lt;/h2&gt;
 &lt;p&gt;It’s easy to find opposing dualities. Good and evil, light and dark, order and
 chaos, female and male – as soon as we can think about it, we can split it
 into two opposing states. But most of those a gradients. There are a few
@@ -310,7 +312,7 @@ collect examples of situations and assign them one or the other moral
 syndrome.&lt;/p&gt;
 &lt;/section&gt;
 &lt;section id="more-than-a-syndrome"&gt;
-&lt;h1&gt;More than a Syndrome&lt;/h1&gt;
+&lt;h2&gt;More than a Syndrome&lt;/h2&gt;
 &lt;p&gt;Jane Jacobs called her findings “syndromes”, because to her that is what it
 was – literally groups of symptoms. In her book she made observations about
 them, but she refrained from jumping to any conclusions, or speculating about
@@ -331,7 +333,7 @@ let’s call the people who predominantly use one or the other “politicians”
 “builders”. It will shortly become clear why.&lt;/p&gt;
 &lt;/section&gt;
 &lt;section id="relationship-with-truth"&gt;
-&lt;h1&gt;Relationship with Truth&lt;/h1&gt;
+&lt;h2&gt;Relationship with Truth&lt;/h2&gt;
 &lt;p&gt;Every politician knows intimately that truth is always negotiable. It’s
 a consensus. You can get away with the most outrageous claims, as long as
 you make them confidently, and other people are inclined to let them slide,
@@ -364,7 +366,7 @@ depends more on other people agreeing with you than on actual physical
 reality.&lt;/p&gt;
 &lt;/section&gt;
 &lt;section id="communication-and-trust"&gt;
-&lt;h1&gt;Communication and Trust&lt;/h1&gt;
+&lt;h2&gt;Communication and Trust&lt;/h2&gt;
 &lt;p&gt;Builders trust strangers implicitly, at least with low-risk things. With more
 successful interactions that trust increases, and everyone builds
 a reputation. They also treat all promises seriously, and feel very hurt when
@@ -401,7 +403,7 @@ detailed and can be reproduced experimentally. Thew politicians will trust the
 publications published by authoritative organisations.&lt;/p&gt;
 &lt;/section&gt;
 &lt;section id="justice-and-force"&gt;
-&lt;h1&gt;Justice and Force&lt;/h1&gt;
+&lt;h2&gt;Justice and Force&lt;/h2&gt;
 &lt;p&gt;This brings us to the use of force. As you can guess, builders hate violence,
 and generally only use it for self-defence (though the definition of
 self-defence can be overly board sometimes). They will hesitantly acknowledge
@@ -426,7 +428,7 @@ if they person being punished is actually guilty. It’s all about demonstrating
 what happens to those who step out of line.&lt;/p&gt;
 &lt;/section&gt;
 &lt;section id="work-and-ownership"&gt;
-&lt;h1&gt;Work and Ownership&lt;/h1&gt;
+&lt;h2&gt;Work and Ownership&lt;/h2&gt;
 &lt;p&gt;For the builders, your success is comes from the work you do, risks you take,
 and deals you make. Everything you have you either earned by working, or
 traded for something else you earned (or traded, and so on). Everybody work
@@ -460,7 +462,7 @@ something by force and hold on to it, it’s now yours. If you lose control of
 something, it’s free for taking for anyone else. Finders keepers.&lt;/p&gt;
 &lt;/section&gt;
 &lt;section id="seeing-each-other"&gt;
-&lt;h1&gt;Seeing Each Other&lt;/h1&gt;
+&lt;h2&gt;Seeing Each Other&lt;/h2&gt;
 &lt;p&gt;Politicians view the builders as extremely naive and stupid. They think they
 are much smarter and more mature, because they can cheat and trick them. At
 the same time they find builders extremely annoying with their insistence on
@@ -478,7 +480,7 @@ builders will often learn to manage the politicians to keep them busy fighting
 each other and away from interfering with important work.&lt;/p&gt;
 &lt;/section&gt;
 &lt;section id="art-and-literature"&gt;
-&lt;h1&gt;Art and Literature&lt;/h1&gt;
+&lt;h2&gt;Art and Literature&lt;/h2&gt;
 &lt;p&gt;If I were to pick two genres of literature that show the differences between
 the two worldviews, I would pick Fantasy and SciFi.&lt;/p&gt;
 &lt;p&gt;If there is a poor boy who is secretly a prince or otherwise destined to rule
@@ -509,7 +511,7 @@ little hard contact with physical reality. The entertainment industry is
 a paradise for them.&lt;/p&gt;
 &lt;/section&gt;
 &lt;section id="good-and-evil"&gt;
-&lt;h1&gt;Good and Evil&lt;/h1&gt;
+&lt;h2&gt;Good and Evil&lt;/h2&gt;
 &lt;p&gt;As Jane Jacobs noted, those two worldviews come with two mutually incompatible
 moral codes. Each of them will look evil from the point of view of the other,
 while it will look good and proper from its own point of view. If I’m painting
@@ -534,7 +536,7 @@ be replaced with a very simple spreadsheet.&lt;/p&gt;
 and no amount of reasoning is going to excuse them.&lt;/p&gt;
 &lt;/section&gt;
 &lt;section id="conclusions"&gt;
-&lt;h1&gt;Conclusions&lt;/h1&gt;
+&lt;h2&gt;Conclusions&lt;/h2&gt;
 &lt;p&gt;Where am I going with this? Why am I writing this article at all? Well,
 several reasons.&lt;/p&gt;
 &lt;p&gt;For one, I wanted to get it off my chest and write it down, so that I can
@@ -556,6 +558,7 @@ cruelty of the politicians, and embrace the welcoming and trust of the
 builders. I think it’s a cultural shift that we need. We need more builder
 media, more books, movies, comics, stories, and games that embrace the
 practical worldview.&lt;/p&gt;
+&lt;/section&gt;
 &lt;/section&gt;
 </content>
     <link href="http://dopieralski.pl/posts/2025-05-09-politics/" rel="alternate"/>
