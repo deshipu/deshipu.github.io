@@ -2,69 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>http://dopieralski.pl/</id>
   <title>dopieralski.pl</title>
-  <updated>2025-05-09T19:58:37.327298+00:00</updated>
+  <updated>2025-07-08T09:18:29.574827+00:00</updated>
   <link href="http://dopieralski.pl/"/>
   <link href="http://dopieralski.pl/blog/atom.xml" rel="self"/>
   <generator uri="https://ablog.readthedocs.org/" version="0.10.33">ABlog</generator>
-  <entry>
-    <id>http://dopieralski.pl/posts/2021-01-09-circuitpython/</id>
-    <title>CircuitPython in 2021</title>
-    <updated>2021-01-09T00:00:00+01:00</updated>
-    <content type="html">&lt;section id="circuitpython-in-2021"&gt;
-
-&lt;p&gt;It is once again time for &lt;a class="reference external" href="https://blog.adafruit.com/2021/01/01/where-should-circuitpython-go-in-2021-circuitpython2021-circuitpython/"&gt;Adafruit’s prompt for
-feedback on CircuitPython&lt;/a&gt;. Let’s see what I did
-last year and what I hope for this year.&lt;/p&gt;
-&lt;section id="the-projects"&gt;
-&lt;h2&gt;The Projects&lt;/h2&gt;
-&lt;p&gt;This year was slow project-wise. I did some work on a new, cheaper version of
-my walking robots, but they still need a lot of programming work. Then I went
-into the rabbit hole of low-profile mechanical keyboards, built half a dozen of
-them, until I made a perfect one for me. In the process I also made a library
-for keyboards that has substantially lower resource requirements than existing
-ones.&lt;/p&gt;
-&lt;p&gt;I also ported the Stage game library to a few new platforms, re-made the menu
-program for it, and merged a couple of improvements from other contributors.&lt;/p&gt;
-&lt;p&gt;Right now I’m working on a 6-hole MIDI ocarina, and I’m considering doing a
-business-card sized flat version of PewPew Standalone, with bi-color LEDs.&lt;/p&gt;
-&lt;/section&gt;
-&lt;section id="the-future"&gt;
-&lt;h2&gt;The Future&lt;/h2&gt;
-&lt;p&gt;After most of my plans went awry in 2020, I’m careful about planning anything
-this year. I think I will just be making small projects to keep myself sane,
-and see how the situation develops.&lt;/p&gt;
-&lt;p&gt;In terms of development of CircuitPython, I’m really looking forward to the
-dynamic USB descriptors, because that will let me make my keyboards more usable
-for the general public, and then it will make sense to actually publish them
-properly.&lt;/p&gt;
-&lt;p&gt;It’s also nice to see the work around deep sleep, as this might let me save on
-some parts in the future, moving the power switch to software.&lt;/p&gt;
-&lt;p&gt;The work around reset, safe mode and what file should be run after reset will
-allow me optimize the menu program for PewPews a little better, giving more
-memory to the games.&lt;/p&gt;
-&lt;p&gt;From what I can see most work is still focused on ESP32-S2, but I don’t find
-this particularly interesting for myself. I’m not a great fan of wireless
-solutions in general, and WiFi in particular seems a bit heavy for
-microcontroller-based projects. The need for certification also limits greatly
-what kind of projects I could make with this.&lt;/p&gt;
-&lt;/section&gt;
-&lt;section id="conclusion"&gt;
-&lt;h2&gt;Conclusion&lt;/h2&gt;
-&lt;p&gt;It’s great to see the CircuitPython project progressing and getting more
-popular, and I am very grateful to all contributors for it. Having said that,
-I think it is slowly reaching a point where it has most of what is needed, so
-it’s difficult to be excited about new developments — they are no longer such
-big steps forward. Of course in the long run it is a good thing — we can focus
-more on things we are building with the tool, not on the tool itself.&lt;/p&gt;
-&lt;/section&gt;
-&lt;/section&gt;
-</content>
-    <link href="http://dopieralski.pl/posts/2021-01-09-circuitpython/" rel="alternate"/>
-    <summary>It is once again time for Adafruit’s prompt for
-feedback on CircuitPython. Let’s see what I did
-last year and what I hope for this year.</summary>
-    <published>2021-01-09T00:00:00+01:00</published>
-  </entry>
   <entry>
     <id>http://dopieralski.pl/posts/2021-12-19-small-robots/</id>
     <title>Build Small Robots</title>
@@ -773,5 +714,217 @@ understand – attitudes and relationships. That’s why gods in them are mostly
 humans with special powers connected with the nature. And that “pagan”
 mythology could tell us a lot about how the society functioned back then.</summary>
     <published>2025-05-09T00:00:00+02:00</published>
+  </entry>
+  <entry>
+    <id>http://dopieralski.pl/posts/2025-07-01/</id>
+    <title>The Subtle Art of Automation</title>
+    <updated>2025-07-01T00:00:00+02:00</updated>
+    <content type="html">&lt;section id="the-subtle-art-of-automation"&gt;
+
+&lt;section id="tools"&gt;
+&lt;h2&gt;Tools&lt;/h2&gt;
+&lt;p&gt;Humans are tool-using animals. For a long time it was thought that this is what
+distinguishes us from animals, in fact, but of course if you actually pay
+attention you will notice that animals are using tools all the time. Yes,
+sometimes you can dismiss it as instinctive behavior, as is the fashion, but
+sometimes when it comes to corvids, parrots, octopuses and primates, you really
+have to admit that they do it intentionally and with full knowledge about the
+expected results. Anyways, humans are among tool-using animals.&lt;/p&gt;
+&lt;p&gt;Why do we use tools? Sometimes it’s because we are not strong or dexterous
+enough to do thing we want to do unaided. Or our nails and teeth are not sharp
+enough. Or our sight, hearing, or sense of touch are not good enough. Other
+times we could do the thing unaided if we had to, but tools make it easier or
+more convenient. Sometimes it’s because we don’t want to risk an injury, or to
+get dirty, or we want to avoid other unpleasant sensation. But the reason I
+hear given most often is that by using tools we can do the same thing faster,
+or at larger scale, or otherwise more efficiently. We can achieve the same (or better) result with less effort. Tools can be a labour-saving device.&lt;/p&gt;
+&lt;p&gt;We say “tools”, but it’s not just tools. They are just easy to talk about them,
+because they are tangible, visible things. But it all applies to skills and
+techniques as well. To the “technologies”. Consider, for example, waving
+baskets. It’s something you do by hand (today we do have machines that can do
+it, but let’s assume we are doing it by hand), but you can do it in several
+different ways. Coming up with a new way to wave baskets that is somehow
+easier, faster, lets you use different materials or produces baskets with
+special qualities that the other ways don’t works exactly the same as if you
+created a new tool for doing this. So tools are just physical manifestations
+of technologies, and it’s the technologies we will be concerned about here.&lt;/p&gt;
+&lt;/section&gt;
+&lt;section id="effort"&gt;
+&lt;h2&gt;Effort&lt;/h2&gt;
+&lt;p&gt;So do the technologies really save effort? It certainly feels that way, why
+would we be using them otherwise? But I think it’s a bit more complicated than
+that.&lt;/p&gt;
+&lt;p&gt;Consider the ox-driven plough. On the face of it, it’s a huge improvement about
+the humble hoe that it replaced. Yes, the farmer still has to be present to
+drive the plough, and it still requires a lot of strength, but a large amount
+of that strength is now provided by the animal, and the whole work goes much
+faster. So it’s a definitely a huge saving, at least as long as you only look
+at this short time when the ploughing is actually happening.&lt;/p&gt;
+&lt;p&gt;But the ox has to eat too. And it needs a place to stay, and it needs to be
+taken care of. And when it gets old or sick, it has to be replaced. So for this
+to work in the long run you need a steady supply of oxen. (And I’m not even
+saying anything about the effort of the ox.) So a tiny plot of land that acted
+as the former’s garden and was enough to feed their family now has to become a
+considerably sized field, enough to grow food for a herd of oxen and the people
+needed to take care of them. And since the oxen need to eat the entire year,
+you have to store your crops somehow, and preserve them.  What used to be a
+simple shack with a small garden, where some hoe-ing would happen a few times a
+year, turns into a small village with several huts, a barn, an enclosure, and
+people working around the clock to maintain all that. And don’t even get me
+started about fresh water and the smell of ox everywhere. And of course because
+you are not storing considerable caches of food, your little village is now
+vulnerable to raids and looting (or the more civilized version of it,
+taxation), so you need defensive walls, soldiers (or at least militia),
+weapons, and so on.&lt;/p&gt;
+&lt;p&gt;Looking at it this way you could easily conclude that the hoe is in fact the
+less labor-intensive solution, when considered globally. It only becomes worse
+when you assume that you already have all the infrastructure need for it.&lt;/p&gt;
+&lt;p&gt;But then again, once you have the infrastructure, it enables not just the
+plough, but many other technologies as well. You now have milk and meat. And as
+much ox shit as you can shake a stick at. You have fortifications and army.
+You have a hierarchy to organize and manage it all. You have surplus food to
+trade. And so on and so forth. So assuming you want all those additional things
+too, on top of replacing the hoe, the plough once again becomes the superior
+technology (for some chosen measure).&lt;/p&gt;
+&lt;/section&gt;
+&lt;section id="transformers"&gt;
+&lt;h2&gt;Transformers&lt;/h2&gt;
+&lt;p&gt;So if technologies don’t &lt;em&gt;actually&lt;/em&gt; save effort on their own, what do they do
+exactly? I like to think of them as transforming one kind of effort into
+another kind, potentially better suited for the task at hand, or maybe just
+easier to store or move around. If you compare the rather abstract and nebulous
+idea of effort to thermodynamic idea of energy, a technology could be like,
+say, a solar cell that transforms light into electricity that can be then
+easily moved around using wires and stored using batteries. Or a combustion
+engine that transforms chemical energy of the fossil fuels into kinetic energy
+of a rotating shaft. Of course the similarity is pretty weak, because we don’t
+really have a well defined formal theory of effort, like we have a theory of
+thermodynamics, but I like to believe that there is some kind of law of
+conservation of effort somewhere in there, however fuzzy and approximate it
+might be.&lt;/p&gt;
+&lt;p&gt;In any case, technologies let you transform different kinds of effort,
+sometimes allowing you to store or move it around. What good is that?&lt;/p&gt;
+&lt;p&gt;Turns out that sometimes some kinds of effort are better for a given task
+than other kinds. So you can “save effort” by using the kind that is more
+efficient for the task at hand.&lt;/p&gt;
+&lt;p&gt;And sometimes certain tasks take less effort when they are done at a particular
+place and time, or when they are done at scale. Being able to store and move
+effort lets you rearrange it into more efficient ways.&lt;/p&gt;
+&lt;p&gt;And finally, sometimes you can “outsource” the effort, by taking advantage of
+something someone else already did (or will have to do to clean up after you).
+Fossil fuels, for example, take advantage of the effort the plants of millions
+of years ago spent to turn light into their bodies, and of the effort the
+future generations will have to spend to deal with the climate change.&lt;/p&gt;
+&lt;p&gt;Just like in thermodynamics, those conversions rarely are free – usually they
+take some additional effort, to, say, dig up those fossil fuels, turn them into
+a form that is convenient to use, and transport them to the right place. But
+with the right arrangements, even with that overhead we can often create
+considerable savings.&lt;/p&gt;
+&lt;/section&gt;
+&lt;section id="automation"&gt;
+&lt;h2&gt;Automation&lt;/h2&gt;
+&lt;p&gt;Automation technologies (together with mechanization) are no different in that
+regard, except they tend to require much more infrastructure to make things
+happen “on their own”. They also come with a myth that “you only need to set it
+up once” and they will work forever without expending any further effort.&lt;/p&gt;
+&lt;p&gt;In practice any ongoing process is going to have setup cost and maintenance
+cost (and also cleanup cost, which we often forget about). In addition, the
+requirements for the output of the process are going to change over time, and
+that requires further effort and resources to adjust it to remain useful
+(either by changing the process itself, or by adding extra adapting steps).&lt;/p&gt;
+&lt;p&gt;Now the trick is to setup that automation in a way that minimizes those ongoing
+costs, possibly doing more work up front, or pushing more work to the cleanup
+(and hoping we won’t be around anymore when it happens). This is not a given,
+and if it’s not done intentionally, we might as well end up with an automated
+process that doesn’t in fact save effort, or accomplish other goals that we
+wanted to achieve.&lt;/p&gt;
+&lt;/section&gt;
+&lt;section id="goals"&gt;
+&lt;h2&gt;Goals&lt;/h2&gt;
+&lt;p&gt;Speaking of goals, saving effort is not the only thing technologies can give
+us. In fact, sometimes we are ready to actually spend more effort in order to
+achieve some of the other goals. What are they? Potentially they are infinite,
+but let’s look at some of the most common ones here.&lt;/p&gt;
+&lt;section id="repeatability"&gt;
+&lt;h3&gt;Repeatability&lt;/h3&gt;
+&lt;p&gt;It can be a goal to have multiple similar things, or it can be just enabling
+the further goals like quality control or fine tuning, but automation sure lets
+you do things the same exact way, if setup with that in mind. As a side effect,
+it also makes it easier to debug!&lt;/p&gt;
+&lt;/section&gt;
+&lt;section id="quality-control"&gt;
+&lt;h3&gt;Quality Control&lt;/h3&gt;
+&lt;p&gt;You want to make sure that the things you are making are at least of a certain
+quality. But maybe you also want to make sure that the quality is not
+unnecessarily high, as it usually costs more. If your process is automated,
+then you can easily inspect it, find the parts that have the most impact on
+quality and adjust and monitor them. You can even automate additional quality
+checks.&lt;/p&gt;
+&lt;/section&gt;
+&lt;section id="fine-tuning"&gt;
+&lt;h3&gt;Fine Tuning&lt;/h3&gt;
+&lt;p&gt;But wait, it’s not just quality. You can fiddle with any feature of the process
+this way. The fact that it always happens the same way, except for the parts
+you have changed, lets you more easily see what the results of your changes
+are.&lt;/p&gt;
+&lt;/section&gt;
+&lt;section id="interchangeability"&gt;
+&lt;h3&gt;Interchangeability&lt;/h3&gt;
+&lt;p&gt;If you design your automation right, you can reuse or share parts of it in
+different processes. You could also have intermediate stages of the product
+shared between several different processes. This lets you both save effort and
+be more flexible about your quotas.&lt;/p&gt;
+&lt;/section&gt;
+&lt;section id="scalability"&gt;
+&lt;h3&gt;Scalability&lt;/h3&gt;
+&lt;p&gt;If you make a machine do something, then you can often quite easily run the
+machine faster, or buy several machines and have them run in parallel. You can
+scale your processes this way.&lt;/p&gt;
+&lt;/section&gt;
+&lt;section id="economy-of-scale"&gt;
+&lt;h3&gt;Economy of Scale&lt;/h3&gt;
+&lt;p&gt;Once you can scale something, you can scale it up to huge amounts and make use
+of all those bulk discounts and bulk shipping. More importantly, you can use
+bigger machines to make the same thing faster and cheaper by making a lot at a
+time.&lt;/p&gt;
+&lt;/section&gt;
+&lt;section id="centralization"&gt;
+&lt;h3&gt;Centralization&lt;/h3&gt;
+&lt;p&gt;Obviously if you have big machines doing a lot of work, you want them all in
+one place, so that you can keep all the resources and materials close by,
+and so that the maintenance is easier.&lt;/p&gt;
+&lt;/section&gt;
+&lt;section id="distribution"&gt;
+&lt;h3&gt;Distribution&lt;/h3&gt;
+&lt;p&gt;But you don’t have to centralize everything if you don’t want to. Automation
+also enables distribution, letting you to have the same machine (or script)
+running in many different locations, close to where they are needed.&lt;/p&gt;
+&lt;p&gt;As you can see, automation can be quite useful and universal tool!&lt;/p&gt;
+&lt;/section&gt;
+&lt;/section&gt;
+&lt;section id="conclusion"&gt;
+&lt;h2&gt;Conclusion&lt;/h2&gt;
+&lt;p&gt;So where am I going with this? My main point is that automation is not always
+about saving effort, and that it doesn’t automatically save effort wherever it
+is used. Sometimes it has other goals, and sometimes it actually makes you
+spend more effort, especially when you count all the effort that is normally
+not visible, because it hides in the infrastructure or has been pushed out onto
+the customers.&lt;/p&gt;
+&lt;p&gt;In practice, there are certain patterns and arrangements that you can use with
+automation tools that work well for achieving a given goal. And there are also
+anti-patterns that make automation pointless or even harmful. The trick is in
+knowing what you want to do and how to arrange things to achieve it.&lt;/p&gt;
+&lt;/section&gt;
+&lt;/section&gt;
+</content>
+    <link href="http://dopieralski.pl/posts/2025-07-01/" rel="alternate"/>
+    <summary>Humans are tool-using animals. For a long time it was thought that this is what
+distinguishes us from animals, in fact, but of course if you actually pay
+attention you will notice that animals are using tools all the time. Yes,
+sometimes you can dismiss it as instinctive behavior, as is the fashion, but
+sometimes when it comes to corvids, parrots, octopuses and primates, you really
+have to admit that they do it intentionally and with full knowledge about the
+expected results. Anyways, humans are among tool-using animals.</summary>
+    <published>2025-07-01T00:00:00+02:00</published>
   </entry>
 </feed>
