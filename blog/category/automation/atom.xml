@@ -2,12 +2,12 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>http://dopieralski.pl/</id>
   <title>dopieralski.pl - Posts in automation</title>
-  <updated>2025-07-08T09:18:29.594955+00:00</updated>
+  <updated>2025-07-08T09:47:38.130385+00:00</updated>
   <link href="http://dopieralski.pl/"/>
   <link href="http://dopieralski.pl/blog/category/automation/atom.xml" rel="self"/>
   <generator uri="https://ablog.readthedocs.org/" version="0.10.33">ABlog</generator>
   <entry>
-    <id>http://dopieralski.pl/posts/2025-07-01/</id>
+    <id>http://dopieralski.pl/posts/2025-07-01-automation/</id>
     <title>The Subtle Art of Automation</title>
     <updated>2025-07-01T00:00:00+02:00</updated>
     <content type="html">&lt;section id="the-subtle-art-of-automation"&gt;
@@ -55,7 +55,7 @@ at this short time when the ploughing is actually happening.&lt;/p&gt;
 taken care of. And when it gets old or sick, it has to be replaced. So for this
 to work in the long run you need a steady supply of oxen. (And I’m not even
 saying anything about the effort of the ox.) So a tiny plot of land that acted
-as the former’s garden and was enough to feed their family now has to become a
+as the farmer’s garden and was enough to feed their family now has to become a
 considerably sized field, enough to grow food for a herd of oxen and the people
 needed to take care of them. And since the oxen need to eat the entire year,
 you have to store your crops somehow, and preserve them.  What used to be a
@@ -208,7 +208,7 @@ knowing what you want to do and how to arrange things to achieve it.&lt;/p&gt;
 &lt;/section&gt;
 &lt;/section&gt;
 </content>
-    <link href="http://dopieralski.pl/posts/2025-07-01/" rel="alternate"/>
+    <link href="http://dopieralski.pl/posts/2025-07-01-automation/" rel="alternate"/>
     <summary>Humans are tool-using animals. For a long time it was thought that this is what
 distinguishes us from animals, in fact, but of course if you actually pay
 attention you will notice that animals are using tools all the time. Yes,
