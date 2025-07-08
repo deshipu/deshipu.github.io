@@ -1,0 +1,130 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+  <id>http://dopieralski.pl/</id>
+  <title>dopieralski.pl - Posts in wishes</title>
+  <updated>2025-07-08T12:18:52.339611+00:00</updated>
+  <link href="http://dopieralski.pl/"/>
+  <link href="http://dopieralski.pl/blog/category/wishes/atom.xml" rel="self"/>
+  <generator uri="https://ablog.readthedocs.org/" version="0.10.33">ABlog</generator>
+  <entry>
+    <id>http://dopieralski.pl/posts/2025-07-08-wishes/</id>
+    <title>My Tech Wishes for 2025</title>
+    <updated>2025-07-08T00:00:00+02:00</updated>
+    <content type="html">&lt;section id="my-tech-wishes-for-2025"&gt;
+
+&lt;p&gt;I know it’s a bit late in the year for this kind of post, but I have been busy
+with other things. In any case, I decided to make it about general technology
+related wishes, and not just CircuitPython, but large part of this is going to
+be about CircuitPython anyways. Or at least related.&lt;/p&gt;
+&lt;section id="media-transfer-protocol"&gt;
+&lt;h2&gt;Media Transfer Protocol&lt;/h2&gt;
+&lt;p&gt;Exposing your microcontroller to the computer it is connected to as a disk
+drive is getting really popular now. And it makes a lot of sense too — it doesn’t require you to install any drivers or programs, it easy to understand, and
+very convenient. CircuitPython does it too and I love it. But it does introduce
+a number of problems:&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;p&gt;You have to use a filesystem that is supported on most operating system, and
+with the small sizes you have, it’s usually FAT12, which is not great for
+flash wearing off or fragmentation.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Since diskettes are not as common anymore, proprietary operating systems
+don’t have their implementations of FAT12 tested as well as other things,
+which means there are lots of bugs in MacOS and Windows.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Tools like virus scanners or disk monitors see those drives as regular disks
+and often interact with them in ways that breaks them.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;You can write to the disk only from one side, either through USB, or from
+your code on the device, but not both at the same time.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;All of those problems could be trivially solved if we could only use the MTP
+protocol instead of exposing the disk as a physical device with USB MSC. MTP
+uses commands to manipulate the files, kinda like FTP, instead of writing to
+the disk directly, and writes themselves are done by the microcontroller
+itself, so it’s easy to use any custom filesystem you want, and to ensure
+proper interactions when multiple operations are happening from different
+sources.&lt;/p&gt;
+&lt;p&gt;There is only one problem, and that is iTunes. You see, back when Apple’s flag
+product was a music player, they were very jealous about it, and they tried
+very hard to “protect” their users from using any other music player. They made
+sure their player uses a custom, proprietary protocol for transferring the
+music collection, and they also made sure that Apple computers didn’t support
+transferring of arbitrary files using MTP. They had a problem in that most
+cameras were already using MTP to transfer photos, and their users needed that,
+so they made it an exception: you can use MTP on a Mac, but only for
+transferring image files, and not any other file. Neat, eh?&lt;/p&gt;
+&lt;p&gt;Today you can only find iPads in museums, and iTunes is just a memory in some
+boomer nightmares, but the decision they made back then stays. No arbitrary
+files with MTP, if you use a Mac, you have to install a special program to use
+MTP for anything else than photos. So any microcontroller device that uses MTP
+would not work out of the box on Apple products, which means that nobody does
+it.&lt;/p&gt;
+&lt;p&gt;So my wish is for someone at Apple to revise that decision, recognize how
+stupid and harmful it was, and remove that stupid limitation from all of their
+operating systems, thank you very much. I would also like to see some ready to
+use libraries and examples for using MTP, but that will surely come once it’s
+usable.&lt;/p&gt;
+&lt;/section&gt;
+&lt;section id="circuitpython-on-ch32v208"&gt;
+&lt;h2&gt;CircuitPython on CH32V208&lt;/h2&gt;
+&lt;p&gt;This is something I would love to do myself, but I’m scared to even start, as
+it is a huge amount of work, and just outside of my comfort zone. Basically,
+the bluetooth versions of the CH32 chips tend to have a lot of memory for the
+bluetooth stack, and that makes it theoretically possible to run CircuitPython
+or LUA on them (as long as we don’t need the bluetooth). It’s a nice cheap
+chip, and it would be perfect as a replacement for the SAMD21 chips I currently
+use for the PewPew devices.&lt;/p&gt;
+&lt;p&gt;Of course porting whole CircuitPython to a new chip is a lot of work, and it’s
+something I have never done before, so naturally it’s scary. But people do it,
+so it’s definitely possible.&lt;/p&gt;
+&lt;/section&gt;
+&lt;section id="voice-synthesis"&gt;
+&lt;h2&gt;Voice Synthesis&lt;/h2&gt;
+&lt;p&gt;After my failed attempts to port the SAM voice synthesiser from MicroBit to
+CircuitPython, I’m happy to see that someone ported it to MicroPython, but
+not as a C library, as I wanted to do, but literally rewrote it in Python.
+Now I need to take it and see if it works in CircuitPython as well. Then I can
+make my robots speak.&lt;/p&gt;
+&lt;/section&gt;
+&lt;section id="servo-controller-on-ch32v003"&gt;
+&lt;h2&gt;Servo Controller on CH32V003&lt;/h2&gt;
+&lt;p&gt;This one I’m actually perfectly capable of finishing on my own, I just need to
+find the energy to work on it. I basically want to control 16 servos with good
+resolution using PWM signals specified through I2C. I already have the PWM part
+working, and there are plenty of examples for I2C slave. It’s just a question
+of sitting down and actually writing the code.&lt;/p&gt;
+&lt;p&gt;Once I have it, I can use it in the future versions of FluffBug and WeeBug, and
+also a robot for the new small OpenMV board. It would free up 8 pins on the
+Xiao, which could then be used for a display or I2S amplifier. It would also
+allow for connecting additional servos, for things like arms or moving
+features.&lt;/p&gt;
+&lt;/section&gt;
+&lt;section id="led-matrices-on-ch32v003"&gt;
+&lt;h2&gt;LED Matrices on CH32V003&lt;/h2&gt;
+&lt;p&gt;I also have two projects with LED matrices for the CH32V003 that I still need
+to program. One is a spectrum analyzer thing, and the hard part is the FFT
+code for it (though there are plenty of examples), and the other is a business
+card fake PewPew—not really running CircuitPython, but with some of the
+PewPew games implemented directly in C and hardcoded in the device.&lt;/p&gt;
+&lt;/section&gt;
+&lt;section id="gif-pendant"&gt;
+&lt;h2&gt;GIF Pendant&lt;/h2&gt;
+&lt;p&gt;Finally, I’m also still working on my GIF pendant project. Now with a round
+screen and CH32V208 as the brains. I have a TinyUSB example for USB MSC in
+RAM working on it. What I need to figure out how to put the storage on the
+internal flash instead, and how to access it from the code to render those
+GIF files onto the screen. Again, it’s something I have never done, and there
+isn’t much documentation about it around, so it’s a lot of trial and error.
+I wish someone who is more knowledgable about TinyUSB and USB MSC could help
+me with that.&lt;/p&gt;
+&lt;p&gt;And that’s pretty much it for me for 2025. It’s mostly projects I would like
+to finish (or would like someone to finish for me), except for that Apple MTP
+thing. Will I get any of my wishes come true? We will see.&lt;/p&gt;
+&lt;/section&gt;
+&lt;/section&gt;
+</content>
+    <link href="http://dopieralski.pl/posts/2025-07-08-wishes/" rel="alternate"/>
+    <summary>I know it’s a bit late in the year for this kind of post, but I have been busy
+with other things. In any case, I decided to make it about general technology
+related wishes, and not just CircuitPython, but large part of this is going to
+be about CircuitPython anyways. Or at least related.</summary>
+    <published>2025-07-08T00:00:00+02:00</published>
+  </entry>
+</feed>

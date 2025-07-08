@@ -2,128 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>http://dopieralski.pl/</id>
   <title>dopieralski.pl - Posts in electronics</title>
-  <updated>2025-07-08T09:47:38.148642+00:00</updated>
+  <updated>2025-07-08T12:18:52.284286+00:00</updated>
   <link href="http://dopieralski.pl/"/>
   <link href="http://dopieralski.pl/blog/category/electronics/atom.xml" rel="self"/>
   <generator uri="https://ablog.readthedocs.org/" version="0.10.33">ABlog</generator>
-  <entry>
-    <id>http://dopieralski.pl/posts/2019-01-04-circuitpython/</id>
-    <title>CircuitPython in 2019</title>
-    <updated>2019-01-04T00:00:00+01:00</updated>
-    <content type="html">&lt;section id="circuitpython-in-2019"&gt;
-
-&lt;p&gt;Adafruit has requested &lt;a class="reference external" href="https://blog.adafruit.com/2018/12/17/what-do-you-want-from-circuitpython-in-2019-circuitpython2019-circuitpython/"&gt;on their blog&lt;/a&gt;
-feedback and comments about CircuitPython in 2019, so here I go. I am mostly
-going to talk about three things: the projects that I personally want to do
-using it, the ongoing developments that I would love to see finished this year,
-and some completely crazy stuff that could potentially be added if someone
-smarter than me and with copious free time worked on it.&lt;/p&gt;
-&lt;section id="the-projects"&gt;
-&lt;h2&gt;The Projects&lt;/h2&gt;
-&lt;section id="pewpew"&gt;
-&lt;h3&gt;PewPew&lt;/h3&gt;
-&lt;aside class="system-message"&gt;
-&lt;p class="system-message-title"&gt;System Message: INFO/1 (&lt;span class="docutils literal"&gt;/home/sheep/dev/ablog/dopieralski.pl/posts/2019-01-04-circuitpython.rst&lt;/span&gt;, line 6); &lt;em&gt;&lt;a href="#id1"&gt;backlink&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;Duplicate implicit target name: “pewpew”.&lt;/p&gt;
-&lt;/aside&gt;
-&lt;p&gt;The immediate thing with highest priority right now is the &lt;a class="reference external" href="http://pewpew.rtfd.io"&gt;PewPew&lt;/a&gt; educational game console, and the workshop I’m
-planning to run with it really soon now (™). I’m rather happy with the hardware
-and the &lt;code class="docutils literal notranslate"&gt;&lt;span class="pre"&gt;pew&lt;/span&gt;&lt;/code&gt; library on it, but I need to work on preparing more learning
-materials and example games for it. I also need to reorganize the repository to
-make it easier to follow and contribute to it.&lt;/p&gt;
-&lt;/section&gt;
-&lt;section id="game-and-successors"&gt;
-&lt;h3&gt;µGame and Successors&lt;/h3&gt;
-&lt;p&gt;A much lower priority thing is to write those games that I have built the
-&lt;a class="reference external" href="http://ugame.rtfd.io"&gt;µGame&lt;/a&gt; for, and possibly also port/rewrite those games
-for Adafruit’s game console when it is finally released. That is probably not
-going to happen very soon, though, so I have some time. If motivation suffices,
-I will probably also improve the &lt;code class="docutils literal notranslate"&gt;&lt;span class="pre"&gt;stage&lt;/span&gt;&lt;/code&gt; game library that µGame uses, and
-create more ready-to-use resources for it.&lt;/p&gt;
-&lt;/section&gt;
-&lt;section id="kubik-and-tote"&gt;
-&lt;h3&gt;Kubik and Tote&lt;/h3&gt;
-&lt;p&gt;While the homebrew game consoles took most of my free time last year, this year
-I want to come back to my robots for a bit. In particular, I want to finish the
-design and programming of ESP8266-based version of &lt;a class="reference external" href="http://tote.rtfd.io"&gt;Tote&lt;/a&gt;, and to finish the Kubik M0 robot (possibly switching
-it to NRF52 in the process). There is also a number of old robots I would like
-to re-visit and finish, such as the &lt;a class="reference external" href="https://hackaday.io/project/7168-logicoma-kun"&gt;Logicoma-kun&lt;/a&gt;, &lt;a class="reference external" href="https://hackaday.io/project/10665-pony-bot"&gt;Pony Bot&lt;/a&gt;, and &lt;a class="reference external" href="https://hackaday.io/project/10534-hexapod-henk-mkii"&gt;Henk the Hexapod&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;I also need to explore more better ways of doing inverse kinematics,
-interpreting accelerometer output, reacting to touch sensors on the legs, and
-possibly also to force sensors in the joints and complaint motion.&lt;/p&gt;
-&lt;/section&gt;
-&lt;section id="badges-and-wearables"&gt;
-&lt;h3&gt;Badges and Wearables&lt;/h3&gt;
-&lt;p&gt;The CircuitPython Badge project is suspended, as the people who wanted to work
-with me to get it to conferences gave up on it, but if there is a Python
-conference that wants it, I might work on it again.&lt;/p&gt;
-&lt;p&gt;I also have this wearable hub prototype, for which I want to make some
-interactive jewelry and accessories. No idea about anything specific yet, but I
-think I will have cat ears for sure, at the least. Maybe also a video pendant.&lt;/p&gt;
-&lt;/section&gt;
-&lt;/section&gt;
-&lt;section id="circuitpython-development"&gt;
-&lt;h2&gt;CircuitPython Development&lt;/h2&gt;
-&lt;section id="textmode-library"&gt;
-&lt;h3&gt;TextMode Library&lt;/h3&gt;
-&lt;p&gt;I really want to write a CircuitPython library that would let you do something
-like the old DOS text mode display, and that would support a variety of
-different displays and fonts. I already have some prototypes for OLED and TFT
-displays, but I need to sit down and bring it all together with a consistent
-API.&lt;/p&gt;
-&lt;/section&gt;
-&lt;section id="built-in-display-support"&gt;
-&lt;h3&gt;Built-in Display Support&lt;/h3&gt;
-&lt;p&gt;I’m waiting with bated breath for the built-in support for displays that is
-being worked on. It will not only make it trivially easy to display the errors
-and the REPL console on any display connected to CircuitPython boards, but also
-let do high-performance graphic operations, and create games like on the µGame.
-This is probably also a prerequisite for that game console board to be released
-by Adafruit, so I really can’t wait for it.&lt;/p&gt;
-&lt;/section&gt;
-&lt;section id="wireless-communication"&gt;
-&lt;h3&gt;Wireless Communication&lt;/h3&gt;
-&lt;p&gt;There is a new library for using ESP8266 as a WiFi module in the AT mode, but
-also some improvement to the RFM9x module support, and of course support for
-NRF52 chips means there is Bluetooth support coming. I’m really looking forward
-to being able to use any of those in CircuitPython, and I hope that the coming
-year will bring a standardised and consistent API for wireless communication.&lt;/p&gt;
-&lt;/section&gt;
-&lt;/section&gt;
-&lt;section id="crazy-project-ideas"&gt;
-&lt;h2&gt;Crazy Project Ideas&lt;/h2&gt;
-&lt;section id="speech-synthesizer"&gt;
-&lt;h3&gt;Speech Synthesizer&lt;/h3&gt;
-&lt;p&gt;The same speech synthesizer that is used to make the Micro:bit talk should be
-very easy to port to CircuitPython, and should even have much better sound
-quality by using the DAC.&lt;/p&gt;
-&lt;/section&gt;
-&lt;section id="speech-recognition"&gt;
-&lt;h3&gt;Speech Recognition&lt;/h3&gt;
-&lt;p&gt;At the same time, it might be possible to use the stronger M4 boards to do
-trigger word recognition, using the same algorithm as the Snowboy program for
-Raspberry Pi. This requires a lot of knowledge and patience that I don’t have,
-but it could be potentially very useful project.&lt;/p&gt;
-&lt;/section&gt;
-&lt;/section&gt;
-&lt;section id="summary"&gt;
-&lt;h2&gt;Summary&lt;/h2&gt;
-&lt;p&gt;That’s all I have right now. As you can see, there is a lot of hope and very
-few promises. That’s because the trend in the recent years is for me to have
-less and less time and motivation for my projects. Perhaps the trend will
-reverse at some point, but until then I try to not plan ahead too much.&lt;/p&gt;
-&lt;/section&gt;
-&lt;/section&gt;
-</content>
-    <link href="http://dopieralski.pl/posts/2019-01-04-circuitpython/" rel="alternate"/>
-    <summary>Adafruit has requested on their blog
-feedback and comments about CircuitPython in 2019, so here I go. I am mostly
-going to talk about three things: the projects that I personally want to do
-using it, the ongoing developments that I would love to see finished this year,
-and some completely crazy stuff that could potentially be added if someone
-smarter than me and with copious free time worked on it.</summary>
-    <published>2019-01-04T00:00:00+01:00</published>
-  </entry>
   <entry>
     <id>http://dopieralski.pl/posts/2020-01-02-circuitpython/</id>
     <title>CircuitPython in 2020</title>
@@ -520,5 +402,126 @@ situation will improve.&lt;/p&gt;
     <summary>As every year, it’s time for a yearly summary and plans of all things I do
 that are related to CircuitPython.</summary>
     <published>2022-01-22T00:00:00+01:00</published>
+  </entry>
+  <entry>
+    <id>http://dopieralski.pl/posts/2025-07-08-wishes/</id>
+    <title>My Tech Wishes for 2025</title>
+    <updated>2025-07-08T00:00:00+02:00</updated>
+    <content type="html">&lt;section id="my-tech-wishes-for-2025"&gt;
+
+&lt;p&gt;I know it’s a bit late in the year for this kind of post, but I have been busy
+with other things. In any case, I decided to make it about general technology
+related wishes, and not just CircuitPython, but large part of this is going to
+be about CircuitPython anyways. Or at least related.&lt;/p&gt;
+&lt;section id="media-transfer-protocol"&gt;
+&lt;h2&gt;Media Transfer Protocol&lt;/h2&gt;
+&lt;p&gt;Exposing your microcontroller to the computer it is connected to as a disk
+drive is getting really popular now. And it makes a lot of sense too — it doesn’t require you to install any drivers or programs, it easy to understand, and
+very convenient. CircuitPython does it too and I love it. But it does introduce
+a number of problems:&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;p&gt;You have to use a filesystem that is supported on most operating system, and
+with the small sizes you have, it’s usually FAT12, which is not great for
+flash wearing off or fragmentation.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Since diskettes are not as common anymore, proprietary operating systems
+don’t have their implementations of FAT12 tested as well as other things,
+which means there are lots of bugs in MacOS and Windows.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Tools like virus scanners or disk monitors see those drives as regular disks
+and often interact with them in ways that breaks them.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;You can write to the disk only from one side, either through USB, or from
+your code on the device, but not both at the same time.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;All of those problems could be trivially solved if we could only use the MTP
+protocol instead of exposing the disk as a physical device with USB MSC. MTP
+uses commands to manipulate the files, kinda like FTP, instead of writing to
+the disk directly, and writes themselves are done by the microcontroller
+itself, so it’s easy to use any custom filesystem you want, and to ensure
+proper interactions when multiple operations are happening from different
+sources.&lt;/p&gt;
+&lt;p&gt;There is only one problem, and that is iTunes. You see, back when Apple’s flag
+product was a music player, they were very jealous about it, and they tried
+very hard to “protect” their users from using any other music player. They made
+sure their player uses a custom, proprietary protocol for transferring the
+music collection, and they also made sure that Apple computers didn’t support
+transferring of arbitrary files using MTP. They had a problem in that most
+cameras were already using MTP to transfer photos, and their users needed that,
+so they made it an exception: you can use MTP on a Mac, but only for
+transferring image files, and not any other file. Neat, eh?&lt;/p&gt;
+&lt;p&gt;Today you can only find iPads in museums, and iTunes is just a memory in some
+boomer nightmares, but the decision they made back then stays. No arbitrary
+files with MTP, if you use a Mac, you have to install a special program to use
+MTP for anything else than photos. So any microcontroller device that uses MTP
+would not work out of the box on Apple products, which means that nobody does
+it.&lt;/p&gt;
+&lt;p&gt;So my wish is for someone at Apple to revise that decision, recognize how
+stupid and harmful it was, and remove that stupid limitation from all of their
+operating systems, thank you very much. I would also like to see some ready to
+use libraries and examples for using MTP, but that will surely come once it’s
+usable.&lt;/p&gt;
+&lt;/section&gt;
+&lt;section id="circuitpython-on-ch32v208"&gt;
+&lt;h2&gt;CircuitPython on CH32V208&lt;/h2&gt;
+&lt;p&gt;This is something I would love to do myself, but I’m scared to even start, as
+it is a huge amount of work, and just outside of my comfort zone. Basically,
+the bluetooth versions of the CH32 chips tend to have a lot of memory for the
+bluetooth stack, and that makes it theoretically possible to run CircuitPython
+or LUA on them (as long as we don’t need the bluetooth). It’s a nice cheap
+chip, and it would be perfect as a replacement for the SAMD21 chips I currently
+use for the PewPew devices.&lt;/p&gt;
+&lt;p&gt;Of course porting whole CircuitPython to a new chip is a lot of work, and it’s
+something I have never done before, so naturally it’s scary. But people do it,
+so it’s definitely possible.&lt;/p&gt;
+&lt;/section&gt;
+&lt;section id="voice-synthesis"&gt;
+&lt;h2&gt;Voice Synthesis&lt;/h2&gt;
+&lt;p&gt;After my failed attempts to port the SAM voice synthesiser from MicroBit to
+CircuitPython, I’m happy to see that someone ported it to MicroPython, but
+not as a C library, as I wanted to do, but literally rewrote it in Python.
+Now I need to take it and see if it works in CircuitPython as well. Then I can
+make my robots speak.&lt;/p&gt;
+&lt;/section&gt;
+&lt;section id="servo-controller-on-ch32v003"&gt;
+&lt;h2&gt;Servo Controller on CH32V003&lt;/h2&gt;
+&lt;p&gt;This one I’m actually perfectly capable of finishing on my own, I just need to
+find the energy to work on it. I basically want to control 16 servos with good
+resolution using PWM signals specified through I2C. I already have the PWM part
+working, and there are plenty of examples for I2C slave. It’s just a question
+of sitting down and actually writing the code.&lt;/p&gt;
+&lt;p&gt;Once I have it, I can use it in the future versions of FluffBug and WeeBug, and
+also a robot for the new small OpenMV board. It would free up 8 pins on the
+Xiao, which could then be used for a display or I2S amplifier. It would also
+allow for connecting additional servos, for things like arms or moving
+features.&lt;/p&gt;
+&lt;/section&gt;
+&lt;section id="led-matrices-on-ch32v003"&gt;
+&lt;h2&gt;LED Matrices on CH32V003&lt;/h2&gt;
+&lt;p&gt;I also have two projects with LED matrices for the CH32V003 that I still need
+to program. One is a spectrum analyzer thing, and the hard part is the FFT
+code for it (though there are plenty of examples), and the other is a business
+card fake PewPew—not really running CircuitPython, but with some of the
+PewPew games implemented directly in C and hardcoded in the device.&lt;/p&gt;
+&lt;/section&gt;
+&lt;section id="gif-pendant"&gt;
+&lt;h2&gt;GIF Pendant&lt;/h2&gt;
+&lt;p&gt;Finally, I’m also still working on my GIF pendant project. Now with a round
+screen and CH32V208 as the brains. I have a TinyUSB example for USB MSC in
+RAM working on it. What I need to figure out how to put the storage on the
+internal flash instead, and how to access it from the code to render those
+GIF files onto the screen. Again, it’s something I have never done, and there
+isn’t much documentation about it around, so it’s a lot of trial and error.
+I wish someone who is more knowledgable about TinyUSB and USB MSC could help
+me with that.&lt;/p&gt;
+&lt;p&gt;And that’s pretty much it for me for 2025. It’s mostly projects I would like
+to finish (or would like someone to finish for me), except for that Apple MTP
+thing. Will I get any of my wishes come true? We will see.&lt;/p&gt;
+&lt;/section&gt;
+&lt;/section&gt;
+</content>
+    <link href="http://dopieralski.pl/posts/2025-07-08-wishes/" rel="alternate"/>
+    <summary>I know it’s a bit late in the year for this kind of post, but I have been busy
+with other things. In any case, I decided to make it about general technology
+related wishes, and not just CircuitPython, but large part of this is going to
+be about CircuitPython anyways. Or at least related.</summary>
+    <published>2025-07-08T00:00:00+02:00</published>
   </entry>
 </feed>

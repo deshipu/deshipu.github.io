@@ -1,0 +1,125 @@
+.. post:: July 8, 2025
+   :category: circuitpython, python, electronics, hardware, wishes
+
+My Tech Wishes for 2025
+***********************
+
+I know it's a bit late in the year for this kind of post, but I have been busy
+with other things. In any case, I decided to make it about general technology
+related wishes, and not just CircuitPython, but large part of this is going to
+be about CircuitPython anyways. Or at least related.
+
+Media Transfer Protocol
+=======================
+
+Exposing your microcontroller to the computer it is connected to as a disk
+drive is getting really popular now. And it makes a lot of sense too --- it doesn't require you to install any drivers or programs, it easy to understand, and
+very convenient. CircuitPython does it too and I love it. But it does introduce
+a number of problems:
+
+* You have to use a filesystem that is supported on most operating system, and
+  with the small sizes you have, it's usually FAT12, which is not great for
+  flash wearing off or fragmentation.
+* Since diskettes are not as common anymore, proprietary operating systems
+  don't have their implementations of FAT12 tested as well as other things,
+  which means there are lots of bugs in MacOS and Windows.
+* Tools like virus scanners or disk monitors see those drives as regular disks
+  and often interact with them in ways that breaks them.
+* You can write to the disk only from one side, either through USB, or from
+  your code on the device, but not both at the same time.
+
+All of those problems could be trivially solved if we could only use the MTP
+protocol instead of exposing the disk as a physical device with USB MSC. MTP
+uses commands to manipulate the files, kinda like FTP, instead of writing to
+the disk directly, and writes themselves are done by the microcontroller
+itself, so it's easy to use any custom filesystem you want, and to ensure
+proper interactions when multiple operations are happening from different
+sources.
+
+There is only one problem, and that is iTunes. You see, back when Apple's flag
+product was a music player, they were very jealous about it, and they tried
+very hard to "protect" their users from using any other music player. They made
+sure their player uses a custom, proprietary protocol for transferring the
+music collection, and they also made sure that Apple computers didn't support
+transferring of arbitrary files using MTP. They had a problem in that most
+cameras were already using MTP to transfer photos, and their users needed that,
+so they made it an exception: you can use MTP on a Mac, but only for
+transferring image files, and not any other file. Neat, eh?
+
+Today you can only find iPads in museums, and iTunes is just a memory in some
+boomer nightmares, but the decision they made back then stays. No arbitrary
+files with MTP, if you use a Mac, you have to install a special program to use
+MTP for anything else than photos. So any microcontroller device that uses MTP
+would not work out of the box on Apple products, which means that nobody does
+it.
+
+So my wish is for someone at Apple to revise that decision, recognize how
+stupid and harmful it was, and remove that stupid limitation from all of their
+operating systems, thank you very much. I would also like to see some ready to
+use libraries and examples for using MTP, but that will surely come once it's
+usable.
+
+CircuitPython on CH32V208
+=========================
+
+This is something I would love to do myself, but I'm scared to even start, as
+it is a huge amount of work, and just outside of my comfort zone. Basically,
+the bluetooth versions of the CH32 chips tend to have a lot of memory for the
+bluetooth stack, and that makes it theoretically possible to run CircuitPython
+or LUA on them (as long as we don't need the bluetooth). It's a nice cheap
+chip, and it would be perfect as a replacement for the SAMD21 chips I currently
+use for the PewPew devices.
+
+Of course porting whole CircuitPython to a new chip is a lot of work, and it's
+something I have never done before, so naturally it's scary. But people do it,
+so it's definitely possible.
+
+Voice Synthesis
+===============
+
+After my failed attempts to port the SAM voice synthesiser from MicroBit to
+CircuitPython, I'm happy to see that someone ported it to MicroPython, but
+not as a C library, as I wanted to do, but literally rewrote it in Python.
+Now I need to take it and see if it works in CircuitPython as well. Then I can
+make my robots speak.
+
+Servo Controller on CH32V003
+============================
+
+This one I'm actually perfectly capable of finishing on my own, I just need to
+find the energy to work on it. I basically want to control 16 servos with good
+resolution using PWM signals specified through I2C. I already have the PWM part
+working, and there are plenty of examples for I2C slave. It's just a question
+of sitting down and actually writing the code.
+
+Once I have it, I can use it in the future versions of FluffBug and WeeBug, and
+also a robot for the new small OpenMV board. It would free up 8 pins on the
+Xiao, which could then be used for a display or I2S amplifier. It would also
+allow for connecting additional servos, for things like arms or moving
+features.
+
+LED Matrices on CH32V003
+========================
+
+I also have two projects with LED matrices for the CH32V003 that I still need
+to program. One is a spectrum analyzer thing, and the hard part is the FFT
+code for it (though there are plenty of examples), and the other is a business
+card fake PewPew---not really running CircuitPython, but with some of the
+PewPew games implemented directly in C and hardcoded in the device.
+
+GIF Pendant
+===========
+
+Finally, I'm also still working on my GIF pendant project. Now with a round
+screen and CH32V208 as the brains. I have a TinyUSB example for USB MSC in
+RAM working on it. What I need to figure out how to put the storage on the
+internal flash instead, and how to access it from the code to render those
+GIF files onto the screen. Again, it's something I have never done, and there
+isn't much documentation about it around, so it's a lot of trial and error.
+I wish someone who is more knowledgable about TinyUSB and USB MSC could help
+me with that.
+
+
+And that's pretty much it for me for 2025. It's mostly projects I would like
+to finish (or would like someone to finish for me), except for that Apple MTP
+thing. Will I get any of my wishes come true? We will see.

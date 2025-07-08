@@ -1,0 +1,164 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+
+    <title>My Tech Wishes for 2025 - dopieralski.pl</title>
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/basic.css" />
+    <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/sphinx_highlight.js"></script>
+    <link rel="author" title="About these documents" href="../../about/" />
+    <link rel="index" title="Index" href="../../genindex/" />
+    <link rel="search" title="Search" href="../../search/" />
+  
+     
+    <link rel="stylesheet" href="../../_static/custom.css" type="text/css" />
+    <link rel="icon" type="image/png" href="../../_static/favicon.png">
+
+  
+  <link rel="alternate" type="application/atom+xml"  href="../../blog/atom.xml" title="dopieralski.pl">
+  
+
+  </head><body>
+<div id="topbar">
+<div id="searchbox" style="display: none" role="search">
+    <div class="searchformwrapper">
+    <form class="search" action="../../search/" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="search" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+    <div id="logo"><a href="../../">
+        <img
+            src="/_static/logo.png"
+            alt=""
+        />dopieralski.pl</a></div>
+</div>
+
+<div role="main">
+  <section id="my-tech-wishes-for-2025">
+<h1>My Tech Wishes for 2025<a class="headerlink" href="#my-tech-wishes-for-2025" title="Permalink to this heading">¶</a></h1>
+<p>I know it’s a bit late in the year for this kind of post, but I have been busy
+with other things. In any case, I decided to make it about general technology
+related wishes, and not just CircuitPython, but large part of this is going to
+be about CircuitPython anyways. Or at least related.</p>
+<section id="media-transfer-protocol">
+<h2>Media Transfer Protocol<a class="headerlink" href="#media-transfer-protocol" title="Permalink to this heading">¶</a></h2>
+<p>Exposing your microcontroller to the computer it is connected to as a disk
+drive is getting really popular now. And it makes a lot of sense too — it doesn’t require you to install any drivers or programs, it easy to understand, and
+very convenient. CircuitPython does it too and I love it. But it does introduce
+a number of problems:</p>
+<ul class="simple">
+<li><p>You have to use a filesystem that is supported on most operating system, and
+with the small sizes you have, it’s usually FAT12, which is not great for
+flash wearing off or fragmentation.</p></li>
+<li><p>Since diskettes are not as common anymore, proprietary operating systems
+don’t have their implementations of FAT12 tested as well as other things,
+which means there are lots of bugs in MacOS and Windows.</p></li>
+<li><p>Tools like virus scanners or disk monitors see those drives as regular disks
+and often interact with them in ways that breaks them.</p></li>
+<li><p>You can write to the disk only from one side, either through USB, or from
+your code on the device, but not both at the same time.</p></li>
+</ul>
+<p>All of those problems could be trivially solved if we could only use the MTP
+protocol instead of exposing the disk as a physical device with USB MSC. MTP
+uses commands to manipulate the files, kinda like FTP, instead of writing to
+the disk directly, and writes themselves are done by the microcontroller
+itself, so it’s easy to use any custom filesystem you want, and to ensure
+proper interactions when multiple operations are happening from different
+sources.</p>
+<p>There is only one problem, and that is iTunes. You see, back when Apple’s flag
+product was a music player, they were very jealous about it, and they tried
+very hard to “protect” their users from using any other music player. They made
+sure their player uses a custom, proprietary protocol for transferring the
+music collection, and they also made sure that Apple computers didn’t support
+transferring of arbitrary files using MTP. They had a problem in that most
+cameras were already using MTP to transfer photos, and their users needed that,
+so they made it an exception: you can use MTP on a Mac, but only for
+transferring image files, and not any other file. Neat, eh?</p>
+<p>Today you can only find iPads in museums, and iTunes is just a memory in some
+boomer nightmares, but the decision they made back then stays. No arbitrary
+files with MTP, if you use a Mac, you have to install a special program to use
+MTP for anything else than photos. So any microcontroller device that uses MTP
+would not work out of the box on Apple products, which means that nobody does
+it.</p>
+<p>So my wish is for someone at Apple to revise that decision, recognize how
+stupid and harmful it was, and remove that stupid limitation from all of their
+operating systems, thank you very much. I would also like to see some ready to
+use libraries and examples for using MTP, but that will surely come once it’s
+usable.</p>
+</section>
+<section id="circuitpython-on-ch32v208">
+<h2>CircuitPython on CH32V208<a class="headerlink" href="#circuitpython-on-ch32v208" title="Permalink to this heading">¶</a></h2>
+<p>This is something I would love to do myself, but I’m scared to even start, as
+it is a huge amount of work, and just outside of my comfort zone. Basically,
+the bluetooth versions of the CH32 chips tend to have a lot of memory for the
+bluetooth stack, and that makes it theoretically possible to run CircuitPython
+or LUA on them (as long as we don’t need the bluetooth). It’s a nice cheap
+chip, and it would be perfect as a replacement for the SAMD21 chips I currently
+use for the PewPew devices.</p>
+<p>Of course porting whole CircuitPython to a new chip is a lot of work, and it’s
+something I have never done before, so naturally it’s scary. But people do it,
+so it’s definitely possible.</p>
+</section>
+<section id="voice-synthesis">
+<h2>Voice Synthesis<a class="headerlink" href="#voice-synthesis" title="Permalink to this heading">¶</a></h2>
+<p>After my failed attempts to port the SAM voice synthesiser from MicroBit to
+CircuitPython, I’m happy to see that someone ported it to MicroPython, but
+not as a C library, as I wanted to do, but literally rewrote it in Python.
+Now I need to take it and see if it works in CircuitPython as well. Then I can
+make my robots speak.</p>
+</section>
+<section id="servo-controller-on-ch32v003">
+<h2>Servo Controller on CH32V003<a class="headerlink" href="#servo-controller-on-ch32v003" title="Permalink to this heading">¶</a></h2>
+<p>This one I’m actually perfectly capable of finishing on my own, I just need to
+find the energy to work on it. I basically want to control 16 servos with good
+resolution using PWM signals specified through I2C. I already have the PWM part
+working, and there are plenty of examples for I2C slave. It’s just a question
+of sitting down and actually writing the code.</p>
+<p>Once I have it, I can use it in the future versions of FluffBug and WeeBug, and
+also a robot for the new small OpenMV board. It would free up 8 pins on the
+Xiao, which could then be used for a display or I2S amplifier. It would also
+allow for connecting additional servos, for things like arms or moving
+features.</p>
+</section>
+<section id="led-matrices-on-ch32v003">
+<h2>LED Matrices on CH32V003<a class="headerlink" href="#led-matrices-on-ch32v003" title="Permalink to this heading">¶</a></h2>
+<p>I also have two projects with LED matrices for the CH32V003 that I still need
+to program. One is a spectrum analyzer thing, and the hard part is the FFT
+code for it (though there are plenty of examples), and the other is a business
+card fake PewPew—not really running CircuitPython, but with some of the
+PewPew games implemented directly in C and hardcoded in the device.</p>
+</section>
+<section id="gif-pendant">
+<h2>GIF Pendant<a class="headerlink" href="#gif-pendant" title="Permalink to this heading">¶</a></h2>
+<p>Finally, I’m also still working on my GIF pendant project. Now with a round
+screen and CH32V208 as the brains. I have a TinyUSB example for USB MSC in
+RAM working on it. What I need to figure out how to put the storage on the
+internal flash instead, and how to access it from the code to render those
+GIF files onto the screen. Again, it’s something I have never done, and there
+isn’t much documentation about it around, so it’s a lot of trial and error.
+I wish someone who is more knowledgable about TinyUSB and USB MSC could help
+me with that.</p>
+<p>And that’s pretty much it for me for 2025. It’s mostly projects I would like
+to finish (or would like someone to finish for me), except for that Apple MTP
+thing. Will I get any of my wishes come true? We will see.</p>
+</section>
+</section>
+
+
+</div>
+  </body>
+</html>
