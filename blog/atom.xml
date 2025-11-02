@@ -2,87 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>http://dopieralski.pl/</id>
   <title>dopieralski.pl</title>
-  <updated>2025-07-08T12:18:52.247899+00:00</updated>
+  <updated>2025-11-02T22:57:51.484668+00:00</updated>
   <link href="http://dopieralski.pl/"/>
   <link href="http://dopieralski.pl/blog/atom.xml" rel="self"/>
   <generator uri="https://ablog.readthedocs.org/" version="0.10.33">ABlog</generator>
-  <entry>
-    <id>http://dopieralski.pl/posts/2022-01-22-circuitpython/</id>
-    <title>CircuitPython in 2022</title>
-    <updated>2022-01-22T00:00:00+01:00</updated>
-    <content type="html">&lt;section id="circuitpython-in-2022"&gt;
-
-&lt;p&gt;As every year, it’s time for a yearly summary and plans of all things I do
-that are related to CircuitPython.&lt;/p&gt;
-&lt;section id="the-projects"&gt;
-&lt;h2&gt;The Projects&lt;/h2&gt;
-&lt;p&gt;This year I made a record number of keyboards, and also greatly improved my
-keyboard library, uKeeb. Some features were added, because CircuitPython now
-supports them: CapsLock LED, disabled disk and console, NKRO and BOOT modes,
-keypad module. Others I added as new keyboards needed them: proper hold/tap
-with rollover timeout, layer switching improvements, mouse support, LED
-animations.&lt;/p&gt;
-&lt;p&gt;My FluffBug robot is now at hardware version 5, but software-wise there was
-no progress. I got the per-leg inverse kinematics done, and I should write
-the walking code, but I can’t find the motivation.&lt;/p&gt;
-&lt;p&gt;The MIDI Ocarina is now at version 3. I gave up on the barometric pressure
-sensor for detecting blowing, as its recovery time was poor, and instead
-switched to a PDM microphone using audiobusio. This works great. I still need
-to write the MIDI code for it.&lt;/p&gt;
-&lt;p&gt;I tried the new camera code, but I couldn’t get it to work with the camera
-breakouts that I have. Either I’m using wrong pins, or something broke in the
-IDF version I used. I have no energy to investigate this further.&lt;/p&gt;
-&lt;p&gt;I also gave up on making the uGame console work with newer versions of
-CircuitPython – the changes in interrupt handling and time module related to
-adding sleep made the SAMD21 port work so erratically, that I simply gave up.
-I did fix the PewPew code by avoiding using the time module altogether.&lt;/p&gt;
-&lt;p&gt;There is also a but in the PWM code on SAMD that makes it hang completely
-in a loop waiting for a register flag that never gets set. I got that far
-debugging it, but why it never gets set is a mystery to me, and nobody
-seems to be interested in fixing it. I worked around it in Stage library
-by simply setting the backlight pin high, not using PWM at all, but I got
-bitten by the same bug recently in the ocarina code.&lt;/p&gt;
-&lt;/section&gt;
-&lt;section id="the-future"&gt;
-&lt;h2&gt;The Future&lt;/h2&gt;
-&lt;p&gt;This year I want to finish FluffBug at least to the point where it walks and
-uses the leg sensors and the distance sensors. I wish I could get the camera
-to work with it as well. I might also try a gesture sensor, and an
-accelerometer.&lt;/p&gt;
-&lt;p&gt;I received a nice ESP32-S2 development board with a display from MakerFabs,
-and I want to get the display working with displayio. Unfortunately it’s a
-16-bit parallel, with non-consecutive data pins, so I would need to work
-on the relevant module first. No idea how much work it would require.&lt;/p&gt;
-&lt;p&gt;There is a cool watch project using a SAML22 microcontroller, which should
-be very similar to SAMD21. The author mentioned that he wants to get a port
-of CircuitPython working on it. I’m very interested in this, because that
-chip also has an LCD-driving circuitry, which would allow me to make even
-cheaper version of the PewPew console, with a custom LCD screen.&lt;/p&gt;
-&lt;p&gt;I might be making another handheld game console, with a 3.2”
-screen and ESP32-S2 as the brains, but I’m not entirely sure yet. I’m doing
-research on how viable it would be, and collecting parts.&lt;/p&gt;
-&lt;/section&gt;
-&lt;section id="conclusion"&gt;
-&lt;h2&gt;Conclusion&lt;/h2&gt;
-&lt;p&gt;This year brought some cool developments around USB and keyboards, but also
-a lot of frustration with keeping my existing projects working despite new
-bugs. The SAMD family seems to now get very little attention, and it suffered
-greatly with the addition of sleep support. Not being able to find and fix
-those bugs is very frustrating, and drains energy I could use on projects
-instead. The new boards are ridiculously powerful, but considerably more
-complex to use in projects, unless using a ready development board. I think
-I will focus on the Lolin S2 Mini boards for my projects this year, however,
-while I mentioned some things I hope to work on, I am aware that I have
-very little energy left for this. Hopefully my health and the overall global
-situation will improve.&lt;/p&gt;
-&lt;/section&gt;
-&lt;/section&gt;
-</content>
-    <link href="http://dopieralski.pl/posts/2022-01-22-circuitpython/" rel="alternate"/>
-    <summary>As every year, it’s time for a yearly summary and plans of all things I do
-that are related to CircuitPython.</summary>
-    <published>2022-01-22T00:00:00+01:00</published>
-  </entry>
   <entry>
     <id>http://dopieralski.pl/posts/2023-02-10-typesetting/</id>
     <title>Design for Exploration</title>
@@ -913,5 +836,221 @@ with other things. In any case, I decided to make it about general technology
 related wishes, and not just CircuitPython, but large part of this is going to
 be about CircuitPython anyways. Or at least related.</summary>
     <published>2025-07-08T00:00:00+02:00</published>
+  </entry>
+  <entry>
+    <id>http://dopieralski.pl/posts/2025-11-02-both-sides/</id>
+    <title>Programming on Both Sides of Your Brain</title>
+    <updated>2025-11-02T00:00:00+01:00</updated>
+    <content type="html">&lt;section id="programming-on-both-sides-of-your-brain"&gt;
+
+&lt;p&gt;A lot of disagreements in software engineering seem to have a deeper background
+than mere technical considerations. Should you move fast and break things, or
+should you reinvent the wheel? Does it matter how the code looks like when it
+does what you want? And what is the purpose of it all in the first place?  I
+propose that many of those arguments arise from different people using
+different of two possible fixed worldviews in a variety of contexts, which they
+assign automatically and mostly unconsciously, in a similar way to how our
+brain resolves bistable perceptions. Furthermore, I propose that the ability to
+consciously switch between the two worldviews, and the experience needed to
+decide which one to use in the given context, are crucial for the work of a
+software engineer.&lt;/p&gt;
+&lt;section id="necker-cube"&gt;
+&lt;h2&gt;Necker Cube&lt;/h2&gt;
+&lt;p&gt;Probably the most well known example of bistable perception is the Necker Cube:
+a two-dimensional wireframe drawing of a cube, which can be interpreted in two
+ways, because it lacks any cues about the depth of the parts of the image.&lt;/p&gt;
+&lt;img alt="../_images/necker.png" class="align-center" src="../_images/necker.png" /&gt;
+&lt;p&gt;When we look at the drawing, we automatically pick one of the possible
+interpretations, and it becomes obvious to us that it’s the correct one. It
+requires a conscious effort to switch to the other interpretation, and some
+people can’t do it at all. The initial choice is based on context cues, such as
+lighting and position of the drawing, personal preference, cultural biases, and
+possibly some amount of randomness.&lt;/p&gt;
+&lt;p&gt;There are other examples of bistable (and multistable) perceptions, some even
+harder to switch between without training. But I think this one illustrates the
+mechanism well enough for our purposes.&lt;/p&gt;
+&lt;/section&gt;
+&lt;section id="drawing-on-the-right-side-of-the-brain"&gt;
+&lt;h2&gt;Drawing on the Right Side of the Brain&lt;/h2&gt;
+&lt;p&gt;In 1979 Betty Edwards published a book describing her technique for teaching
+drawing. Her idea was based on the theory of how left and right brain
+hemispheres are responsible for different ways of perceiving reality, that was
+popular at the time. Today we know that the processes responsible for those two
+ways are not actually confined to their corresponding hemispheres, but rather
+are both whole-brain processes, but the terminology stuck, so you can still
+read people referring to the more verbal and analytic way as the left-brain
+functions, or L-mode, and the more visual and intuitive way as the right-brain
+functions, or R-mode (the hemisphere sides are reversed compared to which sides
+of the body they control, because the nerves cross: left hemisphere controls
+the right side of the body, and vice versa). This supposedly explains why
+left-handed people are more creative, having a more dominant right hemisphere.&lt;/p&gt;
+&lt;p&gt;In any case, no matter how that relates to the actual positions of parts of our
+brains, and the processes that take place, the technique seems to be working: by
+intentionally suppressing the understanding of the different parts of the scene
+we can shift our perceptions to seeing how it looks like, so to say, instead of
+what it is, and make it easier to re-create the looks on the paper. Whatever
+the neurological explanation for it, the trick seems to be working for many
+people.&lt;/p&gt;
+&lt;p&gt;You might find that this general strategy may work in other areas than drawing
+as well. For example, when listening to music, when tasting food and drinks, or
+even with more abstract things, like interpreting poetry, or understanding
+mathematical proofs. It often feels like switching between focusing on details,
+and perceiving the general shape and feel.&lt;/p&gt;
+&lt;p&gt;I think that we often automatically pick the right mode of perception for the
+task in similar way to how we pick an interpretation of the Necker cube above,
+based on context cues, personal preference, cultural biases, and experience.
+And since it’s mostly unconscious, we are often not aware that a choice has
+been made, and that a different interpretation is possible, unless we
+intentionally expend the effort to consider it. And that becomes easier with
+practice.&lt;/p&gt;
+&lt;/section&gt;
+&lt;section id="phases-of-software-design-and-development"&gt;
+&lt;h2&gt;Phases of Software Design and Development&lt;/h2&gt;
+&lt;p&gt;If you ever tried to design a user interface while at the same time writing
+code for the back-end, you might have noticed that it’s very difficult to make
+it work the way the users expect, instead of mirroring the internal
+representation. This is why those tasks are often separated, performed at
+different times, if not by completely different members of the team, or even
+different teams. There can be many more such phases, where you need to focus
+on different aspects of the product, consider different trade-offs, and focus
+on different levels of abstraction.&lt;/p&gt;
+&lt;p&gt;I believe this is, at least partially, because those tasks are best solved in
+different perception modes, and we can only be in one of those modes at a time,
+just like we can only see one interpretation of the Necker cube at once.&lt;/p&gt;
+&lt;p&gt;And while there may be a big variety of roles and phases, depending on the
+organization and methodology and the task at hand, you might notice that the
+worst disagreements usually happen between pairs of roles that can be roughly
+divided into two families, roughly corresponding to the L-mode and R-mode from
+Betty Edwards’ book.&lt;/p&gt;
+&lt;/section&gt;
+&lt;section id="programming-on-the-left-side-of-the-brain"&gt;
+&lt;h2&gt;Programming on the Left Side of the Brain&lt;/h2&gt;
+&lt;p&gt;The L-mode generally sounds like your stereotypical science nerd. You write
+code because you enjoy the difficulty of doing it. You care about the
+correctness of your solution not because it will have some business purpose,
+but because an incorrect solution would be wrong. You want your code to be
+good, whatever it means in the context. You know that either something is true,
+or it isn’t, and the only way to tell is through contact with the harsh
+reality. You trust your co-workers, and cooperate without friction, unless
+someone breaks that trust repeatedly – then you simply start avoiding that
+person and working around them. You very carefully pick your tools and
+dependencies, and you like to understand how they work before you use them. You
+don’t like overcomplicated libraries that do much more than you need. If you
+see something that isn’t right, you will try to fix it yourself, and if that is
+not possible, you will avoid using it. You believe position should be earned
+through work, and trust should be earned trough repeated interactions. You
+don’t care much about authorities, and you don’t believe something is right
+just because someone says so. You tend to avoid taking sides, and you just want
+things to work. You prefer to just show things over describing them. You are
+generally quiet, and you prefer to results speak for you. You are generally
+an optimist, and you believe in improving things for everyone.&lt;/p&gt;
+&lt;/section&gt;
+&lt;section id="programming-on-the-right-side-of-the-brain"&gt;
+&lt;h2&gt;Programming on the Right Side of the Brain&lt;/h2&gt;
+&lt;p&gt;The R-mode is more like a salesman. You don’t really care about how the thing
+is done, as long as everyone agrees that it works. If someone disagrees, you
+may fix it by changing how it works, or by convincing that person that they are
+wrong, either way is fine, as long as there is a consensus. People who believe
+in inviolate truths just don’t have a flexible mind. You love workarounds and
+temporary solutions. You juggle technical debt like a government economist.
+You take sides and stick to them, because position and trust is achieved
+through loyalty or authority enforcement. You like procedures and processes,
+even if they don’t work – after all it’s not your fault it doesn’t work when
+you followed the process correctly. You have friends and enemies among your
+co-workers, but it changes all the time, depending on what you need and who has
+what to offer. You love powerful and complicated tools and libraries,
+especially when they are popular – after all, nobody was fired for choosing
+IBM. You are sensitive to fashions and trends, and you always try to work on
+the coolest projects. Your favorite mode of communication is telling stories.
+You are generally a fatalist, and you believe in making the best use of what is
+available to you right now.&lt;/p&gt;
+&lt;/section&gt;
+&lt;section id="switching-contexts"&gt;
+&lt;h2&gt;Switching Contexts&lt;/h2&gt;
+&lt;p&gt;The above descriptions are very stereotypical. In reality, to survive in the
+modern world, everyone one of us, even the most nerdy nerds and the most
+popular celebrities, have to switch between those modes. Doing grocery
+shopping?  You need the L-mode. Deciding what to have for lunch? That’s R-mode.
+And we often don’t even realize we switch those modes, because it happens
+mostly automatically, depending on the context. Unless sometimes it doesn’t,
+and we are stuck in the wrong mode for the task at hand. This can happen for a
+variety of reasons.&lt;/p&gt;
+&lt;p&gt;Some people simply prefer one mode over the other, because of their
+personality, neural makeup, or cultural biases. For example, autistic people
+generally tend to prefer the L-mode, while people with authoritarian
+personality traits will lean towards the R-mode more.&lt;/p&gt;
+&lt;p&gt;Your training and experience might tell you that a certain mode works better in
+the given situation, while someone who was trained for a different profession,
+or even just by different methodology, will disagree with you, not only about
+what mode is more appropriate, but even what the situation actually is.&lt;/p&gt;
+&lt;p&gt;You might have locked on to a specific mode at a certain time in the project,
+and in the mean time the situation may have changed, so a person joining later
+will choose a different one. Or you might have noticed the change and switched
+your mode, while your colleagues didn’t.&lt;/p&gt;
+&lt;p&gt;Finally, if the task at hand is novel, you might simply not know which mode to
+choose, and may pick it at random.&lt;/p&gt;
+&lt;p&gt;Whatever the cause, when two people are in different modes in the same context
+it’s very difficult for them to agree about anything. And since the mode
+switching is normally completely unconscious and automatic, and because the
+mode you are in always feels the only obvious one for the situation, it feels
+like a perfectly normal, smart and reasonable person suddenly disagrees with
+you about the most fundamental and common sense things. It’s very frustrating.&lt;/p&gt;
+&lt;p&gt;Of course even when you realize that you have a mode mismatch, it’s not trivial
+to decide which mode is more appropriate for the given context, or even where
+the boundaries at which it should be switched lie. Whichever mode you are at
+the moment, it feels like the obviously right one for you, and since they
+differ in how values are assessed, it may be hard to decide which one was more
+appropriate even in hindsight.&lt;/p&gt;
+&lt;/section&gt;
+&lt;section id="elasticity-and-training"&gt;
+&lt;h2&gt;Elasticity and Training&lt;/h2&gt;
+&lt;p&gt;It turns out that people who can switch between the two modes easily are
+generally more successful at software engineering jobs (and many others too).
+Obviously it’s not enough to be able to switch, but also to know when to do it,
+and that comes with experience, but if you generally are reluctant to switch,
+you are more likely to be in the wrong mode at the wrong time.&lt;/p&gt;
+&lt;p&gt;Having the right training for the job helps with the experience part. And that
+is often hands-on training, and not theoretical knowledge read in a book,
+because the context picking and mode switching is mostly automatic, based
+on unconsciously picked cues, that a book would not communicate.&lt;/p&gt;
+&lt;p&gt;Dividing the project into phases and the team into roles at the right places
+helps with switching to the right modes as well, by making the boundaries of
+the different context explicitly visible, so a conscious effort can be made
+by the team members to get into the right mode for the particular phase and
+their role in it.&lt;/p&gt;
+&lt;p&gt;Due to the different roles often requiring different modes, there is no way to
+completely avoid conflict inside the team. This is in fact the main reason to
+have the roles in the first place – to catch problems visible in either of the
+modes. It’s important to realize that those differences are often
+irreconcilable – the differences between how the world is seen in the two
+modes makes it impossible to form a consensus, and some other way of conflict
+resolution is necessary. In the end it might be just necessary to agree to
+disagree. For this reason it’s important for the different phases and roles to
+have distinct, non-overlapping areas of responsibility, so that in the case of
+irreconcilable disagreement it is known whose decision is final.&lt;/p&gt;
+&lt;/section&gt;
+&lt;section id="conclusion"&gt;
+&lt;h2&gt;Conclusion&lt;/h2&gt;
+&lt;p&gt;While my hypothesis of the two distinct mental modes in software engineering
+work is completely made up and unsubstantiated, and based entirely on anecdotal evidence, I am confident that it provides a useful tool for understanding the
+behavior of teams, and may help in organizing projects in a way that reduces
+conflict and improves performance. I have absolutely no proof of that beyond
+my feelings about this. The reader is advised to use their own judgement.&lt;/p&gt;
+&lt;/section&gt;
+&lt;/section&gt;
+</content>
+    <link href="http://dopieralski.pl/posts/2025-11-02-both-sides/" rel="alternate"/>
+    <summary>A lot of disagreements in software engineering seem to have a deeper background
+than mere technical considerations. Should you move fast and break things, or
+should you reinvent the wheel? Does it matter how the code looks like when it
+does what you want? And what is the purpose of it all in the first place?  I
+propose that many of those arguments arise from different people using
+different of two possible fixed worldviews in a variety of contexts, which they
+assign automatically and mostly unconsciously, in a similar way to how our
+brain resolves bistable perceptions. Furthermore, I propose that the ability to
+consciously switch between the two worldviews, and the experience needed to
+decide which one to use in the given context, are crucial for the work of a
+software engineer.</summary>
+    <published>2025-11-02T00:00:00+01:00</published>
   </entry>
 </feed>
