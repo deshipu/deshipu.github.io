@@ -1,0 +1,111 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+
+    <title>CircuitPython in 2026 - dopieralski.pl</title>
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/basic.css" />
+    <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/sphinx_highlight.js"></script>
+    <link rel="author" title="About these documents" href="../../about/" />
+    <link rel="index" title="Index" href="../../genindex/" />
+    <link rel="search" title="Search" href="../../search/" />
+  
+     
+    <link rel="stylesheet" href="../../_static/custom.css" type="text/css" />
+    <link rel="icon" type="image/png" href="../../_static/favicon.png">
+
+  
+  <link rel="alternate" type="application/atom+xml"  href="../../blog/atom.xml" title="dopieralski.pl">
+  
+
+  </head><body>
+<div id="topbar">
+<div id="searchbox" style="display: none" role="search">
+    <div class="searchformwrapper">
+    <form class="search" action="../../search/" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="search" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+    <div id="logo"><a href="../../">
+        <img
+            src="/_static/logo.png"
+            alt=""
+        />dopieralski.pl</a></div>
+</div>
+
+<div role="main">
+  <section id="circuitpython-in-2026">
+<h1>CircuitPython in 2026<a class="headerlink" href="#circuitpython-in-2026" title="Permalink to this heading">¶</a></h1>
+<p>It’s that time when the CircuitPython project is looking for feedback from the
+users, so here is some of mine again.</p>
+<p>I have been mostly focused on three projects using CircuitPython last year: my
+<cite>quadruped robots &lt;https://deshipu.art/projects/project-188909/&gt;</cite>, the <cite>PewPew
+game console &lt;https://deshipu.art/projects/project-185291/&gt;</cite>, and the <cite>µGame
+game console &lt;https://deshipu.art/projects/project-178061/&gt;</cite>.  I didn’t have
+much energy to do any serious progress on any one of them, but I did some
+experimenting, and I have some ideas for the future.</p>
+<p>I failed in my attempts to port the speech synthesis engine from MicroBit to
+CircuitPython as a C module, but <cite>someone ported the project
+&lt;https://github.com/jacklinquan/micropython-samtts&gt;</cite> it is based on (the SAM,
+Software Automatic Mouth) to plain Python code, and it runs on CircuitPython,
+albeit the format conversions necessary to subsequently play it using
+<code class="docutils literal notranslate"><span class="pre">audioio</span></code> make it somewhat slow. Unfortunately, the non-repeat playback of
+<code class="docutils literal notranslate"><span class="pre">RawSample</span></code> is currently pretty broken in CircuitPython, so even though I did
+get this to work, it’s not really usable until those bugs introduced later
+changes are fixed. I took a stab at one of them, but I’m not really familiar
+with that code enough to know what it was supposed to be doing in the first
+place. In any case, there is a way to do voice synthesis in CircuitPython now,
+which is nice for things like talking robots. We can hope the audio libraries
+will become more stable in time.</p>
+<p>I have given up on working on a touch version of the <code class="docutils literal notranslate"><span class="pre">keypad</span></code> module for the
+SAMD21 port. The main problem is that those registers are completely
+undocumented, because Microchip sells a commercial library that uses them, and
+prefers for everyone to use that. Adafruit worked around that with their
+current CircuitPython code, but without access to the same documentation, I
+have little chance. Having that module would greatly improve the functioning
+of those PewPew devices that use touchpads for the buttons – right now the
+code is polling them, which is slow and unresponsive.</p>
+<p>I have also looked at using different chip than the hard to obtain SAMD21 for
+the PewPew devices, in particular the <cite>CH32V208
+&lt;https://www.wch-ic.com/products/CH32V208.html&gt;</cite> looks very promising. It has
+64kB of RAM, 128kB of Flash, and clock up to 144MHz, which should be sufficient
+for CircuitPython running simple games of the PewPew. The problem is, of
+course, that there is currently no port of CircuitPython to that chip. I looked
+a bit into what would be involved into making such a port, and I will probably
+give it a go at some point, but the task is somewhat daunting and certainly
+requires more energy than I have at the moment.</p>
+<p>Finally, I’m finalizing the hardware for the ESP32-S3 version of the µGame
+handheld game console. You can think about it as <cite>Adafruit PyBadge
+&lt;https://www.adafruit.com/product/4200&gt;</cite>, but with larger screen, and more RAM
+and Flash. And somewhat better looking, in my opinion.  There are no changes in
+CircuitPython necessary for it, except for the board definition, which I will
+submit once I’m sure about the hardware, and once I get a USB pid for it.</p>
+<p>In the near future, I want to focus more on writing new games for
+CircuitPython, in particular, I really want to make a roguelike game for that
+platform, as I don’t think there is one yet. It feels to me like I should do
+the hardware work first, the put off the fun of making the games, but the
+reality is that a game console without games is a pretty boring thing.</p>
+<p>As for the CircuitPython project itself, I think it’s in a good place in terms
+of functionality. Yes, better async support and fewer bugs would be nice, but
+there really isn’t anything that stops me from doing the things I want to do
+with it.</p>
+</section>
+
+
+</div>
+  </body>
+</html>
