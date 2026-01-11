@@ -2,96 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>http://dopieralski.pl/</id>
   <title>dopieralski.pl</title>
-  <updated>2026-01-10T22:16:51.241868+00:00</updated>
+  <updated>2026-01-11T08:36:51.445290+00:00</updated>
   <link href="http://dopieralski.pl/"/>
   <link href="http://dopieralski.pl/blog/atom.xml" rel="self"/>
   <generator uri="https://ablog.readthedocs.org/" version="0.10.33">ABlog</generator>
-  <entry>
-    <id>http://dopieralski.pl/posts/2023-02-10-typesetting/</id>
-    <title>Design for Exploration</title>
-    <updated>2023-02-10T00:00:00+01:00</updated>
-    <content type="html">&lt;section id="design-for-exploration"&gt;
-
-&lt;section id="typesetting-software"&gt;
-&lt;h2&gt;Typesetting Software&lt;/h2&gt;
-&lt;p&gt;Imagine a text processor, similar to Wordstar, but more closely modelled around
-the tried and tested workflows of professional typesetters.&lt;/p&gt;
-&lt;p&gt;You begin by composing the text of your copy. But to avoid mistakes and to make
-use of the saved work you did before, you don’t simply type the words. You
-select them from a set of dictionaries that were created by other users,
-organized according to whatever needs those users had. Of course if you need
-any word that is not already in the dictionary, you can always create your own
-custom dictionary and add any words you need to it.&lt;/p&gt;
-&lt;p&gt;Once you have all your words, you connect them into sentences. Each sentence gets assigned a name, so that you can refer to it later on easily.&lt;/p&gt;
-&lt;p&gt;Then you have to select the fonts for your words. Most words will already have their fonts assigned by default in the dictionary, but you might want to make a word bold or italic, or select alternate forms for some letters, maybe a long S or some ligature, or change the kerning subtly to make it look better.&lt;/p&gt;
-&lt;p&gt;Finally, you get to place all those words. You will have them dumped on the page, and you can move them around and arrange them carefully. The sentence names you set earlier are used to show you the “ratlines” connecting the words, to help you get them in the right order. You might even use an “autotypesetter” to arrange the words automatically, but usually you will need to do some manual adjustments.&lt;/p&gt;
-&lt;p&gt;Once you have all that, you can simply hit “print” to have a beautiful page of text printed.&lt;/p&gt;
-&lt;p&gt;If the above described user interface seems to you to be unnecessarily clunky
-and complicated for such a “simple” task as writing a page of text to be
-printed, remember that the process is only seems to be simple when you don’t
-care about all those details. The user interface is fake, of course, but it’s
-an example of something you might come up with if you researched carefully how
-the printing press staff is going about the task, and tried to re-create that
-process in the computer.&lt;/p&gt;
-&lt;/section&gt;
-&lt;section id="kicad"&gt;
-&lt;h2&gt;KiCAD&lt;/h2&gt;
-&lt;p&gt;That is, incidentally, exactly what the authors of PCB design software KiCAD
-did, and the end result is equally baroque:&lt;/p&gt;
-&lt;p&gt;You have to start by drawing a schematic for the circuit you plan to design. Just like with the words, you don’t simply draw the symbols that you need, but instead you select them from a vast library of electronic symbols, divided into several “libraries” by random criteria. If you need a symbol that doesn’t exist in any of those libraries, you have to draw it, place it in a new library, and then you can select it from there.&lt;/p&gt;
-&lt;p&gt;Once you have all your symbols placed, you connect them with wires. And again,
-all wires that are connected together form a net, and get assigned a unique net
-name. You will need those names later. Even if two nets are not visually
-connected, but share the same net, they are considered connected, because who
-cares how hard that is to read. Our program only cares about the nets.&lt;/p&gt;
-&lt;p&gt;Once you have your schematic drawn, you have to select a footprint for each of the symbols. A footprint is the arrangement of holes and pads on the PCB where the physical part will be placed. And of course many symbols will already have a default footprint, but some will have several possibilities, and if it’s a new part, you will have to make a custom one yourself. So you still have to got through this step manually.&lt;/p&gt;
-&lt;p&gt;And finally, you get to see the actual layout of your PCB, with all the
-footprints dumped into a pile, and you can start arranging them, and connecting
-them with traces. There are tools like the autorouter that can help you with
-the connections sometimes, but they mostly come up with solutions that are
-worse than what you could do by hand.&lt;/p&gt;
-&lt;p&gt;Once you have it all placed and connected, you can generate the gerber files and send them to your favorite PCB factory to be manufactured.&lt;/p&gt;
-&lt;/section&gt;
-&lt;section id="can-we-do-better"&gt;
-&lt;h2&gt;Can we do better?&lt;/h2&gt;
-&lt;p&gt;I sure hope so! I mean, modern text processors don’t work like described here,
-and while you often don’t have such precise control on the output, they seem to
-be much easier to use. How do they do that?&lt;/p&gt;
-&lt;p&gt;Well, first of all, they have given up on the division between the manuscript
-and the printed page. They show you the preview of the printed page right away
-– or at least some approximation of it, with some extra information like
-margins paragraph markers included. This merging of the two views, makes it
-much more intuitive, and obviates the need to go back and forth between them to
-make changes and then to see the effects of those changes and so on.&lt;/p&gt;
-&lt;p&gt;You also don’t need to search the dictionaries. You just type the word you
-need, and if it’s not found in any dictionary, it will be marked by
-spellchecker as suspicious, but you are still allowed to have it on your page.
-And if you know you are going to use that new word more, adding it to the
-custom dictionary is just a question of a single command.&lt;/p&gt;
-&lt;p&gt;And you don’t have to assign a font and style to every word separately. You use
-the defaults most of the time, and then you can select parts of the text and
-change those defaults in bulk as needed. If you really want to, you can even
-change ligatures and alternate letter forms, though that is usually automated
-well enough that most people never need to touch it.&lt;/p&gt;
-&lt;p&gt;Of course you are still limited to the fonts installed on your system, and if
-you need a custom glyph that is not included in any font, you will need to
-either make a new font (which is very complicated) or cheat by including it as
-an image or doing some similar trick. Font selection dialogs came a long way in
-modern word processors, but they still suck a lot. There is a lot that could be
-done to improve on them, starting with proper tagging and categorizing of the
-fonts themselves. Perhaps at some point we will be able to just describe what
-we want, instead of having to look for it in a long list? And maybe one day we
-will find a better way of sorting fonts than by name.&lt;/p&gt;
-&lt;p&gt;But still, I think the text editing came a long way compared to some other
-computer assisted tasks, like PCB design.&lt;/p&gt;
-&lt;/section&gt;
-&lt;/section&gt;
-</content>
-    <link href="http://dopieralski.pl/posts/2023-02-10-typesetting/" rel="alternate"/>
-    <summary>Imagine a text processor, similar to Wordstar, but more closely modelled around
-the tried and tested workflows of professional typesetters.</summary>
-    <published>2023-02-10T00:00:00+01:00</published>
-  </entry>
   <entry>
     <id>http://dopieralski.pl/posts/2025-05-09-politics/</id>
     <title>Political and Practical Worldviews</title>
@@ -1052,5 +966,71 @@ consciously switch between the two worldviews, and the experience needed to
 decide which one to use in the given context, are crucial for the work of a
 software engineer.</summary>
     <published>2025-11-02T00:00:00+01:00</published>
+  </entry>
+  <entry>
+    <id>http://dopieralski.pl/posts/2026-01-11-circuitpython/</id>
+    <title>CircuitPython in 2026</title>
+    <updated>2026-01-11T00:00:00+01:00</updated>
+    <content type="html">&lt;section id="circuitpython-in-2026"&gt;
+
+&lt;p&gt;It’s that time when the CircuitPython project is looking for feedback from the
+users, so here is some of mine again.&lt;/p&gt;
+&lt;p&gt;I have been mostly focused on three projects using CircuitPython last year: my
+&lt;cite&gt;quadruped robots &amp;lt;https://deshipu.art/projects/project-188909/&amp;gt;&lt;/cite&gt;, the &lt;cite&gt;PewPew
+game console &amp;lt;https://deshipu.art/projects/project-185291/&amp;gt;&lt;/cite&gt;, and the &lt;cite&gt;µGame
+game console &amp;lt;https://deshipu.art/projects/project-178061/&amp;gt;&lt;/cite&gt;.  I didn’t have
+much energy to do any serious progress on any one of them, but I did some
+experimenting, and I have some ideas for the future.&lt;/p&gt;
+&lt;p&gt;I failed in my attempts to port the speech synthesis engine from MicroBit to
+CircuitPython as a C module, but &lt;cite&gt;someone ported the project
+&amp;lt;https://github.com/jacklinquan/micropython-samtts&amp;gt;&lt;/cite&gt; it is based on (the SAM,
+Software Automatic Mouth) to plain Python code, and it runs on CircuitPython,
+albeit the format conversions necessary to subsequently play it using
+&lt;code class="docutils literal notranslate"&gt;&lt;span class="pre"&gt;audioio&lt;/span&gt;&lt;/code&gt; make it somewhat slow. Unfortunately, the non-repeat playback of
+&lt;code class="docutils literal notranslate"&gt;&lt;span class="pre"&gt;RawSample&lt;/span&gt;&lt;/code&gt; is currently pretty broken in CircuitPython, so even though I did
+get this to work, it’s not really usable until those bugs introduced later
+changes are fixed. I took a stab at one of them, but I’m not really familiar
+with that code enough to know what it was supposed to be doing in the first
+place. In any case, there is a way to do voice synthesis in CircuitPython now,
+which is nice for things like talking robots. We can hope the audio libraries
+will become more stable in time.&lt;/p&gt;
+&lt;p&gt;I have given up on working on a touch version of the &lt;code class="docutils literal notranslate"&gt;&lt;span class="pre"&gt;keypad&lt;/span&gt;&lt;/code&gt; module for the
+SAMD21 port. The main problem is that those registers are completely
+undocumented, because Microchip sells a commercial library that uses them, and
+prefers for everyone to use that. Adafruit worked around that with their
+current CircuitPython code, but without access to the same documentation, I
+have little chance. Having that module would greatly improve the functioning
+of those PewPew devices that use touchpads for the buttons – right now the
+code is polling them, which is slow and unresponsive.&lt;/p&gt;
+&lt;p&gt;I have also looked at using different chip than the hard to obtain SAMD21 for
+the PewPew devices, in particular the &lt;cite&gt;CH32V208
+&amp;lt;https://www.wch-ic.com/products/CH32V208.html&amp;gt;&lt;/cite&gt; looks very promising. It has
+64kB of RAM, 128kB of Flash, and clock up to 144MHz, which should be sufficient
+for CircuitPython running simple games of the PewPew. The problem is, of
+course, that there is currently no port of CircuitPython to that chip. I looked
+a bit into what would be involved into making such a port, and I will probably
+give it a go at some point, but the task is somewhat daunting and certainly
+requires more energy than I have at the moment.&lt;/p&gt;
+&lt;p&gt;Finally, I’m finalizing the hardware for the ESP32-S3 version of the µGame
+handheld game console. You can think about it as &lt;cite&gt;Adafruit PyBadge
+&amp;lt;https://www.adafruit.com/product/4200&amp;gt;&lt;/cite&gt;, but with larger screen, and more RAM
+and Flash. And somewhat better looking, in my opinion.  There are no changes in
+CircuitPython necessary for it, except for the board definition, which I will
+submit once I’m sure about the hardware, and once I get a USB pid for it.&lt;/p&gt;
+&lt;p&gt;In the near future, I want to focus more on writing new games for
+CircuitPython, in particular, I really want to make a roguelike game for that
+platform, as I don’t think there is one yet. It feels to me like I should do
+the hardware work first, the put off the fun of making the games, but the
+reality is that a game console without games is a pretty boring thing.&lt;/p&gt;
+&lt;p&gt;As for the CircuitPython project itself, I think it’s in a good place in terms
+of functionality. Yes, better async support and fewer bugs would be nice, but
+there really isn’t anything that stops me from doing the things I want to do
+with it.&lt;/p&gt;
+&lt;/section&gt;
+</content>
+    <link href="http://dopieralski.pl/posts/2026-01-11-circuitpython/" rel="alternate"/>
+    <summary>It’s that time when the CircuitPython project is looking for feedback from the
+users, so here is some of mine again.</summary>
+    <published>2026-01-11T00:00:00+01:00</published>
   </entry>
 </feed>

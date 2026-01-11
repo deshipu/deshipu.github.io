@@ -2,128 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>http://dopieralski.pl/</id>
   <title>dopieralski.pl - Posts in circuitpython</title>
-  <updated>2026-01-10T22:16:51.264185+00:00</updated>
+  <updated>2026-01-11T08:36:51.464736+00:00</updated>
   <link href="http://dopieralski.pl/"/>
   <link href="http://dopieralski.pl/blog/category/circuitpython/atom.xml" rel="self"/>
   <generator uri="https://ablog.readthedocs.org/" version="0.10.33">ABlog</generator>
-  <entry>
-    <id>http://dopieralski.pl/posts/2019-01-04-circuitpython/</id>
-    <title>CircuitPython in 2019</title>
-    <updated>2019-01-04T00:00:00+01:00</updated>
-    <content type="html">&lt;section id="circuitpython-in-2019"&gt;
-
-&lt;p&gt;Adafruit has requested &lt;a class="reference external" href="https://blog.adafruit.com/2018/12/17/what-do-you-want-from-circuitpython-in-2019-circuitpython2019-circuitpython/"&gt;on their blog&lt;/a&gt;
-feedback and comments about CircuitPython in 2019, so here I go. I am mostly
-going to talk about three things: the projects that I personally want to do
-using it, the ongoing developments that I would love to see finished this year,
-and some completely crazy stuff that could potentially be added if someone
-smarter than me and with copious free time worked on it.&lt;/p&gt;
-&lt;section id="the-projects"&gt;
-&lt;h2&gt;The Projects&lt;/h2&gt;
-&lt;section id="pewpew"&gt;
-&lt;h3&gt;PewPew&lt;/h3&gt;
-&lt;aside class="system-message"&gt;
-&lt;p class="system-message-title"&gt;System Message: INFO/1 (&lt;span class="docutils literal"&gt;/home/sheep/dev/ablog/dopieralski.pl/posts/2019-01-04-circuitpython.rst&lt;/span&gt;, line 6); &lt;em&gt;&lt;a href="#id1"&gt;backlink&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;Duplicate implicit target name: “pewpew”.&lt;/p&gt;
-&lt;/aside&gt;
-&lt;p&gt;The immediate thing with highest priority right now is the &lt;a class="reference external" href="http://pewpew.rtfd.io"&gt;PewPew&lt;/a&gt; educational game console, and the workshop I’m
-planning to run with it really soon now (™). I’m rather happy with the hardware
-and the &lt;code class="docutils literal notranslate"&gt;&lt;span class="pre"&gt;pew&lt;/span&gt;&lt;/code&gt; library on it, but I need to work on preparing more learning
-materials and example games for it. I also need to reorganize the repository to
-make it easier to follow and contribute to it.&lt;/p&gt;
-&lt;/section&gt;
-&lt;section id="game-and-successors"&gt;
-&lt;h3&gt;µGame and Successors&lt;/h3&gt;
-&lt;p&gt;A much lower priority thing is to write those games that I have built the
-&lt;a class="reference external" href="http://ugame.rtfd.io"&gt;µGame&lt;/a&gt; for, and possibly also port/rewrite those games
-for Adafruit’s game console when it is finally released. That is probably not
-going to happen very soon, though, so I have some time. If motivation suffices,
-I will probably also improve the &lt;code class="docutils literal notranslate"&gt;&lt;span class="pre"&gt;stage&lt;/span&gt;&lt;/code&gt; game library that µGame uses, and
-create more ready-to-use resources for it.&lt;/p&gt;
-&lt;/section&gt;
-&lt;section id="kubik-and-tote"&gt;
-&lt;h3&gt;Kubik and Tote&lt;/h3&gt;
-&lt;p&gt;While the homebrew game consoles took most of my free time last year, this year
-I want to come back to my robots for a bit. In particular, I want to finish the
-design and programming of ESP8266-based version of &lt;a class="reference external" href="http://tote.rtfd.io"&gt;Tote&lt;/a&gt;, and to finish the Kubik M0 robot (possibly switching
-it to NRF52 in the process). There is also a number of old robots I would like
-to re-visit and finish, such as the &lt;a class="reference external" href="https://hackaday.io/project/7168-logicoma-kun"&gt;Logicoma-kun&lt;/a&gt;, &lt;a class="reference external" href="https://hackaday.io/project/10665-pony-bot"&gt;Pony Bot&lt;/a&gt;, and &lt;a class="reference external" href="https://hackaday.io/project/10534-hexapod-henk-mkii"&gt;Henk the Hexapod&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;I also need to explore more better ways of doing inverse kinematics,
-interpreting accelerometer output, reacting to touch sensors on the legs, and
-possibly also to force sensors in the joints and complaint motion.&lt;/p&gt;
-&lt;/section&gt;
-&lt;section id="badges-and-wearables"&gt;
-&lt;h3&gt;Badges and Wearables&lt;/h3&gt;
-&lt;p&gt;The CircuitPython Badge project is suspended, as the people who wanted to work
-with me to get it to conferences gave up on it, but if there is a Python
-conference that wants it, I might work on it again.&lt;/p&gt;
-&lt;p&gt;I also have this wearable hub prototype, for which I want to make some
-interactive jewelry and accessories. No idea about anything specific yet, but I
-think I will have cat ears for sure, at the least. Maybe also a video pendant.&lt;/p&gt;
-&lt;/section&gt;
-&lt;/section&gt;
-&lt;section id="circuitpython-development"&gt;
-&lt;h2&gt;CircuitPython Development&lt;/h2&gt;
-&lt;section id="textmode-library"&gt;
-&lt;h3&gt;TextMode Library&lt;/h3&gt;
-&lt;p&gt;I really want to write a CircuitPython library that would let you do something
-like the old DOS text mode display, and that would support a variety of
-different displays and fonts. I already have some prototypes for OLED and TFT
-displays, but I need to sit down and bring it all together with a consistent
-API.&lt;/p&gt;
-&lt;/section&gt;
-&lt;section id="built-in-display-support"&gt;
-&lt;h3&gt;Built-in Display Support&lt;/h3&gt;
-&lt;p&gt;I’m waiting with bated breath for the built-in support for displays that is
-being worked on. It will not only make it trivially easy to display the errors
-and the REPL console on any display connected to CircuitPython boards, but also
-let do high-performance graphic operations, and create games like on the µGame.
-This is probably also a prerequisite for that game console board to be released
-by Adafruit, so I really can’t wait for it.&lt;/p&gt;
-&lt;/section&gt;
-&lt;section id="wireless-communication"&gt;
-&lt;h3&gt;Wireless Communication&lt;/h3&gt;
-&lt;p&gt;There is a new library for using ESP8266 as a WiFi module in the AT mode, but
-also some improvement to the RFM9x module support, and of course support for
-NRF52 chips means there is Bluetooth support coming. I’m really looking forward
-to being able to use any of those in CircuitPython, and I hope that the coming
-year will bring a standardised and consistent API for wireless communication.&lt;/p&gt;
-&lt;/section&gt;
-&lt;/section&gt;
-&lt;section id="crazy-project-ideas"&gt;
-&lt;h2&gt;Crazy Project Ideas&lt;/h2&gt;
-&lt;section id="speech-synthesizer"&gt;
-&lt;h3&gt;Speech Synthesizer&lt;/h3&gt;
-&lt;p&gt;The same speech synthesizer that is used to make the Micro:bit talk should be
-very easy to port to CircuitPython, and should even have much better sound
-quality by using the DAC.&lt;/p&gt;
-&lt;/section&gt;
-&lt;section id="speech-recognition"&gt;
-&lt;h3&gt;Speech Recognition&lt;/h3&gt;
-&lt;p&gt;At the same time, it might be possible to use the stronger M4 boards to do
-trigger word recognition, using the same algorithm as the Snowboy program for
-Raspberry Pi. This requires a lot of knowledge and patience that I don’t have,
-but it could be potentially very useful project.&lt;/p&gt;
-&lt;/section&gt;
-&lt;/section&gt;
-&lt;section id="summary"&gt;
-&lt;h2&gt;Summary&lt;/h2&gt;
-&lt;p&gt;That’s all I have right now. As you can see, there is a lot of hope and very
-few promises. That’s because the trend in the recent years is for me to have
-less and less time and motivation for my projects. Perhaps the trend will
-reverse at some point, but until then I try to not plan ahead too much.&lt;/p&gt;
-&lt;/section&gt;
-&lt;/section&gt;
-</content>
-    <link href="http://dopieralski.pl/posts/2019-01-04-circuitpython/" rel="alternate"/>
-    <summary>Adafruit has requested on their blog
-feedback and comments about CircuitPython in 2019, so here I go. I am mostly
-going to talk about three things: the projects that I personally want to do
-using it, the ongoing developments that I would love to see finished this year,
-and some completely crazy stuff that could potentially be added if someone
-smarter than me and with copious free time worked on it.</summary>
-    <published>2019-01-04T00:00:00+01:00</published>
-  </entry>
   <entry>
     <id>http://dopieralski.pl/posts/2020-01-02-circuitpython/</id>
     <title>CircuitPython in 2020</title>
@@ -507,5 +389,71 @@ with other things. In any case, I decided to make it about general technology
 related wishes, and not just CircuitPython, but large part of this is going to
 be about CircuitPython anyways. Or at least related.</summary>
     <published>2025-07-08T00:00:00+02:00</published>
+  </entry>
+  <entry>
+    <id>http://dopieralski.pl/posts/2026-01-11-circuitpython/</id>
+    <title>CircuitPython in 2026</title>
+    <updated>2026-01-11T00:00:00+01:00</updated>
+    <content type="html">&lt;section id="circuitpython-in-2026"&gt;
+
+&lt;p&gt;It’s that time when the CircuitPython project is looking for feedback from the
+users, so here is some of mine again.&lt;/p&gt;
+&lt;p&gt;I have been mostly focused on three projects using CircuitPython last year: my
+&lt;cite&gt;quadruped robots &amp;lt;https://deshipu.art/projects/project-188909/&amp;gt;&lt;/cite&gt;, the &lt;cite&gt;PewPew
+game console &amp;lt;https://deshipu.art/projects/project-185291/&amp;gt;&lt;/cite&gt;, and the &lt;cite&gt;µGame
+game console &amp;lt;https://deshipu.art/projects/project-178061/&amp;gt;&lt;/cite&gt;.  I didn’t have
+much energy to do any serious progress on any one of them, but I did some
+experimenting, and I have some ideas for the future.&lt;/p&gt;
+&lt;p&gt;I failed in my attempts to port the speech synthesis engine from MicroBit to
+CircuitPython as a C module, but &lt;cite&gt;someone ported the project
+&amp;lt;https://github.com/jacklinquan/micropython-samtts&amp;gt;&lt;/cite&gt; it is based on (the SAM,
+Software Automatic Mouth) to plain Python code, and it runs on CircuitPython,
+albeit the format conversions necessary to subsequently play it using
+&lt;code class="docutils literal notranslate"&gt;&lt;span class="pre"&gt;audioio&lt;/span&gt;&lt;/code&gt; make it somewhat slow. Unfortunately, the non-repeat playback of
+&lt;code class="docutils literal notranslate"&gt;&lt;span class="pre"&gt;RawSample&lt;/span&gt;&lt;/code&gt; is currently pretty broken in CircuitPython, so even though I did
+get this to work, it’s not really usable until those bugs introduced later
+changes are fixed. I took a stab at one of them, but I’m not really familiar
+with that code enough to know what it was supposed to be doing in the first
+place. In any case, there is a way to do voice synthesis in CircuitPython now,
+which is nice for things like talking robots. We can hope the audio libraries
+will become more stable in time.&lt;/p&gt;
+&lt;p&gt;I have given up on working on a touch version of the &lt;code class="docutils literal notranslate"&gt;&lt;span class="pre"&gt;keypad&lt;/span&gt;&lt;/code&gt; module for the
+SAMD21 port. The main problem is that those registers are completely
+undocumented, because Microchip sells a commercial library that uses them, and
+prefers for everyone to use that. Adafruit worked around that with their
+current CircuitPython code, but without access to the same documentation, I
+have little chance. Having that module would greatly improve the functioning
+of those PewPew devices that use touchpads for the buttons – right now the
+code is polling them, which is slow and unresponsive.&lt;/p&gt;
+&lt;p&gt;I have also looked at using different chip than the hard to obtain SAMD21 for
+the PewPew devices, in particular the &lt;cite&gt;CH32V208
+&amp;lt;https://www.wch-ic.com/products/CH32V208.html&amp;gt;&lt;/cite&gt; looks very promising. It has
+64kB of RAM, 128kB of Flash, and clock up to 144MHz, which should be sufficient
+for CircuitPython running simple games of the PewPew. The problem is, of
+course, that there is currently no port of CircuitPython to that chip. I looked
+a bit into what would be involved into making such a port, and I will probably
+give it a go at some point, but the task is somewhat daunting and certainly
+requires more energy than I have at the moment.&lt;/p&gt;
+&lt;p&gt;Finally, I’m finalizing the hardware for the ESP32-S3 version of the µGame
+handheld game console. You can think about it as &lt;cite&gt;Adafruit PyBadge
+&amp;lt;https://www.adafruit.com/product/4200&amp;gt;&lt;/cite&gt;, but with larger screen, and more RAM
+and Flash. And somewhat better looking, in my opinion.  There are no changes in
+CircuitPython necessary for it, except for the board definition, which I will
+submit once I’m sure about the hardware, and once I get a USB pid for it.&lt;/p&gt;
+&lt;p&gt;In the near future, I want to focus more on writing new games for
+CircuitPython, in particular, I really want to make a roguelike game for that
+platform, as I don’t think there is one yet. It feels to me like I should do
+the hardware work first, the put off the fun of making the games, but the
+reality is that a game console without games is a pretty boring thing.&lt;/p&gt;
+&lt;p&gt;As for the CircuitPython project itself, I think it’s in a good place in terms
+of functionality. Yes, better async support and fewer bugs would be nice, but
+there really isn’t anything that stops me from doing the things I want to do
+with it.&lt;/p&gt;
+&lt;/section&gt;
+</content>
+    <link href="http://dopieralski.pl/posts/2026-01-11-circuitpython/" rel="alternate"/>
+    <summary>It’s that time when the CircuitPython project is looking for feedback from the
+users, so here is some of mine again.</summary>
+    <published>2026-01-11T00:00:00+01:00</published>
   </entry>
 </feed>

@@ -1,0 +1,75 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+  <id>http://dopieralski.pl/</id>
+  <title>dopieralski.pl - Posted in 2026</title>
+  <updated>2026-01-11T08:36:51.548260+00:00</updated>
+  <link href="http://dopieralski.pl/"/>
+  <link href="http://dopieralski.pl/blog/2026/atom.xml" rel="self"/>
+  <generator uri="https://ablog.readthedocs.org/" version="0.10.33">ABlog</generator>
+  <entry>
+    <id>http://dopieralski.pl/posts/2026-01-11-circuitpython/</id>
+    <title>CircuitPython in 2026</title>
+    <updated>2026-01-11T00:00:00+01:00</updated>
+    <content type="html">&lt;section id="circuitpython-in-2026"&gt;
+
+&lt;p&gt;It’s that time when the CircuitPython project is looking for feedback from the
+users, so here is some of mine again.&lt;/p&gt;
+&lt;p&gt;I have been mostly focused on three projects using CircuitPython last year: my
+&lt;cite&gt;quadruped robots &amp;lt;https://deshipu.art/projects/project-188909/&amp;gt;&lt;/cite&gt;, the &lt;cite&gt;PewPew
+game console &amp;lt;https://deshipu.art/projects/project-185291/&amp;gt;&lt;/cite&gt;, and the &lt;cite&gt;µGame
+game console &amp;lt;https://deshipu.art/projects/project-178061/&amp;gt;&lt;/cite&gt;.  I didn’t have
+much energy to do any serious progress on any one of them, but I did some
+experimenting, and I have some ideas for the future.&lt;/p&gt;
+&lt;p&gt;I failed in my attempts to port the speech synthesis engine from MicroBit to
+CircuitPython as a C module, but &lt;cite&gt;someone ported the project
+&amp;lt;https://github.com/jacklinquan/micropython-samtts&amp;gt;&lt;/cite&gt; it is based on (the SAM,
+Software Automatic Mouth) to plain Python code, and it runs on CircuitPython,
+albeit the format conversions necessary to subsequently play it using
+&lt;code class="docutils literal notranslate"&gt;&lt;span class="pre"&gt;audioio&lt;/span&gt;&lt;/code&gt; make it somewhat slow. Unfortunately, the non-repeat playback of
+&lt;code class="docutils literal notranslate"&gt;&lt;span class="pre"&gt;RawSample&lt;/span&gt;&lt;/code&gt; is currently pretty broken in CircuitPython, so even though I did
+get this to work, it’s not really usable until those bugs introduced later
+changes are fixed. I took a stab at one of them, but I’m not really familiar
+with that code enough to know what it was supposed to be doing in the first
+place. In any case, there is a way to do voice synthesis in CircuitPython now,
+which is nice for things like talking robots. We can hope the audio libraries
+will become more stable in time.&lt;/p&gt;
+&lt;p&gt;I have given up on working on a touch version of the &lt;code class="docutils literal notranslate"&gt;&lt;span class="pre"&gt;keypad&lt;/span&gt;&lt;/code&gt; module for the
+SAMD21 port. The main problem is that those registers are completely
+undocumented, because Microchip sells a commercial library that uses them, and
+prefers for everyone to use that. Adafruit worked around that with their
+current CircuitPython code, but without access to the same documentation, I
+have little chance. Having that module would greatly improve the functioning
+of those PewPew devices that use touchpads for the buttons – right now the
+code is polling them, which is slow and unresponsive.&lt;/p&gt;
+&lt;p&gt;I have also looked at using different chip than the hard to obtain SAMD21 for
+the PewPew devices, in particular the &lt;cite&gt;CH32V208
+&amp;lt;https://www.wch-ic.com/products/CH32V208.html&amp;gt;&lt;/cite&gt; looks very promising. It has
+64kB of RAM, 128kB of Flash, and clock up to 144MHz, which should be sufficient
+for CircuitPython running simple games of the PewPew. The problem is, of
+course, that there is currently no port of CircuitPython to that chip. I looked
+a bit into what would be involved into making such a port, and I will probably
+give it a go at some point, but the task is somewhat daunting and certainly
+requires more energy than I have at the moment.&lt;/p&gt;
+&lt;p&gt;Finally, I’m finalizing the hardware for the ESP32-S3 version of the µGame
+handheld game console. You can think about it as &lt;cite&gt;Adafruit PyBadge
+&amp;lt;https://www.adafruit.com/product/4200&amp;gt;&lt;/cite&gt;, but with larger screen, and more RAM
+and Flash. And somewhat better looking, in my opinion.  There are no changes in
+CircuitPython necessary for it, except for the board definition, which I will
+submit once I’m sure about the hardware, and once I get a USB pid for it.&lt;/p&gt;
+&lt;p&gt;In the near future, I want to focus more on writing new games for
+CircuitPython, in particular, I really want to make a roguelike game for that
+platform, as I don’t think there is one yet. It feels to me like I should do
+the hardware work first, the put off the fun of making the games, but the
+reality is that a game console without games is a pretty boring thing.&lt;/p&gt;
+&lt;p&gt;As for the CircuitPython project itself, I think it’s in a good place in terms
+of functionality. Yes, better async support and fewer bugs would be nice, but
+there really isn’t anything that stops me from doing the things I want to do
+with it.&lt;/p&gt;
+&lt;/section&gt;
+</content>
+    <link href="http://dopieralski.pl/posts/2026-01-11-circuitpython/" rel="alternate"/>
+    <summary>It’s that time when the CircuitPython project is looking for feedback from the
+users, so here is some of mine again.</summary>
+    <published>2026-01-11T00:00:00+01:00</published>
+  </entry>
+</feed>
