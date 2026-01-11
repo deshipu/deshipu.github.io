@@ -9,15 +9,15 @@ It's that time when the CircuitPython project is looking for feedback from the
 users, so here is some of mine again.
 
 I have been mostly focused on three projects using CircuitPython last year: my
-`quadruped robots <https://deshipu.art/projects/project-188909/>`, the `PewPew
-game console <https://deshipu.art/projects/project-185291/>`, and the `µGame
-game console <https://deshipu.art/projects/project-178061/>`.  I didn't have
+`quadruped robots <https://deshipu.art/projects/project-188909/>`_, the `PewPew
+game console <https://deshipu.art/projects/project-185291/>`_, and the `µGame
+game console <https://deshipu.art/projects/project-178061/>`_.  I didn't have
 much energy to do any serious progress on any one of them, but I did some
 experimenting, and I have some ideas for the future.
 
 I failed in my attempts to port the speech synthesis engine from MicroBit to
 CircuitPython as a C module, but `someone ported the project
-<https://github.com/jacklinquan/micropython-samtts>` it is based on (the SAM,
+<https://github.com/jacklinquan/micropython-samtts>`_ it is based on (the SAM,
 Software Automatic Mouth) to plain Python code, and it runs on CircuitPython,
 albeit the format conversions necessary to subsequently play it using
 ``audioio`` make it somewhat slow. Unfortunately, the non-repeat playback of
@@ -40,7 +40,7 @@ code is polling them, which is slow and unresponsive.
 
 I have also looked at using different chip than the hard to obtain SAMD21 for
 the PewPew devices, in particular the `CH32V208
-<https://www.wch-ic.com/products/CH32V208.html>` looks very promising. It has
+<https://www.wch-ic.com/products/CH32V208.html>`_ looks very promising. It has
 64kB of RAM, 128kB of Flash, and clock up to 144MHz, which should be sufficient
 for CircuitPython running simple games of the PewPew. The problem is, of
 course, that there is currently no port of CircuitPython to that chip. I looked
@@ -50,7 +50,7 @@ requires more energy than I have at the moment.
 
 Finally, I'm finalizing the hardware for the ESP32-S3 version of the µGame
 handheld game console. You can think about it as `Adafruit PyBadge
-<https://www.adafruit.com/product/4200>`, but with larger screen, and more RAM
+<https://www.adafruit.com/product/4200>`_, but with larger screen, and more RAM
 and Flash. And somewhat better looking, in my opinion.  There are no changes in
 CircuitPython necessary for it, except for the board definition, which I will
 submit once I'm sure about the hardware, and once I get a USB pid for it.

@@ -53,14 +53,13 @@
 <p>It’s that time when the CircuitPython project is looking for feedback from the
 users, so here is some of mine again.</p>
 <p>I have been mostly focused on three projects using CircuitPython last year: my
-<cite>quadruped robots &lt;https://deshipu.art/projects/project-188909/&gt;</cite>, the <cite>PewPew
-game console &lt;https://deshipu.art/projects/project-185291/&gt;</cite>, and the <cite>µGame
-game console &lt;https://deshipu.art/projects/project-178061/&gt;</cite>.  I didn’t have
+<a class="reference external" href="https://deshipu.art/projects/project-188909/">quadruped robots</a>, the <a class="reference external" href="https://deshipu.art/projects/project-185291/">PewPew
+game console</a>, and the <a class="reference external" href="https://deshipu.art/projects/project-178061/">µGame
+game console</a>.  I didn’t have
 much energy to do any serious progress on any one of them, but I did some
 experimenting, and I have some ideas for the future.</p>
 <p>I failed in my attempts to port the speech synthesis engine from MicroBit to
-CircuitPython as a C module, but <cite>someone ported the project
-&lt;https://github.com/jacklinquan/micropython-samtts&gt;</cite> it is based on (the SAM,
+CircuitPython as a C module, but <a class="reference external" href="https://github.com/jacklinquan/micropython-samtts">someone ported the project</a> it is based on (the SAM,
 Software Automatic Mouth) to plain Python code, and it runs on CircuitPython,
 albeit the format conversions necessary to subsequently play it using
 <code class="docutils literal notranslate"><span class="pre">audioio</span></code> make it somewhat slow. Unfortunately, the non-repeat playback of
@@ -80,8 +79,7 @@ have little chance. Having that module would greatly improve the functioning
 of those PewPew devices that use touchpads for the buttons – right now the
 code is polling them, which is slow and unresponsive.</p>
 <p>I have also looked at using different chip than the hard to obtain SAMD21 for
-the PewPew devices, in particular the <cite>CH32V208
-&lt;https://www.wch-ic.com/products/CH32V208.html&gt;</cite> looks very promising. It has
+the PewPew devices, in particular the <a class="reference external" href="https://www.wch-ic.com/products/CH32V208.html">CH32V208</a> looks very promising. It has
 64kB of RAM, 128kB of Flash, and clock up to 144MHz, which should be sufficient
 for CircuitPython running simple games of the PewPew. The problem is, of
 course, that there is currently no port of CircuitPython to that chip. I looked
@@ -89,8 +87,7 @@ a bit into what would be involved into making such a port, and I will probably
 give it a go at some point, but the task is somewhat daunting and certainly
 requires more energy than I have at the moment.</p>
 <p>Finally, I’m finalizing the hardware for the ESP32-S3 version of the µGame
-handheld game console. You can think about it as <cite>Adafruit PyBadge
-&lt;https://www.adafruit.com/product/4200&gt;</cite>, but with larger screen, and more RAM
+handheld game console. You can think about it as <a class="reference external" href="https://www.adafruit.com/product/4200">Adafruit PyBadge</a>, but with larger screen, and more RAM
 and Flash. And somewhat better looking, in my opinion.  There are no changes in
 CircuitPython necessary for it, except for the board definition, which I will
 submit once I’m sure about the hardware, and once I get a USB pid for it.</p>
