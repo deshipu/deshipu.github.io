@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>http://dopieralski.pl/</id>
   <title>dopieralski.pl - Posts in philosophy</title>
-  <updated>2026-01-11T08:40:51.271908+00:00</updated>
+  <updated>2026-02-20T00:34:43.110909+00:00</updated>
   <link href="http://dopieralski.pl/"/>
   <link href="http://dopieralski.pl/blog/category/philosophy/atom.xml" rel="self"/>
   <generator uri="https://ablog.readthedocs.org/" version="0.10.33">ABlog</generator>
@@ -633,5 +633,100 @@ consciously switch between the two worldviews, and the experience needed to
 decide which one to use in the given context, are crucial for the work of a
 software engineer.</summary>
     <published>2025-11-02T00:00:00+01:00</published>
+  </entry>
+  <entry>
+    <id>http://dopieralski.pl/posts/2026-02-19-social-design/</id>
+    <title>Social Design</title>
+    <updated>2026-02-19T00:00:00+01:00</updated>
+    <content type="html">&lt;section id="social-design"&gt;
+
+&lt;p&gt;I have used my share of software tools with terrible user interfaces, and I
+have read even more complaints from other people about such tools. Why can’t
+the designers just put themselves in the shoes of the users, mentally, and
+think about what kind of interface would be the most convenient and useful?
+Those stupid autistic programmers must be completely devoid of any trace of
+empathy to produce such designs, surely. If we could only make sure such design
+work is done by reasonable people thinking about others, it surely would be
+must better!&lt;/p&gt;
+&lt;p&gt;Well, turns out that this is not so simple, but it’s a little bit involved to
+explain. I will try anyways.&lt;/p&gt;
+&lt;p&gt;The short version of it is that what you think is simple and obvious, is not so
+simple and obvious to others. It only seems to be so, because you are
+mis-communicating. You are using the same words as the others, and the others
+agree with what they hear, but those words mean different things to different
+people. This is invisible to you until someone takes what you said and turns it
+into a concrete example. Chances are that when you look at it, you will say
+they completely mis-understood you, and that is not what you meant at all.  But
+that is what they understood, and what they agreed on. If you make each person
+who has previously so nicely agreed with you turn your words into a concrete
+example, each one of them will produce some interpretation of your words that
+is most likely completely different from what you actually meant.&lt;/p&gt;
+&lt;p&gt;If you took that horrible user interface, and asked all those people who
+completely agreed that it is horrible, to tell you what exactly is wrong with
+them, you would hear completely inconsistent and wildly different opinions. And
+that’s not just because most people are very bad at analyzing user interfaces.
+It’s also because each of those people probably wanted something different. But
+as long as they talk between themselves, they will generally all agree, because
+each of them will choose the interpretation of the words other said that
+matches their own ideas.&lt;/p&gt;
+&lt;p&gt;Now, programming doesn’t work that way. Programming is one of those disciplines
+where you can’t solve things by using a different word to describe the same
+thing, until everyone agrees. It doesn’t work on consensus, it works on
+physical reality, and unlike consensus, physical reality is unique. There is at
+any point only one truth, even when there can be multiple interpretations, and
+hypotheses that fit the experimental data. There is a necessary assumption in
+there, that cannot be avoided, that all those interpretations, and hypotheses
+are in fact describing a single underlying reality. And to make computers work
+you have to believe in that single truth, you have to work within the confines
+of the physical reality, because the computers don’t care about what you mean,
+they just do their computation, in more or less predictable ways, and it’s up
+to you to arrange them in a way that does something useful.&lt;/p&gt;
+&lt;p&gt;You might say: that is completely fine, they have to be those hyper-honest,
+literally-minded autistics when they commune with their machines, but can’t
+they be a little bit more human when they speak to users, or imagine what the
+users want, so that they can then do their magic and make the machines do what
+we want them to do? Isn’t this their entire job, to translate between the
+normal people and the machines? Shouldn’t they put more effort into thinking
+normally?&lt;/p&gt;
+&lt;p&gt;And that’s the entire problem. There isn’t just one “normally” out there. You
+think there is, because you live in a society, and you have learned to exist in
+it without too much conflict, and to reinterpret things others are saying to
+match with your own opinions and experiences. With the physical reality, there
+is no problem: there is only one truth, and if you make enough experiments,
+collect enough data, and think about it hard enough, you can eventually get to
+an interpretation of your data that is close enough to that truth for things to
+work most of the time. This doesn’t work with “normal” people. They seem to all
+be saying the same things, but they &lt;em&gt;mean&lt;/em&gt; different things, and often they
+don’t even mean anything at all, just repeat something they’ve heard without
+understanding it, and will claim it means something completely different as
+soon as you try to pinpoint it. They will also change their minds, and claim
+contradictory things. And every translation to a concrete, formal description
+that you might attempt will be wrong to most of them. You see, you simply don’t
+&lt;em&gt;understand&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;So are we doomed to unusable software product with interfaces designed for
+people who don’t understand the basic needs of the users? I believe good
+software tools are possible, but the path to them does not lead through making
+the designers more human and making them listen to “normal” people. On the
+contrary, I think it’s best when they don’t listen to what the users &lt;em&gt;say&lt;/em&gt; at
+all, and instead just look at what the users &lt;em&gt;do&lt;/em&gt;. Words lie. While it is
+possible to mislead with actions as well, especially if you are trying to guess
+the intentions, they are at least much less ambiguous. And they are repeatable
+and rooted in physical reality. We can do science on them, and we can figure
+things out. And then we can translate them into concrete, working things.&lt;/p&gt;
+&lt;p&gt;So next time you are about to complain that user interface designers don’t
+listen to their users, keep in mind that listening to users is not how you
+make good user interfaces.&lt;/p&gt;
+&lt;/section&gt;
+</content>
+    <link href="http://dopieralski.pl/posts/2026-02-19-social-design/" rel="alternate"/>
+    <summary>I have used my share of software tools with terrible user interfaces, and I
+have read even more complaints from other people about such tools. Why can’t
+the designers just put themselves in the shoes of the users, mentally, and
+think about what kind of interface would be the most convenient and useful?
+Those stupid autistic programmers must be completely devoid of any trace of
+empathy to produce such designs, surely. If we could only make sure such design
+work is done by reasonable people thinking about others, it surely would be
+must better!</summary>
+    <published>2026-02-19T00:00:00+01:00</published>
   </entry>
 </feed>
