@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>http://dopieralski.pl/</id>
   <title>dopieralski.pl - Posted in 2023</title>
-  <updated>2026-02-20T00:34:43.182558+00:00</updated>
+  <updated>2026-07-19T23:40:23.568603+00:00</updated>
   <link href="http://dopieralski.pl/"/>
   <link href="http://dopieralski.pl/blog/2023/atom.xml" rel="self"/>
-  <generator uri="https://ablog.readthedocs.org/" version="0.10.33">ABlog</generator>
+  <generator uri="https://ablog.readthedocs.io/" version="0.11.13">ABlog</generator>
   <entry>
     <id>http://dopieralski.pl/posts/2023-02-10-typesetting/</id>
     <title>Design for Exploration</title>
@@ -87,7 +87,7 @@ computer assisted tasks, like PCB design.&lt;/p&gt;
 &lt;/section&gt;
 &lt;/section&gt;
 </content>
-    <link href="http://dopieralski.pl/posts/2023-02-10-typesetting/" rel="alternate"/>
+    <link href="http://dopieralski.pl/posts/2023-02-10-typesetting/"/>
     <summary>Imagine a text processor, similar to Wordstar, but more closely modelled around
 the tried and tested workflows of professional typesetters.</summary>
     <published>2023-02-10T00:00:00+01:00</published>

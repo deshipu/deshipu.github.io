@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>http://dopieralski.pl/</id>
   <title>dopieralski.pl - Posts in psychology</title>
-  <updated>2026-02-20T00:34:43.133073+00:00</updated>
+  <updated>2026-07-19T23:40:23.503221+00:00</updated>
   <link href="http://dopieralski.pl/"/>
   <link href="http://dopieralski.pl/blog/category/psychology/atom.xml" rel="self"/>
-  <generator uri="https://ablog.readthedocs.org/" version="0.10.33">ABlog</generator>
+  <generator uri="https://ablog.readthedocs.io/" version="0.11.13">ABlog</generator>
   <entry>
     <id>http://dopieralski.pl/posts/2025-11-02-both-sides/</id>
     <title>Programming on Both Sides of Your Brain</title>
@@ -28,7 +28,7 @@ software engineer.&lt;/p&gt;
 &lt;p&gt;Probably the most well known example of bistable perception is the Necker Cube:
 a two-dimensional wireframe drawing of a cube, which can be interpreted in two
 ways, because it lacks any cues about the depth of the parts of the image.&lt;/p&gt;
-&lt;img alt="../../../_images/necker.png" class="align-center" src="../../../_images/necker.png" /&gt;
+&lt;img alt="http://dopieralski.pl/_images/necker.png" class="align-center" src="http://dopieralski.pl/_images/necker.png" /&gt;
 &lt;p&gt;When we look at the drawing, we automatically pick one of the possible
 interpretations, and it becomes obvious to us that it’s the correct one. It
 requires a conscious effort to switch to the other interpretation, and some
@@ -208,7 +208,7 @@ my feelings about this. The reader is advised to use their own judgement.&lt;/p&
 &lt;/section&gt;
 &lt;/section&gt;
 </content>
-    <link href="http://dopieralski.pl/posts/2025-11-02-both-sides/" rel="alternate"/>
+    <link href="http://dopieralski.pl/posts/2025-11-02-both-sides/"/>
     <summary>A lot of disagreements in software engineering seem to have a deeper background
 than mere technical considerations. Should you move fast and break things, or
 should you reinvent the wheel? Does it matter how the code looks like when it

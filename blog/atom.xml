@@ -2,342 +2,492 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>http://dopieralski.pl/</id>
   <title>dopieralski.pl</title>
-  <updated>2026-02-20T00:34:43.049392+00:00</updated>
+  <updated>2026-07-19T23:40:23.414133+00:00</updated>
   <link href="http://dopieralski.pl/"/>
   <link href="http://dopieralski.pl/blog/atom.xml" rel="self"/>
-  <generator uri="https://ablog.readthedocs.org/" version="0.10.33">ABlog</generator>
+  <generator uri="https://ablog.readthedocs.io/" version="0.11.13">ABlog</generator>
   <entry>
-    <id>http://dopieralski.pl/posts/2025-07-01-automation/</id>
-    <title>The Subtle Art of Automation</title>
-    <updated>2025-07-01T00:00:00+02:00</updated>
-    <content type="html">&lt;section id="the-subtle-art-of-automation"&gt;
+    <id>http://dopieralski.pl/posts/2026-07-19-robot-legs/</id>
+    <title>Robot Legs</title>
+    <updated>2026-07-19T00:00:00+02:00</updated>
+    <content type="html">&lt;section id="robot-legs"&gt;
 
-&lt;section id="tools"&gt;
-&lt;h2&gt;Tools&lt;/h2&gt;
-&lt;p&gt;Humans are tool-using animals. For a long time it was thought that this is what
-distinguishes us from animals, in fact, but of course if you actually pay
-attention you will notice that animals are using tools all the time. Yes,
-sometimes you can dismiss it as instinctive behavior, as is the fashion, but
-sometimes when it comes to corvids, parrots, octopuses and primates, you really
-have to admit that they do it intentionally and with full knowledge about the
-expected results. Anyways, humans are among tool-using animals.&lt;/p&gt;
-&lt;p&gt;Why do we use tools? Sometimes it’s because we are not strong or dexterous
-enough to do thing we want to do unaided. Or our nails and teeth are not sharp
-enough. Or our sight, hearing, or sense of touch are not good enough. Other
-times we could do the thing unaided if we had to, but tools make it easier or
-more convenient. Sometimes it’s because we don’t want to risk an injury, or to
-get dirty, or we want to avoid other unpleasant sensation. But the reason I
-hear given most often is that by using tools we can do the same thing faster,
-or at larger scale, or otherwise more efficiently. We can achieve the same (or better) result with less effort. Tools can be a labour-saving device.&lt;/p&gt;
-&lt;p&gt;We say “tools”, but it’s not just tools. They are just easy to talk about them,
-because they are tangible, visible things. But it all applies to skills and
-techniques as well. To the “technologies”. Consider, for example, waving
-baskets. It’s something you do by hand (today we do have machines that can do
-it, but let’s assume we are doing it by hand), but you can do it in several
-different ways. Coming up with a new way to wave baskets that is somehow
-easier, faster, lets you use different materials or produces baskets with
-special qualities that the other ways don’t works exactly the same as if you
-created a new tool for doing this. So tools are just physical manifestations
-of technologies, and it’s the technologies we will be concerned about here.&lt;/p&gt;
+&lt;section id="aside"&gt;
+&lt;h2&gt;Aside&lt;/h2&gt;
+&lt;p&gt;I noticed that when I find the energy to write here, I either write about some
+pretty abstract philosophical or political things, or about my increasingly
+unlikely plans to work on my hobby projects. I don’t really feel any of those
+are very useful for the average reader – the first kind you can find a dime
+a dozen all over the Internet, and the second kind gets outdated within a year.
+So I decided to try something else – write about some technical aspects of
+my hobbies. Now, without further ado, let’s get down to it.&lt;/p&gt;
 &lt;/section&gt;
-&lt;section id="effort"&gt;
-&lt;h2&gt;Effort&lt;/h2&gt;
-&lt;p&gt;So do the technologies really save effort? It certainly feels that way, why
-would we be using them otherwise? But I think it’s a bit more complicated than
-that.&lt;/p&gt;
-&lt;p&gt;Consider the ox-driven plough. On the face of it, it’s a huge improvement about
-the humble hoe that it replaced. Yes, the farmer still has to be present to
-drive the plough, and it still requires a lot of strength, but a large amount
-of that strength is now provided by the animal, and the whole work goes much
-faster. So it’s a definitely a huge saving, at least as long as you only look
-at this short time when the ploughing is actually happening.&lt;/p&gt;
-&lt;p&gt;But the ox has to eat too. And it needs a place to stay, and it needs to be
-taken care of. And when it gets old or sick, it has to be replaced. So for this
-to work in the long run you need a steady supply of oxen. (And I’m not even
-saying anything about the effort of the ox.) So a tiny plot of land that acted
-as the farmer’s garden and was enough to feed their family now has to become a
-considerably sized field, enough to grow food for a herd of oxen and the people
-needed to take care of them. And since the oxen need to eat the entire year,
-you have to store your crops somehow, and preserve them.  What used to be a
-simple shack with a small garden, where some hoe-ing would happen a few times a
-year, turns into a small village with several huts, a barn, an enclosure, and
-people working around the clock to maintain all that. And don’t even get me
-started about fresh water and the smell of ox everywhere. And of course because
-you are not storing considerable caches of food, your little village is now
-vulnerable to raids and looting (or the more civilized version of it,
-taxation), so you need defensive walls, soldiers (or at least militia),
-weapons, and so on.&lt;/p&gt;
-&lt;p&gt;Looking at it this way you could easily conclude that the hoe is in fact the
-less labor-intensive solution, when considered globally. It only becomes worse
-when you assume that you already have all the infrastructure need for it.&lt;/p&gt;
-&lt;p&gt;But then again, once you have the infrastructure, it enables not just the
-plough, but many other technologies as well. You now have milk and meat. And as
-much ox shit as you can shake a stick at. You have fortifications and army.
-You have a hierarchy to organize and manage it all. You have surplus food to
-trade. And so on and so forth. So assuming you want all those additional things
-too, on top of replacing the hoe, the plough once again becomes the superior
-technology (for some chosen measure).&lt;/p&gt;
+&lt;section id="feet"&gt;
+&lt;h2&gt;Feet&lt;/h2&gt;
+&lt;p&gt;When you are building a statically stable walking robot (the kind I will focus
+on, because I think it’s the easiest for a hobbyist), in order to keep it from
+falling down, you have to keep its center of mass above its area of support at
+all times. For our purposes, we can define the center of mass as a place on the
+robot where you can support it to balance it (but also sideways, so it’s often
+actually outside of the robot’s body). The area of support is the smallest
+convex area around all the points on the ground where the robot is touching.
+You can imagine a rubber band stretched around all its feet on the floor. Of
+course, when a robot raises one of its legs, the area of support changes
+dramatically – since the foot is no longer touching the ground, the rubber
+band gets released, and now only surrounds the remaining feet.&lt;/p&gt;
+&lt;p&gt;There are generally two strategies for keeping the support area under the
+center of mass: large feet, and many legs.&lt;/p&gt;
+&lt;p&gt;Large feet are especially popular with bipedal robots, and the idea is that
+before you raise one foot, you shift the body of the robot to move the center
+of mass so that it fits somewhere above the other foot. Sometimes, if the feet
+have additional supports that allow their ares of support to overlap, you don’t
+even need to move the body – the wind-up walking toys sometimes do that, with
+spurs sticking out of their feet, helping them keep balance even on one foot.&lt;/p&gt;
+&lt;p&gt;With many legs you don’t need such large feet – in fact, you often make the
+legs pointy or ending in balls, so that you don’t have to deal with ankle
+joints – and you instead make sure that the area of support formed by the legs
+remaining on the ground fits under the center of mass. This can be done by
+moving the legs in a certain order, or, again, by shifting the robot’s body (or
+both). Practically, you need at least four legs for this to work for walking:
+one to raise to make a step, and three to make a triangular area of support
+large enough for the robot to be stable. There is only one statically stable
+gait that lets you do that with four legs: creep. However, with six or more
+legs, you have more possibilities, and you can even raise more than one leg at
+the same time.&lt;/p&gt;
+&lt;p&gt;It is possible to mix the two strategies, making the feet large in one
+dimension, but relying on multiple legs for support in the other: imagine a
+robot with three legs in a line, each with a foot consisting of a horizontal
+bar, perpendicular to that line. Because those feet are long, the robot can
+stand on two legs, while the third is being moved. Or you could have some legs
+with large feet, and some more pointy legs. But to be honest, I haven’t seen
+such a walking robot in practice.&lt;/p&gt;
 &lt;/section&gt;
-&lt;section id="transformers"&gt;
-&lt;h2&gt;Transformers&lt;/h2&gt;
-&lt;p&gt;So if technologies don’t &lt;em&gt;actually&lt;/em&gt; save effort on their own, what do they do
-exactly? I like to think of them as transforming one kind of effort into
-another kind, potentially better suited for the task at hand, or maybe just
-easier to store or move around. If you compare the rather abstract and nebulous
-idea of effort to thermodynamic idea of energy, a technology could be like,
-say, a solar cell that transforms light into electricity that can be then
-easily moved around using wires and stored using batteries. Or a combustion
-engine that transforms chemical energy of the fossil fuels into kinetic energy
-of a rotating shaft. Of course the similarity is pretty weak, because we don’t
-really have a well defined formal theory of effort, like we have a theory of
-thermodynamics, but I like to believe that there is some kind of law of
-conservation of effort somewhere in there, however fuzzy and approximate it
-might be.&lt;/p&gt;
-&lt;p&gt;In any case, technologies let you transform different kinds of effort,
-sometimes allowing you to store or move it around. What good is that?&lt;/p&gt;
-&lt;p&gt;Turns out that sometimes some kinds of effort are better for a given task
-than other kinds. So you can “save effort” by using the kind that is more
-efficient for the task at hand.&lt;/p&gt;
-&lt;p&gt;And sometimes certain tasks take less effort when they are done at a particular
-place and time, or when they are done at scale. Being able to store and move
-effort lets you rearrange it into more efficient ways.&lt;/p&gt;
-&lt;p&gt;And finally, sometimes you can “outsource” the effort, by taking advantage of
-something someone else already did (or will have to do to clean up after you).
-Fossil fuels, for example, take advantage of the effort the plants of millions
-of years ago spent to turn light into their bodies, and of the effort the
-future generations will have to spend to deal with the climate change.&lt;/p&gt;
-&lt;p&gt;Just like in thermodynamics, those conversions rarely are free – usually they
-take some additional effort, to, say, dig up those fossil fuels, turn them into
-a form that is convenient to use, and transport them to the right place. But
-with the right arrangements, even with that overhead we can often create
-considerable savings.&lt;/p&gt;
 &lt;/section&gt;
-&lt;section id="automation"&gt;
-&lt;h2&gt;Automation&lt;/h2&gt;
-&lt;p&gt;Automation technologies (together with mechanization) are no different in that
-regard, except they tend to require much more infrastructure to make things
-happen “on their own”. They also come with a myth that “you only need to set it
-up once” and they will work forever without expending any further effort.&lt;/p&gt;
-&lt;p&gt;In practice any ongoing process is going to have setup cost and maintenance
-cost (and also cleanup cost, which we often forget about). In addition, the
-requirements for the output of the process are going to change over time, and
-that requires further effort and resources to adjust it to remain useful
-(either by changing the process itself, or by adding extra adapting steps).&lt;/p&gt;
-&lt;p&gt;Now the trick is to setup that automation in a way that minimizes those ongoing
-costs, possibly doing more work up front, or pushing more work to the cleanup
-(and hoping we won’t be around anymore when it happens). This is not a given,
-and if it’s not done intentionally, we might as well end up with an automated
-process that doesn’t in fact save effort, or accomplish other goals that we
-wanted to achieve.&lt;/p&gt;
+&lt;section id="going-ahead"&gt;
+&lt;h1&gt;Going Ahead&lt;/h1&gt;
+&lt;p&gt;Once we have assured our robot’s stability, we can start thinking about what it
+takes to propel it forward. Since we want proper walking, without slipping,
+sliding, or rolling, there is really only one way to do it: move all the legs
+on the ground backwards in a straight line (or, from another point of view,
+shift the body of the robot forward), while possibly making a step forward with
+the raised legs, putting them on the ground before the robot, so we that we
+don’t run out of legs eventually.&lt;/p&gt;
+&lt;p&gt;Once again, the order of moving the legs and the relative speeds of moving the
+body and taking a step matter here. Ideally, you want to put your stepping leg
+on the ground just before one of your other legs moves out of its movement
+range, and needs to be raised for the next step.&lt;/p&gt;
+&lt;p&gt;Once again, for quadrupedal robots there is only one way to do it, moving both
+legs on one side, one after the other, and then switching to the other side,
+and so forth. Again, that’s the creep gait. For hexapods and robots with more
+legs, there are more possible gaits.&lt;/p&gt;
+&lt;p&gt;So one requirement we have already is that it must be possible to move each of
+the legs in a straight line backwards, and then raise it and make a step
+forward with it.&lt;/p&gt;
+&lt;p&gt;Ironically, this immediately disqualifies a lot of hobby quadruped robots in a
+configuration that I like to call a turtle: each leg has a hip joint that
+rotates in the horizontal plane, and a knee joint that raises and lowers the
+foot. This kind of leg will always move along the ground in an arc – it could
+be close enough to a straight line to make it work, especially with small
+enough steps, but there will always be some slipping and scratching of the
+ground. I don’t recommend this configuration to robot hobbyists, especially
+since there is also no opportunity to learn inverse kinematics with it, as the
+math for the leg position is rather trivial.&lt;/p&gt;
+&lt;p&gt;There are leg configurations with two joints that meet our requirement, both
+have both joints in the same vertical plane, with the insect variant having the
+knee pointing up, and the mammal variant having the knee pointing backwards (or
+forwards). Because both joints work in the same plane, you can use simple
+trigonometry to calculate the inverse kinematics, that is, calculate what
+angles the joints need to have to put the end of the leg in the specified
+position. We need that plane to be vertical, and parallel to the direction of
+walking, so that the leg can move both backward and forward, and up and down.&lt;/p&gt;
+&lt;p&gt;Second requirement is that we have to be able to keep the center of mass of the
+robot over the support area. This can be achieved by carefully designing the
+robot’s proportions and gait so that the no extra body movement is needed – a
+possible, but somewhat limiting option – or by shifting the robot’s body in
+anticipation of raising legs. With two-joint legs, we can easily move the body
+forward and backward, by shifting all legs (that touch the ground) forward and
+backward. However, if we want to move the body sideways (which is the most
+efficient way of balancing with the creep gait), the only way to do it is by
+tilting the body by raising all legs (on the ground) on one side, and lowering
+them on the other. Unfortunately this changes the distance between the legs on
+the left and on the right, and causes the feet to slip on the ground (or
+elastic bending of the legs absorbs the difference). This works well enough for
+small, light robots, but must be considered for larger and heavier ones.&lt;/p&gt;
+&lt;p&gt;Of course legs with three joints (two in the same plane, one perpendicular)
+don’t have this problem – they can be positioned in three dimensions anywhere
+in their working envelope, and move in straight lines in any direction. They
+can not only shift the body horizontally, but also tilt it in any direction,
+and even rotate it in place, without taking the feet off the ground. But
+servomotors are the most expensive part of cheap hobby robots, so it makes
+sense to try and make do with as few of them as possible.&lt;/p&gt;
+&lt;p&gt;It is possible do the balancing in a different way than shifting or tilting the
+entire body of the robot. There can be an additional joint or joints somewhere
+that move part of the robot’s body, or some kind of tail or head, for balance.&lt;/p&gt;
+&lt;section id="turning"&gt;
+&lt;h2&gt;Turning&lt;/h2&gt;
+&lt;p&gt;In order for the robot to turn in place (or even just twist its body to look
+around), you have to be able to move its feet on the ground along arcs,
+centered on the center of rotation. This is where the turtle configuration
+shines (it’s actually the only thing it can do without slipping), and where the
+other two-joint leg configurations fail.&lt;/p&gt;
+&lt;p&gt;Turning while walking is a bit tricker, because you have to combine the two
+movements, the shifting forward and the rotation, resulting in elongated arcs
+that are no longer centered all on the same spot. This is where even the turtle
+configuration fails, and you really need legs with three joints.&lt;/p&gt;
+&lt;p&gt;But of course we can cheat, if our robot is light enough and its legs elastic
+enough. We can turn like a tank does, by doing the walking forward motion, but
+with varying speeds on the left and right sides. We can even move the legs in
+opposite directions to turn in place, just like a tank too! But if you ever
+have seen the ground where a tank or an excavator have been turning, you will
+know that this involves a lot of sideways friction. Slipping also means that
+the effect will depend on the surface, and probably won’t be repeatable. You
+will need some external way of determining the facing of the robot after such a
+maneuver.&lt;/p&gt;
+&lt;p&gt;That is all for the many legs strategy. What about the robots with large feet?
+Well, if you want to avoid slipping, you need to have a way to rotate one foot
+relative to another. You can do this by adding a joint somewhere in the leg,
+rotating in the horizontal plane. The good news, however, is that with two legs
+the two joints don’t have to be independent – they can work together, as one
+leg will be in the air anyways.&lt;/p&gt;
+&lt;p&gt;For robots with multiple legs with large feet you have to do both – move them
+in an arc, and rotate the foot along that same arc. Or, again, ignore the small
+detail and allow friction and elasticity to simplify things somewhat, if your
+robot is small and light enough.&lt;/p&gt;
 &lt;/section&gt;
-&lt;section id="goals"&gt;
-&lt;h2&gt;Goals&lt;/h2&gt;
-&lt;p&gt;Speaking of goals, saving effort is not the only thing technologies can give
-us. In fact, sometimes we are ready to actually spend more effort in order to
-achieve some of the other goals. What are they? Potentially they are infinite,
-but let’s look at some of the most common ones here.&lt;/p&gt;
-&lt;section id="repeatability"&gt;
-&lt;h3&gt;Repeatability&lt;/h3&gt;
-&lt;p&gt;It can be a goal to have multiple similar things, or it can be just enabling
-the further goals like quality control or fine tuning, but automation sure lets
-you do things the same exact way, if setup with that in mind. As a side effect,
-it also makes it easier to debug!&lt;/p&gt;
+&lt;section id="slalom"&gt;
+&lt;h2&gt;Slalom&lt;/h2&gt;
+&lt;p&gt;Sometimes you don’t need your robot to actually move in a straight line, just
+to move in a specified direction, with some sideways movements allowed, as long
+as they average out to a straight line.&lt;/p&gt;
+&lt;p&gt;This is what the bipedal robot with large feet and two servos per leg can do:
+one servo to raise and lower the leg, and one to rotate the leg horizontally.
+It can then put one foot in front of the other by doing a kind of a duck
+waddle, twisting its body with every step.&lt;/p&gt;
+&lt;p&gt;This is harder to pull off with the multiple leg strategy, because all the leg
+on the ground have to move in unison to avoid slipping. The turtle
+configuration can’t do it, because one of the three legs on the ground will
+always move in an arc that is mirrored relative to the other two. Perhaps if we
+also used the joint responsible for vertical motion of the leg to somehow
+compensate the sideways movement of the foot, tilting the body in the process,
+it would be possible to achieve synchronised leg movement, but I haven’t seen
+that done, and when I tried it myself, I gave up because the math became pretty
+complex.&lt;/p&gt;
 &lt;/section&gt;
-&lt;section id="quality-control"&gt;
-&lt;h3&gt;Quality Control&lt;/h3&gt;
-&lt;p&gt;You want to make sure that the things you are making are at least of a certain
-quality. But maybe you also want to make sure that the quality is not
-unnecessarily high, as it usually costs more. If your process is automated,
-then you can easily inspect it, find the parts that have the most impact on
-quality and adjust and monitor them. You can even automate additional quality
-checks.&lt;/p&gt;
+&lt;section id="anticipation"&gt;
+&lt;h2&gt;Anticipation&lt;/h2&gt;
+&lt;p&gt;The speed of a walking robot depends on two variables: how big are its steps,
+and how fast it makes them. The speed of making the steps is usually limited by
+the speed of the servomotors used and the trajectory of the stop, so for
+optimizing the gait you are usually left with just the length of the step
+(stride).&lt;/p&gt;
+&lt;p&gt;When walking forward, it would be inefficient to only move the leg to the
+neutral position when taking a step – we can make a step that is two times
+longer by putting the leg forward of its neutral position, ideally as far ahead
+as it can move. This works well as long as we are only walking forward, though.&lt;/p&gt;
+&lt;p&gt;If the robot suddenly has to turn or rotate, the leg that is extended forward
+can, depending on the exact configuration, have less available movement
+sideways than if it was in the neutral position, and a step must be taken with
+it earlier than it would if it was only moved ahead to the neutral position.
+There is little that can be done about this when remote controlling a robot
+interactively – it can’t predict future movements – but if the robot is
+controlled through some kind of planning algorithm that knows the path the
+robot is going to take ahead of time, the steps can be planned along that path
+taking into account the movement envelope of the leg and optimal stride length.&lt;/p&gt;
+&lt;p&gt;This is quite advanced topic, and for our simple remote-controlled robot toys
+we can simply accept that it will sometimes have to re-do a step, or stumble
+occasionally when the sequence of movements results in an unfortunate positions
+of its legs.&lt;/p&gt;
 &lt;/section&gt;
-&lt;section id="fine-tuning"&gt;
-&lt;h3&gt;Fine Tuning&lt;/h3&gt;
-&lt;p&gt;But wait, it’s not just quality. You can fiddle with any feature of the process
-this way. The fact that it always happens the same way, except for the parts
-you have changed, lets you more easily see what the results of your changes
-are.&lt;/p&gt;
+&lt;section id="stomping"&gt;
+&lt;h2&gt;Stomping&lt;/h2&gt;
+&lt;p&gt;So far we have ignored inertia. Our tiny little robots are hopefully light
+enough, and move slow enough, that just adding some safety margins to the area
+of support should suffice to prevent it from falling due to its movements.&lt;/p&gt;
+&lt;p&gt;But there is another place where inertia appears, and that is in the movement
+of the individual legs: most hobbyist robots use simple hobby servomotors
+(because the are relatively cheap), and the way you control them is by sending
+a PWM signal, with the duty cycle corresponding to the desired new position.
+The servomotor will compare this with its current position, and will move as
+fast as it can towards the new setting, possibly overshooting a little bit and
+correcting as needed, due to – yes – inertia. The heavier the leg that it has
+to move, the more overshoot it will have. This is mostly invisible at the
+scales we work at, except for one notable case: when the robot puts its leg
+down on the ground. You can overshoot that, the ground is solid and the leg
+will (hopefully) not penetrate into it. So instead the leg hits the ground with
+some force, and you can hear that as the robot stomping. Of course the bigger
+the robot and the longer and heavier the leg, the worse it gets.&lt;/p&gt;
+&lt;p&gt;Apart from the sound and possible damage to the surface of the ground, the
+shock is also not great for the gears inside those servomotors, and possibly
+for the entire frame of the robot’s body, to say nothing about any kind of
+mechanical sensors (like an accelerometer, for instance) that the robot might
+have. Plus it wastes energy and makes it last shorter on a single battery
+charge.&lt;/p&gt;
+&lt;p&gt;So how do you avoid that? One obvious way is to use servomotors that have less
+overshoot. More advanced (and more expensive) servomotors don’t just blindly
+compare the signal they receive with the current position, but instead have a
+PID loop that tries to slow down and stop the movement just in time.
+Unfortunately, for this to work properly, the PID loop has to be tuned to a
+particular mass of the leg, and obviously servomotor manufacturers don’t know
+anything about our robot’s legs. They make assumptions about the most common
+use cases, and tune the PID to that. In practice, it’s less than perfect, and
+we are on a budget and can’t afford fancy servomotors anyways.&lt;/p&gt;
+&lt;p&gt;We could possibly do our own PID loop in software, but to do that we would need
+feedback from the leg’s joint about its current position. That requires either
+modifying the servomotor to break out the corresponding wire and some
+additional electronics to interpret that signal safely, or additional position
+sensors on all joints. While such feedback information is useful for much more
+than just PID loop, and it would be great to have it, in practice it adds
+complexity to an already complex project. And we would need to tune that PID
+loop ourselves for every joint, which is a lot of work.&lt;/p&gt;
+&lt;p&gt;Another option is to note that the movements of the legs of our robot are very
+repetitive, and that this interactive PID loop would most of the time result in
+the exact same movement profile: slow at first, then fast, then slow again
+towards the end. Instead of generating that profile dynamically with feedback,
+we could as well just hard-code it in our software, and tune that for a best
+compromise.&lt;/p&gt;
+&lt;p&gt;How do we do it in practice? Instead of giving the servomotor the signal to
+move to its final position, only tell it to move a little bit, but change
+that position repeatedly according to the timing of the profile being used.
+It’s very similar to doing object movement in video games, where you have to
+update the position of the object for every animation frame.&lt;/p&gt;
+&lt;p&gt;Note that having control over movement profiles gives you the ability to change
+how the movement of your robot feels to the observers. You can make it more
+insect-like or more mammal-like, you can make it seem nervous or confident, you
+can make it look more natural or more alien. There is a lot of room for
+artistic expression there, apart from the technical advantages.&lt;/p&gt;
 &lt;/section&gt;
-&lt;section id="interchangeability"&gt;
-&lt;h3&gt;Interchangeability&lt;/h3&gt;
-&lt;p&gt;If you design your automation right, you can reuse or share parts of it in
-different processes. You could also have intermediate stages of the product
-shared between several different processes. This lets you both save effort and
-be more flexible about your quotas.&lt;/p&gt;
-&lt;/section&gt;
-&lt;section id="scalability"&gt;
-&lt;h3&gt;Scalability&lt;/h3&gt;
-&lt;p&gt;If you make a machine do something, then you can often quite easily run the
-machine faster, or buy several machines and have them run in parallel. You can
-scale your processes this way.&lt;/p&gt;
-&lt;/section&gt;
-&lt;section id="economy-of-scale"&gt;
-&lt;h3&gt;Economy of Scale&lt;/h3&gt;
-&lt;p&gt;Once you can scale something, you can scale it up to huge amounts and make use
-of all those bulk discounts and bulk shipping. More importantly, you can use
-bigger machines to make the same thing faster and cheaper by making a lot at a
-time.&lt;/p&gt;
-&lt;/section&gt;
-&lt;section id="centralization"&gt;
-&lt;h3&gt;Centralization&lt;/h3&gt;
-&lt;p&gt;Obviously if you have big machines doing a lot of work, you want them all in
-one place, so that you can keep all the resources and materials close by,
-and so that the maintenance is easier.&lt;/p&gt;
-&lt;/section&gt;
-&lt;section id="distribution"&gt;
-&lt;h3&gt;Distribution&lt;/h3&gt;
-&lt;p&gt;But you don’t have to centralize everything if you don’t want to. Automation
-also enables distribution, letting you to have the same machine (or script)
-running in many different locations, close to where they are needed.&lt;/p&gt;
-&lt;p&gt;As you can see, automation can be quite useful and universal tool!&lt;/p&gt;
-&lt;/section&gt;
+&lt;section id="uneven-terrain"&gt;
+&lt;h2&gt;Uneven Terrain&lt;/h2&gt;
+&lt;p&gt;So far we have silently assumed that the surface on which our robot is walking
+is relatively even and flat, and our robot is once again small and light enough
+to just get through small obstacles by sheer luck and determination, possibly
+with a little bit of stumbling sometimes.&lt;/p&gt;
+&lt;p&gt;But one of the big advantages of legs over wheels or tracks is, allegedly, the
+ability to handle uneven terrain. So what do we need if we want our robot to be
+able to handle some small obstacles, or stop at the edge of the table?
+Obviously we will need some kind of sensors to tell the robot about the ground
+it stands on. But what kind of sensors could those be and how do we handle
+them?&lt;/p&gt;
+&lt;p&gt;If we have the position feedback as mentioned earlier for the PID tuning, we
+can use that to estimate the resistance to movement of the leg. A sudden raise
+in movement resistance while moving down can indicate that the leg has hit the
+ground earlier than anticipated. Similarly, a lack of resistance at the end of
+leg’s movement down can indicate that it didn’t hit the ground yet, either
+because the ground is lower in that place, or because there is no ground there
+at all, and the robot is standing at the edge of a chasm, about to plunge down.
+Such sensors, however, add complexity to the robot, and are not easy to
+interpret, being very noisy.&lt;/p&gt;
+&lt;p&gt;Possibly the simplest solution possible is to just have a switch, or other
+pressure-sensitive sensor at the end of the leg. Obviously it would need to be
+sensitive enough for the weight of the robot to trigger it. I have found that
+switches commonly used to detect the presence of SD cards in various devices
+work very well for this purpose, using very light springs and having relatively
+short travel. Detecting on/off state of a switch doesn’t require additional
+electronics, apart from a free GPIO pin.&lt;/p&gt;
+&lt;p&gt;You can also estimate the movement resistance by measuring the current taken
+by the servomotors, and then use it similar to the position feedback signal.
+This can also be used to implement compliant movements, and for example to
+make the robot walk in a direction it is pushed towards. Again, this requires
+some additional electronics, though it might not be as noisy as a physical
+position sensor.&lt;/p&gt;
+&lt;p&gt;Finally, instead of putting sensors on the legs, you can have an orientation
+sensor, such as an accelerometer – or even better, a composite IMU sensor –
+on the body of the robot. Then you can use the readings from that sensor to
+move the legs up and down such that the body is always level. With just three
+legs on the ground for a quadruped, this works surprisingly well. You can also
+detect an edge of the table by lack of reaction to the body orientation from
+leg’s movement. This required a bit more advanced logic in software, but it’s
+doable. With even more software tricks, we can use the accelerometer to detect
+the shocks from the stomping discussed earlier, and thus estimate when exactly
+the leg hit the ground. This can be affected by uneven softness of the ground.&lt;/p&gt;
+&lt;p&gt;All sorts of other solutions are possible. If the robot is equipped with
+cameras and lidar, and is modeling the terrain around it, that information can
+be used for positioning the legs and planning the steps. Simpler optical
+distance sensors could be used to estimate the position of the body against the
+ground, or when mounted on the legs, the positions of the individual legs.
+Various strain and force sensors can give us information similar to that from
+measuring motor current. There is a lot of room for experimentation here,
+though unfortunately most of it also add a considerable amount of complexity.&lt;/p&gt;
 &lt;/section&gt;
 &lt;section id="conclusion"&gt;
 &lt;h2&gt;Conclusion&lt;/h2&gt;
-&lt;p&gt;So where am I going with this? My main point is that automation is not always
-about saving effort, and that it doesn’t automatically save effort wherever it
-is used. Sometimes it has other goals, and sometimes it actually makes you
-spend more effort, especially when you count all the effort that is normally
-not visible, because it hides in the infrastructure or has been pushed out onto
-the customers.&lt;/p&gt;
-&lt;p&gt;In practice, there are certain patterns and arrangements that you can use with
-automation tools that work well for achieving a given goal. And there are also
-anti-patterns that make automation pointless or even harmful. The trick is in
-knowing what you want to do and how to arrange things to achieve it.&lt;/p&gt;
+&lt;p&gt;While I hope that this article will prove generally useful to robot-building
+hobbyists, it mostly records my own experiences with designing a cheap and
+small walking robot. It is the reasoning that made me arrive at the design of
+the WeeBug robot. Of course many decisions were made and compromises taken, and
+it is fully possible to use the same document to arrive at a completely
+different design. In any case, I encourage everyone to try their skill in
+building their own robot walkers.&lt;/p&gt;
 &lt;/section&gt;
 &lt;/section&gt;
 </content>
-    <link href="http://dopieralski.pl/posts/2025-07-01-automation/" rel="alternate"/>
-    <summary>Humans are tool-using animals. For a long time it was thought that this is what
-distinguishes us from animals, in fact, but of course if you actually pay
-attention you will notice that animals are using tools all the time. Yes,
-sometimes you can dismiss it as instinctive behavior, as is the fashion, but
-sometimes when it comes to corvids, parrots, octopuses and primates, you really
-have to admit that they do it intentionally and with full knowledge about the
-expected results. Anyways, humans are among tool-using animals.</summary>
-    <published>2025-07-01T00:00:00+02:00</published>
+    <link href="http://dopieralski.pl/posts/2026-07-19-robot-legs/"/>
+    <summary>I noticed that when I find the energy to write here, I either write about some
+pretty abstract philosophical or political things, or about my increasingly
+unlikely plans to work on my hobby projects. I don’t really feel any of those
+are very useful for the average reader – the first kind you can find a dime
+a dozen all over the Internet, and the second kind gets outdated within a year.
+So I decided to try something else – write about some technical aspects of
+my hobbies. Now, without further ado, let’s get down to it.</summary>
+    <published>2026-07-19T00:00:00+02:00</published>
   </entry>
   <entry>
-    <id>http://dopieralski.pl/posts/2025-07-08-wishes/</id>
-    <title>My Tech Wishes for 2025</title>
-    <updated>2025-07-08T00:00:00+02:00</updated>
-    <content type="html">&lt;section id="my-tech-wishes-for-2025"&gt;
+    <id>http://dopieralski.pl/posts/2026-02-19-social-design/</id>
+    <title>Social Design</title>
+    <updated>2026-02-19T00:00:00+01:00</updated>
+    <content type="html">&lt;section id="social-design"&gt;
 
-&lt;p&gt;I know it’s a bit late in the year for this kind of post, but I have been busy
-with other things. In any case, I decided to make it about general technology
-related wishes, and not just CircuitPython, but large part of this is going to
-be about CircuitPython anyways. Or at least related.&lt;/p&gt;
-&lt;section id="media-transfer-protocol"&gt;
-&lt;h2&gt;Media Transfer Protocol&lt;/h2&gt;
-&lt;p&gt;Exposing your microcontroller to the computer it is connected to as a disk
-drive is getting really popular now. And it makes a lot of sense too — it doesn’t require you to install any drivers or programs, it easy to understand, and
-very convenient. CircuitPython does it too and I love it. But it does introduce
-a number of problems:&lt;/p&gt;
-&lt;ul class="simple"&gt;
-&lt;li&gt;&lt;p&gt;You have to use a filesystem that is supported on most operating system, and
-with the small sizes you have, it’s usually FAT12, which is not great for
-flash wearing off or fragmentation.&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Since diskettes are not as common anymore, proprietary operating systems
-don’t have their implementations of FAT12 tested as well as other things,
-which means there are lots of bugs in MacOS and Windows.&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Tools like virus scanners or disk monitors see those drives as regular disks
-and often interact with them in ways that breaks them.&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;You can write to the disk only from one side, either through USB, or from
-your code on the device, but not both at the same time.&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;All of those problems could be trivially solved if we could only use the MTP
-protocol instead of exposing the disk as a physical device with USB MSC. MTP
-uses commands to manipulate the files, kinda like FTP, instead of writing to
-the disk directly, and writes themselves are done by the microcontroller
-itself, so it’s easy to use any custom filesystem you want, and to ensure
-proper interactions when multiple operations are happening from different
-sources.&lt;/p&gt;
-&lt;p&gt;There is only one problem, and that is iTunes. You see, back when Apple’s flag
-product was a music player, they were very jealous about it, and they tried
-very hard to “protect” their users from using any other music player. They made
-sure their player uses a custom, proprietary protocol for transferring the
-music collection, and they also made sure that Apple computers didn’t support
-transferring of arbitrary files using MTP. They had a problem in that most
-cameras were already using MTP to transfer photos, and their users needed that,
-so they made it an exception: you can use MTP on a Mac, but only for
-transferring image files, and not any other file. Neat, eh?&lt;/p&gt;
-&lt;p&gt;Today you can only find iPads in museums, and iTunes is just a memory in some
-boomer nightmares, but the decision they made back then stays. No arbitrary
-files with MTP, if you use a Mac, you have to install a special program to use
-MTP for anything else than photos. So any microcontroller device that uses MTP
-would not work out of the box on Apple products, which means that nobody does
-it.&lt;/p&gt;
-&lt;p&gt;So my wish is for someone at Apple to revise that decision, recognize how
-stupid and harmful it was, and remove that stupid limitation from all of their
-operating systems, thank you very much. I would also like to see some ready to
-use libraries and examples for using MTP, but that will surely come once it’s
-usable.&lt;/p&gt;
-&lt;/section&gt;
-&lt;section id="circuitpython-on-ch32v208"&gt;
-&lt;h2&gt;CircuitPython on CH32V208&lt;/h2&gt;
-&lt;p&gt;This is something I would love to do myself, but I’m scared to even start, as
-it is a huge amount of work, and just outside of my comfort zone. Basically,
-the bluetooth versions of the CH32 chips tend to have a lot of memory for the
-bluetooth stack, and that makes it theoretically possible to run CircuitPython
-or LUA on them (as long as we don’t need the bluetooth). It’s a nice cheap
-chip, and it would be perfect as a replacement for the SAMD21 chips I currently
-use for the PewPew devices.&lt;/p&gt;
-&lt;p&gt;Of course porting whole CircuitPython to a new chip is a lot of work, and it’s
-something I have never done before, so naturally it’s scary. But people do it,
-so it’s definitely possible.&lt;/p&gt;
-&lt;/section&gt;
-&lt;section id="voice-synthesis"&gt;
-&lt;h2&gt;Voice Synthesis&lt;/h2&gt;
-&lt;p&gt;After my failed attempts to port the SAM voice synthesiser from MicroBit to
-CircuitPython, I’m happy to see that someone ported it to MicroPython, but
-not as a C library, as I wanted to do, but literally rewrote it in Python.
-Now I need to take it and see if it works in CircuitPython as well. Then I can
-make my robots speak.&lt;/p&gt;
-&lt;/section&gt;
-&lt;section id="servo-controller-on-ch32v003"&gt;
-&lt;h2&gt;Servo Controller on CH32V003&lt;/h2&gt;
-&lt;p&gt;This one I’m actually perfectly capable of finishing on my own, I just need to
-find the energy to work on it. I basically want to control 16 servos with good
-resolution using PWM signals specified through I2C. I already have the PWM part
-working, and there are plenty of examples for I2C slave. It’s just a question
-of sitting down and actually writing the code.&lt;/p&gt;
-&lt;p&gt;Once I have it, I can use it in the future versions of FluffBug and WeeBug, and
-also a robot for the new small OpenMV board. It would free up 8 pins on the
-Xiao, which could then be used for a display or I2S amplifier. It would also
-allow for connecting additional servos, for things like arms or moving
-features.&lt;/p&gt;
-&lt;/section&gt;
-&lt;section id="led-matrices-on-ch32v003"&gt;
-&lt;h2&gt;LED Matrices on CH32V003&lt;/h2&gt;
-&lt;p&gt;I also have two projects with LED matrices for the CH32V003 that I still need
-to program. One is a spectrum analyzer thing, and the hard part is the FFT
-code for it (though there are plenty of examples), and the other is a business
-card fake PewPew—not really running CircuitPython, but with some of the
-PewPew games implemented directly in C and hardcoded in the device.&lt;/p&gt;
-&lt;/section&gt;
-&lt;section id="gif-pendant"&gt;
-&lt;h2&gt;GIF Pendant&lt;/h2&gt;
-&lt;p&gt;Finally, I’m also still working on my GIF pendant project. Now with a round
-screen and CH32V208 as the brains. I have a TinyUSB example for USB MSC in
-RAM working on it. What I need to figure out how to put the storage on the
-internal flash instead, and how to access it from the code to render those
-GIF files onto the screen. Again, it’s something I have never done, and there
-isn’t much documentation about it around, so it’s a lot of trial and error.
-I wish someone who is more knowledgable about TinyUSB and USB MSC could help
-me with that.&lt;/p&gt;
-&lt;p&gt;And that’s pretty much it for me for 2025. It’s mostly projects I would like
-to finish (or would like someone to finish for me), except for that Apple MTP
-thing. Will I get any of my wishes come true? We will see.&lt;/p&gt;
-&lt;/section&gt;
+&lt;p&gt;I have used my share of software tools with terrible user interfaces, and I
+have read even more complaints from other people about such tools. Why can’t
+the designers just put themselves in the shoes of the users, mentally, and
+think about what kind of interface would be the most convenient and useful?
+Those stupid autistic programmers must be completely devoid of any trace of
+empathy to produce such designs, surely. If we could only make sure such design
+work is done by reasonable people thinking about others, it surely would be
+must better!&lt;/p&gt;
+&lt;p&gt;Well, turns out that this is not so simple, but it’s a little bit involved to
+explain. I will try anyways.&lt;/p&gt;
+&lt;p&gt;The short version of it is that what you think is simple and obvious, is not so
+simple and obvious to others. It only seems to be so, because you are
+mis-communicating. You are using the same words as the others, and the others
+agree with what they hear, but those words mean different things to different
+people. This is invisible to you until someone takes what you said and turns it
+into a concrete example. Chances are that when you look at it, you will say
+they completely mis-understood you, and that is not what you meant at all.  But
+that is what they understood, and what they agreed on. If you make each person
+who has previously so nicely agreed with you turn your words into a concrete
+example, each one of them will produce some interpretation of your words that
+is most likely completely different from what you actually meant.&lt;/p&gt;
+&lt;p&gt;If you took that horrible user interface, and asked all those people who
+completely agreed that it is horrible, to tell you what exactly is wrong with
+them, you would hear completely inconsistent and wildly different opinions. And
+that’s not just because most people are very bad at analyzing user interfaces.
+It’s also because each of those people probably wanted something different. But
+as long as they talk between themselves, they will generally all agree, because
+each of them will choose the interpretation of the words other said that
+matches their own ideas.&lt;/p&gt;
+&lt;p&gt;Now, programming doesn’t work that way. Programming is one of those disciplines
+where you can’t solve things by using a different word to describe the same
+thing, until everyone agrees. It doesn’t work on consensus, it works on
+physical reality, and unlike consensus, physical reality is unique. There is at
+any point only one truth, even when there can be multiple interpretations, and
+hypotheses that fit the experimental data. There is a necessary assumption in
+there, that cannot be avoided, that all those interpretations, and hypotheses
+are in fact describing a single underlying reality. And to make computers work
+you have to believe in that single truth, you have to work within the confines
+of the physical reality, because the computers don’t care about what you mean,
+they just do their computation, in more or less predictable ways, and it’s up
+to you to arrange them in a way that does something useful.&lt;/p&gt;
+&lt;p&gt;You might say: that is completely fine, they have to be those hyper-honest,
+literally-minded autistics when they commune with their machines, but can’t
+they be a little bit more human when they speak to users, or imagine what the
+users want, so that they can then do their magic and make the machines do what
+we want them to do? Isn’t this their entire job, to translate between the
+normal people and the machines? Shouldn’t they put more effort into thinking
+normally?&lt;/p&gt;
+&lt;p&gt;And that’s the entire problem. There isn’t just one “normally” out there. You
+think there is, because you live in a society, and you have learned to exist in
+it without too much conflict, and to reinterpret things others are saying to
+match with your own opinions and experiences. With the physical reality, there
+is no problem: there is only one truth, and if you make enough experiments,
+collect enough data, and think about it hard enough, you can eventually get to
+an interpretation of your data that is close enough to that truth for things to
+work most of the time. This doesn’t work with “normal” people. They seem to all
+be saying the same things, but they &lt;em&gt;mean&lt;/em&gt; different things, and often they
+don’t even mean anything at all, just repeat something they’ve heard without
+understanding it, and will claim it means something completely different as
+soon as you try to pinpoint it. They will also change their minds, and claim
+contradictory things. And every translation to a concrete, formal description
+that you might attempt will be wrong to most of them. You see, you simply don’t
+&lt;em&gt;understand&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;So are we doomed to unusable software product with interfaces designed for
+people who don’t understand the basic needs of the users? I believe good
+software tools are possible, but the path to them does not lead through making
+the designers more human and making them listen to “normal” people. On the
+contrary, I think it’s best when they don’t listen to what the users &lt;em&gt;say&lt;/em&gt; at
+all, and instead just look at what the users &lt;em&gt;do&lt;/em&gt;. Words lie. While it is
+possible to mislead with actions as well, especially if you are trying to guess
+the intentions, they are at least much less ambiguous. And they are repeatable
+and rooted in physical reality. We can do science on them, and we can figure
+things out. And then we can translate them into concrete, working things.&lt;/p&gt;
+&lt;p&gt;So next time you are about to complain that user interface designers don’t
+listen to their users, keep in mind that listening to users is not how you
+make good user interfaces.&lt;/p&gt;
 &lt;/section&gt;
 </content>
-    <link href="http://dopieralski.pl/posts/2025-07-08-wishes/" rel="alternate"/>
-    <summary>I know it’s a bit late in the year for this kind of post, but I have been busy
-with other things. In any case, I decided to make it about general technology
-related wishes, and not just CircuitPython, but large part of this is going to
-be about CircuitPython anyways. Or at least related.</summary>
-    <published>2025-07-08T00:00:00+02:00</published>
+    <link href="http://dopieralski.pl/posts/2026-02-19-social-design/"/>
+    <summary>I have used my share of software tools with terrible user interfaces, and I
+have read even more complaints from other people about such tools. Why can’t
+the designers just put themselves in the shoes of the users, mentally, and
+think about what kind of interface would be the most convenient and useful?
+Those stupid autistic programmers must be completely devoid of any trace of
+empathy to produce such designs, surely. If we could only make sure such design
+work is done by reasonable people thinking about others, it surely would be
+must better!</summary>
+    <published>2026-02-19T00:00:00+01:00</published>
+  </entry>
+  <entry>
+    <id>http://dopieralski.pl/posts/2026-01-11-circuitpython/</id>
+    <title>CircuitPython in 2026</title>
+    <updated>2026-01-11T00:00:00+01:00</updated>
+    <content type="html">&lt;section id="circuitpython-in-2026"&gt;
+
+&lt;p&gt;It’s that time when the CircuitPython project is looking for feedback from the
+users, so here is some of mine again.&lt;/p&gt;
+&lt;p&gt;I have been mostly focused on three projects using CircuitPython last year: my
+&lt;a class="reference external" href="https://deshipu.art/projects/project-188909/"&gt;quadruped robots&lt;/a&gt;, the &lt;a class="reference external" href="https://deshipu.art/projects/project-185291/"&gt;PewPew
+game console&lt;/a&gt;, and the &lt;a class="reference external" href="https://deshipu.art/projects/project-178061/"&gt;µGame
+game console&lt;/a&gt;.  I didn’t have
+much energy to do any serious progress on any one of them, but I did some
+experimenting, and I have some ideas for the future.&lt;/p&gt;
+&lt;p&gt;I failed in my attempts to port the speech synthesis engine from MicroBit to
+CircuitPython as a C module, but &lt;a class="reference external" href="https://github.com/jacklinquan/micropython-samtts"&gt;someone ported the project&lt;/a&gt; it is based on (the SAM,
+Software Automatic Mouth) to plain Python code, and it runs on CircuitPython,
+albeit the format conversions necessary to subsequently play it using
+&lt;code class="docutils literal notranslate"&gt;&lt;span class="pre"&gt;audioio&lt;/span&gt;&lt;/code&gt; make it somewhat slow. Unfortunately, the non-repeat playback of
+&lt;code class="docutils literal notranslate"&gt;&lt;span class="pre"&gt;RawSample&lt;/span&gt;&lt;/code&gt; is currently pretty broken in CircuitPython, so even though I did
+get this to work, it’s not really usable until those bugs introduced later
+changes are fixed. I took a stab at one of them, but I’m not really familiar
+with that code enough to know what it was supposed to be doing in the first
+place. In any case, there is a way to do voice synthesis in CircuitPython now,
+which is nice for things like talking robots. We can hope the audio libraries
+will become more stable in time.&lt;/p&gt;
+&lt;p&gt;I have given up on working on a touch version of the &lt;code class="docutils literal notranslate"&gt;&lt;span class="pre"&gt;keypad&lt;/span&gt;&lt;/code&gt; module for the
+SAMD21 port. The main problem is that those registers are completely
+undocumented, because Microchip sells a commercial library that uses them, and
+prefers for everyone to use that. Adafruit worked around that with their
+current CircuitPython code, but without access to the same documentation, I
+have little chance. Having that module would greatly improve the functioning
+of those PewPew devices that use touchpads for the buttons – right now the
+code is polling them, which is slow and unresponsive.&lt;/p&gt;
+&lt;p&gt;I have also looked at using different chip than the hard to obtain SAMD21 for
+the PewPew devices, in particular the &lt;a class="reference external" href="https://www.wch-ic.com/products/CH32V208.html"&gt;CH32V208&lt;/a&gt; looks very promising. It has
+64kB of RAM, 128kB of Flash, and clock up to 144MHz, which should be sufficient
+for CircuitPython running simple games of the PewPew. The problem is, of
+course, that there is currently no port of CircuitPython to that chip. I looked
+a bit into what would be involved into making such a port, and I will probably
+give it a go at some point, but the task is somewhat daunting and certainly
+requires more energy than I have at the moment.&lt;/p&gt;
+&lt;p&gt;Finally, I’m finalizing the hardware for the ESP32-S3 version of the µGame
+handheld game console. You can think about it as &lt;a class="reference external" href="https://www.adafruit.com/product/4200"&gt;Adafruit PyBadge&lt;/a&gt;, but with larger screen, and more RAM
+and Flash. And somewhat better looking, in my opinion.  There are no changes in
+CircuitPython necessary for it, except for the board definition, which I will
+submit once I’m sure about the hardware, and once I get a USB pid for it.&lt;/p&gt;
+&lt;p&gt;In the near future, I want to focus more on writing new games for
+CircuitPython, in particular, I really want to make a roguelike game for that
+platform, as I don’t think there is one yet. It feels to me like I should do
+the hardware work first, the put off the fun of making the games, but the
+reality is that a game console without games is a pretty boring thing.&lt;/p&gt;
+&lt;p&gt;As for the CircuitPython project itself, I think it’s in a good place in terms
+of functionality. Yes, better async support and fewer bugs would be nice, but
+there really isn’t anything that stops me from doing the things I want to do
+with it.&lt;/p&gt;
+&lt;/section&gt;
+</content>
+    <link href="http://dopieralski.pl/posts/2026-01-11-circuitpython/"/>
+    <summary>It’s that time when the CircuitPython project is looking for feedback from the
+users, so here is some of mine again.</summary>
+    <published>2026-01-11T00:00:00+01:00</published>
   </entry>
   <entry>
     <id>http://dopieralski.pl/posts/2025-11-02-both-sides/</id>
@@ -361,7 +511,7 @@ software engineer.&lt;/p&gt;
 &lt;p&gt;Probably the most well known example of bistable perception is the Necker Cube:
 a two-dimensional wireframe drawing of a cube, which can be interpreted in two
 ways, because it lacks any cues about the depth of the parts of the image.&lt;/p&gt;
-&lt;img alt="../_images/necker.png" class="align-center" src="../_images/necker.png" /&gt;
+&lt;img alt="http://dopieralski.pl/_images/necker.png" class="align-center" src="http://dopieralski.pl/_images/necker.png" /&gt;
 &lt;p&gt;When we look at the drawing, we automatically pick one of the possible
 interpretations, and it becomes obvious to us that it’s the correct one. It
 requires a conscious effort to switch to the other interpretation, and some
@@ -541,7 +691,7 @@ my feelings about this. The reader is advised to use their own judgement.&lt;/p&
 &lt;/section&gt;
 &lt;/section&gt;
 </content>
-    <link href="http://dopieralski.pl/posts/2025-11-02-both-sides/" rel="alternate"/>
+    <link href="http://dopieralski.pl/posts/2025-11-02-both-sides/"/>
     <summary>A lot of disagreements in software engineering seem to have a deeper background
 than mere technical considerations. Should you move fast and break things, or
 should you reinvent the wheel? Does it matter how the code looks like when it
@@ -556,161 +706,124 @@ software engineer.</summary>
     <published>2025-11-02T00:00:00+01:00</published>
   </entry>
   <entry>
-    <id>http://dopieralski.pl/posts/2026-01-11-circuitpython/</id>
-    <title>CircuitPython in 2026</title>
-    <updated>2026-01-11T00:00:00+01:00</updated>
-    <content type="html">&lt;section id="circuitpython-in-2026"&gt;
+    <id>http://dopieralski.pl/posts/2025-07-08-wishes/</id>
+    <title>My Tech Wishes for 2025</title>
+    <updated>2025-07-08T00:00:00+02:00</updated>
+    <content type="html">&lt;section id="my-tech-wishes-for-2025"&gt;
 
-&lt;p&gt;It’s that time when the CircuitPython project is looking for feedback from the
-users, so here is some of mine again.&lt;/p&gt;
-&lt;p&gt;I have been mostly focused on three projects using CircuitPython last year: my
-&lt;a class="reference external" href="https://deshipu.art/projects/project-188909/"&gt;quadruped robots&lt;/a&gt;, the &lt;a class="reference external" href="https://deshipu.art/projects/project-185291/"&gt;PewPew
-game console&lt;/a&gt;, and the &lt;a class="reference external" href="https://deshipu.art/projects/project-178061/"&gt;µGame
-game console&lt;/a&gt;.  I didn’t have
-much energy to do any serious progress on any one of them, but I did some
-experimenting, and I have some ideas for the future.&lt;/p&gt;
-&lt;p&gt;I failed in my attempts to port the speech synthesis engine from MicroBit to
-CircuitPython as a C module, but &lt;a class="reference external" href="https://github.com/jacklinquan/micropython-samtts"&gt;someone ported the project&lt;/a&gt; it is based on (the SAM,
-Software Automatic Mouth) to plain Python code, and it runs on CircuitPython,
-albeit the format conversions necessary to subsequently play it using
-&lt;code class="docutils literal notranslate"&gt;&lt;span class="pre"&gt;audioio&lt;/span&gt;&lt;/code&gt; make it somewhat slow. Unfortunately, the non-repeat playback of
-&lt;code class="docutils literal notranslate"&gt;&lt;span class="pre"&gt;RawSample&lt;/span&gt;&lt;/code&gt; is currently pretty broken in CircuitPython, so even though I did
-get this to work, it’s not really usable until those bugs introduced later
-changes are fixed. I took a stab at one of them, but I’m not really familiar
-with that code enough to know what it was supposed to be doing in the first
-place. In any case, there is a way to do voice synthesis in CircuitPython now,
-which is nice for things like talking robots. We can hope the audio libraries
-will become more stable in time.&lt;/p&gt;
-&lt;p&gt;I have given up on working on a touch version of the &lt;code class="docutils literal notranslate"&gt;&lt;span class="pre"&gt;keypad&lt;/span&gt;&lt;/code&gt; module for the
-SAMD21 port. The main problem is that those registers are completely
-undocumented, because Microchip sells a commercial library that uses them, and
-prefers for everyone to use that. Adafruit worked around that with their
-current CircuitPython code, but without access to the same documentation, I
-have little chance. Having that module would greatly improve the functioning
-of those PewPew devices that use touchpads for the buttons – right now the
-code is polling them, which is slow and unresponsive.&lt;/p&gt;
-&lt;p&gt;I have also looked at using different chip than the hard to obtain SAMD21 for
-the PewPew devices, in particular the &lt;a class="reference external" href="https://www.wch-ic.com/products/CH32V208.html"&gt;CH32V208&lt;/a&gt; looks very promising. It has
-64kB of RAM, 128kB of Flash, and clock up to 144MHz, which should be sufficient
-for CircuitPython running simple games of the PewPew. The problem is, of
-course, that there is currently no port of CircuitPython to that chip. I looked
-a bit into what would be involved into making such a port, and I will probably
-give it a go at some point, but the task is somewhat daunting and certainly
-requires more energy than I have at the moment.&lt;/p&gt;
-&lt;p&gt;Finally, I’m finalizing the hardware for the ESP32-S3 version of the µGame
-handheld game console. You can think about it as &lt;a class="reference external" href="https://www.adafruit.com/product/4200"&gt;Adafruit PyBadge&lt;/a&gt;, but with larger screen, and more RAM
-and Flash. And somewhat better looking, in my opinion.  There are no changes in
-CircuitPython necessary for it, except for the board definition, which I will
-submit once I’m sure about the hardware, and once I get a USB pid for it.&lt;/p&gt;
-&lt;p&gt;In the near future, I want to focus more on writing new games for
-CircuitPython, in particular, I really want to make a roguelike game for that
-platform, as I don’t think there is one yet. It feels to me like I should do
-the hardware work first, the put off the fun of making the games, but the
-reality is that a game console without games is a pretty boring thing.&lt;/p&gt;
-&lt;p&gt;As for the CircuitPython project itself, I think it’s in a good place in terms
-of functionality. Yes, better async support and fewer bugs would be nice, but
-there really isn’t anything that stops me from doing the things I want to do
-with it.&lt;/p&gt;
+&lt;p&gt;I know it’s a bit late in the year for this kind of post, but I have been busy
+with other things. In any case, I decided to make it about general technology
+related wishes, and not just CircuitPython, but large part of this is going to
+be about CircuitPython anyways. Or at least related.&lt;/p&gt;
+&lt;section id="media-transfer-protocol"&gt;
+&lt;h2&gt;Media Transfer Protocol&lt;/h2&gt;
+&lt;p&gt;Exposing your microcontroller to the computer it is connected to as a disk
+drive is getting really popular now. And it makes a lot of sense too — it doesn’t require you to install any drivers or programs, it easy to understand, and
+very convenient. CircuitPython does it too and I love it. But it does introduce
+a number of problems:&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;p&gt;You have to use a filesystem that is supported on most operating system, and
+with the small sizes you have, it’s usually FAT12, which is not great for
+flash wearing off or fragmentation.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Since diskettes are not as common anymore, proprietary operating systems
+don’t have their implementations of FAT12 tested as well as other things,
+which means there are lots of bugs in MacOS and Windows.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Tools like virus scanners or disk monitors see those drives as regular disks
+and often interact with them in ways that breaks them.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;You can write to the disk only from one side, either through USB, or from
+your code on the device, but not both at the same time.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;All of those problems could be trivially solved if we could only use the MTP
+protocol instead of exposing the disk as a physical device with USB MSC. MTP
+uses commands to manipulate the files, kinda like FTP, instead of writing to
+the disk directly, and writes themselves are done by the microcontroller
+itself, so it’s easy to use any custom filesystem you want, and to ensure
+proper interactions when multiple operations are happening from different
+sources.&lt;/p&gt;
+&lt;p&gt;There is only one problem, and that is iTunes. You see, back when Apple’s flag
+product was a music player, they were very jealous about it, and they tried
+very hard to “protect” their users from using any other music player. They made
+sure their player uses a custom, proprietary protocol for transferring the
+music collection, and they also made sure that Apple computers didn’t support
+transferring of arbitrary files using MTP. They had a problem in that most
+cameras were already using MTP to transfer photos, and their users needed that,
+so they made it an exception: you can use MTP on a Mac, but only for
+transferring image files, and not any other file. Neat, eh?&lt;/p&gt;
+&lt;p&gt;Today you can only find iPads in museums, and iTunes is just a memory in some
+boomer nightmares, but the decision they made back then stays. No arbitrary
+files with MTP, if you use a Mac, you have to install a special program to use
+MTP for anything else than photos. So any microcontroller device that uses MTP
+would not work out of the box on Apple products, which means that nobody does
+it.&lt;/p&gt;
+&lt;p&gt;So my wish is for someone at Apple to revise that decision, recognize how
+stupid and harmful it was, and remove that stupid limitation from all of their
+operating systems, thank you very much. I would also like to see some ready to
+use libraries and examples for using MTP, but that will surely come once it’s
+usable.&lt;/p&gt;
+&lt;/section&gt;
+&lt;section id="circuitpython-on-ch32v208"&gt;
+&lt;h2&gt;CircuitPython on CH32V208&lt;/h2&gt;
+&lt;p&gt;This is something I would love to do myself, but I’m scared to even start, as
+it is a huge amount of work, and just outside of my comfort zone. Basically,
+the bluetooth versions of the CH32 chips tend to have a lot of memory for the
+bluetooth stack, and that makes it theoretically possible to run CircuitPython
+or LUA on them (as long as we don’t need the bluetooth). It’s a nice cheap
+chip, and it would be perfect as a replacement for the SAMD21 chips I currently
+use for the PewPew devices.&lt;/p&gt;
+&lt;p&gt;Of course porting whole CircuitPython to a new chip is a lot of work, and it’s
+something I have never done before, so naturally it’s scary. But people do it,
+so it’s definitely possible.&lt;/p&gt;
+&lt;/section&gt;
+&lt;section id="voice-synthesis"&gt;
+&lt;h2&gt;Voice Synthesis&lt;/h2&gt;
+&lt;p&gt;After my failed attempts to port the SAM voice synthesiser from MicroBit to
+CircuitPython, I’m happy to see that someone ported it to MicroPython, but
+not as a C library, as I wanted to do, but literally rewrote it in Python.
+Now I need to take it and see if it works in CircuitPython as well. Then I can
+make my robots speak.&lt;/p&gt;
+&lt;/section&gt;
+&lt;section id="servo-controller-on-ch32v003"&gt;
+&lt;h2&gt;Servo Controller on CH32V003&lt;/h2&gt;
+&lt;p&gt;This one I’m actually perfectly capable of finishing on my own, I just need to
+find the energy to work on it. I basically want to control 16 servos with good
+resolution using PWM signals specified through I2C. I already have the PWM part
+working, and there are plenty of examples for I2C slave. It’s just a question
+of sitting down and actually writing the code.&lt;/p&gt;
+&lt;p&gt;Once I have it, I can use it in the future versions of FluffBug and WeeBug, and
+also a robot for the new small OpenMV board. It would free up 8 pins on the
+Xiao, which could then be used for a display or I2S amplifier. It would also
+allow for connecting additional servos, for things like arms or moving
+features.&lt;/p&gt;
+&lt;/section&gt;
+&lt;section id="led-matrices-on-ch32v003"&gt;
+&lt;h2&gt;LED Matrices on CH32V003&lt;/h2&gt;
+&lt;p&gt;I also have two projects with LED matrices for the CH32V003 that I still need
+to program. One is a spectrum analyzer thing, and the hard part is the FFT
+code for it (though there are plenty of examples), and the other is a business
+card fake PewPew—not really running CircuitPython, but with some of the
+PewPew games implemented directly in C and hardcoded in the device.&lt;/p&gt;
+&lt;/section&gt;
+&lt;section id="gif-pendant"&gt;
+&lt;h2&gt;GIF Pendant&lt;/h2&gt;
+&lt;p&gt;Finally, I’m also still working on my GIF pendant project. Now with a round
+screen and CH32V208 as the brains. I have a TinyUSB example for USB MSC in
+RAM working on it. What I need to figure out how to put the storage on the
+internal flash instead, and how to access it from the code to render those
+GIF files onto the screen. Again, it’s something I have never done, and there
+isn’t much documentation about it around, so it’s a lot of trial and error.
+I wish someone who is more knowledgable about TinyUSB and USB MSC could help
+me with that.&lt;/p&gt;
+&lt;p&gt;And that’s pretty much it for me for 2025. It’s mostly projects I would like
+to finish (or would like someone to finish for me), except for that Apple MTP
+thing. Will I get any of my wishes come true? We will see.&lt;/p&gt;
+&lt;/section&gt;
 &lt;/section&gt;
 </content>
-    <link href="http://dopieralski.pl/posts/2026-01-11-circuitpython/" rel="alternate"/>
-    <summary>It’s that time when the CircuitPython project is looking for feedback from the
-users, so here is some of mine again.</summary>
-    <published>2026-01-11T00:00:00+01:00</published>
-  </entry>
-  <entry>
-    <id>http://dopieralski.pl/posts/2026-02-19-social-design/</id>
-    <title>Social Design</title>
-    <updated>2026-02-19T00:00:00+01:00</updated>
-    <content type="html">&lt;section id="social-design"&gt;
-
-&lt;p&gt;I have used my share of software tools with terrible user interfaces, and I
-have read even more complaints from other people about such tools. Why can’t
-the designers just put themselves in the shoes of the users, mentally, and
-think about what kind of interface would be the most convenient and useful?
-Those stupid autistic programmers must be completely devoid of any trace of
-empathy to produce such designs, surely. If we could only make sure such design
-work is done by reasonable people thinking about others, it surely would be
-must better!&lt;/p&gt;
-&lt;p&gt;Well, turns out that this is not so simple, but it’s a little bit involved to
-explain. I will try anyways.&lt;/p&gt;
-&lt;p&gt;The short version of it is that what you think is simple and obvious, is not so
-simple and obvious to others. It only seems to be so, because you are
-mis-communicating. You are using the same words as the others, and the others
-agree with what they hear, but those words mean different things to different
-people. This is invisible to you until someone takes what you said and turns it
-into a concrete example. Chances are that when you look at it, you will say
-they completely mis-understood you, and that is not what you meant at all.  But
-that is what they understood, and what they agreed on. If you make each person
-who has previously so nicely agreed with you turn your words into a concrete
-example, each one of them will produce some interpretation of your words that
-is most likely completely different from what you actually meant.&lt;/p&gt;
-&lt;p&gt;If you took that horrible user interface, and asked all those people who
-completely agreed that it is horrible, to tell you what exactly is wrong with
-them, you would hear completely inconsistent and wildly different opinions. And
-that’s not just because most people are very bad at analyzing user interfaces.
-It’s also because each of those people probably wanted something different. But
-as long as they talk between themselves, they will generally all agree, because
-each of them will choose the interpretation of the words other said that
-matches their own ideas.&lt;/p&gt;
-&lt;p&gt;Now, programming doesn’t work that way. Programming is one of those disciplines
-where you can’t solve things by using a different word to describe the same
-thing, until everyone agrees. It doesn’t work on consensus, it works on
-physical reality, and unlike consensus, physical reality is unique. There is at
-any point only one truth, even when there can be multiple interpretations, and
-hypotheses that fit the experimental data. There is a necessary assumption in
-there, that cannot be avoided, that all those interpretations, and hypotheses
-are in fact describing a single underlying reality. And to make computers work
-you have to believe in that single truth, you have to work within the confines
-of the physical reality, because the computers don’t care about what you mean,
-they just do their computation, in more or less predictable ways, and it’s up
-to you to arrange them in a way that does something useful.&lt;/p&gt;
-&lt;p&gt;You might say: that is completely fine, they have to be those hyper-honest,
-literally-minded autistics when they commune with their machines, but can’t
-they be a little bit more human when they speak to users, or imagine what the
-users want, so that they can then do their magic and make the machines do what
-we want them to do? Isn’t this their entire job, to translate between the
-normal people and the machines? Shouldn’t they put more effort into thinking
-normally?&lt;/p&gt;
-&lt;p&gt;And that’s the entire problem. There isn’t just one “normally” out there. You
-think there is, because you live in a society, and you have learned to exist in
-it without too much conflict, and to reinterpret things others are saying to
-match with your own opinions and experiences. With the physical reality, there
-is no problem: there is only one truth, and if you make enough experiments,
-collect enough data, and think about it hard enough, you can eventually get to
-an interpretation of your data that is close enough to that truth for things to
-work most of the time. This doesn’t work with “normal” people. They seem to all
-be saying the same things, but they &lt;em&gt;mean&lt;/em&gt; different things, and often they
-don’t even mean anything at all, just repeat something they’ve heard without
-understanding it, and will claim it means something completely different as
-soon as you try to pinpoint it. They will also change their minds, and claim
-contradictory things. And every translation to a concrete, formal description
-that you might attempt will be wrong to most of them. You see, you simply don’t
-&lt;em&gt;understand&lt;/em&gt;.&lt;/p&gt;
-&lt;p&gt;So are we doomed to unusable software product with interfaces designed for
-people who don’t understand the basic needs of the users? I believe good
-software tools are possible, but the path to them does not lead through making
-the designers more human and making them listen to “normal” people. On the
-contrary, I think it’s best when they don’t listen to what the users &lt;em&gt;say&lt;/em&gt; at
-all, and instead just look at what the users &lt;em&gt;do&lt;/em&gt;. Words lie. While it is
-possible to mislead with actions as well, especially if you are trying to guess
-the intentions, they are at least much less ambiguous. And they are repeatable
-and rooted in physical reality. We can do science on them, and we can figure
-things out. And then we can translate them into concrete, working things.&lt;/p&gt;
-&lt;p&gt;So next time you are about to complain that user interface designers don’t
-listen to their users, keep in mind that listening to users is not how you
-make good user interfaces.&lt;/p&gt;
-&lt;/section&gt;
-</content>
-    <link href="http://dopieralski.pl/posts/2026-02-19-social-design/" rel="alternate"/>
-    <summary>I have used my share of software tools with terrible user interfaces, and I
-have read even more complaints from other people about such tools. Why can’t
-the designers just put themselves in the shoes of the users, mentally, and
-think about what kind of interface would be the most convenient and useful?
-Those stupid autistic programmers must be completely devoid of any trace of
-empathy to produce such designs, surely. If we could only make sure such design
-work is done by reasonable people thinking about others, it surely would be
-must better!</summary>
-    <published>2026-02-19T00:00:00+01:00</published>
+    <link href="http://dopieralski.pl/posts/2025-07-08-wishes/"/>
+    <summary>I know it’s a bit late in the year for this kind of post, but I have been busy
+with other things. In any case, I decided to make it about general technology
+related wishes, and not just CircuitPython, but large part of this is going to
+be about CircuitPython anyways. Or at least related.</summary>
+    <published>2025-07-08T00:00:00+02:00</published>
   </entry>
 </feed>

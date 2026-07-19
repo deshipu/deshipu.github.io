@@ -2,69 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>http://dopieralski.pl/</id>
   <title>dopieralski.pl - Posted in 2021</title>
-  <updated>2026-02-20T00:34:43.186826+00:00</updated>
+  <updated>2026-07-19T23:40:23.572489+00:00</updated>
   <link href="http://dopieralski.pl/"/>
   <link href="http://dopieralski.pl/blog/2021/atom.xml" rel="self"/>
-  <generator uri="https://ablog.readthedocs.org/" version="0.10.33">ABlog</generator>
-  <entry>
-    <id>http://dopieralski.pl/posts/2021-01-09-circuitpython/</id>
-    <title>CircuitPython in 2021</title>
-    <updated>2021-01-09T00:00:00+01:00</updated>
-    <content type="html">&lt;section id="circuitpython-in-2021"&gt;
-
-&lt;p&gt;It is once again time for &lt;a class="reference external" href="https://blog.adafruit.com/2021/01/01/where-should-circuitpython-go-in-2021-circuitpython2021-circuitpython/"&gt;Adafruit’s prompt for
-feedback on CircuitPython&lt;/a&gt;. Let’s see what I did
-last year and what I hope for this year.&lt;/p&gt;
-&lt;section id="the-projects"&gt;
-&lt;h2&gt;The Projects&lt;/h2&gt;
-&lt;p&gt;This year was slow project-wise. I did some work on a new, cheaper version of
-my walking robots, but they still need a lot of programming work. Then I went
-into the rabbit hole of low-profile mechanical keyboards, built half a dozen of
-them, until I made a perfect one for me. In the process I also made a library
-for keyboards that has substantially lower resource requirements than existing
-ones.&lt;/p&gt;
-&lt;p&gt;I also ported the Stage game library to a few new platforms, re-made the menu
-program for it, and merged a couple of improvements from other contributors.&lt;/p&gt;
-&lt;p&gt;Right now I’m working on a 6-hole MIDI ocarina, and I’m considering doing a
-business-card sized flat version of PewPew Standalone, with bi-color LEDs.&lt;/p&gt;
-&lt;/section&gt;
-&lt;section id="the-future"&gt;
-&lt;h2&gt;The Future&lt;/h2&gt;
-&lt;p&gt;After most of my plans went awry in 2020, I’m careful about planning anything
-this year. I think I will just be making small projects to keep myself sane,
-and see how the situation develops.&lt;/p&gt;
-&lt;p&gt;In terms of development of CircuitPython, I’m really looking forward to the
-dynamic USB descriptors, because that will let me make my keyboards more usable
-for the general public, and then it will make sense to actually publish them
-properly.&lt;/p&gt;
-&lt;p&gt;It’s also nice to see the work around deep sleep, as this might let me save on
-some parts in the future, moving the power switch to software.&lt;/p&gt;
-&lt;p&gt;The work around reset, safe mode and what file should be run after reset will
-allow me optimize the menu program for PewPews a little better, giving more
-memory to the games.&lt;/p&gt;
-&lt;p&gt;From what I can see most work is still focused on ESP32-S2, but I don’t find
-this particularly interesting for myself. I’m not a great fan of wireless
-solutions in general, and WiFi in particular seems a bit heavy for
-microcontroller-based projects. The need for certification also limits greatly
-what kind of projects I could make with this.&lt;/p&gt;
-&lt;/section&gt;
-&lt;section id="conclusion"&gt;
-&lt;h2&gt;Conclusion&lt;/h2&gt;
-&lt;p&gt;It’s great to see the CircuitPython project progressing and getting more
-popular, and I am very grateful to all contributors for it. Having said that,
-I think it is slowly reaching a point where it has most of what is needed, so
-it’s difficult to be excited about new developments — they are no longer such
-big steps forward. Of course in the long run it is a good thing — we can focus
-more on things we are building with the tool, not on the tool itself.&lt;/p&gt;
-&lt;/section&gt;
-&lt;/section&gt;
-</content>
-    <link href="http://dopieralski.pl/posts/2021-01-09-circuitpython/" rel="alternate"/>
-    <summary>It is once again time for Adafruit’s prompt for
-feedback on CircuitPython. Let’s see what I did
-last year and what I hope for this year.</summary>
-    <published>2021-01-09T00:00:00+01:00</published>
-  </entry>
+  <generator uri="https://ablog.readthedocs.io/" version="0.11.13">ABlog</generator>
   <entry>
     <id>http://dopieralski.pl/posts/2021-12-19-small-robots/</id>
     <title>Build Small Robots</title>
@@ -195,8 +136,67 @@ something goes wrong or breaks, you have to call the mason to fix your house…&
 &lt;/section&gt;
 &lt;/section&gt;
 </content>
-    <link href="http://dopieralski.pl/posts/2021-12-19-small-robots/" rel="alternate"/>
+    <link href="http://dopieralski.pl/posts/2021-12-19-small-robots/"/>
     <summary>In which we learn why it’s much easier to build small robots than large ones.</summary>
     <published>2021-12-19T00:00:00+01:00</published>
+  </entry>
+  <entry>
+    <id>http://dopieralski.pl/posts/2021-01-09-circuitpython/</id>
+    <title>CircuitPython in 2021</title>
+    <updated>2021-01-09T00:00:00+01:00</updated>
+    <content type="html">&lt;section id="circuitpython-in-2021"&gt;
+
+&lt;p&gt;It is once again time for &lt;a class="reference external" href="https://blog.adafruit.com/2021/01/01/where-should-circuitpython-go-in-2021-circuitpython2021-circuitpython/"&gt;Adafruit’s prompt for
+feedback on CircuitPython&lt;/a&gt;. Let’s see what I did
+last year and what I hope for this year.&lt;/p&gt;
+&lt;section id="the-projects"&gt;
+&lt;h2&gt;The Projects&lt;/h2&gt;
+&lt;p&gt;This year was slow project-wise. I did some work on a new, cheaper version of
+my walking robots, but they still need a lot of programming work. Then I went
+into the rabbit hole of low-profile mechanical keyboards, built half a dozen of
+them, until I made a perfect one for me. In the process I also made a library
+for keyboards that has substantially lower resource requirements than existing
+ones.&lt;/p&gt;
+&lt;p&gt;I also ported the Stage game library to a few new platforms, re-made the menu
+program for it, and merged a couple of improvements from other contributors.&lt;/p&gt;
+&lt;p&gt;Right now I’m working on a 6-hole MIDI ocarina, and I’m considering doing a
+business-card sized flat version of PewPew Standalone, with bi-color LEDs.&lt;/p&gt;
+&lt;/section&gt;
+&lt;section id="the-future"&gt;
+&lt;h2&gt;The Future&lt;/h2&gt;
+&lt;p&gt;After most of my plans went awry in 2020, I’m careful about planning anything
+this year. I think I will just be making small projects to keep myself sane,
+and see how the situation develops.&lt;/p&gt;
+&lt;p&gt;In terms of development of CircuitPython, I’m really looking forward to the
+dynamic USB descriptors, because that will let me make my keyboards more usable
+for the general public, and then it will make sense to actually publish them
+properly.&lt;/p&gt;
+&lt;p&gt;It’s also nice to see the work around deep sleep, as this might let me save on
+some parts in the future, moving the power switch to software.&lt;/p&gt;
+&lt;p&gt;The work around reset, safe mode and what file should be run after reset will
+allow me optimize the menu program for PewPews a little better, giving more
+memory to the games.&lt;/p&gt;
+&lt;p&gt;From what I can see most work is still focused on ESP32-S2, but I don’t find
+this particularly interesting for myself. I’m not a great fan of wireless
+solutions in general, and WiFi in particular seems a bit heavy for
+microcontroller-based projects. The need for certification also limits greatly
+what kind of projects I could make with this.&lt;/p&gt;
+&lt;/section&gt;
+&lt;section id="conclusion"&gt;
+&lt;h2&gt;Conclusion&lt;/h2&gt;
+&lt;p&gt;It’s great to see the CircuitPython project progressing and getting more
+popular, and I am very grateful to all contributors for it. Having said that,
+I think it is slowly reaching a point where it has most of what is needed, so
+it’s difficult to be excited about new developments — they are no longer such
+big steps forward. Of course in the long run it is a good thing — we can focus
+more on things we are building with the tool, not on the tool itself.&lt;/p&gt;
+&lt;/section&gt;
+&lt;/section&gt;
+</content>
+    <link href="http://dopieralski.pl/posts/2021-01-09-circuitpython/"/>
+    <summary>It is once again time for Adafruit’s prompt for
+feedback on CircuitPython. Let’s see what I did
+last year and what I hope for this year.</summary>
+    <published>2021-01-09T00:00:00+01:00</published>
   </entry>
 </feed>

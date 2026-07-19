@@ -1,0 +1,348 @@
+---
+blogpost: true
+date: 2026-07-19
+category: robot, robotics
+---
+
+# Robot Legs
+
+## Aside
+
+I noticed that when I find the energy to write here, I either write about some
+pretty abstract philosophical or political things, or about my increasingly
+unlikely plans to work on my hobby projects. I don't really feel any of those
+are very useful for the average reader -- the first kind you can find a dime
+a dozen all over the Internet, and the second kind gets outdated within a year.
+So I decided to try something else -- write about some technical aspects of
+my hobbies. Now, without further ado, let's get down to it.
+
+## Feet
+
+When you are building a statically stable walking robot (the kind I will focus
+on, because I think it's the easiest for a hobbyist), in order to keep it from
+falling down, you have to keep its center of mass above its area of support at
+all times. For our purposes, we can define the center of mass as a place on the
+robot where you can support it to balance it (but also sideways, so it's often
+actually outside of the robot's body). The area of support is the smallest
+convex area around all the points on the ground where the robot is touching.
+You can imagine a rubber band stretched around all its feet on the floor. Of
+course, when a robot raises one of its legs, the area of support changes
+dramatically -- since the foot is no longer touching the ground, the rubber
+band gets released, and now only surrounds the remaining feet.
+
+There are generally two strategies for keeping the support area under the
+center of mass: large feet, and many legs.
+
+Large feet are especially popular with bipedal robots, and the idea is that
+before you raise one foot, you shift the body of the robot to move the center
+of mass so that it fits somewhere above the other foot. Sometimes, if the feet
+have additional supports that allow their ares of support to overlap, you don't
+even need to move the body -- the wind-up walking toys sometimes do that, with
+spurs sticking out of their feet, helping them keep balance even on one foot.
+
+With many legs you don't need such large feet -- in fact, you often make the
+legs pointy or ending in balls, so that you don't have to deal with ankle
+joints -- and you instead make sure that the area of support formed by the legs
+remaining on the ground fits under the center of mass. This can be done by
+moving the legs in a certain order, or, again, by shifting the robot's body (or
+both). Practically, you need at least four legs for this to work for walking:
+one to raise to make a step, and three to make a triangular area of support
+large enough for the robot to be stable. There is only one statically stable
+gait that lets you do that with four legs: creep. However, with six or more
+legs, you have more possibilities, and you can even raise more than one leg at
+the same time.
+
+It is possible to mix the two strategies, making the feet large in one
+dimension, but relying on multiple legs for support in the other: imagine a
+robot with three legs in a line, each with a foot consisting of a horizontal
+bar, perpendicular to that line. Because those feet are long, the robot can
+stand on two legs, while the third is being moved. Or you could have some legs
+with large feet, and some more pointy legs. But to be honest, I haven't seen
+such a walking robot in practice.
+
+# Going Ahead
+
+Once we have assured our robot's stability, we can start thinking about what it
+takes to propel it forward. Since we want proper walking, without slipping,
+sliding, or rolling, there is really only one way to do it: move all the legs
+on the ground backwards in a straight line (or, from another point of view,
+shift the body of the robot forward), while possibly making a step forward with
+the raised legs, putting them on the ground before the robot, so we that we
+don't run out of legs eventually.
+
+Once again, the order of moving the legs and the relative speeds of moving the
+body and taking a step matter here. Ideally, you want to put your stepping leg
+on the ground just before one of your other legs moves out of its movement
+range, and needs to be raised for the next step.
+
+Once again, for quadrupedal robots there is only one way to do it, moving both
+legs on one side, one after the other, and then switching to the other side,
+and so forth. Again, that's the creep gait. For hexapods and robots with more
+legs, there are more possible gaits.
+
+So one requirement we have already is that it must be possible to move each of
+the legs in a straight line backwards, and then raise it and make a step
+forward with it.
+
+Ironically, this immediately disqualifies a lot of hobby quadruped robots in a
+configuration that I like to call a turtle: each leg has a hip joint that
+rotates in the horizontal plane, and a knee joint that raises and lowers the
+foot. This kind of leg will always move along the ground in an arc -- it could
+be close enough to a straight line to make it work, especially with small
+enough steps, but there will always be some slipping and scratching of the
+ground. I don't recommend this configuration to robot hobbyists, especially
+since there is also no opportunity to learn inverse kinematics with it, as the
+math for the leg position is rather trivial.
+
+There are leg configurations with two joints that meet our requirement, both
+have both joints in the same vertical plane, with the insect variant having the
+knee pointing up, and the mammal variant having the knee pointing backwards (or
+forwards). Because both joints work in the same plane, you can use simple
+trigonometry to calculate the inverse kinematics, that is, calculate what
+angles the joints need to have to put the end of the leg in the specified
+position. We need that plane to be vertical, and parallel to the direction of
+walking, so that the leg can move both backward and forward, and up and down.
+
+Second requirement is that we have to be able to keep the center of mass of the
+robot over the support area. This can be achieved by carefully designing the
+robot's proportions and gait so that the no extra body movement is needed -- a
+possible, but somewhat limiting option -- or by shifting the robot's body in
+anticipation of raising legs. With two-joint legs, we can easily move the body
+forward and backward, by shifting all legs (that touch the ground) forward and
+backward. However, if we want to move the body sideways (which is the most
+efficient way of balancing with the creep gait), the only way to do it is by
+tilting the body by raising all legs (on the ground) on one side, and lowering
+them on the other. Unfortunately this changes the distance between the legs on
+the left and on the right, and causes the feet to slip on the ground (or
+elastic bending of the legs absorbs the difference). This works well enough for
+small, light robots, but must be considered for larger and heavier ones.
+
+Of course legs with three joints (two in the same plane, one perpendicular)
+don't have this problem -- they can be positioned in three dimensions anywhere
+in their working envelope, and move in straight lines in any direction. They
+can not only shift the body horizontally, but also tilt it in any direction,
+and even rotate it in place, without taking the feet off the ground. But
+servomotors are the most expensive part of cheap hobby robots, so it makes
+sense to try and make do with as few of them as possible.
+
+It is possible do the balancing in a different way than shifting or tilting the
+entire body of the robot. There can be an additional joint or joints somewhere
+that move part of the robot's body, or some kind of tail or head, for balance.
+
+## Turning
+
+In order for the robot to turn in place (or even just twist its body to look
+around), you have to be able to move its feet on the ground along arcs,
+centered on the center of rotation. This is where the turtle configuration
+shines (it's actually the only thing it can do without slipping), and where the
+other two-joint leg configurations fail.
+
+Turning while walking is a bit tricker, because you have to combine the two
+movements, the shifting forward and the rotation, resulting in elongated arcs
+that are no longer centered all on the same spot. This is where even the turtle
+configuration fails, and you really need legs with three joints.
+
+But of course we can cheat, if our robot is light enough and its legs elastic
+enough. We can turn like a tank does, by doing the walking forward motion, but
+with varying speeds on the left and right sides. We can even move the legs in
+opposite directions to turn in place, just like a tank too! But if you ever
+have seen the ground where a tank or an excavator have been turning, you will
+know that this involves a lot of sideways friction. Slipping also means that
+the effect will depend on the surface, and probably won't be repeatable. You
+will need some external way of determining the facing of the robot after such a
+maneuver.
+
+That is all for the many legs strategy. What about the robots with large feet?
+Well, if you want to avoid slipping, you need to have a way to rotate one foot
+relative to another. You can do this by adding a joint somewhere in the leg,
+rotating in the horizontal plane. The good news, however, is that with two legs
+the two joints don't have to be independent -- they can work together, as one
+leg will be in the air anyways.
+
+For robots with multiple legs with large feet you have to do both -- move them
+in an arc, and rotate the foot along that same arc. Or, again, ignore the small
+detail and allow friction and elasticity to simplify things somewhat, if your
+robot is small and light enough.
+
+## Slalom
+
+Sometimes you don't need your robot to actually move in a straight line, just
+to move in a specified direction, with some sideways movements allowed, as long
+as they average out to a straight line.
+
+This is what the bipedal robot with large feet and two servos per leg can do:
+one servo to raise and lower the leg, and one to rotate the leg horizontally.
+It can then put one foot in front of the other by doing a kind of a duck
+waddle, twisting its body with every step.
+
+This is harder to pull off with the multiple leg strategy, because all the leg
+on the ground have to move in unison to avoid slipping. The turtle
+configuration can't do it, because one of the three legs on the ground will
+always move in an arc that is mirrored relative to the other two. Perhaps if we
+also used the joint responsible for vertical motion of the leg to somehow
+compensate the sideways movement of the foot, tilting the body in the process,
+it would be possible to achieve synchronised leg movement, but I haven't seen
+that done, and when I tried it myself, I gave up because the math became pretty
+complex.
+
+## Anticipation
+
+The speed of a walking robot depends on two variables: how big are its steps,
+and how fast it makes them. The speed of making the steps is usually limited by
+the speed of the servomotors used and the trajectory of the stop, so for
+optimizing the gait you are usually left with just the length of the step
+(stride).
+
+When walking forward, it would be inefficient to only move the leg to the
+neutral position when taking a step -- we can make a step that is two times
+longer by putting the leg forward of its neutral position, ideally as far ahead
+as it can move. This works well as long as we are only walking forward, though.
+
+If the robot suddenly has to turn or rotate, the leg that is extended forward
+can, depending on the exact configuration, have less available movement
+sideways than if it was in the neutral position, and a step must be taken with
+it earlier than it would if it was only moved ahead to the neutral position.
+There is little that can be done about this when remote controlling a robot
+interactively -- it can't predict future movements -- but if the robot is
+controlled through some kind of planning algorithm that knows the path the
+robot is going to take ahead of time, the steps can be planned along that path
+taking into account the movement envelope of the leg and optimal stride length.
+
+This is quite advanced topic, and for our simple remote-controlled robot toys
+we can simply accept that it will sometimes have to re-do a step, or stumble
+occasionally when the sequence of movements results in an unfortunate positions
+of its legs.
+
+## Stomping
+
+So far we have ignored inertia. Our tiny little robots are hopefully light
+enough, and move slow enough, that just adding some safety margins to the area
+of support should suffice to prevent it from falling due to its movements.
+
+But there is another place where inertia appears, and that is in the movement
+of the individual legs: most hobbyist robots use simple hobby servomotors
+(because the are relatively cheap), and the way you control them is by sending
+a PWM signal, with the duty cycle corresponding to the desired new position.
+The servomotor will compare this with its current position, and will move as
+fast as it can towards the new setting, possibly overshooting a little bit and
+correcting as needed, due to -- yes -- inertia. The heavier the leg that it has
+to move, the more overshoot it will have. This is mostly invisible at the
+scales we work at, except for one notable case: when the robot puts its leg
+down on the ground. You can overshoot that, the ground is solid and the leg
+will (hopefully) not penetrate into it. So instead the leg hits the ground with
+some force, and you can hear that as the robot stomping. Of course the bigger
+the robot and the longer and heavier the leg, the worse it gets.
+
+Apart from the sound and possible damage to the surface of the ground, the
+shock is also not great for the gears inside those servomotors, and possibly
+for the entire frame of the robot's body, to say nothing about any kind of
+mechanical sensors (like an accelerometer, for instance) that the robot might
+have. Plus it wastes energy and makes it last shorter on a single battery
+charge.
+
+So how do you avoid that? One obvious way is to use servomotors that have less
+overshoot. More advanced (and more expensive) servomotors don't just blindly
+compare the signal they receive with the current position, but instead have a
+PID loop that tries to slow down and stop the movement just in time.
+Unfortunately, for this to work properly, the PID loop has to be tuned to a
+particular mass of the leg, and obviously servomotor manufacturers don't know
+anything about our robot's legs. They make assumptions about the most common
+use cases, and tune the PID to that. In practice, it's less than perfect, and
+we are on a budget and can't afford fancy servomotors anyways.
+
+We could possibly do our own PID loop in software, but to do that we would need
+feedback from the leg's joint about its current position. That requires either
+modifying the servomotor to break out the corresponding wire and some
+additional electronics to interpret that signal safely, or additional position
+sensors on all joints. While such feedback information is useful for much more
+than just PID loop, and it would be great to have it, in practice it adds
+complexity to an already complex project. And we would need to tune that PID
+loop ourselves for every joint, which is a lot of work.
+
+Another option is to note that the movements of the legs of our robot are very
+repetitive, and that this interactive PID loop would most of the time result in
+the exact same movement profile: slow at first, then fast, then slow again
+towards the end. Instead of generating that profile dynamically with feedback,
+we could as well just hard-code it in our software, and tune that for a best
+compromise.
+
+How do we do it in practice? Instead of giving the servomotor the signal to
+move to its final position, only tell it to move a little bit, but change
+that position repeatedly according to the timing of the profile being used.
+It's very similar to doing object movement in video games, where you have to
+update the position of the object for every animation frame.
+
+Note that having control over movement profiles gives you the ability to change
+how the movement of your robot feels to the observers. You can make it more
+insect-like or more mammal-like, you can make it seem nervous or confident, you
+can make it look more natural or more alien. There is a lot of room for
+artistic expression there, apart from the technical advantages.
+
+## Uneven Terrain
+
+So far we have silently assumed that the surface on which our robot is walking
+is relatively even and flat, and our robot is once again small and light enough
+to just get through small obstacles by sheer luck and determination, possibly
+with a little bit of stumbling sometimes.
+
+But one of the big advantages of legs over wheels or tracks is, allegedly, the
+ability to handle uneven terrain. So what do we need if we want our robot to be
+able to handle some small obstacles, or stop at the edge of the table?
+Obviously we will need some kind of sensors to tell the robot about the ground
+it stands on. But what kind of sensors could those be and how do we handle
+them?
+
+If we have the position feedback as mentioned earlier for the PID tuning, we
+can use that to estimate the resistance to movement of the leg. A sudden raise
+in movement resistance while moving down can indicate that the leg has hit the
+ground earlier than anticipated. Similarly, a lack of resistance at the end of
+leg's movement down can indicate that it didn't hit the ground yet, either
+because the ground is lower in that place, or because there is no ground there
+at all, and the robot is standing at the edge of a chasm, about to plunge down.
+Such sensors, however, add complexity to the robot, and are not easy to
+interpret, being very noisy.
+
+Possibly the simplest solution possible is to just have a switch, or other
+pressure-sensitive sensor at the end of the leg. Obviously it would need to be
+sensitive enough for the weight of the robot to trigger it. I have found that
+switches commonly used to detect the presence of SD cards in various devices
+work very well for this purpose, using very light springs and having relatively
+short travel. Detecting on/off state of a switch doesn't require additional
+electronics, apart from a free GPIO pin.
+
+You can also estimate the movement resistance by measuring the current taken
+by the servomotors, and then use it similar to the position feedback signal.
+This can also be used to implement compliant movements, and for example to
+make the robot walk in a direction it is pushed towards. Again, this requires
+some additional electronics, though it might not be as noisy as a physical
+position sensor.
+
+Finally, instead of putting sensors on the legs, you can have an orientation
+sensor, such as an accelerometer -- or even better, a composite IMU sensor --
+on the body of the robot. Then you can use the readings from that sensor to
+move the legs up and down such that the body is always level. With just three
+legs on the ground for a quadruped, this works surprisingly well. You can also
+detect an edge of the table by lack of reaction to the body orientation from
+leg's movement. This required a bit more advanced logic in software, but it's
+doable. With even more software tricks, we can use the accelerometer to detect
+the shocks from the stomping discussed earlier, and thus estimate when exactly
+the leg hit the ground. This can be affected by uneven softness of the ground.
+
+All sorts of other solutions are possible. If the robot is equipped with
+cameras and lidar, and is modeling the terrain around it, that information can
+be used for positioning the legs and planning the steps. Simpler optical
+distance sensors could be used to estimate the position of the body against the
+ground, or when mounted on the legs, the positions of the individual legs.
+Various strain and force sensors can give us information similar to that from
+measuring motor current. There is a lot of room for experimentation here,
+though unfortunately most of it also add a considerable amount of complexity.
+
+## Conclusion
+
+While I hope that this article will prove generally useful to robot-building
+hobbyists, it mostly records my own experiences with designing a cheap and
+small walking robot. It is the reasoning that made me arrive at the design of
+the WeeBug robot. Of course many decisions were made and compromises taken, and
+it is fully possible to use the same document to arrive at a completely
+different design. In any case, I encourage everyone to try their skill in
+building their own robot walkers.

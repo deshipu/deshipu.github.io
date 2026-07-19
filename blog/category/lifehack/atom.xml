@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>http://dopieralski.pl/</id>
   <title>dopieralski.pl - Posts in lifehack</title>
-  <updated>2026-02-20T00:34:43.106888+00:00</updated>
+  <updated>2026-07-19T23:40:23.478492+00:00</updated>
   <link href="http://dopieralski.pl/"/>
   <link href="http://dopieralski.pl/blog/category/lifehack/atom.xml" rel="self"/>
-  <generator uri="https://ablog.readthedocs.org/" version="0.10.33">ABlog</generator>
+  <generator uri="https://ablog.readthedocs.io/" version="0.11.13">ABlog</generator>
   <entry>
     <id>http://dopieralski.pl/posts/2019-03-26-boredom/</id>
     <title>Boredom</title>
@@ -43,7 +43,7 @@ absolutely nothing. Literally staring at a wall. It will make everything else
 you do much better.&lt;/p&gt;
 &lt;/section&gt;
 </content>
-    <link href="http://dopieralski.pl/posts/2019-03-26-boredom/" rel="alternate"/>
+    <link href="http://dopieralski.pl/posts/2019-03-26-boredom/"/>
     <summary>Would you like to be more creative? More eloquent in conversations? More
 intelligent in decision making? Better at problem solving? More attentive? Able
 to read those difficult books? Focus deeply on the project at hand? There is a

@@ -2,10 +2,559 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>http://dopieralski.pl/</id>
   <title>dopieralski.pl - Posted in 2025</title>
-  <updated>2026-02-20T00:34:43.168543+00:00</updated>
+  <updated>2026-07-19T23:40:23.554378+00:00</updated>
   <link href="http://dopieralski.pl/"/>
   <link href="http://dopieralski.pl/blog/2025/atom.xml" rel="self"/>
-  <generator uri="https://ablog.readthedocs.org/" version="0.10.33">ABlog</generator>
+  <generator uri="https://ablog.readthedocs.io/" version="0.11.13">ABlog</generator>
+  <entry>
+    <id>http://dopieralski.pl/posts/2025-11-02-both-sides/</id>
+    <title>Programming on Both Sides of Your Brain</title>
+    <updated>2025-11-02T00:00:00+01:00</updated>
+    <content type="html">&lt;section id="programming-on-both-sides-of-your-brain"&gt;
+
+&lt;p&gt;A lot of disagreements in software engineering seem to have a deeper background
+than mere technical considerations. Should you move fast and break things, or
+should you reinvent the wheel? Does it matter how the code looks like when it
+does what you want? And what is the purpose of it all in the first place?  I
+propose that many of those arguments arise from different people using
+different of two possible fixed worldviews in a variety of contexts, which they
+assign automatically and mostly unconsciously, in a similar way to how our
+brain resolves bistable perceptions. Furthermore, I propose that the ability to
+consciously switch between the two worldviews, and the experience needed to
+decide which one to use in the given context, are crucial for the work of a
+software engineer.&lt;/p&gt;
+&lt;section id="necker-cube"&gt;
+&lt;h2&gt;Necker Cube&lt;/h2&gt;
+&lt;p&gt;Probably the most well known example of bistable perception is the Necker Cube:
+a two-dimensional wireframe drawing of a cube, which can be interpreted in two
+ways, because it lacks any cues about the depth of the parts of the image.&lt;/p&gt;
+&lt;img alt="http://dopieralski.pl/_images/necker.png" class="align-center" src="http://dopieralski.pl/_images/necker.png" /&gt;
+&lt;p&gt;When we look at the drawing, we automatically pick one of the possible
+interpretations, and it becomes obvious to us that it’s the correct one. It
+requires a conscious effort to switch to the other interpretation, and some
+people can’t do it at all. The initial choice is based on context cues, such as
+lighting and position of the drawing, personal preference, cultural biases, and
+possibly some amount of randomness.&lt;/p&gt;
+&lt;p&gt;There are other examples of bistable (and multistable) perceptions, some even
+harder to switch between without training. But I think this one illustrates the
+mechanism well enough for our purposes.&lt;/p&gt;
+&lt;/section&gt;
+&lt;section id="drawing-on-the-right-side-of-the-brain"&gt;
+&lt;h2&gt;Drawing on the Right Side of the Brain&lt;/h2&gt;
+&lt;p&gt;In 1979 Betty Edwards published a book describing her technique for teaching
+drawing. Her idea was based on the theory of how left and right brain
+hemispheres are responsible for different ways of perceiving reality, that was
+popular at the time. Today we know that the processes responsible for those two
+ways are not actually confined to their corresponding hemispheres, but rather
+are both whole-brain processes, but the terminology stuck, so you can still
+read people referring to the more verbal and analytic way as the left-brain
+functions, or L-mode, and the more visual and intuitive way as the right-brain
+functions, or R-mode (the hemisphere sides are reversed compared to which sides
+of the body they control, because the nerves cross: left hemisphere controls
+the right side of the body, and vice versa). This supposedly explains why
+left-handed people are more creative, having a more dominant right hemisphere.&lt;/p&gt;
+&lt;p&gt;In any case, no matter how that relates to the actual positions of parts of our
+brains, and the processes that take place, the technique seems to be working: by
+intentionally suppressing the understanding of the different parts of the scene
+we can shift our perceptions to seeing how it looks like, so to say, instead of
+what it is, and make it easier to re-create the looks on the paper. Whatever
+the neurological explanation for it, the trick seems to be working for many
+people.&lt;/p&gt;
+&lt;p&gt;You might find that this general strategy may work in other areas than drawing
+as well. For example, when listening to music, when tasting food and drinks, or
+even with more abstract things, like interpreting poetry, or understanding
+mathematical proofs. It often feels like switching between focusing on details,
+and perceiving the general shape and feel.&lt;/p&gt;
+&lt;p&gt;I think that we often automatically pick the right mode of perception for the
+task in similar way to how we pick an interpretation of the Necker cube above,
+based on context cues, personal preference, cultural biases, and experience.
+And since it’s mostly unconscious, we are often not aware that a choice has
+been made, and that a different interpretation is possible, unless we
+intentionally expend the effort to consider it. And that becomes easier with
+practice.&lt;/p&gt;
+&lt;/section&gt;
+&lt;section id="phases-of-software-design-and-development"&gt;
+&lt;h2&gt;Phases of Software Design and Development&lt;/h2&gt;
+&lt;p&gt;If you ever tried to design a user interface while at the same time writing
+code for the back-end, you might have noticed that it’s very difficult to make
+it work the way the users expect, instead of mirroring the internal
+representation. This is why those tasks are often separated, performed at
+different times, if not by completely different members of the team, or even
+different teams. There can be many more such phases, where you need to focus
+on different aspects of the product, consider different trade-offs, and focus
+on different levels of abstraction.&lt;/p&gt;
+&lt;p&gt;I believe this is, at least partially, because those tasks are best solved in
+different perception modes, and we can only be in one of those modes at a time,
+just like we can only see one interpretation of the Necker cube at once.&lt;/p&gt;
+&lt;p&gt;And while there may be a big variety of roles and phases, depending on the
+organization and methodology and the task at hand, you might notice that the
+worst disagreements usually happen between pairs of roles that can be roughly
+divided into two families, roughly corresponding to the L-mode and R-mode from
+Betty Edwards’ book.&lt;/p&gt;
+&lt;/section&gt;
+&lt;section id="programming-on-the-left-side-of-the-brain"&gt;
+&lt;h2&gt;Programming on the Left Side of the Brain&lt;/h2&gt;
+&lt;p&gt;The L-mode generally sounds like your stereotypical science nerd. You write
+code because you enjoy the difficulty of doing it. You care about the
+correctness of your solution not because it will have some business purpose,
+but because an incorrect solution would be wrong. You want your code to be
+good, whatever it means in the context. You know that either something is true,
+or it isn’t, and the only way to tell is through contact with the harsh
+reality. You trust your co-workers, and cooperate without friction, unless
+someone breaks that trust repeatedly – then you simply start avoiding that
+person and working around them. You very carefully pick your tools and
+dependencies, and you like to understand how they work before you use them. You
+don’t like overcomplicated libraries that do much more than you need. If you
+see something that isn’t right, you will try to fix it yourself, and if that is
+not possible, you will avoid using it. You believe position should be earned
+through work, and trust should be earned trough repeated interactions. You
+don’t care much about authorities, and you don’t believe something is right
+just because someone says so. You tend to avoid taking sides, and you just want
+things to work. You prefer to just show things over describing them. You are
+generally quiet, and you prefer to results speak for you. You are generally
+an optimist, and you believe in improving things for everyone.&lt;/p&gt;
+&lt;/section&gt;
+&lt;section id="programming-on-the-right-side-of-the-brain"&gt;
+&lt;h2&gt;Programming on the Right Side of the Brain&lt;/h2&gt;
+&lt;p&gt;The R-mode is more like a salesman. You don’t really care about how the thing
+is done, as long as everyone agrees that it works. If someone disagrees, you
+may fix it by changing how it works, or by convincing that person that they are
+wrong, either way is fine, as long as there is a consensus. People who believe
+in inviolate truths just don’t have a flexible mind. You love workarounds and
+temporary solutions. You juggle technical debt like a government economist.
+You take sides and stick to them, because position and trust is achieved
+through loyalty or authority enforcement. You like procedures and processes,
+even if they don’t work – after all it’s not your fault it doesn’t work when
+you followed the process correctly. You have friends and enemies among your
+co-workers, but it changes all the time, depending on what you need and who has
+what to offer. You love powerful and complicated tools and libraries,
+especially when they are popular – after all, nobody was fired for choosing
+IBM. You are sensitive to fashions and trends, and you always try to work on
+the coolest projects. Your favorite mode of communication is telling stories.
+You are generally a fatalist, and you believe in making the best use of what is
+available to you right now.&lt;/p&gt;
+&lt;/section&gt;
+&lt;section id="switching-contexts"&gt;
+&lt;h2&gt;Switching Contexts&lt;/h2&gt;
+&lt;p&gt;The above descriptions are very stereotypical. In reality, to survive in the
+modern world, everyone one of us, even the most nerdy nerds and the most
+popular celebrities, have to switch between those modes. Doing grocery
+shopping?  You need the L-mode. Deciding what to have for lunch? That’s R-mode.
+And we often don’t even realize we switch those modes, because it happens
+mostly automatically, depending on the context. Unless sometimes it doesn’t,
+and we are stuck in the wrong mode for the task at hand. This can happen for a
+variety of reasons.&lt;/p&gt;
+&lt;p&gt;Some people simply prefer one mode over the other, because of their
+personality, neural makeup, or cultural biases. For example, autistic people
+generally tend to prefer the L-mode, while people with authoritarian
+personality traits will lean towards the R-mode more.&lt;/p&gt;
+&lt;p&gt;Your training and experience might tell you that a certain mode works better in
+the given situation, while someone who was trained for a different profession,
+or even just by different methodology, will disagree with you, not only about
+what mode is more appropriate, but even what the situation actually is.&lt;/p&gt;
+&lt;p&gt;You might have locked on to a specific mode at a certain time in the project,
+and in the mean time the situation may have changed, so a person joining later
+will choose a different one. Or you might have noticed the change and switched
+your mode, while your colleagues didn’t.&lt;/p&gt;
+&lt;p&gt;Finally, if the task at hand is novel, you might simply not know which mode to
+choose, and may pick it at random.&lt;/p&gt;
+&lt;p&gt;Whatever the cause, when two people are in different modes in the same context
+it’s very difficult for them to agree about anything. And since the mode
+switching is normally completely unconscious and automatic, and because the
+mode you are in always feels the only obvious one for the situation, it feels
+like a perfectly normal, smart and reasonable person suddenly disagrees with
+you about the most fundamental and common sense things. It’s very frustrating.&lt;/p&gt;
+&lt;p&gt;Of course even when you realize that you have a mode mismatch, it’s not trivial
+to decide which mode is more appropriate for the given context, or even where
+the boundaries at which it should be switched lie. Whichever mode you are at
+the moment, it feels like the obviously right one for you, and since they
+differ in how values are assessed, it may be hard to decide which one was more
+appropriate even in hindsight.&lt;/p&gt;
+&lt;/section&gt;
+&lt;section id="elasticity-and-training"&gt;
+&lt;h2&gt;Elasticity and Training&lt;/h2&gt;
+&lt;p&gt;It turns out that people who can switch between the two modes easily are
+generally more successful at software engineering jobs (and many others too).
+Obviously it’s not enough to be able to switch, but also to know when to do it,
+and that comes with experience, but if you generally are reluctant to switch,
+you are more likely to be in the wrong mode at the wrong time.&lt;/p&gt;
+&lt;p&gt;Having the right training for the job helps with the experience part. And that
+is often hands-on training, and not theoretical knowledge read in a book,
+because the context picking and mode switching is mostly automatic, based
+on unconsciously picked cues, that a book would not communicate.&lt;/p&gt;
+&lt;p&gt;Dividing the project into phases and the team into roles at the right places
+helps with switching to the right modes as well, by making the boundaries of
+the different context explicitly visible, so a conscious effort can be made
+by the team members to get into the right mode for the particular phase and
+their role in it.&lt;/p&gt;
+&lt;p&gt;Due to the different roles often requiring different modes, there is no way to
+completely avoid conflict inside the team. This is in fact the main reason to
+have the roles in the first place – to catch problems visible in either of the
+modes. It’s important to realize that those differences are often
+irreconcilable – the differences between how the world is seen in the two
+modes makes it impossible to form a consensus, and some other way of conflict
+resolution is necessary. In the end it might be just necessary to agree to
+disagree. For this reason it’s important for the different phases and roles to
+have distinct, non-overlapping areas of responsibility, so that in the case of
+irreconcilable disagreement it is known whose decision is final.&lt;/p&gt;
+&lt;/section&gt;
+&lt;section id="conclusion"&gt;
+&lt;h2&gt;Conclusion&lt;/h2&gt;
+&lt;p&gt;While my hypothesis of the two distinct mental modes in software engineering
+work is completely made up and unsubstantiated, and based entirely on anecdotal evidence, I am confident that it provides a useful tool for understanding the
+behavior of teams, and may help in organizing projects in a way that reduces
+conflict and improves performance. I have absolutely no proof of that beyond
+my feelings about this. The reader is advised to use their own judgement.&lt;/p&gt;
+&lt;/section&gt;
+&lt;/section&gt;
+</content>
+    <link href="http://dopieralski.pl/posts/2025-11-02-both-sides/"/>
+    <summary>A lot of disagreements in software engineering seem to have a deeper background
+than mere technical considerations. Should you move fast and break things, or
+should you reinvent the wheel? Does it matter how the code looks like when it
+does what you want? And what is the purpose of it all in the first place?  I
+propose that many of those arguments arise from different people using
+different of two possible fixed worldviews in a variety of contexts, which they
+assign automatically and mostly unconsciously, in a similar way to how our
+brain resolves bistable perceptions. Furthermore, I propose that the ability to
+consciously switch between the two worldviews, and the experience needed to
+decide which one to use in the given context, are crucial for the work of a
+software engineer.</summary>
+    <published>2025-11-02T00:00:00+01:00</published>
+  </entry>
+  <entry>
+    <id>http://dopieralski.pl/posts/2025-07-08-wishes/</id>
+    <title>My Tech Wishes for 2025</title>
+    <updated>2025-07-08T00:00:00+02:00</updated>
+    <content type="html">&lt;section id="my-tech-wishes-for-2025"&gt;
+
+&lt;p&gt;I know it’s a bit late in the year for this kind of post, but I have been busy
+with other things. In any case, I decided to make it about general technology
+related wishes, and not just CircuitPython, but large part of this is going to
+be about CircuitPython anyways. Or at least related.&lt;/p&gt;
+&lt;section id="media-transfer-protocol"&gt;
+&lt;h2&gt;Media Transfer Protocol&lt;/h2&gt;
+&lt;p&gt;Exposing your microcontroller to the computer it is connected to as a disk
+drive is getting really popular now. And it makes a lot of sense too — it doesn’t require you to install any drivers or programs, it easy to understand, and
+very convenient. CircuitPython does it too and I love it. But it does introduce
+a number of problems:&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;p&gt;You have to use a filesystem that is supported on most operating system, and
+with the small sizes you have, it’s usually FAT12, which is not great for
+flash wearing off or fragmentation.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Since diskettes are not as common anymore, proprietary operating systems
+don’t have their implementations of FAT12 tested as well as other things,
+which means there are lots of bugs in MacOS and Windows.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Tools like virus scanners or disk monitors see those drives as regular disks
+and often interact with them in ways that breaks them.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;You can write to the disk only from one side, either through USB, or from
+your code on the device, but not both at the same time.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;All of those problems could be trivially solved if we could only use the MTP
+protocol instead of exposing the disk as a physical device with USB MSC. MTP
+uses commands to manipulate the files, kinda like FTP, instead of writing to
+the disk directly, and writes themselves are done by the microcontroller
+itself, so it’s easy to use any custom filesystem you want, and to ensure
+proper interactions when multiple operations are happening from different
+sources.&lt;/p&gt;
+&lt;p&gt;There is only one problem, and that is iTunes. You see, back when Apple’s flag
+product was a music player, they were very jealous about it, and they tried
+very hard to “protect” their users from using any other music player. They made
+sure their player uses a custom, proprietary protocol for transferring the
+music collection, and they also made sure that Apple computers didn’t support
+transferring of arbitrary files using MTP. They had a problem in that most
+cameras were already using MTP to transfer photos, and their users needed that,
+so they made it an exception: you can use MTP on a Mac, but only for
+transferring image files, and not any other file. Neat, eh?&lt;/p&gt;
+&lt;p&gt;Today you can only find iPads in museums, and iTunes is just a memory in some
+boomer nightmares, but the decision they made back then stays. No arbitrary
+files with MTP, if you use a Mac, you have to install a special program to use
+MTP for anything else than photos. So any microcontroller device that uses MTP
+would not work out of the box on Apple products, which means that nobody does
+it.&lt;/p&gt;
+&lt;p&gt;So my wish is for someone at Apple to revise that decision, recognize how
+stupid and harmful it was, and remove that stupid limitation from all of their
+operating systems, thank you very much. I would also like to see some ready to
+use libraries and examples for using MTP, but that will surely come once it’s
+usable.&lt;/p&gt;
+&lt;/section&gt;
+&lt;section id="circuitpython-on-ch32v208"&gt;
+&lt;h2&gt;CircuitPython on CH32V208&lt;/h2&gt;
+&lt;p&gt;This is something I would love to do myself, but I’m scared to even start, as
+it is a huge amount of work, and just outside of my comfort zone. Basically,
+the bluetooth versions of the CH32 chips tend to have a lot of memory for the
+bluetooth stack, and that makes it theoretically possible to run CircuitPython
+or LUA on them (as long as we don’t need the bluetooth). It’s a nice cheap
+chip, and it would be perfect as a replacement for the SAMD21 chips I currently
+use for the PewPew devices.&lt;/p&gt;
+&lt;p&gt;Of course porting whole CircuitPython to a new chip is a lot of work, and it’s
+something I have never done before, so naturally it’s scary. But people do it,
+so it’s definitely possible.&lt;/p&gt;
+&lt;/section&gt;
+&lt;section id="voice-synthesis"&gt;
+&lt;h2&gt;Voice Synthesis&lt;/h2&gt;
+&lt;p&gt;After my failed attempts to port the SAM voice synthesiser from MicroBit to
+CircuitPython, I’m happy to see that someone ported it to MicroPython, but
+not as a C library, as I wanted to do, but literally rewrote it in Python.
+Now I need to take it and see if it works in CircuitPython as well. Then I can
+make my robots speak.&lt;/p&gt;
+&lt;/section&gt;
+&lt;section id="servo-controller-on-ch32v003"&gt;
+&lt;h2&gt;Servo Controller on CH32V003&lt;/h2&gt;
+&lt;p&gt;This one I’m actually perfectly capable of finishing on my own, I just need to
+find the energy to work on it. I basically want to control 16 servos with good
+resolution using PWM signals specified through I2C. I already have the PWM part
+working, and there are plenty of examples for I2C slave. It’s just a question
+of sitting down and actually writing the code.&lt;/p&gt;
+&lt;p&gt;Once I have it, I can use it in the future versions of FluffBug and WeeBug, and
+also a robot for the new small OpenMV board. It would free up 8 pins on the
+Xiao, which could then be used for a display or I2S amplifier. It would also
+allow for connecting additional servos, for things like arms or moving
+features.&lt;/p&gt;
+&lt;/section&gt;
+&lt;section id="led-matrices-on-ch32v003"&gt;
+&lt;h2&gt;LED Matrices on CH32V003&lt;/h2&gt;
+&lt;p&gt;I also have two projects with LED matrices for the CH32V003 that I still need
+to program. One is a spectrum analyzer thing, and the hard part is the FFT
+code for it (though there are plenty of examples), and the other is a business
+card fake PewPew—not really running CircuitPython, but with some of the
+PewPew games implemented directly in C and hardcoded in the device.&lt;/p&gt;
+&lt;/section&gt;
+&lt;section id="gif-pendant"&gt;
+&lt;h2&gt;GIF Pendant&lt;/h2&gt;
+&lt;p&gt;Finally, I’m also still working on my GIF pendant project. Now with a round
+screen and CH32V208 as the brains. I have a TinyUSB example for USB MSC in
+RAM working on it. What I need to figure out how to put the storage on the
+internal flash instead, and how to access it from the code to render those
+GIF files onto the screen. Again, it’s something I have never done, and there
+isn’t much documentation about it around, so it’s a lot of trial and error.
+I wish someone who is more knowledgable about TinyUSB and USB MSC could help
+me with that.&lt;/p&gt;
+&lt;p&gt;And that’s pretty much it for me for 2025. It’s mostly projects I would like
+to finish (or would like someone to finish for me), except for that Apple MTP
+thing. Will I get any of my wishes come true? We will see.&lt;/p&gt;
+&lt;/section&gt;
+&lt;/section&gt;
+</content>
+    <link href="http://dopieralski.pl/posts/2025-07-08-wishes/"/>
+    <summary>I know it’s a bit late in the year for this kind of post, but I have been busy
+with other things. In any case, I decided to make it about general technology
+related wishes, and not just CircuitPython, but large part of this is going to
+be about CircuitPython anyways. Or at least related.</summary>
+    <published>2025-07-08T00:00:00+02:00</published>
+  </entry>
+  <entry>
+    <id>http://dopieralski.pl/posts/2025-07-01-automation/</id>
+    <title>The Subtle Art of Automation</title>
+    <updated>2025-07-01T00:00:00+02:00</updated>
+    <content type="html">&lt;section id="the-subtle-art-of-automation"&gt;
+
+&lt;section id="tools"&gt;
+&lt;h2&gt;Tools&lt;/h2&gt;
+&lt;p&gt;Humans are tool-using animals. For a long time it was thought that this is what
+distinguishes us from animals, in fact, but of course if you actually pay
+attention you will notice that animals are using tools all the time. Yes,
+sometimes you can dismiss it as instinctive behavior, as is the fashion, but
+sometimes when it comes to corvids, parrots, octopuses and primates, you really
+have to admit that they do it intentionally and with full knowledge about the
+expected results. Anyways, humans are among tool-using animals.&lt;/p&gt;
+&lt;p&gt;Why do we use tools? Sometimes it’s because we are not strong or dexterous
+enough to do thing we want to do unaided. Or our nails and teeth are not sharp
+enough. Or our sight, hearing, or sense of touch are not good enough. Other
+times we could do the thing unaided if we had to, but tools make it easier or
+more convenient. Sometimes it’s because we don’t want to risk an injury, or to
+get dirty, or we want to avoid other unpleasant sensation. But the reason I
+hear given most often is that by using tools we can do the same thing faster,
+or at larger scale, or otherwise more efficiently. We can achieve the same (or better) result with less effort. Tools can be a labour-saving device.&lt;/p&gt;
+&lt;p&gt;We say “tools”, but it’s not just tools. They are just easy to talk about them,
+because they are tangible, visible things. But it all applies to skills and
+techniques as well. To the “technologies”. Consider, for example, waving
+baskets. It’s something you do by hand (today we do have machines that can do
+it, but let’s assume we are doing it by hand), but you can do it in several
+different ways. Coming up with a new way to wave baskets that is somehow
+easier, faster, lets you use different materials or produces baskets with
+special qualities that the other ways don’t works exactly the same as if you
+created a new tool for doing this. So tools are just physical manifestations
+of technologies, and it’s the technologies we will be concerned about here.&lt;/p&gt;
+&lt;/section&gt;
+&lt;section id="effort"&gt;
+&lt;h2&gt;Effort&lt;/h2&gt;
+&lt;p&gt;So do the technologies really save effort? It certainly feels that way, why
+would we be using them otherwise? But I think it’s a bit more complicated than
+that.&lt;/p&gt;
+&lt;p&gt;Consider the ox-driven plough. On the face of it, it’s a huge improvement about
+the humble hoe that it replaced. Yes, the farmer still has to be present to
+drive the plough, and it still requires a lot of strength, but a large amount
+of that strength is now provided by the animal, and the whole work goes much
+faster. So it’s a definitely a huge saving, at least as long as you only look
+at this short time when the ploughing is actually happening.&lt;/p&gt;
+&lt;p&gt;But the ox has to eat too. And it needs a place to stay, and it needs to be
+taken care of. And when it gets old or sick, it has to be replaced. So for this
+to work in the long run you need a steady supply of oxen. (And I’m not even
+saying anything about the effort of the ox.) So a tiny plot of land that acted
+as the farmer’s garden and was enough to feed their family now has to become a
+considerably sized field, enough to grow food for a herd of oxen and the people
+needed to take care of them. And since the oxen need to eat the entire year,
+you have to store your crops somehow, and preserve them.  What used to be a
+simple shack with a small garden, where some hoe-ing would happen a few times a
+year, turns into a small village with several huts, a barn, an enclosure, and
+people working around the clock to maintain all that. And don’t even get me
+started about fresh water and the smell of ox everywhere. And of course because
+you are not storing considerable caches of food, your little village is now
+vulnerable to raids and looting (or the more civilized version of it,
+taxation), so you need defensive walls, soldiers (or at least militia),
+weapons, and so on.&lt;/p&gt;
+&lt;p&gt;Looking at it this way you could easily conclude that the hoe is in fact the
+less labor-intensive solution, when considered globally. It only becomes worse
+when you assume that you already have all the infrastructure need for it.&lt;/p&gt;
+&lt;p&gt;But then again, once you have the infrastructure, it enables not just the
+plough, but many other technologies as well. You now have milk and meat. And as
+much ox shit as you can shake a stick at. You have fortifications and army.
+You have a hierarchy to organize and manage it all. You have surplus food to
+trade. And so on and so forth. So assuming you want all those additional things
+too, on top of replacing the hoe, the plough once again becomes the superior
+technology (for some chosen measure).&lt;/p&gt;
+&lt;/section&gt;
+&lt;section id="transformers"&gt;
+&lt;h2&gt;Transformers&lt;/h2&gt;
+&lt;p&gt;So if technologies don’t &lt;em&gt;actually&lt;/em&gt; save effort on their own, what do they do
+exactly? I like to think of them as transforming one kind of effort into
+another kind, potentially better suited for the task at hand, or maybe just
+easier to store or move around. If you compare the rather abstract and nebulous
+idea of effort to thermodynamic idea of energy, a technology could be like,
+say, a solar cell that transforms light into electricity that can be then
+easily moved around using wires and stored using batteries. Or a combustion
+engine that transforms chemical energy of the fossil fuels into kinetic energy
+of a rotating shaft. Of course the similarity is pretty weak, because we don’t
+really have a well defined formal theory of effort, like we have a theory of
+thermodynamics, but I like to believe that there is some kind of law of
+conservation of effort somewhere in there, however fuzzy and approximate it
+might be.&lt;/p&gt;
+&lt;p&gt;In any case, technologies let you transform different kinds of effort,
+sometimes allowing you to store or move it around. What good is that?&lt;/p&gt;
+&lt;p&gt;Turns out that sometimes some kinds of effort are better for a given task
+than other kinds. So you can “save effort” by using the kind that is more
+efficient for the task at hand.&lt;/p&gt;
+&lt;p&gt;And sometimes certain tasks take less effort when they are done at a particular
+place and time, or when they are done at scale. Being able to store and move
+effort lets you rearrange it into more efficient ways.&lt;/p&gt;
+&lt;p&gt;And finally, sometimes you can “outsource” the effort, by taking advantage of
+something someone else already did (or will have to do to clean up after you).
+Fossil fuels, for example, take advantage of the effort the plants of millions
+of years ago spent to turn light into their bodies, and of the effort the
+future generations will have to spend to deal with the climate change.&lt;/p&gt;
+&lt;p&gt;Just like in thermodynamics, those conversions rarely are free – usually they
+take some additional effort, to, say, dig up those fossil fuels, turn them into
+a form that is convenient to use, and transport them to the right place. But
+with the right arrangements, even with that overhead we can often create
+considerable savings.&lt;/p&gt;
+&lt;/section&gt;
+&lt;section id="automation"&gt;
+&lt;h2&gt;Automation&lt;/h2&gt;
+&lt;p&gt;Automation technologies (together with mechanization) are no different in that
+regard, except they tend to require much more infrastructure to make things
+happen “on their own”. They also come with a myth that “you only need to set it
+up once” and they will work forever without expending any further effort.&lt;/p&gt;
+&lt;p&gt;In practice any ongoing process is going to have setup cost and maintenance
+cost (and also cleanup cost, which we often forget about). In addition, the
+requirements for the output of the process are going to change over time, and
+that requires further effort and resources to adjust it to remain useful
+(either by changing the process itself, or by adding extra adapting steps).&lt;/p&gt;
+&lt;p&gt;Now the trick is to setup that automation in a way that minimizes those ongoing
+costs, possibly doing more work up front, or pushing more work to the cleanup
+(and hoping we won’t be around anymore when it happens). This is not a given,
+and if it’s not done intentionally, we might as well end up with an automated
+process that doesn’t in fact save effort, or accomplish other goals that we
+wanted to achieve.&lt;/p&gt;
+&lt;/section&gt;
+&lt;section id="goals"&gt;
+&lt;h2&gt;Goals&lt;/h2&gt;
+&lt;p&gt;Speaking of goals, saving effort is not the only thing technologies can give
+us. In fact, sometimes we are ready to actually spend more effort in order to
+achieve some of the other goals. What are they? Potentially they are infinite,
+but let’s look at some of the most common ones here.&lt;/p&gt;
+&lt;section id="repeatability"&gt;
+&lt;h3&gt;Repeatability&lt;/h3&gt;
+&lt;p&gt;It can be a goal to have multiple similar things, or it can be just enabling
+the further goals like quality control or fine tuning, but automation sure lets
+you do things the same exact way, if setup with that in mind. As a side effect,
+it also makes it easier to debug!&lt;/p&gt;
+&lt;/section&gt;
+&lt;section id="quality-control"&gt;
+&lt;h3&gt;Quality Control&lt;/h3&gt;
+&lt;p&gt;You want to make sure that the things you are making are at least of a certain
+quality. But maybe you also want to make sure that the quality is not
+unnecessarily high, as it usually costs more. If your process is automated,
+then you can easily inspect it, find the parts that have the most impact on
+quality and adjust and monitor them. You can even automate additional quality
+checks.&lt;/p&gt;
+&lt;/section&gt;
+&lt;section id="fine-tuning"&gt;
+&lt;h3&gt;Fine Tuning&lt;/h3&gt;
+&lt;p&gt;But wait, it’s not just quality. You can fiddle with any feature of the process
+this way. The fact that it always happens the same way, except for the parts
+you have changed, lets you more easily see what the results of your changes
+are.&lt;/p&gt;
+&lt;/section&gt;
+&lt;section id="interchangeability"&gt;
+&lt;h3&gt;Interchangeability&lt;/h3&gt;
+&lt;p&gt;If you design your automation right, you can reuse or share parts of it in
+different processes. You could also have intermediate stages of the product
+shared between several different processes. This lets you both save effort and
+be more flexible about your quotas.&lt;/p&gt;
+&lt;/section&gt;
+&lt;section id="scalability"&gt;
+&lt;h3&gt;Scalability&lt;/h3&gt;
+&lt;p&gt;If you make a machine do something, then you can often quite easily run the
+machine faster, or buy several machines and have them run in parallel. You can
+scale your processes this way.&lt;/p&gt;
+&lt;/section&gt;
+&lt;section id="economy-of-scale"&gt;
+&lt;h3&gt;Economy of Scale&lt;/h3&gt;
+&lt;p&gt;Once you can scale something, you can scale it up to huge amounts and make use
+of all those bulk discounts and bulk shipping. More importantly, you can use
+bigger machines to make the same thing faster and cheaper by making a lot at a
+time.&lt;/p&gt;
+&lt;/section&gt;
+&lt;section id="centralization"&gt;
+&lt;h3&gt;Centralization&lt;/h3&gt;
+&lt;p&gt;Obviously if you have big machines doing a lot of work, you want them all in
+one place, so that you can keep all the resources and materials close by,
+and so that the maintenance is easier.&lt;/p&gt;
+&lt;/section&gt;
+&lt;section id="distribution"&gt;
+&lt;h3&gt;Distribution&lt;/h3&gt;
+&lt;p&gt;But you don’t have to centralize everything if you don’t want to. Automation
+also enables distribution, letting you to have the same machine (or script)
+running in many different locations, close to where they are needed.&lt;/p&gt;
+&lt;p&gt;As you can see, automation can be quite useful and universal tool!&lt;/p&gt;
+&lt;/section&gt;
+&lt;/section&gt;
+&lt;section id="conclusion"&gt;
+&lt;h2&gt;Conclusion&lt;/h2&gt;
+&lt;p&gt;So where am I going with this? My main point is that automation is not always
+about saving effort, and that it doesn’t automatically save effort wherever it
+is used. Sometimes it has other goals, and sometimes it actually makes you
+spend more effort, especially when you count all the effort that is normally
+not visible, because it hides in the infrastructure or has been pushed out onto
+the customers.&lt;/p&gt;
+&lt;p&gt;In practice, there are certain patterns and arrangements that you can use with
+automation tools that work well for achieving a given goal. And there are also
+anti-patterns that make automation pointless or even harmful. The trick is in
+knowing what you want to do and how to arrange things to achieve it.&lt;/p&gt;
+&lt;/section&gt;
+&lt;/section&gt;
+</content>
+    <link href="http://dopieralski.pl/posts/2025-07-01-automation/"/>
+    <summary>Humans are tool-using animals. For a long time it was thought that this is what
+distinguishes us from animals, in fact, but of course if you actually pay
+attention you will notice that animals are using tools all the time. Yes,
+sometimes you can dismiss it as instinctive behavior, as is the fashion, but
+sometimes when it comes to corvids, parrots, octopuses and primates, you really
+have to admit that they do it intentionally and with full knowledge about the
+expected results. Anyways, humans are among tool-using animals.</summary>
+    <published>2025-07-01T00:00:00+02:00</published>
+  </entry>
   <entry>
     <id>http://dopieralski.pl/posts/2025-05-09-politics/</id>
     <title>Political and Practical Worldviews</title>
@@ -400,7 +949,7 @@ practical worldview.&lt;/p&gt;
 &lt;/section&gt;
 &lt;/section&gt;
 </content>
-    <link href="http://dopieralski.pl/posts/2025-05-09-politics/" rel="alternate"/>
+    <link href="http://dopieralski.pl/posts/2025-05-09-politics/"/>
     <summary>Before we were somewhat brutally brought into the loving embrace of the Roman
 Catholic Church by our considerate neighbours, my country had its own “pagan”
 religion, with its own mythology and traditions. A lot of the traditions
@@ -417,554 +966,5 @@ understand – attitudes and relationships. That’s why gods in them are mostly
 humans with special powers connected with the nature. And that “pagan”
 mythology could tell us a lot about how the society functioned back then.</summary>
     <published>2025-05-09T00:00:00+02:00</published>
-  </entry>
-  <entry>
-    <id>http://dopieralski.pl/posts/2025-07-01-automation/</id>
-    <title>The Subtle Art of Automation</title>
-    <updated>2025-07-01T00:00:00+02:00</updated>
-    <content type="html">&lt;section id="the-subtle-art-of-automation"&gt;
-
-&lt;section id="tools"&gt;
-&lt;h2&gt;Tools&lt;/h2&gt;
-&lt;p&gt;Humans are tool-using animals. For a long time it was thought that this is what
-distinguishes us from animals, in fact, but of course if you actually pay
-attention you will notice that animals are using tools all the time. Yes,
-sometimes you can dismiss it as instinctive behavior, as is the fashion, but
-sometimes when it comes to corvids, parrots, octopuses and primates, you really
-have to admit that they do it intentionally and with full knowledge about the
-expected results. Anyways, humans are among tool-using animals.&lt;/p&gt;
-&lt;p&gt;Why do we use tools? Sometimes it’s because we are not strong or dexterous
-enough to do thing we want to do unaided. Or our nails and teeth are not sharp
-enough. Or our sight, hearing, or sense of touch are not good enough. Other
-times we could do the thing unaided if we had to, but tools make it easier or
-more convenient. Sometimes it’s because we don’t want to risk an injury, or to
-get dirty, or we want to avoid other unpleasant sensation. But the reason I
-hear given most often is that by using tools we can do the same thing faster,
-or at larger scale, or otherwise more efficiently. We can achieve the same (or better) result with less effort. Tools can be a labour-saving device.&lt;/p&gt;
-&lt;p&gt;We say “tools”, but it’s not just tools. They are just easy to talk about them,
-because they are tangible, visible things. But it all applies to skills and
-techniques as well. To the “technologies”. Consider, for example, waving
-baskets. It’s something you do by hand (today we do have machines that can do
-it, but let’s assume we are doing it by hand), but you can do it in several
-different ways. Coming up with a new way to wave baskets that is somehow
-easier, faster, lets you use different materials or produces baskets with
-special qualities that the other ways don’t works exactly the same as if you
-created a new tool for doing this. So tools are just physical manifestations
-of technologies, and it’s the technologies we will be concerned about here.&lt;/p&gt;
-&lt;/section&gt;
-&lt;section id="effort"&gt;
-&lt;h2&gt;Effort&lt;/h2&gt;
-&lt;p&gt;So do the technologies really save effort? It certainly feels that way, why
-would we be using them otherwise? But I think it’s a bit more complicated than
-that.&lt;/p&gt;
-&lt;p&gt;Consider the ox-driven plough. On the face of it, it’s a huge improvement about
-the humble hoe that it replaced. Yes, the farmer still has to be present to
-drive the plough, and it still requires a lot of strength, but a large amount
-of that strength is now provided by the animal, and the whole work goes much
-faster. So it’s a definitely a huge saving, at least as long as you only look
-at this short time when the ploughing is actually happening.&lt;/p&gt;
-&lt;p&gt;But the ox has to eat too. And it needs a place to stay, and it needs to be
-taken care of. And when it gets old or sick, it has to be replaced. So for this
-to work in the long run you need a steady supply of oxen. (And I’m not even
-saying anything about the effort of the ox.) So a tiny plot of land that acted
-as the farmer’s garden and was enough to feed their family now has to become a
-considerably sized field, enough to grow food for a herd of oxen and the people
-needed to take care of them. And since the oxen need to eat the entire year,
-you have to store your crops somehow, and preserve them.  What used to be a
-simple shack with a small garden, where some hoe-ing would happen a few times a
-year, turns into a small village with several huts, a barn, an enclosure, and
-people working around the clock to maintain all that. And don’t even get me
-started about fresh water and the smell of ox everywhere. And of course because
-you are not storing considerable caches of food, your little village is now
-vulnerable to raids and looting (or the more civilized version of it,
-taxation), so you need defensive walls, soldiers (or at least militia),
-weapons, and so on.&lt;/p&gt;
-&lt;p&gt;Looking at it this way you could easily conclude that the hoe is in fact the
-less labor-intensive solution, when considered globally. It only becomes worse
-when you assume that you already have all the infrastructure need for it.&lt;/p&gt;
-&lt;p&gt;But then again, once you have the infrastructure, it enables not just the
-plough, but many other technologies as well. You now have milk and meat. And as
-much ox shit as you can shake a stick at. You have fortifications and army.
-You have a hierarchy to organize and manage it all. You have surplus food to
-trade. And so on and so forth. So assuming you want all those additional things
-too, on top of replacing the hoe, the plough once again becomes the superior
-technology (for some chosen measure).&lt;/p&gt;
-&lt;/section&gt;
-&lt;section id="transformers"&gt;
-&lt;h2&gt;Transformers&lt;/h2&gt;
-&lt;p&gt;So if technologies don’t &lt;em&gt;actually&lt;/em&gt; save effort on their own, what do they do
-exactly? I like to think of them as transforming one kind of effort into
-another kind, potentially better suited for the task at hand, or maybe just
-easier to store or move around. If you compare the rather abstract and nebulous
-idea of effort to thermodynamic idea of energy, a technology could be like,
-say, a solar cell that transforms light into electricity that can be then
-easily moved around using wires and stored using batteries. Or a combustion
-engine that transforms chemical energy of the fossil fuels into kinetic energy
-of a rotating shaft. Of course the similarity is pretty weak, because we don’t
-really have a well defined formal theory of effort, like we have a theory of
-thermodynamics, but I like to believe that there is some kind of law of
-conservation of effort somewhere in there, however fuzzy and approximate it
-might be.&lt;/p&gt;
-&lt;p&gt;In any case, technologies let you transform different kinds of effort,
-sometimes allowing you to store or move it around. What good is that?&lt;/p&gt;
-&lt;p&gt;Turns out that sometimes some kinds of effort are better for a given task
-than other kinds. So you can “save effort” by using the kind that is more
-efficient for the task at hand.&lt;/p&gt;
-&lt;p&gt;And sometimes certain tasks take less effort when they are done at a particular
-place and time, or when they are done at scale. Being able to store and move
-effort lets you rearrange it into more efficient ways.&lt;/p&gt;
-&lt;p&gt;And finally, sometimes you can “outsource” the effort, by taking advantage of
-something someone else already did (or will have to do to clean up after you).
-Fossil fuels, for example, take advantage of the effort the plants of millions
-of years ago spent to turn light into their bodies, and of the effort the
-future generations will have to spend to deal with the climate change.&lt;/p&gt;
-&lt;p&gt;Just like in thermodynamics, those conversions rarely are free – usually they
-take some additional effort, to, say, dig up those fossil fuels, turn them into
-a form that is convenient to use, and transport them to the right place. But
-with the right arrangements, even with that overhead we can often create
-considerable savings.&lt;/p&gt;
-&lt;/section&gt;
-&lt;section id="automation"&gt;
-&lt;h2&gt;Automation&lt;/h2&gt;
-&lt;p&gt;Automation technologies (together with mechanization) are no different in that
-regard, except they tend to require much more infrastructure to make things
-happen “on their own”. They also come with a myth that “you only need to set it
-up once” and they will work forever without expending any further effort.&lt;/p&gt;
-&lt;p&gt;In practice any ongoing process is going to have setup cost and maintenance
-cost (and also cleanup cost, which we often forget about). In addition, the
-requirements for the output of the process are going to change over time, and
-that requires further effort and resources to adjust it to remain useful
-(either by changing the process itself, or by adding extra adapting steps).&lt;/p&gt;
-&lt;p&gt;Now the trick is to setup that automation in a way that minimizes those ongoing
-costs, possibly doing more work up front, or pushing more work to the cleanup
-(and hoping we won’t be around anymore when it happens). This is not a given,
-and if it’s not done intentionally, we might as well end up with an automated
-process that doesn’t in fact save effort, or accomplish other goals that we
-wanted to achieve.&lt;/p&gt;
-&lt;/section&gt;
-&lt;section id="goals"&gt;
-&lt;h2&gt;Goals&lt;/h2&gt;
-&lt;p&gt;Speaking of goals, saving effort is not the only thing technologies can give
-us. In fact, sometimes we are ready to actually spend more effort in order to
-achieve some of the other goals. What are they? Potentially they are infinite,
-but let’s look at some of the most common ones here.&lt;/p&gt;
-&lt;section id="repeatability"&gt;
-&lt;h3&gt;Repeatability&lt;/h3&gt;
-&lt;p&gt;It can be a goal to have multiple similar things, or it can be just enabling
-the further goals like quality control or fine tuning, but automation sure lets
-you do things the same exact way, if setup with that in mind. As a side effect,
-it also makes it easier to debug!&lt;/p&gt;
-&lt;/section&gt;
-&lt;section id="quality-control"&gt;
-&lt;h3&gt;Quality Control&lt;/h3&gt;
-&lt;p&gt;You want to make sure that the things you are making are at least of a certain
-quality. But maybe you also want to make sure that the quality is not
-unnecessarily high, as it usually costs more. If your process is automated,
-then you can easily inspect it, find the parts that have the most impact on
-quality and adjust and monitor them. You can even automate additional quality
-checks.&lt;/p&gt;
-&lt;/section&gt;
-&lt;section id="fine-tuning"&gt;
-&lt;h3&gt;Fine Tuning&lt;/h3&gt;
-&lt;p&gt;But wait, it’s not just quality. You can fiddle with any feature of the process
-this way. The fact that it always happens the same way, except for the parts
-you have changed, lets you more easily see what the results of your changes
-are.&lt;/p&gt;
-&lt;/section&gt;
-&lt;section id="interchangeability"&gt;
-&lt;h3&gt;Interchangeability&lt;/h3&gt;
-&lt;p&gt;If you design your automation right, you can reuse or share parts of it in
-different processes. You could also have intermediate stages of the product
-shared between several different processes. This lets you both save effort and
-be more flexible about your quotas.&lt;/p&gt;
-&lt;/section&gt;
-&lt;section id="scalability"&gt;
-&lt;h3&gt;Scalability&lt;/h3&gt;
-&lt;p&gt;If you make a machine do something, then you can often quite easily run the
-machine faster, or buy several machines and have them run in parallel. You can
-scale your processes this way.&lt;/p&gt;
-&lt;/section&gt;
-&lt;section id="economy-of-scale"&gt;
-&lt;h3&gt;Economy of Scale&lt;/h3&gt;
-&lt;p&gt;Once you can scale something, you can scale it up to huge amounts and make use
-of all those bulk discounts and bulk shipping. More importantly, you can use
-bigger machines to make the same thing faster and cheaper by making a lot at a
-time.&lt;/p&gt;
-&lt;/section&gt;
-&lt;section id="centralization"&gt;
-&lt;h3&gt;Centralization&lt;/h3&gt;
-&lt;p&gt;Obviously if you have big machines doing a lot of work, you want them all in
-one place, so that you can keep all the resources and materials close by,
-and so that the maintenance is easier.&lt;/p&gt;
-&lt;/section&gt;
-&lt;section id="distribution"&gt;
-&lt;h3&gt;Distribution&lt;/h3&gt;
-&lt;p&gt;But you don’t have to centralize everything if you don’t want to. Automation
-also enables distribution, letting you to have the same machine (or script)
-running in many different locations, close to where they are needed.&lt;/p&gt;
-&lt;p&gt;As you can see, automation can be quite useful and universal tool!&lt;/p&gt;
-&lt;/section&gt;
-&lt;/section&gt;
-&lt;section id="conclusion"&gt;
-&lt;h2&gt;Conclusion&lt;/h2&gt;
-&lt;p&gt;So where am I going with this? My main point is that automation is not always
-about saving effort, and that it doesn’t automatically save effort wherever it
-is used. Sometimes it has other goals, and sometimes it actually makes you
-spend more effort, especially when you count all the effort that is normally
-not visible, because it hides in the infrastructure or has been pushed out onto
-the customers.&lt;/p&gt;
-&lt;p&gt;In practice, there are certain patterns and arrangements that you can use with
-automation tools that work well for achieving a given goal. And there are also
-anti-patterns that make automation pointless or even harmful. The trick is in
-knowing what you want to do and how to arrange things to achieve it.&lt;/p&gt;
-&lt;/section&gt;
-&lt;/section&gt;
-</content>
-    <link href="http://dopieralski.pl/posts/2025-07-01-automation/" rel="alternate"/>
-    <summary>Humans are tool-using animals. For a long time it was thought that this is what
-distinguishes us from animals, in fact, but of course if you actually pay
-attention you will notice that animals are using tools all the time. Yes,
-sometimes you can dismiss it as instinctive behavior, as is the fashion, but
-sometimes when it comes to corvids, parrots, octopuses and primates, you really
-have to admit that they do it intentionally and with full knowledge about the
-expected results. Anyways, humans are among tool-using animals.</summary>
-    <published>2025-07-01T00:00:00+02:00</published>
-  </entry>
-  <entry>
-    <id>http://dopieralski.pl/posts/2025-07-08-wishes/</id>
-    <title>My Tech Wishes for 2025</title>
-    <updated>2025-07-08T00:00:00+02:00</updated>
-    <content type="html">&lt;section id="my-tech-wishes-for-2025"&gt;
-
-&lt;p&gt;I know it’s a bit late in the year for this kind of post, but I have been busy
-with other things. In any case, I decided to make it about general technology
-related wishes, and not just CircuitPython, but large part of this is going to
-be about CircuitPython anyways. Or at least related.&lt;/p&gt;
-&lt;section id="media-transfer-protocol"&gt;
-&lt;h2&gt;Media Transfer Protocol&lt;/h2&gt;
-&lt;p&gt;Exposing your microcontroller to the computer it is connected to as a disk
-drive is getting really popular now. And it makes a lot of sense too — it doesn’t require you to install any drivers or programs, it easy to understand, and
-very convenient. CircuitPython does it too and I love it. But it does introduce
-a number of problems:&lt;/p&gt;
-&lt;ul class="simple"&gt;
-&lt;li&gt;&lt;p&gt;You have to use a filesystem that is supported on most operating system, and
-with the small sizes you have, it’s usually FAT12, which is not great for
-flash wearing off or fragmentation.&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Since diskettes are not as common anymore, proprietary operating systems
-don’t have their implementations of FAT12 tested as well as other things,
-which means there are lots of bugs in MacOS and Windows.&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Tools like virus scanners or disk monitors see those drives as regular disks
-and often interact with them in ways that breaks them.&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;You can write to the disk only from one side, either through USB, or from
-your code on the device, but not both at the same time.&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;All of those problems could be trivially solved if we could only use the MTP
-protocol instead of exposing the disk as a physical device with USB MSC. MTP
-uses commands to manipulate the files, kinda like FTP, instead of writing to
-the disk directly, and writes themselves are done by the microcontroller
-itself, so it’s easy to use any custom filesystem you want, and to ensure
-proper interactions when multiple operations are happening from different
-sources.&lt;/p&gt;
-&lt;p&gt;There is only one problem, and that is iTunes. You see, back when Apple’s flag
-product was a music player, they were very jealous about it, and they tried
-very hard to “protect” their users from using any other music player. They made
-sure their player uses a custom, proprietary protocol for transferring the
-music collection, and they also made sure that Apple computers didn’t support
-transferring of arbitrary files using MTP. They had a problem in that most
-cameras were already using MTP to transfer photos, and their users needed that,
-so they made it an exception: you can use MTP on a Mac, but only for
-transferring image files, and not any other file. Neat, eh?&lt;/p&gt;
-&lt;p&gt;Today you can only find iPads in museums, and iTunes is just a memory in some
-boomer nightmares, but the decision they made back then stays. No arbitrary
-files with MTP, if you use a Mac, you have to install a special program to use
-MTP for anything else than photos. So any microcontroller device that uses MTP
-would not work out of the box on Apple products, which means that nobody does
-it.&lt;/p&gt;
-&lt;p&gt;So my wish is for someone at Apple to revise that decision, recognize how
-stupid and harmful it was, and remove that stupid limitation from all of their
-operating systems, thank you very much. I would also like to see some ready to
-use libraries and examples for using MTP, but that will surely come once it’s
-usable.&lt;/p&gt;
-&lt;/section&gt;
-&lt;section id="circuitpython-on-ch32v208"&gt;
-&lt;h2&gt;CircuitPython on CH32V208&lt;/h2&gt;
-&lt;p&gt;This is something I would love to do myself, but I’m scared to even start, as
-it is a huge amount of work, and just outside of my comfort zone. Basically,
-the bluetooth versions of the CH32 chips tend to have a lot of memory for the
-bluetooth stack, and that makes it theoretically possible to run CircuitPython
-or LUA on them (as long as we don’t need the bluetooth). It’s a nice cheap
-chip, and it would be perfect as a replacement for the SAMD21 chips I currently
-use for the PewPew devices.&lt;/p&gt;
-&lt;p&gt;Of course porting whole CircuitPython to a new chip is a lot of work, and it’s
-something I have never done before, so naturally it’s scary. But people do it,
-so it’s definitely possible.&lt;/p&gt;
-&lt;/section&gt;
-&lt;section id="voice-synthesis"&gt;
-&lt;h2&gt;Voice Synthesis&lt;/h2&gt;
-&lt;p&gt;After my failed attempts to port the SAM voice synthesiser from MicroBit to
-CircuitPython, I’m happy to see that someone ported it to MicroPython, but
-not as a C library, as I wanted to do, but literally rewrote it in Python.
-Now I need to take it and see if it works in CircuitPython as well. Then I can
-make my robots speak.&lt;/p&gt;
-&lt;/section&gt;
-&lt;section id="servo-controller-on-ch32v003"&gt;
-&lt;h2&gt;Servo Controller on CH32V003&lt;/h2&gt;
-&lt;p&gt;This one I’m actually perfectly capable of finishing on my own, I just need to
-find the energy to work on it. I basically want to control 16 servos with good
-resolution using PWM signals specified through I2C. I already have the PWM part
-working, and there are plenty of examples for I2C slave. It’s just a question
-of sitting down and actually writing the code.&lt;/p&gt;
-&lt;p&gt;Once I have it, I can use it in the future versions of FluffBug and WeeBug, and
-also a robot for the new small OpenMV board. It would free up 8 pins on the
-Xiao, which could then be used for a display or I2S amplifier. It would also
-allow for connecting additional servos, for things like arms or moving
-features.&lt;/p&gt;
-&lt;/section&gt;
-&lt;section id="led-matrices-on-ch32v003"&gt;
-&lt;h2&gt;LED Matrices on CH32V003&lt;/h2&gt;
-&lt;p&gt;I also have two projects with LED matrices for the CH32V003 that I still need
-to program. One is a spectrum analyzer thing, and the hard part is the FFT
-code for it (though there are plenty of examples), and the other is a business
-card fake PewPew—not really running CircuitPython, but with some of the
-PewPew games implemented directly in C and hardcoded in the device.&lt;/p&gt;
-&lt;/section&gt;
-&lt;section id="gif-pendant"&gt;
-&lt;h2&gt;GIF Pendant&lt;/h2&gt;
-&lt;p&gt;Finally, I’m also still working on my GIF pendant project. Now with a round
-screen and CH32V208 as the brains. I have a TinyUSB example for USB MSC in
-RAM working on it. What I need to figure out how to put the storage on the
-internal flash instead, and how to access it from the code to render those
-GIF files onto the screen. Again, it’s something I have never done, and there
-isn’t much documentation about it around, so it’s a lot of trial and error.
-I wish someone who is more knowledgable about TinyUSB and USB MSC could help
-me with that.&lt;/p&gt;
-&lt;p&gt;And that’s pretty much it for me for 2025. It’s mostly projects I would like
-to finish (or would like someone to finish for me), except for that Apple MTP
-thing. Will I get any of my wishes come true? We will see.&lt;/p&gt;
-&lt;/section&gt;
-&lt;/section&gt;
-</content>
-    <link href="http://dopieralski.pl/posts/2025-07-08-wishes/" rel="alternate"/>
-    <summary>I know it’s a bit late in the year for this kind of post, but I have been busy
-with other things. In any case, I decided to make it about general technology
-related wishes, and not just CircuitPython, but large part of this is going to
-be about CircuitPython anyways. Or at least related.</summary>
-    <published>2025-07-08T00:00:00+02:00</published>
-  </entry>
-  <entry>
-    <id>http://dopieralski.pl/posts/2025-11-02-both-sides/</id>
-    <title>Programming on Both Sides of Your Brain</title>
-    <updated>2025-11-02T00:00:00+01:00</updated>
-    <content type="html">&lt;section id="programming-on-both-sides-of-your-brain"&gt;
-
-&lt;p&gt;A lot of disagreements in software engineering seem to have a deeper background
-than mere technical considerations. Should you move fast and break things, or
-should you reinvent the wheel? Does it matter how the code looks like when it
-does what you want? And what is the purpose of it all in the first place?  I
-propose that many of those arguments arise from different people using
-different of two possible fixed worldviews in a variety of contexts, which they
-assign automatically and mostly unconsciously, in a similar way to how our
-brain resolves bistable perceptions. Furthermore, I propose that the ability to
-consciously switch between the two worldviews, and the experience needed to
-decide which one to use in the given context, are crucial for the work of a
-software engineer.&lt;/p&gt;
-&lt;section id="necker-cube"&gt;
-&lt;h2&gt;Necker Cube&lt;/h2&gt;
-&lt;p&gt;Probably the most well known example of bistable perception is the Necker Cube:
-a two-dimensional wireframe drawing of a cube, which can be interpreted in two
-ways, because it lacks any cues about the depth of the parts of the image.&lt;/p&gt;
-&lt;img alt="../../_images/necker.png" class="align-center" src="../../_images/necker.png" /&gt;
-&lt;p&gt;When we look at the drawing, we automatically pick one of the possible
-interpretations, and it becomes obvious to us that it’s the correct one. It
-requires a conscious effort to switch to the other interpretation, and some
-people can’t do it at all. The initial choice is based on context cues, such as
-lighting and position of the drawing, personal preference, cultural biases, and
-possibly some amount of randomness.&lt;/p&gt;
-&lt;p&gt;There are other examples of bistable (and multistable) perceptions, some even
-harder to switch between without training. But I think this one illustrates the
-mechanism well enough for our purposes.&lt;/p&gt;
-&lt;/section&gt;
-&lt;section id="drawing-on-the-right-side-of-the-brain"&gt;
-&lt;h2&gt;Drawing on the Right Side of the Brain&lt;/h2&gt;
-&lt;p&gt;In 1979 Betty Edwards published a book describing her technique for teaching
-drawing. Her idea was based on the theory of how left and right brain
-hemispheres are responsible for different ways of perceiving reality, that was
-popular at the time. Today we know that the processes responsible for those two
-ways are not actually confined to their corresponding hemispheres, but rather
-are both whole-brain processes, but the terminology stuck, so you can still
-read people referring to the more verbal and analytic way as the left-brain
-functions, or L-mode, and the more visual and intuitive way as the right-brain
-functions, or R-mode (the hemisphere sides are reversed compared to which sides
-of the body they control, because the nerves cross: left hemisphere controls
-the right side of the body, and vice versa). This supposedly explains why
-left-handed people are more creative, having a more dominant right hemisphere.&lt;/p&gt;
-&lt;p&gt;In any case, no matter how that relates to the actual positions of parts of our
-brains, and the processes that take place, the technique seems to be working: by
-intentionally suppressing the understanding of the different parts of the scene
-we can shift our perceptions to seeing how it looks like, so to say, instead of
-what it is, and make it easier to re-create the looks on the paper. Whatever
-the neurological explanation for it, the trick seems to be working for many
-people.&lt;/p&gt;
-&lt;p&gt;You might find that this general strategy may work in other areas than drawing
-as well. For example, when listening to music, when tasting food and drinks, or
-even with more abstract things, like interpreting poetry, or understanding
-mathematical proofs. It often feels like switching between focusing on details,
-and perceiving the general shape and feel.&lt;/p&gt;
-&lt;p&gt;I think that we often automatically pick the right mode of perception for the
-task in similar way to how we pick an interpretation of the Necker cube above,
-based on context cues, personal preference, cultural biases, and experience.
-And since it’s mostly unconscious, we are often not aware that a choice has
-been made, and that a different interpretation is possible, unless we
-intentionally expend the effort to consider it. And that becomes easier with
-practice.&lt;/p&gt;
-&lt;/section&gt;
-&lt;section id="phases-of-software-design-and-development"&gt;
-&lt;h2&gt;Phases of Software Design and Development&lt;/h2&gt;
-&lt;p&gt;If you ever tried to design a user interface while at the same time writing
-code for the back-end, you might have noticed that it’s very difficult to make
-it work the way the users expect, instead of mirroring the internal
-representation. This is why those tasks are often separated, performed at
-different times, if not by completely different members of the team, or even
-different teams. There can be many more such phases, where you need to focus
-on different aspects of the product, consider different trade-offs, and focus
-on different levels of abstraction.&lt;/p&gt;
-&lt;p&gt;I believe this is, at least partially, because those tasks are best solved in
-different perception modes, and we can only be in one of those modes at a time,
-just like we can only see one interpretation of the Necker cube at once.&lt;/p&gt;
-&lt;p&gt;And while there may be a big variety of roles and phases, depending on the
-organization and methodology and the task at hand, you might notice that the
-worst disagreements usually happen between pairs of roles that can be roughly
-divided into two families, roughly corresponding to the L-mode and R-mode from
-Betty Edwards’ book.&lt;/p&gt;
-&lt;/section&gt;
-&lt;section id="programming-on-the-left-side-of-the-brain"&gt;
-&lt;h2&gt;Programming on the Left Side of the Brain&lt;/h2&gt;
-&lt;p&gt;The L-mode generally sounds like your stereotypical science nerd. You write
-code because you enjoy the difficulty of doing it. You care about the
-correctness of your solution not because it will have some business purpose,
-but because an incorrect solution would be wrong. You want your code to be
-good, whatever it means in the context. You know that either something is true,
-or it isn’t, and the only way to tell is through contact with the harsh
-reality. You trust your co-workers, and cooperate without friction, unless
-someone breaks that trust repeatedly – then you simply start avoiding that
-person and working around them. You very carefully pick your tools and
-dependencies, and you like to understand how they work before you use them. You
-don’t like overcomplicated libraries that do much more than you need. If you
-see something that isn’t right, you will try to fix it yourself, and if that is
-not possible, you will avoid using it. You believe position should be earned
-through work, and trust should be earned trough repeated interactions. You
-don’t care much about authorities, and you don’t believe something is right
-just because someone says so. You tend to avoid taking sides, and you just want
-things to work. You prefer to just show things over describing them. You are
-generally quiet, and you prefer to results speak for you. You are generally
-an optimist, and you believe in improving things for everyone.&lt;/p&gt;
-&lt;/section&gt;
-&lt;section id="programming-on-the-right-side-of-the-brain"&gt;
-&lt;h2&gt;Programming on the Right Side of the Brain&lt;/h2&gt;
-&lt;p&gt;The R-mode is more like a salesman. You don’t really care about how the thing
-is done, as long as everyone agrees that it works. If someone disagrees, you
-may fix it by changing how it works, or by convincing that person that they are
-wrong, either way is fine, as long as there is a consensus. People who believe
-in inviolate truths just don’t have a flexible mind. You love workarounds and
-temporary solutions. You juggle technical debt like a government economist.
-You take sides and stick to them, because position and trust is achieved
-through loyalty or authority enforcement. You like procedures and processes,
-even if they don’t work – after all it’s not your fault it doesn’t work when
-you followed the process correctly. You have friends and enemies among your
-co-workers, but it changes all the time, depending on what you need and who has
-what to offer. You love powerful and complicated tools and libraries,
-especially when they are popular – after all, nobody was fired for choosing
-IBM. You are sensitive to fashions and trends, and you always try to work on
-the coolest projects. Your favorite mode of communication is telling stories.
-You are generally a fatalist, and you believe in making the best use of what is
-available to you right now.&lt;/p&gt;
-&lt;/section&gt;
-&lt;section id="switching-contexts"&gt;
-&lt;h2&gt;Switching Contexts&lt;/h2&gt;
-&lt;p&gt;The above descriptions are very stereotypical. In reality, to survive in the
-modern world, everyone one of us, even the most nerdy nerds and the most
-popular celebrities, have to switch between those modes. Doing grocery
-shopping?  You need the L-mode. Deciding what to have for lunch? That’s R-mode.
-And we often don’t even realize we switch those modes, because it happens
-mostly automatically, depending on the context. Unless sometimes it doesn’t,
-and we are stuck in the wrong mode for the task at hand. This can happen for a
-variety of reasons.&lt;/p&gt;
-&lt;p&gt;Some people simply prefer one mode over the other, because of their
-personality, neural makeup, or cultural biases. For example, autistic people
-generally tend to prefer the L-mode, while people with authoritarian
-personality traits will lean towards the R-mode more.&lt;/p&gt;
-&lt;p&gt;Your training and experience might tell you that a certain mode works better in
-the given situation, while someone who was trained for a different profession,
-or even just by different methodology, will disagree with you, not only about
-what mode is more appropriate, but even what the situation actually is.&lt;/p&gt;
-&lt;p&gt;You might have locked on to a specific mode at a certain time in the project,
-and in the mean time the situation may have changed, so a person joining later
-will choose a different one. Or you might have noticed the change and switched
-your mode, while your colleagues didn’t.&lt;/p&gt;
-&lt;p&gt;Finally, if the task at hand is novel, you might simply not know which mode to
-choose, and may pick it at random.&lt;/p&gt;
-&lt;p&gt;Whatever the cause, when two people are in different modes in the same context
-it’s very difficult for them to agree about anything. And since the mode
-switching is normally completely unconscious and automatic, and because the
-mode you are in always feels the only obvious one for the situation, it feels
-like a perfectly normal, smart and reasonable person suddenly disagrees with
-you about the most fundamental and common sense things. It’s very frustrating.&lt;/p&gt;
-&lt;p&gt;Of course even when you realize that you have a mode mismatch, it’s not trivial
-to decide which mode is more appropriate for the given context, or even where
-the boundaries at which it should be switched lie. Whichever mode you are at
-the moment, it feels like the obviously right one for you, and since they
-differ in how values are assessed, it may be hard to decide which one was more
-appropriate even in hindsight.&lt;/p&gt;
-&lt;/section&gt;
-&lt;section id="elasticity-and-training"&gt;
-&lt;h2&gt;Elasticity and Training&lt;/h2&gt;
-&lt;p&gt;It turns out that people who can switch between the two modes easily are
-generally more successful at software engineering jobs (and many others too).
-Obviously it’s not enough to be able to switch, but also to know when to do it,
-and that comes with experience, but if you generally are reluctant to switch,
-you are more likely to be in the wrong mode at the wrong time.&lt;/p&gt;
-&lt;p&gt;Having the right training for the job helps with the experience part. And that
-is often hands-on training, and not theoretical knowledge read in a book,
-because the context picking and mode switching is mostly automatic, based
-on unconsciously picked cues, that a book would not communicate.&lt;/p&gt;
-&lt;p&gt;Dividing the project into phases and the team into roles at the right places
-helps with switching to the right modes as well, by making the boundaries of
-the different context explicitly visible, so a conscious effort can be made
-by the team members to get into the right mode for the particular phase and
-their role in it.&lt;/p&gt;
-&lt;p&gt;Due to the different roles often requiring different modes, there is no way to
-completely avoid conflict inside the team. This is in fact the main reason to
-have the roles in the first place – to catch problems visible in either of the
-modes. It’s important to realize that those differences are often
-irreconcilable – the differences between how the world is seen in the two
-modes makes it impossible to form a consensus, and some other way of conflict
-resolution is necessary. In the end it might be just necessary to agree to
-disagree. For this reason it’s important for the different phases and roles to
-have distinct, non-overlapping areas of responsibility, so that in the case of
-irreconcilable disagreement it is known whose decision is final.&lt;/p&gt;
-&lt;/section&gt;
-&lt;section id="conclusion"&gt;
-&lt;h2&gt;Conclusion&lt;/h2&gt;
-&lt;p&gt;While my hypothesis of the two distinct mental modes in software engineering
-work is completely made up and unsubstantiated, and based entirely on anecdotal evidence, I am confident that it provides a useful tool for understanding the
-behavior of teams, and may help in organizing projects in a way that reduces
-conflict and improves performance. I have absolutely no proof of that beyond
-my feelings about this. The reader is advised to use their own judgement.&lt;/p&gt;
-&lt;/section&gt;
-&lt;/section&gt;
-</content>
-    <link href="http://dopieralski.pl/posts/2025-11-02-both-sides/" rel="alternate"/>
-    <summary>A lot of disagreements in software engineering seem to have a deeper background
-than mere technical considerations. Should you move fast and break things, or
-should you reinvent the wheel? Does it matter how the code looks like when it
-does what you want? And what is the purpose of it all in the first place?  I
-propose that many of those arguments arise from different people using
-different of two possible fixed worldviews in a variety of contexts, which they
-assign automatically and mostly unconsciously, in a similar way to how our
-brain resolves bistable perceptions. Furthermore, I propose that the ability to
-consciously switch between the two worldviews, and the experience needed to
-decide which one to use in the given context, are crucial for the work of a
-software engineer.</summary>
-    <published>2025-11-02T00:00:00+01:00</published>
   </entry>
 </feed>

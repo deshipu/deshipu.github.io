@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>http://dopieralski.pl/</id>
   <title>dopieralski.pl - Posts in design</title>
-  <updated>2026-02-20T00:34:43.084242+00:00</updated>
+  <updated>2026-07-19T23:40:23.457358+00:00</updated>
   <link href="http://dopieralski.pl/"/>
   <link href="http://dopieralski.pl/blog/category/design/atom.xml" rel="self"/>
-  <generator uri="https://ablog.readthedocs.org/" version="0.10.33">ABlog</generator>
+  <generator uri="https://ablog.readthedocs.io/" version="0.11.13">ABlog</generator>
   <entry>
     <id>http://dopieralski.pl/posts/2026-02-19-social-design/</id>
     <title>Social Design</title>
@@ -90,7 +90,7 @@ listen to their users, keep in mind that listening to users is not how you
 make good user interfaces.&lt;/p&gt;
 &lt;/section&gt;
 </content>
-    <link href="http://dopieralski.pl/posts/2026-02-19-social-design/" rel="alternate"/>
+    <link href="http://dopieralski.pl/posts/2026-02-19-social-design/"/>
     <summary>I have used my share of software tools with terrible user interfaces, and I
 have read even more complaints from other people about such tools. Why can’t
 the designers just put themselves in the shoes of the users, mentally, and

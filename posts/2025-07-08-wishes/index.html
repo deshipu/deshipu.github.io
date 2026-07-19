@@ -1,20 +1,16 @@
-
 <!DOCTYPE html>
 
-<html lang="en">
+<html lang="en" data-content_root="../../">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <title>My Tech Wishes for 2025 - dopieralski.pl</title>
-    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
-    <link rel="stylesheet" type="text/css" href="../../_static/basic.css" />
-    <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
-    <script src="../../_static/jquery.js"></script>
-    <script src="../../_static/underscore.js"></script>
-    <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
-    <script src="../../_static/doctools.js"></script>
-    <script src="../../_static/sphinx_highlight.js"></script>
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="../../_static/basic.css?v=29da98fa" />
+    <script src="../../_static/documentation_options.js?v=187304be"></script>
+    <script src="../../_static/doctools.js?v=fd6eb6e6"></script>
+    <script src="../../_static/sphinx_highlight.js?v=6ffebe34"></script>
     <link rel="author" title="About these documents" href="../../about/" />
     <link rel="index" title="Index" href="../../genindex/" />
     <link rel="search" title="Search" href="../../search/" />
@@ -49,13 +45,13 @@
 
 <div role="main">
   <section id="my-tech-wishes-for-2025">
-<h1>My Tech Wishes for 2025<a class="headerlink" href="#my-tech-wishes-for-2025" title="Permalink to this heading">¶</a></h1>
+<h1>My Tech Wishes for 2025<a class="headerlink" href="#my-tech-wishes-for-2025" title="Link to this heading">¶</a></h1>
 <p>I know it’s a bit late in the year for this kind of post, but I have been busy
 with other things. In any case, I decided to make it about general technology
 related wishes, and not just CircuitPython, but large part of this is going to
 be about CircuitPython anyways. Or at least related.</p>
 <section id="media-transfer-protocol">
-<h2>Media Transfer Protocol<a class="headerlink" href="#media-transfer-protocol" title="Permalink to this heading">¶</a></h2>
+<h2>Media Transfer Protocol<a class="headerlink" href="#media-transfer-protocol" title="Link to this heading">¶</a></h2>
 <p>Exposing your microcontroller to the computer it is connected to as a disk
 drive is getting really popular now. And it makes a lot of sense too — it doesn’t require you to install any drivers or programs, it easy to understand, and
 very convenient. CircuitPython does it too and I love it. But it does introduce
@@ -101,7 +97,7 @@ use libraries and examples for using MTP, but that will surely come once it’s
 usable.</p>
 </section>
 <section id="circuitpython-on-ch32v208">
-<h2>CircuitPython on CH32V208<a class="headerlink" href="#circuitpython-on-ch32v208" title="Permalink to this heading">¶</a></h2>
+<h2>CircuitPython on CH32V208<a class="headerlink" href="#circuitpython-on-ch32v208" title="Link to this heading">¶</a></h2>
 <p>This is something I would love to do myself, but I’m scared to even start, as
 it is a huge amount of work, and just outside of my comfort zone. Basically,
 the bluetooth versions of the CH32 chips tend to have a lot of memory for the
@@ -114,7 +110,7 @@ something I have never done before, so naturally it’s scary. But people do it,
 so it’s definitely possible.</p>
 </section>
 <section id="voice-synthesis">
-<h2>Voice Synthesis<a class="headerlink" href="#voice-synthesis" title="Permalink to this heading">¶</a></h2>
+<h2>Voice Synthesis<a class="headerlink" href="#voice-synthesis" title="Link to this heading">¶</a></h2>
 <p>After my failed attempts to port the SAM voice synthesiser from MicroBit to
 CircuitPython, I’m happy to see that someone ported it to MicroPython, but
 not as a C library, as I wanted to do, but literally rewrote it in Python.
@@ -122,7 +118,7 @@ Now I need to take it and see if it works in CircuitPython as well. Then I can
 make my robots speak.</p>
 </section>
 <section id="servo-controller-on-ch32v003">
-<h2>Servo Controller on CH32V003<a class="headerlink" href="#servo-controller-on-ch32v003" title="Permalink to this heading">¶</a></h2>
+<h2>Servo Controller on CH32V003<a class="headerlink" href="#servo-controller-on-ch32v003" title="Link to this heading">¶</a></h2>
 <p>This one I’m actually perfectly capable of finishing on my own, I just need to
 find the energy to work on it. I basically want to control 16 servos with good
 resolution using PWM signals specified through I2C. I already have the PWM part
@@ -135,7 +131,7 @@ allow for connecting additional servos, for things like arms or moving
 features.</p>
 </section>
 <section id="led-matrices-on-ch32v003">
-<h2>LED Matrices on CH32V003<a class="headerlink" href="#led-matrices-on-ch32v003" title="Permalink to this heading">¶</a></h2>
+<h2>LED Matrices on CH32V003<a class="headerlink" href="#led-matrices-on-ch32v003" title="Link to this heading">¶</a></h2>
 <p>I also have two projects with LED matrices for the CH32V003 that I still need
 to program. One is a spectrum analyzer thing, and the hard part is the FFT
 code for it (though there are plenty of examples), and the other is a business
@@ -143,7 +139,7 @@ card fake PewPew—not really running CircuitPython, but with some of the
 PewPew games implemented directly in C and hardcoded in the device.</p>
 </section>
 <section id="gif-pendant">
-<h2>GIF Pendant<a class="headerlink" href="#gif-pendant" title="Permalink to this heading">¶</a></h2>
+<h2>GIF Pendant<a class="headerlink" href="#gif-pendant" title="Link to this heading">¶</a></h2>
 <p>Finally, I’m also still working on my GIF pendant project. Now with a round
 screen and CH32V208 as the brains. I have a TinyUSB example for USB MSC in
 RAM working on it. What I need to figure out how to put the storage on the

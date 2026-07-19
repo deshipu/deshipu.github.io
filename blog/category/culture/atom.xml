@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>http://dopieralski.pl/</id>
   <title>dopieralski.pl - Posts in culture</title>
-  <updated>2026-02-20T00:34:43.079367+00:00</updated>
+  <updated>2026-07-19T23:40:23.452284+00:00</updated>
   <link href="http://dopieralski.pl/"/>
   <link href="http://dopieralski.pl/blog/category/culture/atom.xml" rel="self"/>
-  <generator uri="https://ablog.readthedocs.org/" version="0.10.33">ABlog</generator>
+  <generator uri="https://ablog.readthedocs.io/" version="0.11.13">ABlog</generator>
   <entry>
     <id>http://dopieralski.pl/posts/2025-05-09-politics/</id>
     <title>Political and Practical Worldviews</title>
@@ -400,7 +400,7 @@ practical worldview.&lt;/p&gt;
 &lt;/section&gt;
 &lt;/section&gt;
 </content>
-    <link href="http://dopieralski.pl/posts/2025-05-09-politics/" rel="alternate"/>
+    <link href="http://dopieralski.pl/posts/2025-05-09-politics/"/>
     <summary>Before we were somewhat brutally brought into the loving embrace of the Roman
 Catholic Church by our considerate neighbours, my country had its own “pagan”
 religion, with its own mythology and traditions. A lot of the traditions

@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>http://dopieralski.pl/</id>
   <title>dopieralski.pl - Posts in gamedev</title>
-  <updated>2026-02-20T00:34:43.098714+00:00</updated>
+  <updated>2026-07-19T23:40:23.470644+00:00</updated>
   <link href="http://dopieralski.pl/"/>
   <link href="http://dopieralski.pl/blog/category/gamedev/atom.xml" rel="self"/>
-  <generator uri="https://ablog.readthedocs.org/" version="0.10.33">ABlog</generator>
+  <generator uri="https://ablog.readthedocs.io/" version="0.11.13">ABlog</generator>
   <entry>
     <id>http://dopieralski.pl/posts/2020-06-21-snowball/</id>
     <title>Progress Mechanics</title>
@@ -161,7 +161,7 @@ the wider world of economics, politics and social sciences in general.&lt;/p&gt;
 &lt;/section&gt;
 &lt;/section&gt;
 </content>
-    <link href="http://dopieralski.pl/posts/2020-06-21-snowball/" rel="alternate"/>
+    <link href="http://dopieralski.pl/posts/2020-06-21-snowball/"/>
     <summary>Progress is an important mechanic in computer games. Not only it gives us a
 reason to play the game, but it also serves as a way of communicating how
 well we are playing. It can also serve several other purposes.</summary>

@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>http://dopieralski.pl/</id>
   <title>dopieralski.pl - Posts in webdev</title>
-  <updated>2026-02-20T00:34:43.155918+00:00</updated>
+  <updated>2026-07-19T23:40:23.537839+00:00</updated>
   <link href="http://dopieralski.pl/"/>
   <link href="http://dopieralski.pl/blog/category/webdev/atom.xml" rel="self"/>
-  <generator uri="https://ablog.readthedocs.org/" version="0.10.33">ABlog</generator>
+  <generator uri="https://ablog.readthedocs.io/" version="0.11.13">ABlog</generator>
   <entry>
     <id>http://dopieralski.pl/posts/2018-12-25/</id>
     <title>New Website</title>
@@ -26,7 +26,7 @@ like, but I’m mostly happy with it.&lt;/p&gt;
 wiki and WikiCreole markup to this and ReStructuredText.&lt;/p&gt;
 &lt;/section&gt;
 </content>
-    <link href="http://dopieralski.pl/posts/2018-12-25/" rel="alternate"/>
+    <link href="http://dopieralski.pl/posts/2018-12-25/"/>
     <summary>My hosting provider is dropping their service, and that has forced me to look
 for another solution for hosting my website. I’ve been toying with the idea of
 a statically-generated blog for a long time, and this finally pushed me to try

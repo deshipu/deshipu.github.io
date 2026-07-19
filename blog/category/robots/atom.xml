@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>http://dopieralski.pl/</id>
   <title>dopieralski.pl - Posts in robots</title>
-  <updated>2026-02-20T00:34:43.148325+00:00</updated>
+  <updated>2026-07-19T23:40:23.532939+00:00</updated>
   <link href="http://dopieralski.pl/"/>
   <link href="http://dopieralski.pl/blog/category/robots/atom.xml" rel="self"/>
-  <generator uri="https://ablog.readthedocs.org/" version="0.10.33">ABlog</generator>
+  <generator uri="https://ablog.readthedocs.io/" version="0.11.13">ABlog</generator>
   <entry>
     <id>http://dopieralski.pl/posts/2021-12-19-small-robots/</id>
     <title>Build Small Robots</title>
@@ -136,7 +136,7 @@ something goes wrong or breaks, you have to call the mason to fix your house…&
 &lt;/section&gt;
 &lt;/section&gt;
 </content>
-    <link href="http://dopieralski.pl/posts/2021-12-19-small-robots/" rel="alternate"/>
+    <link href="http://dopieralski.pl/posts/2021-12-19-small-robots/"/>
     <summary>In which we learn why it’s much easier to build small robots than large ones.</summary>
     <published>2021-12-19T00:00:00+01:00</published>
   </entry>

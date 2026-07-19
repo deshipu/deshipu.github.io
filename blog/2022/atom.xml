@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>http://dopieralski.pl/</id>
   <title>dopieralski.pl - Posted in 2022</title>
-  <updated>2026-02-20T00:34:43.184888+00:00</updated>
+  <updated>2026-07-19T23:40:23.570788+00:00</updated>
   <link href="http://dopieralski.pl/"/>
   <link href="http://dopieralski.pl/blog/2022/atom.xml" rel="self"/>
-  <generator uri="https://ablog.readthedocs.org/" version="0.10.33">ABlog</generator>
+  <generator uri="https://ablog.readthedocs.io/" version="0.11.13">ABlog</generator>
   <entry>
     <id>http://dopieralski.pl/posts/2022-01-22-circuitpython/</id>
     <title>CircuitPython in 2022</title>
@@ -78,7 +78,7 @@ situation will improve.&lt;/p&gt;
 &lt;/section&gt;
 &lt;/section&gt;
 </content>
-    <link href="http://dopieralski.pl/posts/2022-01-22-circuitpython/" rel="alternate"/>
+    <link href="http://dopieralski.pl/posts/2022-01-22-circuitpython/"/>
     <summary>As every year, it’s time for a yearly summary and plans of all things I do
 that are related to CircuitPython.</summary>
     <published>2022-01-22T00:00:00+01:00</published>

@@ -2,10 +2,54 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>http://dopieralski.pl/</id>
   <title>dopieralski.pl - Posted in 2019</title>
-  <updated>2026-02-20T00:34:43.198199+00:00</updated>
+  <updated>2026-07-19T23:40:23.582258+00:00</updated>
   <link href="http://dopieralski.pl/"/>
   <link href="http://dopieralski.pl/blog/2019/atom.xml" rel="self"/>
-  <generator uri="https://ablog.readthedocs.org/" version="0.10.33">ABlog</generator>
+  <generator uri="https://ablog.readthedocs.io/" version="0.11.13">ABlog</generator>
+  <entry>
+    <id>http://dopieralski.pl/posts/2019-03-26-boredom/</id>
+    <title>Boredom</title>
+    <updated>2019-03-26T00:00:00+01:00</updated>
+    <content type="html">&lt;section id="boredom"&gt;
+
+&lt;p&gt;Would you like to be more creative? More eloquent in conversations? More
+intelligent in decision making? Better at problem solving? More attentive? Able
+to read those difficult books? Focus deeply on the project at hand? There is a
+simple solution for all this: embrace boredom.&lt;/p&gt;
+&lt;p&gt;It takes some effort and training, but I can assure you that it certainly is
+worth it. Whenever you are waiting, whenever you don’t have anything urgent to
+do, whenever you don’t particularly feel like doing something, just be bored.
+Forget about taking out your phone and mindlessly scrolling through the social
+network stream, frantically checking your messages, or playing silly games
+designed to get you addicted to them. Just stay there and think about whatever
+comes to your mind: that conversation you had last week with a friend about
+morality, that book you are reading, that project you were planning to start,
+what you will tell the person you are waiting for when they arrive, what you
+will do next, etc. — it doesn’t really matter what you think about, just let
+your mind wander.&lt;/p&gt;
+&lt;p&gt;The effect of this? You will have more motivation to actually work on that
+project, you will understand the book better, you will have interesting things
+to say in the next conversation, you will enjoy your time with that person
+more, and so on. Because your mind will have done some of the work up front and
+will be prepared. Because you will also think about things that you wouldn’t
+notice otherwise. Because you will be more rested and ready to pay more
+attention to the here and now.&lt;/p&gt;
+&lt;p&gt;Obviously, this is not a silver bullet. It doesn’t work when you are tired,
+depressed, stressed and burned out: you have to make sure you take care of your
+sleep deprivation, depression and anxiety first — don’t be afraid to talk to a
+doctor about them, they are often very easily cured. But once you have that
+under control, make sure to leave yourself as much time as possible for doing
+absolutely nothing. Literally staring at a wall. It will make everything else
+you do much better.&lt;/p&gt;
+&lt;/section&gt;
+</content>
+    <link href="http://dopieralski.pl/posts/2019-03-26-boredom/"/>
+    <summary>Would you like to be more creative? More eloquent in conversations? More
+intelligent in decision making? Better at problem solving? More attentive? Able
+to read those difficult books? Focus deeply on the project at hand? There is a
+simple solution for all this: embrace boredom.</summary>
+    <published>2019-03-26T00:00:00+01:00</published>
+  </entry>
   <entry>
     <id>http://dopieralski.pl/posts/2019-01-04-circuitpython/</id>
     <title>CircuitPython in 2019</title>
@@ -23,7 +67,7 @@ smarter than me and with copious free time worked on it.&lt;/p&gt;
 &lt;section id="pewpew"&gt;
 &lt;h3&gt;PewPew&lt;/h3&gt;
 &lt;aside class="system-message"&gt;
-&lt;p class="system-message-title"&gt;System Message: INFO/1 (&lt;span class="docutils literal"&gt;/home/sheep/dev/ablog/dopieralski.pl/posts/2019-01-04-circuitpython.rst&lt;/span&gt;, line 6); &lt;em&gt;&lt;a href="#id1"&gt;backlink&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;p class="system-message-title"&gt;System Message: INFO/1 (&lt;span class="docutils literal"&gt;/home/sheep/dev/ablog/dopieralski.pl/posts/2019-01-04-circuitpython.rst&lt;/span&gt;, line 29)&lt;/p&gt;
 &lt;p&gt;Duplicate implicit target name: “pewpew”.&lt;/p&gt;
 &lt;/aside&gt;
 &lt;p&gt;The immediate thing with highest priority right now is the &lt;a class="reference external" href="http://pewpew.rtfd.io"&gt;PewPew&lt;/a&gt; educational game console, and the workshop I’m
@@ -115,7 +159,7 @@ reverse at some point, but until then I try to not plan ahead too much.&lt;/p&gt
 &lt;/section&gt;
 &lt;/section&gt;
 </content>
-    <link href="http://dopieralski.pl/posts/2019-01-04-circuitpython/" rel="alternate"/>
+    <link href="http://dopieralski.pl/posts/2019-01-04-circuitpython/"/>
     <summary>Adafruit has requested on their blog
 feedback and comments about CircuitPython in 2019, so here I go. I am mostly
 going to talk about three things: the projects that I personally want to do
@@ -123,49 +167,5 @@ using it, the ongoing developments that I would love to see finished this year,
 and some completely crazy stuff that could potentially be added if someone
 smarter than me and with copious free time worked on it.</summary>
     <published>2019-01-04T00:00:00+01:00</published>
-  </entry>
-  <entry>
-    <id>http://dopieralski.pl/posts/2019-03-26-boredom/</id>
-    <title>Boredom</title>
-    <updated>2019-03-26T00:00:00+01:00</updated>
-    <content type="html">&lt;section id="boredom"&gt;
-
-&lt;p&gt;Would you like to be more creative? More eloquent in conversations? More
-intelligent in decision making? Better at problem solving? More attentive? Able
-to read those difficult books? Focus deeply on the project at hand? There is a
-simple solution for all this: embrace boredom.&lt;/p&gt;
-&lt;p&gt;It takes some effort and training, but I can assure you that it certainly is
-worth it. Whenever you are waiting, whenever you don’t have anything urgent to
-do, whenever you don’t particularly feel like doing something, just be bored.
-Forget about taking out your phone and mindlessly scrolling through the social
-network stream, frantically checking your messages, or playing silly games
-designed to get you addicted to them. Just stay there and think about whatever
-comes to your mind: that conversation you had last week with a friend about
-morality, that book you are reading, that project you were planning to start,
-what you will tell the person you are waiting for when they arrive, what you
-will do next, etc. — it doesn’t really matter what you think about, just let
-your mind wander.&lt;/p&gt;
-&lt;p&gt;The effect of this? You will have more motivation to actually work on that
-project, you will understand the book better, you will have interesting things
-to say in the next conversation, you will enjoy your time with that person
-more, and so on. Because your mind will have done some of the work up front and
-will be prepared. Because you will also think about things that you wouldn’t
-notice otherwise. Because you will be more rested and ready to pay more
-attention to the here and now.&lt;/p&gt;
-&lt;p&gt;Obviously, this is not a silver bullet. It doesn’t work when you are tired,
-depressed, stressed and burned out: you have to make sure you take care of your
-sleep deprivation, depression and anxiety first — don’t be afraid to talk to a
-doctor about them, they are often very easily cured. But once you have that
-under control, make sure to leave yourself as much time as possible for doing
-absolutely nothing. Literally staring at a wall. It will make everything else
-you do much better.&lt;/p&gt;
-&lt;/section&gt;
-</content>
-    <link href="http://dopieralski.pl/posts/2019-03-26-boredom/" rel="alternate"/>
-    <summary>Would you like to be more creative? More eloquent in conversations? More
-intelligent in decision making? Better at problem solving? More attentive? Able
-to read those difficult books? Focus deeply on the project at hand? There is a
-simple solution for all this: embrace boredom.</summary>
-    <published>2019-03-26T00:00:00+01:00</published>
   </entry>
 </feed>

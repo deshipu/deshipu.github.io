@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>http://dopieralski.pl/</id>
   <title>dopieralski.pl - Posts in automation</title>
-  <updated>2026-02-20T00:34:43.063868+00:00</updated>
+  <updated>2026-07-19T23:40:23.437315+00:00</updated>
   <link href="http://dopieralski.pl/"/>
   <link href="http://dopieralski.pl/blog/category/automation/atom.xml" rel="self"/>
-  <generator uri="https://ablog.readthedocs.org/" version="0.10.33">ABlog</generator>
+  <generator uri="https://ablog.readthedocs.io/" version="0.11.13">ABlog</generator>
   <entry>
     <id>http://dopieralski.pl/posts/2025-07-01-automation/</id>
     <title>The Subtle Art of Automation</title>
@@ -208,7 +208,7 @@ knowing what you want to do and how to arrange things to achieve it.&lt;/p&gt;
 &lt;/section&gt;
 &lt;/section&gt;
 </content>
-    <link href="http://dopieralski.pl/posts/2025-07-01-automation/" rel="alternate"/>
+    <link href="http://dopieralski.pl/posts/2025-07-01-automation/"/>
     <summary>Humans are tool-using animals. For a long time it was thought that this is what
 distinguishes us from animals, in fact, but of course if you actually pay
 attention you will notice that animals are using tools all the time. Yes,
