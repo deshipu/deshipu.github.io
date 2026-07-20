@@ -60,7 +60,7 @@ stand on two legs, while the third is being moved. Or you could have some legs
 with large feet, and some more pointy legs. But to be honest, I haven't seen
 such a walking robot in practice.
 
-# Going Ahead
+## Going Ahead
 
 Once we have assured our robot's stability, we can start thinking about what it
 takes to propel it forward. Since we want proper walking, without slipping,

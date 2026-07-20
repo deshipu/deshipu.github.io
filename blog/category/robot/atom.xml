@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>http://dopieralski.pl/</id>
   <title>dopieralski.pl - Posts in robot</title>
-  <updated>2026-07-19T23:40:23.516609+00:00</updated>
+  <updated>2026-07-20T08:41:25.266947+00:00</updated>
   <link href="http://dopieralski.pl/"/>
   <link href="http://dopieralski.pl/blog/category/robot/atom.xml" rel="self"/>
   <generator uri="https://ablog.readthedocs.io/" version="0.11.13">ABlog</generator>
@@ -62,9 +62,8 @@ stand on two legs, while the third is being moved. Or you could have some legs
 with large feet, and some more pointy legs. But to be honest, I haven’t seen
 such a walking robot in practice.&lt;/p&gt;
 &lt;/section&gt;
-&lt;/section&gt;
 &lt;section id="going-ahead"&gt;
-&lt;h1&gt;Going Ahead&lt;/h1&gt;
+&lt;h2&gt;Going Ahead&lt;/h2&gt;
 &lt;p&gt;Once we have assured our robot’s stability, we can start thinking about what it
 takes to propel it forward. Since we want proper walking, without slipping,
 sliding, or rolling, there is really only one way to do it: move all the legs
@@ -123,6 +122,7 @@ sense to try and make do with as few of them as possible.&lt;/p&gt;
 &lt;p&gt;It is possible do the balancing in a different way than shifting or tilting the
 entire body of the robot. There can be an additional joint or joints somewhere
 that move part of the robot’s body, or some kind of tail or head, for balance.&lt;/p&gt;
+&lt;/section&gt;
 &lt;section id="turning"&gt;
 &lt;h2&gt;Turning&lt;/h2&gt;
 &lt;p&gt;In order for the robot to turn in place (or even just twist its body to look
